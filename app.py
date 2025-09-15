@@ -329,8 +329,8 @@ KNOWLEDGE_BASE = {
 # Store for temporary files
 temp_files = {}
 
-def calculate_nodes(date, time, city, country):
-    """Calculate North and South Node positions"""
+def calculate_nodes_and_big_three(date, time, city, country):
+    """Calculate North/South Node positions and Sun/Moon/Rising signs"""
     try:
         # Geocode city
         geolocator = Nominatim(user_agent="node_calc")
@@ -357,81 +357,153 @@ def calculate_nodes(date, time, city, country):
         # North Node position
         node, *_ = swe.calc_ut(jd, swe.TRUE_NODE)
         node_long = node[0] % 360.0
-        sign_index = int(node_long // 30)
-        sign = SIGNS[sign_index]
-        degree = node_long % 30
+        node_sign_index = int(node_long // 30)
+        node_sign = SIGNS[node_sign_index]
+        node_degree = node_long % 30
         
-        # Houses (Placidus)
+        # Sun position
+        sun, *_ = swe.calc_ut(jd, swe.SUN)
+        sun_long = sun[0] % 360.0
+        sun_sign_index = int(sun_long // 30)
+        sun_sign = SIGNS[sun_sign_index]
+        
+        # Moon position
+        moon, *_ = swe.calc_ut(jd, swe.MOON)
+        moon_long = moon[0] % 360.0
+        moon_sign_index = int(moon_long // 30)
+        moon_sign = SIGNS[moon_sign_index]
+        
+        # Houses (Placidus) and Rising sign
         houses, ascmc = swe.houses_ex(jd, lat, lon, b'P')
-        house = None
+        asc_long = ascmc[0] % 360.0
+        rising_sign_index = int(asc_long // 30)
+        rising_sign = SIGNS[rising_sign_index]
+        
+        # Calculate which house the North Node is in
+        node_house = None
         for i in range(12):
             start = houses[i]
             end = houses[(i + 1) % 12]
             if start <= node_long < end or (end < start and (node_long >= start or node_long < end)):
-                house = i + 1
+                node_house = i + 1
                 break
         
         # South Node (opposite sign and house)
-        opp_sign = SIGNS[(sign_index + 6) % 12]
-        opp_house = (house + 6 - 1) % 12 + 1 if house else None
+        south_sign = SIGNS[(node_sign_index + 6) % 12]
+        south_house = (node_house + 6 - 1) % 12 + 1 if node_house else None
         
         return {
-            "north_node": {"sign": sign, "degree": round(degree, 2), "house": house},
-            "south_node": {"sign": opp_sign, "degree": round(degree, 2), "house": opp_house}
+            "north_node": {"sign": node_sign, "degree": round(node_degree, 2), "house": node_house},
+            "south_node": {"sign": south_sign, "degree": round(node_degree, 2), "house": south_house},
+            "sun_sign": sun_sign,
+            "moon_sign": moon_sign,
+            "rising_sign": rising_sign
         }
     except Exception as e:
-        raise Exception(f"Node calculation error: {str(e)}")
+        raise Exception(f"Calculation error: {str(e)}")
 
-def generate_full_report(nodes_data):
-    """Generate complete report text using knowledge base"""
+def generate_full_report(chart_data):
+    """Generate rich, narrative-style report with context and explanations"""
     try:
-        north_node = nodes_data["north_node"]
-        south_node = nodes_data["south_node"]
+        north_node = chart_data["north_node"]
+        south_node = chart_data["south_node"]
+        sun_sign = chart_data["sun_sign"]
+        moon_sign = chart_data["moon_sign"]
+        rising_sign = chart_data["rising_sign"]
         
         report = []
         report.append("NODAL PATHWAYS REPORT")
         report.append("=" * 50)
         report.append("")
         
-        # North Node section
+        # Birth Chart Overview
+        report.append("YOUR ASTROLOGICAL BLUEPRINT")
+        report.append("-" * 30)
+        report.append(f"Sun in {sun_sign} • Moon in {moon_sign} • Rising in {rising_sign}")
+        report.append(f"North Node in {north_node['sign']} • South Node in {south_node['sign']}")
+        report.append("")
+        
+        # North Node section with rich narrative
         report.append("NORTH NODE GUIDANCE")
         report.append("-" * 20)
         north_sign_data = KNOWLEDGE_BASE["north_nodes"][north_node["sign"]]
-        report.append(f"North Node in {north_node['sign']}: {north_sign_data['meaning']}")
+        
+        report.append(f"Your North Node in {north_node['sign']} reveals your soul's primary growth direction in this lifetime. {north_sign_data['meaning']} This placement asks you to embrace qualities that may feel unfamiliar or challenging at first, but will ultimately lead to your greatest fulfillment and spiritual evolution.")
         report.append("")
         
-        report.append("Guidance for your North Node:")
-        for guidance in north_sign_data["guidance"]:
-            report.append(f"• {guidance}")
+        report.append("To develop these qualities, focus on practical steps that gradually shift your approach to life:")
+        
+        # Convert bullet points to flowing narrative
+        guidance_text = " ".join([f"{guidance.rstrip('.')}, which helps you" if i < len(north_sign_data['guidance'])-1 else f"and {guidance.lower()}" for i, guidance in enumerate(north_sign_data['guidance'])])
+        report.append(guidance_text + ". These practices will naturally strengthen your connection to your North Node energy.")
         report.append("")
         
-        # House guidance if available
+        # House guidance with context
         if north_node.get("house"):
             house_data = KNOWLEDGE_BASE["houses"][str(north_node["house"])]
-            report.append(f"North Node in House {north_node['house']}: {house_data['focus']}")
+            report.append(f"Your North Node's placement in the {north_node['house']}th house adds another layer of meaning. {house_data['focus']} This house placement shows the life areas where your {north_node['sign']} growth will be most important and transformative.")
             report.append("")
-            report.append("House guidance:")
-            for guidance in house_data["guidance"]:
-                report.append(f"• {guidance}")
+            
+            house_guidance = " ".join([f"{guidance.rstrip('.')}" if i < len(house_data['guidance'])-1 else f"and {guidance.lower()}" for i, guidance in enumerate(house_data['guidance'])])
+            report.append(f"The {north_node['house']}th house invites you to {house_guidance}. These experiences will accelerate your spiritual development and help you embody your North Node purpose more fully.")
             report.append("")
         
-        # South Node section
+        # South Node with compassionate reframing
         report.append("SOUTH NODE AWARENESS")
         report.append("-" * 20)
         south_sign_data = KNOWLEDGE_BASE["south_nodes"][south_node["sign"]]
-        report.append(f"South Node in {south_node['sign']}: {south_sign_data['patterns']}")
+        
+        report.append(f"Your South Node in {south_node['sign']} represents the gifts and patterns you've mastered in previous lifetimes. While these qualities are natural strengths, the challenge lies in {south_sign_data['patterns'].lower()}. These tendencies, though comfortable, can prevent you from growing toward your North Node potential.")
         report.append("")
         
-        report.append("Areas to be mindful of:")
-        for guidance in south_sign_data["guidance"]:
-            report.append(f"• {guidance}")
+        south_guidance = " ".join([f"{guidance.rstrip('.')}" if i < len(south_sign_data['guidance'])-1 else f"and {guidance.lower()}" for i, guidance in enumerate(south_sign_data['guidance'])])
+        report.append(f"To find balance, practice awareness when you {south_guidance}. The goal isn't to eliminate these patterns entirely, but to use them consciously while expanding toward your North Node growth.")
         report.append("")
         
-        # Combined insight
-        report.append("COMBINED INSIGHT")
-        report.append("-" * 15)
-        report.append(f"Your journey involves moving from {south_node['sign']} patterns toward {north_node['sign']} growth.")
-        report.append("Use your South Node experience as a foundation, but avoid getting stuck in old patterns.")
+        # Enhanced big three interactions
+        report.append("YOUR NODES AND SUN SIGN")
+        report.append("-" * 25)
+        
+        if sun_sign == north_node['sign']:
+            report.append(f"Your Sun in {sun_sign} creates a powerful alignment with your North Node purpose. Your core identity and life direction are unified, making it easier to embody the qualities you're meant to develop. You naturally radiate {north_node['sign']} energy, and others likely see you as someone who authentically lives their purpose. This alignment suggests you're here to master and teach {north_node['sign']} qualities through your very being.")
+        elif sun_sign == south_node['sign']:
+            report.append(f"With your Sun in {sun_sign}, the same sign as your South Node, you embody the mastered gifts from your past-life experiences. While this gives you natural confidence in {sun_sign} qualities, be mindful not to over-rely on these familiar patterns. Your challenge is to let your {north_node['sign']} North Node guide your self-expression, using your {sun_sign} strengths as a foundation rather than a limitation.")
+        else:
+            report.append(f"Your {sun_sign} Sun provides the core energy and vitality to fuel your {north_node['sign']} North Node development. The dynamic between these two signs creates an interesting interplay in your personality. Your {sun_sign} nature gives you the confidence and drive to step into the unfamiliar territory of your {north_node['sign']} growth, while your North Node adds depth and purpose to how you express your {sun_sign} identity.")
+        report.append("")
+        
+        # Moon sign interaction
+        report.append("YOUR NODES AND MOON SIGN")
+        report.append("-" * 26)
+        
+        if moon_sign == north_node['sign']:
+            report.append(f"Your Moon in {moon_sign} creates an intuitive understanding of your North Node path. Your emotional nature instinctively knows what you need for growth, and you likely feel most nurtured when engaging in {north_node['sign']} activities. This placement suggests that following your genuine emotional responses will guide you toward your life purpose. Trust your feelings—they're aligned with your soul's direction.")
+        elif moon_sign == south_node['sign']:
+            report.append(f"Your Moon in {moon_sign} connects you deeply to your South Node patterns, meaning your emotional comfort zone lies in familiar {moon_sign} territory. While this emotional foundation is valuable, be aware that your habitual responses might pull you away from {north_node['sign']} growth. Practice conscious emotional development by honoring your {moon_sign} needs while gradually expanding toward your North Node qualities.")
+        else:
+            report.append(f"Your {moon_sign} Moon provides emotional support for your {north_node['sign']} North Node journey. The relationship between these signs influences how you process the challenges and rewards of personal growth. Your {moon_sign} emotional nature can either support or complicate your path to {north_node['sign']} development, depending on how consciously you work with both energies.")
+        report.append("")
+        
+        # Rising sign interaction
+        report.append("YOUR NODES AND RISING SIGN")
+        report.append("-" * 28)
+        
+        if rising_sign == north_node['sign']:
+            report.append(f"Your {rising_sign} Rising sign aligns beautifully with your North Node, meaning others naturally perceive you as someone embodying your life purpose. Your outer personality and approach to new situations already reflect {rising_sign} qualities, making your North Node development feel more natural and supported by how the world responds to you. This is a gift that accelerates your spiritual growth.")
+        elif rising_sign == south_node['sign']:
+            report.append(f"With your Rising sign in {rising_sign}, the same as your South Node, you naturally present yourself through familiar, mastered qualities. Others see you as naturally gifted in {rising_sign} areas, which can be both a blessing and a challenge. While this gives you confidence in how you meet the world, consciously cultivate your {north_node['sign']} North Node qualities in your interactions and first impressions.")
+        else:
+            report.append(f"Your {rising_sign} Rising provides the style and approach through which you'll develop your {north_node['sign']} North Node qualities. The way you naturally meet new people and situations has a {rising_sign} flavor that can either support or create tension with your North Node growth. Learning to blend these energies consciously will enhance both your personal magnetism and spiritual development.")
+        report.append("")
+        
+        # Integrated wisdom
+        report.append("INTEGRATED GUIDANCE")
+        report.append("-" * 18)
+        report.append(f"Your soul's journey in this lifetime centers on the evolution from {south_node['sign']} patterns toward {north_node['sign']} mastery. This isn't about rejecting your South Node gifts—your {south_node['sign']} experience provides a valuable foundation. Instead, it's about expanding beyond what feels safe and familiar.")
+        report.append("")
+        report.append(f"With your {sun_sign} Sun providing core vitality, your {moon_sign} Moon offering emotional wisdom, and your {rising_sign} Rising shaping how you meet the world, you have a unique combination of tools to support this transformation. Each element of your chart contributes to your ability to grow into your {north_node['sign']} potential while honoring the gifts you've already developed.")
+        report.append("")
+        report.append("Remember that spiritual growth is a gradual process. Be patient with yourself as you learn to balance the familiar comfort of your South Node with the exciting challenge of your North Node development. The goal is integration—using all parts of your astrological makeup to create a rich, authentic, and purposeful life.")
         report.append("")
         
         report.append("Astrology is interpretive and meant for reflection only.")
@@ -645,13 +717,13 @@ def send_report_email(email, report_text, pdf_path):
 def get_nodes():
     try:
         data = request.json
-        nodes_data = calculate_nodes(
+        chart_data = calculate_nodes_and_big_three(
             data['date'], 
             data.get('time', '12:00'),
             data['city'],
             data['country']
         )
-        return jsonify(nodes_data)
+        return jsonify(chart_data)
     except Exception as e:
         return jsonify({"error": str(e)}), 400
 
@@ -705,8 +777,8 @@ def process_form():
         print("Country:", data.get('country'))
         print("Email:", data.get('email'))
         
-        # Calculate nodes
-        nodes_data = calculate_nodes(
+        # Calculate nodes and big three
+        chart_data = calculate_nodes_and_big_three(
             data['date'],
             data.get('time', '12:00'),
             data['city'],
@@ -714,7 +786,7 @@ def process_form():
         )
         
         # Generate full report
-        report_text = generate_full_report(nodes_data)
+        report_text = generate_full_report(chart_data)
         
         # Create PDF
         pdf_path = create_pdf_report(report_text)
