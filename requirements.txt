@@ -1,0 +1,5 @@
+flask
+pyswisseph
+geopy
+timezonefinder
+pytz
