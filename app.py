@@ -536,7 +536,18 @@ def make_report():
 def process_form():
     """Process Google Form submission and email report"""
     try:
+        # Log the raw request data for debugging
+        print("Raw request data:", request.data)
+        print("Request JSON:", request.json)
+        
         data = request.json
+        
+        # Log each expected field
+        print("Date:", data.get('date'))
+        print("Time:", data.get('time'))
+        print("City:", data.get('city'))
+        print("Country:", data.get('country'))
+        print("Email:", data.get('email'))
         
         # Calculate nodes
         nodes_data = calculate_nodes(
@@ -558,6 +569,7 @@ def process_form():
         return jsonify({"status": "success", "message": "Report sent successfully"})
         
     except Exception as e:
+        print("Error in process_form:", str(e))
         return jsonify({"error": str(e)}), 400
 
 @app.route('/download/<file_id>', methods=['GET'])
