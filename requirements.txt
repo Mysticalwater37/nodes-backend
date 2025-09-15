@@ -1,6 +1,7 @@
 flask
-pyswisseph
+swisseph
 geopy
 timezonefinder
 pytz
 reportlab
+resend
