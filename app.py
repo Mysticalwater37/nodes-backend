@@ -4,8 +4,12 @@ from geopy.geocoders import Nominatim
 from timezonefinder import TimezoneFinder
 from datetime import datetime
 import pytz
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
-from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.lib.units import inch
+from reportlab.lib.pagesizes import letter
+from reportlab.lib.colors import HexColor
+from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_JUSTIFY
 import uuid
 import os
 import resend
@@ -437,19 +441,166 @@ def generate_full_report(nodes_data):
         raise Exception(f"Report generation error: {str(e)}")
 
 def create_pdf_report(report_text):
-    """Create PDF from report text"""
+    """Create a beautifully formatted PDF from report text"""
     filename = f"nodal_report_{uuid.uuid4()}.pdf"
     filepath = f"/tmp/{filename}"
     
+    # Create document with proper margins
+    doc = SimpleDocTemplate(
+        filepath, 
+        pagesize=letter,
+        rightMargin=1*inch, 
+        leftMargin=1*inch,
+        topMargin=1*inch, 
+        bottomMargin=1*inch
+    )
+    
+    # Define color scheme to match your celestial branding
+    primary_color = HexColor('#2C3E50')  # Deep navy (like your dark section)
+    accent_color = HexColor('#6B9BD8')   # Soft blue (like your header gradient)
+    secondary_color = HexColor('#8FA8C7')  # Lighter celestial blue
+    text_color = HexColor('#2C3E50')     # Dark navy for readability
+    
+    # Get base styles
     styles = getSampleStyleSheet()
-    doc = SimpleDocTemplate(filepath)
+    
+    # Custom title style - celestial themed
+    title_style = ParagraphStyle(
+        'CustomTitle',
+        parent=styles['Heading1'],
+        fontSize=24,
+        textColor=primary_color,
+        spaceAfter=40,
+        spaceBefore=20,
+        alignment=TA_CENTER,
+        fontName='Helvetica-Bold'
+    )
+    
+    # Custom main heading style with celestial blue accent
+    main_heading_style = ParagraphStyle(
+        'MainHeading',
+        parent=styles['Heading2'],
+        fontSize=16,
+        textColor=accent_color,
+        spaceAfter=15,
+        spaceBefore=25,
+        fontName='Helvetica-Bold',
+        borderWidth=1,
+        borderColor=secondary_color,
+        borderPadding=8,
+        backColor=HexColor('#F0F6FF')  # Very light celestial blue
+    )
+    
+    # Custom subheading style
+    sub_heading_style = ParagraphStyle(
+        'SubHeading',
+        parent=styles['Heading3'],
+        fontSize=14,
+        textColor=primary_color,
+        spaceAfter=10,
+        spaceBefore=15,
+        fontName='Helvetica-Bold'
+    )
+    
+    # Custom body style
+    body_style = ParagraphStyle(
+        'CustomBody',
+        parent=styles['Normal'],
+        fontSize=12,
+        textColor=text_color,
+        spaceAfter=8,
+        leading=18,
+        alignment=TA_JUSTIFY,
+        fontName='Helvetica'
+    )
+    
+    # Custom bullet style
+    bullet_style = ParagraphStyle(
+        'BulletStyle',
+        parent=styles['Normal'],
+        fontSize=11,
+        textColor=text_color,
+        spaceAfter=6,
+        leading=16,
+        leftIndent=20,
+        bulletIndent=10,
+        fontName='Helvetica'
+    )
+    
+    # Custom insight style with celestial theme
+    insight_style = ParagraphStyle(
+        'InsightStyle',
+        parent=styles['Normal'],
+        fontSize=12,
+        textColor=text_color,
+        spaceAfter=12,
+        leading=18,
+        alignment=TA_JUSTIFY,
+        fontName='Helvetica-Oblique',
+        backColor=HexColor('#F0F6FF'),  # Soft celestial blue background
+        borderWidth=1,
+        borderColor=secondary_color,
+        borderPadding=10
+    )
+    
+    # Custom footer style
+    footer_style = ParagraphStyle(
+        'FooterStyle',
+        parent=styles['Normal'],
+        fontSize=10,
+        textColor=HexColor('#7F8C8D'),
+        spaceAfter=12,
+        spaceBefore=20,
+        alignment=TA_CENTER,
+        fontName='Helvetica-Oblique'
+    )
+    
     story = []
     
-    for paragraph in report_text.split("\n"):
-        if paragraph.strip():
-            story.append(Paragraph(paragraph, styles['Normal']))
-        story.append(Spacer(1, 12))
+    # Process the report text
+    lines = report_text.split("\n")
     
+    for i, line in enumerate(lines):
+        line = line.strip()
+        if not line:
+            continue
+            
+        # Title
+        if "NODAL PATHWAYS REPORT" in line:
+            story.append(Paragraph(line, title_style))
+            story.append(Spacer(1, 20))
+        
+        # Skip separator lines
+        elif line.startswith("=") or line.startswith("-"):
+            continue
+        
+        # Main sections
+        elif any(keyword in line for keyword in ["NORTH NODE GUIDANCE", "SOUTH NODE AWARENESS", "COMBINED INSIGHT"]):
+            story.append(Paragraph(line, main_heading_style))
+        
+        # Subsections
+        elif any(keyword in line for keyword in ["North Node in", "South Node in", "House guidance:", "Areas to be mindful"]):
+            story.append(Paragraph(line, sub_heading_style))
+        
+        # Bullet points
+        elif line.startswith("•"):
+            formatted_line = line.replace("•", "&#8226;")  # Use proper bullet character
+            story.append(Paragraph(formatted_line, bullet_style))
+        
+        # Combined insight content (special formatting)
+        elif "journey involves moving from" in line or "Use your South Node experience" in line:
+            story.append(Paragraph(line, insight_style))
+        
+        # Footer/disclaimer
+        elif "Astrology is interpretive" in line:
+            story.append(Spacer(1, 30))
+            story.append(Paragraph(line, footer_style))
+        
+        # Regular body text
+        else:
+            story.append(Paragraph(line, body_style))
+    
+    # Build the PDF
     doc.build(story)
     return filepath
 
@@ -460,7 +611,7 @@ def send_report_email(email, report_text, pdf_path):
             pdf_content = base64.b64encode(f.read()).decode('utf-8')
         
         email_response = resend.Emails.send({
-            "from": "onboarding@resend.dev",  # Change to your domain later
+            "from": "onboarding@resend.dev",
             "to": email,
             "subject": "Your Nodal Pathways Report",
             "html": """
@@ -475,6 +626,8 @@ def send_report_email(email, report_text, pdf_path):
             }]
         })
         
+        print("Email sent successfully:", email_response)
+        
         # Clean up temp file
         try:
             os.remove(pdf_path)
@@ -483,6 +636,8 @@ def send_report_email(email, report_text, pdf_path):
             
         return email_response
     except Exception as e:
+        print("Detailed email error:", str(e))
+        print("Error type:", type(e).__name__)
         raise Exception(f"Email sending error: {str(e)}")
 
 # Your existing endpoints
