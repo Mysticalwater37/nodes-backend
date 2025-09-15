@@ -1,14 +1,18 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_file
 import swisseph as swe
 from geopy.geocoders import Nominatim
 from timezonefinder import TimezoneFinder
 from datetime import datetime
 import pytz
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
+from reportlab.lib.styles import getSampleStyleSheet
+import uuid
+import os
 
 app = Flask(__name__)
 
-# set the path to Swiss Ephemeris data files
-swe.set_ephe_path('.')  # you can leave '.' (current directory) unless you download data separately
+# Path to Swiss Ephemeris data files
+swe.set_ephe_path('.')  
 
 SIGNS = ["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
          "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"]
@@ -57,7 +61,7 @@ def get_nodes():
                 house = i + 1
                 break
 
-        # Step 7: South Node = opposite
+        # Step 7: South Node
         opp_sign = SIGNS[(sign_index + 6) % 12]
         opp_house = (house + 6 - 1) % 12 + 1 if house else None
 
@@ -68,6 +72,31 @@ def get_nodes():
 
     except Exception as e:
         return jsonify({"error": str(e)}), 400
+
+
+@app.route('/report', methods=['POST'])
+def make_report():
+    try:
+        data = request.json
+        report_text = data['report']   # text you send from GPT
+        filename = f"{uuid.uuid4()}.pdf"
+        filepath = f"/tmp/{filename}"
+
+        styles = getSampleStyleSheet()
+        doc = SimpleDocTemplate(filepath)
+        story = []
+
+        for paragraph in report_text.split("\n"):
+            story.append(Paragraph(paragraph, styles['Normal']))
+            story.append(Spacer(1, 12))
+
+        doc.build(story)
+
+        return send_file(filepath, as_attachment=True)
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000)
