@@ -9,6 +9,7 @@ from reportlab.lib.styles import getSampleStyleSheet
 import uuid
 import os
 import resend
+import base64
 
 app = Flask(__name__)
 
@@ -456,7 +457,7 @@ def send_report_email(email, report_text, pdf_path):
     """Send report via email"""
     try:
         with open(pdf_path, 'rb') as f:
-            pdf_content = f.read()
+            pdf_content = base64.b64encode(f.read()).decode('utf-8')
         
         email_response = resend.Emails.send({
             "from": "onboarding@resend.dev",  # Change to your domain later
