@@ -584,9 +584,10 @@ def generate_full_report(chart_data):
             report.append(f"Your {rising_sign} Rising sign aligns beautifully with your North Node, meaning others naturally perceive you as someone embodying your life purpose. Your outer personality and approach to new situations already reflect {rising_sign} qualities, making your North Node development feel more natural and supported by how the world responds to you. This is a gift that accelerates your spiritual growth.")
         elif rising_sign == south_node['sign']:
             report.append(f"With your Rising sign in {rising_sign}, the same as your South Node, you naturally present yourself through familiar, mastered qualities. Others see you as naturally gifted in {rising_sign} areas, which can be both a blessing and a challenge. While this gives you confidence in how you meet the world, consciously cultivate your {north_node['sign']} North Node qualities in your interactions and first impressions.")
-       else:
+        else:
             article = "an" if rising_sign[0].lower() in 'aeiou' else "a"
-            report.append(f"Your {rising_sign} Rising provides the style and approach through which you'll develop your {north_node['sign']} North Node qualities. The way you naturally meet new people and situations has {article} {rising_sign} flavor that can either support or create tension with your North Node growth. Learning to blend these energies consciously will enhance both your personal magnetism and spiritual development.")
+            report.append(f"Your {rising_sign} Rising provides the style and approach through which you'll develop your {north_node['sign']} North Node qualities. The way you naturally meet new people and situations has {article} {rising_sign} flavor that can either support or create tension with your North Node growth. Learning to blend these energies consciously will enhance both your personal magnetism and spiritual development.") 
+            report.append("")
         # Integrated wisdom
         report.append("INTEGRATED GUIDANCE")
         report.append("-" * 18)
