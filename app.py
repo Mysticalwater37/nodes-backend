@@ -509,8 +509,8 @@ for i, guidance in enumerate(north_sign_data['guidance']):
     else:
         report.append(f"Additionally, {guidance_clean}.")
         
-        report.append("These practices will naturally strengthen your connection to your North Node energy.")
-        report.append("")
+report.append("These practices will naturally strengthen your connection to your North Node energy.")
+report.append("")
         
         # House guidance with context
         if north_node.get("house"):
