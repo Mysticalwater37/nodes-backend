@@ -592,19 +592,19 @@ def create_pdf_report(report_text):
         fontName='Helvetica-Bold'
     )
     
-    # Custom main heading style with celestial blue accent
+ # Custom main heading style - bolder and larger
     main_heading_style = ParagraphStyle(
         'MainHeading',
         parent=styles['Heading2'],
-        fontSize=16,
+        fontSize=18,
         textColor=accent_color,
-        spaceAfter=15,
-        spaceBefore=25,
+        spaceAfter=20,
+        spaceBefore=30,
         fontName='Helvetica-Bold',
-        borderWidth=1,
+        borderWidth=2,
         borderColor=secondary_color,
-        borderPadding=8,
-        backColor=HexColor('#F0F6FF')  # Very light celestial blue
+        borderPadding=12,
+        backColor=HexColor('#F0F6FF')
     )
     
     # Custom subheading style
@@ -618,14 +618,14 @@ def create_pdf_report(report_text):
         fontName='Helvetica-Bold'
     )
     
-    # Custom body style
+   # Custom body style - larger for mobile
     body_style = ParagraphStyle(
         'CustomBody',
         parent=styles['Normal'],
-        fontSize=12,
+        fontSize=14,
         textColor=text_color,
-        spaceAfter=8,
-        leading=18,
+        spaceAfter=12,
+        leading=20,
         alignment=TA_JUSTIFY,
         fontName='Helvetica'
     )
