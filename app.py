@@ -433,14 +433,30 @@ def generate_full_report(chart_data):
         
         report.append("To develop these qualities, focus on practical steps that gradually shift your approach to life:")
         
-        # Create flowing narrative from guidance points
+       # Create flowing narrative from guidance points
         for i, guidance in enumerate(north_sign_data['guidance']):
+            # Convert to proper verb form
+            guidance_clean = guidance.rstrip('.').lower()
+            if guidance_clean.startswith('take initiative'):
+                guidance_clean = 'taking initiative'
+            elif guidance_clean.startswith('pursue'):
+                guidance_clean = guidance_clean.replace('pursue', 'pursuing')
+            elif guidance_clean.startswith('speak'):
+                guidance_clean = guidance_clean.replace('speak', 'speaking')
+            elif guidance_clean.startswith('organize'):
+                guidance_clean = 'organizing'
+            elif guidance_clean.startswith('improve'):
+                guidance_clean = 'improving'
+            elif guidance_clean.startswith('support'):
+                guidance_clean = 'supporting'
+            # Add more conversions as needed for other guidance types
+            
             if i == 0:
-                report.append(f"Start by {guidance.lower().rstrip('.')}")
+                report.append(f"Start by {guidance_clean}.")
             elif i == len(north_sign_data['guidance']) - 1:
-                report.append(f"Most importantly, {guidance.lower().rstrip('.')}.")
+                report.append(f"Most importantly, {guidance_clean}.")
             else:
-                report.append(f"Additionally, {guidance.lower().rstrip('.')}")
+                report.append(f"Additionally, {guidance_clean}.")
         
         report.append("These practices will naturally strengthen your connection to your North Node energy.")
         report.append("")
