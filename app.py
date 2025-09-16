@@ -727,7 +727,7 @@ def send_report_email(email, report_text, pdf_path):
             pdf_content = base64.b64encode(f.read()).decode('utf-8')
         
         email_response = resend.Emails.send({
-            "from": "onboarding@resend.dev",
+            "from": "reports@api.nodalpathways.com",
             "to": email,
             "subject": "Your Nodal Pathways Report",
             "html": """
