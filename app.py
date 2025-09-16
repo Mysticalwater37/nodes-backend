@@ -410,107 +410,106 @@ def generate_full_report(chart_data):
         sun_sign = chart_data["sun_sign"]
         moon_sign = chart_data["moon_sign"]
         rising_sign = chart_data["rising_sign"]
-        
+
         report = []
         report.append("NODAL PATHWAYS REPORT")
         report.append("=" * 50)
         report.append("")
-        
-        # Birth Chart Overview
+
         report.append("YOUR ASTROLOGICAL BLUEPRINT")
         report.append("-" * 30)
         report.append(f"Sun in {sun_sign} • Moon in {moon_sign} • Rising in {rising_sign}")
         report.append(f"North Node in {north_node['sign']} • South Node in {south_node['sign']}")
         report.append("")
-        
-        # North Node section with rich narrative
+
         report.append("NORTH NODE GUIDANCE")
         report.append("-" * 20)
         north_sign_data = KNOWLEDGE_BASE["north_nodes"][north_node["sign"]]
-        
         report.append(f"Your North Node in {north_node['sign']} reveals your soul's primary growth direction in this lifetime. {north_sign_data['meaning']} This placement asks you to embrace qualities that may feel unfamiliar or challenging at first, but will ultimately lead to your greatest fulfillment and spiritual evolution.")
         report.append("")
-        
         report.append("To develop these qualities, focus on practical steps that gradually shift your approach to life:")
-        
-    # Create flowing narrative from guidance points
-for i, guidance in enumerate(north_sign_data['guidance']):
-    # Convert to proper verb form
-    guidance_clean = guidance.rstrip('.').lower()
-    if guidance_clean.startswith('take initiative'):
-        guidance_clean = 'taking initiative'
-    elif guidance_clean.startswith('pursue'):
-        guidance_clean = guidance_clean.replace('pursue', 'pursuing')
-    elif guidance_clean.startswith('speak'):
-        guidance_clean = guidance_clean.replace('speak', 'speaking')
-    elif guidance_clean.startswith('create'):
-        guidance_clean = 'creating'
-    elif guidance_clean.startswith('spend'):
-        guidance_clean = 'spending'
-    elif guidance_clean.startswith('focus'):
-        guidance_clean = 'focusing'
-    elif guidance_clean.startswith('ask'):
-        guidance_clean = 'asking'
-    elif guidance_clean.startswith('read'):
-        guidance_clean = 'reading'
-    elif guidance_clean.startswith('share'):
-        guidance_clean = 'sharing'
-    elif guidance_clean.startswith('cook'):
-        guidance_clean = 'cooking'
-    elif guidance_clean.startswith('allow'):
-        guidance_clean = 'allowing'
-    elif guidance_clean.startswith('do'):
-        guidance_clean = guidance_clean.replace('do', 'doing')
-    elif guidance_clean.startswith('express'):
-        guidance_clean = 'expressing'
-    elif guidance_clean.startswith('celebrate'):
-        guidance_clean = 'celebrating'
-    elif guidance_clean.startswith('organize'):
-        guidance_clean = 'organizing'
-    elif guidance_clean.startswith('improve'):
-        guidance_clean = 'improving'
-    elif guidance_clean.startswith('support'):
-        guidance_clean = 'supporting'
-    elif guidance_clean.startswith('listen'):
-        guidance_clean = 'listening'
-    elif guidance_clean.startswith('seek'):
-        guidance_clean = 'seeking'
-    elif guidance_clean.startswith('invest'):
-        guidance_clean = 'investing'
-    elif guidance_clean.startswith('reflect'):
-        guidance_clean = 'reflecting'
-    elif guidance_clean.startswith('practice'):
-        guidance_clean = 'practicing'
-    elif guidance_clean.startswith('lean'):
-        guidance_clean = 'leaning'
-    elif guidance_clean.startswith('learn'):
-        guidance_clean = 'learning'
-    elif guidance_clean.startswith('travel'):
-        guidance_clean = 'traveling'
-    elif guidance_clean.startswith('set'):
-        guidance_clean = 'setting'
-    elif guidance_clean.startswith('track'):
-        guidance_clean = 'tracking'
-    elif guidance_clean.startswith('take ownership'):
-        guidance_clean = 'taking ownership'
-    elif guidance_clean.startswith('contribute'):
-        guidance_clean = 'contributing'
-    elif guidance_clean.startswith('experiment'):
-        guidance_clean = 'experimenting'
-    elif guidance_clean.startswith('connect'):
-        guidance_clean = 'connecting'
-    elif guidance_clean.startswith('engage'):
-        guidance_clean = 'engaging'
-    
-    if i == 0:
-        report.append(f"Start by {guidance_clean}.")
-    elif i == len(north_sign_data['guidance']) - 1:
-        report.append(f"Most importantly, {guidance_clean}.")
-    else:
-        report.append(f"Additionally, {guidance_clean}.")
 
-report.append("These practices will naturally strengthen your connection to your North Node energy.")
-report.append("")
+        for i, guidance in enumerate(north_sign_data['guidance']):
+            guidance_clean = guidance.rstrip('.').lower()
+            if guidance_clean.startswith('take initiative'):
+                guidance_clean = 'taking initiative'
+            elif guidance_clean.startswith('pursue'):
+                guidance_clean = guidance_clean.replace('pursue', 'pursuing')
+            elif guidance_clean.startswith('speak'):
+                guidance_clean = guidance_clean.replace('speak', 'speaking')
+            elif guidance_clean.startswith('create'):
+                guidance_clean = 'creating'
+            elif guidance_clean.startswith('spend'):
+                guidance_clean = 'spending'
+            elif guidance_clean.startswith('focus'):
+                guidance_clean = 'focusing'
+            elif guidance_clean.startswith('ask'):
+                guidance_clean = 'asking'
+            elif guidance_clean.startswith('read'):
+                guidance_clean = 'reading'
+            elif guidance_clean.startswith('share'):
+                guidance_clean = 'sharing'
+            elif guidance_clean.startswith('cook'):
+                guidance_clean = 'cooking'
+            elif guidance_clean.startswith('allow'):
+                guidance_clean = 'allowing'
+            elif guidance_clean.startswith('do'):
+                guidance_clean = guidance_clean.replace('do', 'doing')
+            elif guidance_clean.startswith('express'):
+                guidance_clean = 'expressing'
+            elif guidance_clean.startswith('celebrate'):
+                guidance_clean = 'celebrating'
+            elif guidance_clean.startswith('organize'):
+                guidance_clean = 'organizing'
+            elif guidance_clean.startswith('improve'):
+                guidance_clean = 'improving'
+            elif guidance_clean.startswith('support'):
+                guidance_clean = 'supporting'
+            elif guidance_clean.startswith('listen'):
+                guidance_clean = 'listening'
+            elif guidance_clean.startswith('seek'):
+                guidance_clean = 'seeking'
+            elif guidance_clean.startswith('invest'):
+                guidance_clean = 'investing'
+            elif guidance_clean.startswith('reflect'):
+                guidance_clean = 'reflecting'
+            elif guidance_clean.startswith('practice'):
+                guidance_clean = 'practicing'
+            elif guidance_clean.startswith('lean'):
+                guidance_clean = 'leaning'
+            elif guidance_clean.startswith('learn'):
+                guidance_clean = 'learning'
+            elif guidance_clean.startswith('travel'):
+                guidance_clean = 'traveling'
+            elif guidance_clean.startswith('set'):
+                guidance_clean = 'setting'
+            elif guidance_clean.startswith('track'):
+                guidance_clean = 'tracking'
+            elif guidance_clean.startswith('take ownership'):
+                guidance_clean = 'taking ownership'
+            elif guidance_clean.startswith('contribute'):
+                guidance_clean = 'contributing'
+            elif guidance_clean.startswith('experiment'):
+                guidance_clean = 'experimenting'
+            elif guidance_clean.startswith('connect'):
+                guidance_clean = 'connecting'
+            elif guidance_clean.startswith('engage'):
+                guidance_clean = 'engaging'
+
+            if i == 0:
+                report.append(f"Start by {guidance_clean}.")
+            elif i == len(north_sign_data['guidance']) - 1:
+                report.append(f"Most importantly, {guidance_clean}.")
+            else:
+                report.append(f"Additionally, {guidance_clean}.")
+
+        report.append("These practices will naturally strengthen your connection to your North Node energy.")
+        report.append("")
+
+        return "\n".join(report)
+
+    except Exception as e:
+        raise Exception(f"Report generation error: {str(e)}")
         
         # House guidance with context
         if north_node.get("house"):
