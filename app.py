@@ -433,7 +433,7 @@ def generate_full_report(chart_data):
         
         report.append("To develop these qualities, focus on practical steps that gradually shift your approach to life:")
         
-      # Create flowing narrative from guidance points
+    # Create flowing narrative from guidance points
 for i, guidance in enumerate(north_sign_data['guidance']):
     # Convert to proper verb form
     guidance_clean = guidance.rstrip('.').lower()
@@ -508,7 +508,7 @@ for i, guidance in enumerate(north_sign_data['guidance']):
         report.append(f"Most importantly, {guidance_clean}.")
     else:
         report.append(f"Additionally, {guidance_clean}.")
-        
+
 report.append("These practices will naturally strengthen your connection to your North Node energy.")
 report.append("")
         
