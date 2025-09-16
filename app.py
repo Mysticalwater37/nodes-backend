@@ -433,30 +433,81 @@ def generate_full_report(chart_data):
         
         report.append("To develop these qualities, focus on practical steps that gradually shift your approach to life:")
         
-       # Create flowing narrative from guidance points
-        for i, guidance in enumerate(north_sign_data['guidance']):
-            # Convert to proper verb form
-            guidance_clean = guidance.rstrip('.').lower()
-            if guidance_clean.startswith('take initiative'):
-                guidance_clean = 'taking initiative'
-            elif guidance_clean.startswith('pursue'):
-                guidance_clean = guidance_clean.replace('pursue', 'pursuing')
-            elif guidance_clean.startswith('speak'):
-                guidance_clean = guidance_clean.replace('speak', 'speaking')
-            elif guidance_clean.startswith('organize'):
-                guidance_clean = 'organizing'
-            elif guidance_clean.startswith('improve'):
-                guidance_clean = 'improving'
-            elif guidance_clean.startswith('support'):
-                guidance_clean = 'supporting'
-            # Add more conversions as needed for other guidance types
-            
-            if i == 0:
-                report.append(f"Start by {guidance_clean}.")
-            elif i == len(north_sign_data['guidance']) - 1:
-                report.append(f"Most importantly, {guidance_clean}.")
-            else:
-                report.append(f"Additionally, {guidance_clean}.")
+      # Create flowing narrative from guidance points
+for i, guidance in enumerate(north_sign_data['guidance']):
+    # Convert to proper verb form
+    guidance_clean = guidance.rstrip('.').lower()
+    if guidance_clean.startswith('take initiative'):
+        guidance_clean = 'taking initiative'
+    elif guidance_clean.startswith('pursue'):
+        guidance_clean = guidance_clean.replace('pursue', 'pursuing')
+    elif guidance_clean.startswith('speak'):
+        guidance_clean = guidance_clean.replace('speak', 'speaking')
+    elif guidance_clean.startswith('create'):
+        guidance_clean = 'creating'
+    elif guidance_clean.startswith('spend'):
+        guidance_clean = 'spending'
+    elif guidance_clean.startswith('focus'):
+        guidance_clean = 'focusing'
+    elif guidance_clean.startswith('ask'):
+        guidance_clean = 'asking'
+    elif guidance_clean.startswith('read'):
+        guidance_clean = 'reading'
+    elif guidance_clean.startswith('share'):
+        guidance_clean = 'sharing'
+    elif guidance_clean.startswith('cook'):
+        guidance_clean = 'cooking'
+    elif guidance_clean.startswith('allow'):
+        guidance_clean = 'allowing'
+    elif guidance_clean.startswith('do'):
+        guidance_clean = guidance_clean.replace('do', 'doing')
+    elif guidance_clean.startswith('express'):
+        guidance_clean = 'expressing'
+    elif guidance_clean.startswith('celebrate'):
+        guidance_clean = 'celebrating'
+    elif guidance_clean.startswith('organize'):
+        guidance_clean = 'organizing'
+    elif guidance_clean.startswith('improve'):
+        guidance_clean = 'improving'
+    elif guidance_clean.startswith('support'):
+        guidance_clean = 'supporting'
+    elif guidance_clean.startswith('listen'):
+        guidance_clean = 'listening'
+    elif guidance_clean.startswith('seek'):
+        guidance_clean = 'seeking'
+    elif guidance_clean.startswith('invest'):
+        guidance_clean = 'investing'
+    elif guidance_clean.startswith('reflect'):
+        guidance_clean = 'reflecting'
+    elif guidance_clean.startswith('practice'):
+        guidance_clean = 'practicing'
+    elif guidance_clean.startswith('lean'):
+        guidance_clean = 'leaning'
+    elif guidance_clean.startswith('learn'):
+        guidance_clean = 'learning'
+    elif guidance_clean.startswith('travel'):
+        guidance_clean = 'traveling'
+    elif guidance_clean.startswith('set'):
+        guidance_clean = 'setting'
+    elif guidance_clean.startswith('track'):
+        guidance_clean = 'tracking'
+    elif guidance_clean.startswith('take ownership'):
+        guidance_clean = 'taking ownership'
+    elif guidance_clean.startswith('contribute'):
+        guidance_clean = 'contributing'
+    elif guidance_clean.startswith('experiment'):
+        guidance_clean = 'experimenting'
+    elif guidance_clean.startswith('connect'):
+        guidance_clean = 'connecting'
+    elif guidance_clean.startswith('engage'):
+        guidance_clean = 'engaging'
+    
+    if i == 0:
+        report.append(f"Start by {guidance_clean}.")
+    elif i == len(north_sign_data['guidance']) - 1:
+        report.append(f"Most importantly, {guidance_clean}.")
+    else:
+        report.append(f"Additionally, {guidance_clean}.")
         
         report.append("These practices will naturally strengthen your connection to your North Node energy.")
         report.append("")
@@ -477,7 +528,7 @@ def generate_full_report(chart_data):
                 elif i == len(house_data['guidance']) - 1:
                     report.append(f"Most importantly, focus on how to {guidance_clean}.")
                 else:
-                    report.append(f"Practice learning to {guidance_clean}.")
+                    report.append(f"Practice {guidance_clean}.")
             
             report.append("These experiences will accelerate your spiritual development and help you embody your North Node purpose more fully.")
             report.append("")
@@ -537,8 +588,8 @@ def generate_full_report(chart_data):
         elif rising_sign == south_node['sign']:
             report.append(f"With your Rising sign in {rising_sign}, the same as your South Node, you naturally present yourself through familiar, mastered qualities. Others see you as naturally gifted in {rising_sign} areas, which can be both a blessing and a challenge. While this gives you confidence in how you meet the world, consciously cultivate your {north_node['sign']} North Node qualities in your interactions and first impressions.")
         else:
-            report.append(f"Your {rising_sign} Rising provides the style and approach through which you'll develop your {north_node['sign']} North Node qualities. The way you naturally meet new people and situations has a {rising_sign} flavor that can either support or create tension with your North Node growth. Learning to blend these energies consciously will enhance both your personal magnetism and spiritual development.")
-        report.append("")
+    article = "an" if rising_sign[0].lower() in 'aeiou' else "a"
+    report.append(f"Your {rising_sign} Rising provides the style and approach through which you'll develop your {north_node['sign']} North Node qualities. The way you naturally meet new people and situations has {article} {rising_sign} flavor that can either support or create tension with your North Node growth. Learning to blend these energies consciously will enhance both your personal magnetism and spiritual development.")
         
         # Integrated wisdom
         report.append("INTEGRATED GUIDANCE")
@@ -596,7 +647,7 @@ def create_pdf_report(report_text):
     main_heading_style = ParagraphStyle(
         'MainHeading',
         parent=styles['Heading2'],
-        fontSize=18,
+        fontSize=22,
         textColor=accent_color,
         spaceAfter=20,
         spaceBefore=30,
@@ -611,7 +662,7 @@ def create_pdf_report(report_text):
     sub_heading_style = ParagraphStyle(
         'SubHeading',
         parent=styles['Heading3'],
-        fontSize=14,
+        fontSize=16,
         textColor=primary_color,
         spaceAfter=10,
         spaceBefore=15,
@@ -622,7 +673,7 @@ def create_pdf_report(report_text):
     body_style = ParagraphStyle(
         'CustomBody',
         parent=styles['Normal'],
-        fontSize=14,
+        fontSize=18,
         textColor=text_color,
         spaceAfter=12,
         leading=20,
@@ -634,7 +685,7 @@ def create_pdf_report(report_text):
     bullet_style = ParagraphStyle(
         'BulletStyle',
         parent=styles['Normal'],
-        fontSize=11,
+        fontSize=16,
         textColor=text_color,
         spaceAfter=6,
         leading=16,
@@ -647,7 +698,7 @@ def create_pdf_report(report_text):
     insight_style = ParagraphStyle(
         'InsightStyle',
         parent=styles['Normal'],
-        fontSize=12,
+        fontSize=16,
         textColor=text_color,
         spaceAfter=12,
         leading=18,
@@ -663,7 +714,7 @@ def create_pdf_report(report_text):
     footer_style = ParagraphStyle(
         'FooterStyle',
         parent=styles['Normal'],
-        fontSize=10,
+        fontSize=14,
         textColor=HexColor('#7F8C8D'),
         spaceAfter=12,
         spaceBefore=20,
