@@ -433,9 +433,16 @@ def generate_full_report(chart_data):
         
         report.append("To develop these qualities, focus on practical steps that gradually shift your approach to life:")
         
-        # Convert bullet points to flowing narrative
-        guidance_text = " ".join([f"{guidance.rstrip('.')}, which helps you" if i < len(north_sign_data['guidance'])-1 else f"and {guidance.lower()}" for i, guidance in enumerate(north_sign_data['guidance'])])
-        report.append(guidance_text + ". These practices will naturally strengthen your connection to your North Node energy.")
+        # Create flowing narrative from guidance points
+        for i, guidance in enumerate(north_sign_data['guidance']):
+            if i == 0:
+                report.append(f"Start by {guidance.lower().rstrip('.')}")
+            elif i == len(north_sign_data['guidance']) - 1:
+                report.append(f"Most importantly, {guidance.lower().rstrip('.')}.")
+            else:
+                report.append(f"Additionally, {guidance.lower().rstrip('.')}")
+        
+        report.append("These practices will naturally strengthen your connection to your North Node energy.")
         report.append("")
         
         # House guidance with context
@@ -444,8 +451,19 @@ def generate_full_report(chart_data):
             report.append(f"Your North Node's placement in the {north_node['house']}th house adds another layer of meaning. {house_data['focus']} This house placement shows the life areas where your {north_node['sign']} growth will be most important and transformative.")
             report.append("")
             
-            house_guidance = " ".join([f"{guidance.rstrip('.')}" if i < len(house_data['guidance'])-1 else f"and {guidance.lower()}" for i, guidance in enumerate(house_data['guidance'])])
-            report.append(f"The {north_node['house']}th house invites you to {house_guidance}. These experiences will accelerate your spiritual development and help you embody your North Node purpose more fully.")
+            report.append(f"The {north_node['house']}th house invites you to approach relationships and cooperation with greater intention.")
+            
+            # Create proper sentences for house guidance
+            for i, guidance in enumerate(house_data['guidance']):
+                guidance_clean = guidance.rstrip('.').lower()
+                if i == 0:
+                    report.append(f"Begin by learning to {guidance_clean}.")
+                elif i == len(house_data['guidance']) - 1:
+                    report.append(f"Most importantly, focus on how to {guidance_clean}.")
+                else:
+                    report.append(f"Practice learning to {guidance_clean}.")
+            
+            report.append("These experiences will accelerate your spiritual development and help you embody your North Node purpose more fully.")
             report.append("")
         
         # South Node with compassionate reframing
@@ -456,8 +474,18 @@ def generate_full_report(chart_data):
         report.append(f"Your South Node in {south_node['sign']} represents the gifts and patterns you've mastered in previous lifetimes. While these qualities are natural strengths, the challenge lies in {south_sign_data['patterns'].lower()}. These tendencies, though comfortable, can prevent you from growing toward your North Node potential.")
         report.append("")
         
-        south_guidance = " ".join([f"{guidance.rstrip('.')}" if i < len(south_sign_data['guidance'])-1 else f"and {guidance.lower()}" for i, guidance in enumerate(south_sign_data['guidance'])])
-        report.append(f"To find balance, practice awareness when you {south_guidance}. The goal isn't to eliminate these patterns entirely, but to use them consciously while expanding toward your North Node growth.")
+        # Create proper sentences for South Node guidance
+        report.append("To find balance, practice developing awareness in these key areas:")
+        for i, guidance in enumerate(south_sign_data['guidance']):
+            guidance_clean = guidance.rstrip('.').lower()
+            if guidance_clean.startswith('notice'):
+                report.append(f"Pay attention to moments when you {guidance_clean}.")
+            elif guidance_clean.startswith('practice'):
+                report.append(f"Work on {guidance_clean}.")
+            else:
+                report.append(f"Learn to {guidance_clean}.")
+        
+        report.append("The goal isn't to eliminate these patterns entirely, but to use them consciously while expanding toward your North Node growth.")
         report.append("")
         
         # Enhanced big three interactions
