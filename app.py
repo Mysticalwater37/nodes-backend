@@ -624,6 +624,18 @@ def process_form():
         report_text = generate_full_report(chart_data)
         print("Report generation completed")
         
+        print("=== ABOUT TO CREATE PDF ===")
+        pdf_path = create_pdf_report(report_text)
+        print(f"PDF created at {pdf_path}")
+        
+        print("=== ABOUT TO SEND EMAIL ===")
+        send_report_email(
+            data['Email'],
+            report_text,
+            pdf_path
+        )
+        print("Email sent successfully")
+        
         return jsonify({"status": "success", "message": "Report sent successfully"})
     except Exception as e:
         print(f"DETAILED ERROR: {str(e)}")
