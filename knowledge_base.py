@@ -4541,8 +4541,11 @@ KNOWLEDGE_BASE = {
         "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
       ],
       "combined_insight": "The journey moves from virgo habits anchored in the 6th house to pisces initiative expressed through the 12th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mysticism, empathy, and creative transcendence of pisces in the concrete arena of the 12th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
-     },
-"sun_signs": {
+     }
+  },
+  
+  KNOWLEDGE_BASE = {
+  "sun_signs": {
     # ... your existing sun_signs data stays the same
   },
   
@@ -4886,13 +4889,8 @@ KNOWLEDGE_BASE = {
         "Meditate metrics that matter and track them for four weeks.",
         "Journal one process and reduce friction points.",
         "Restore with someone affected and offer a clear contribution."
-      ]
-    }
-  }
-}
-}
-
-north_node_combinations = {
+      ],
+  "north_node_combinations": {
   "aries_1": {
     "north_sign": "Aries",
     "north_house": 1,
@@ -8781,4 +8779,5 @@ north_node_combinations = {
     ],
     "combined_insight": "The journey moves from virgo habits anchored in the 6th house to pisces initiative expressed through the 12th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mysticism, empathy, and creative transcendence of pisces in the concrete arena of the 12th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
   }
+},
 }
