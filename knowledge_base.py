@@ -4895,3 +4895,3893 @@ KNOWLEDGE_BASE = {
 }
 }
 
+north_node_combinations = {
+  "aries_1": {
+    "north_sign": "Aries",
+    "north_house": 1,
+    "south_sign": "Libra",
+    "south_house": 7,
+    "north_meaning": "Your growth path in Aries develops through claiming authorship, direct action, courage, and the capacity to move while the insight is fresh. This North Node asks you to trust your native aries gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 1st house locates this evolution in identity, vitality, and beginnings. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aries qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Libra and the 7th house. Where the past leaned on pleasing, over-consulting, and dependence on external harmony, you are now invited to cultivate the vitality, boldness, and the willingness to go first of aries so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Initiate one meaningful step this week that expresses aries qualities within the sphere of identity, vitality, and beginnings.",
+      "Decide a clear boundary around time or energy and protect it while you work in the 1st house themes.",
+      "Act a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Lead your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Embody a weekly routine that anchors aries growth in real time within identity, vitality, and beginnings.",
+      "Begin metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Declare one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Show with someone affected by this house area and offer a clear contribution that uses your aries strengths."
+    ],
+    "south_patterns": "Past stability came from libra strategies such as pleasing, over-consulting, and dependence on external harmony. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 7th house this can appear as placation, indecision, or deferring authority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in partnerships, agreements, and mutuality, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect partnerships, agreements, and mutuality.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from libra habits anchored in the 7th house to aries initiative expressed through the 1st house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the vitality, boldness, and the willingness to go first of aries in the concrete arena of the 1st house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aries_2": {
+    "north_sign": "Aries",
+    "north_house": 2,
+    "south_sign": "Libra",
+    "south_house": 8,
+    "north_meaning": "Your growth path in Aries develops through claiming authorship, direct action, courage, and the capacity to move while the insight is fresh. This North Node asks you to trust your native aries gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 2nd house locates this evolution in resources, self-worth, skills, and material steadiness. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aries qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Libra and the 8th house. Where the past leaned on pleasing, over-consulting, and dependence on external harmony, you are now invited to cultivate the vitality, boldness, and the willingness to go first of aries so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Initiate one meaningful step this week that expresses aries qualities within the sphere of resources, self-worth, skills, and material steadiness.",
+      "Decide a clear boundary around time or energy and protect it while you work in the 2nd house themes.",
+      "Act a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Lead your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Budget a weekly routine that anchors aries growth in real time within resources, self-worth, skills, and material steadiness.",
+      "Own metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Develop one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Price with someone affected by this house area and offer a clear contribution that uses your aries strengths."
+    ],
+    "south_patterns": "Past stability came from libra strategies such as pleasing, over-consulting, and dependence on external harmony. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 8th house this can appear as entanglement, secrecy, power struggles, or resource fusion. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in intimacy, shared resources, vulnerability, and transformation, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect intimacy, shared resources, vulnerability, and transformation.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from libra habits anchored in the 8th house to aries initiative expressed through the 2nd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the vitality, boldness, and the willingness to go first of aries in the concrete arena of the 2nd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aries_3": {
+    "north_sign": "Aries",
+    "north_house": 3,
+    "south_sign": "Libra",
+    "south_house": 9,
+    "north_meaning": "Your growth path in Aries develops through claiming authorship, direct action, courage, and the capacity to move while the insight is fresh. This North Node asks you to trust your native aries gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 3rd house locates this evolution in communication, craft, learning, and local networks. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aries qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Libra and the 9th house. Where the past leaned on pleasing, over-consulting, and dependence on external harmony, you are now invited to cultivate the vitality, boldness, and the willingness to go first of aries so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Initiate one meaningful step this week that expresses aries qualities within the sphere of communication, craft, learning, and local networks.",
+      "Decide a clear boundary around time or energy and protect it while you work in the 3rd house themes.",
+      "Act a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Lead your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Study a weekly routine that anchors aries growth in real time within communication, craft, learning, and local networks.",
+      "Practice metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Publish one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Map with someone affected by this house area and offer a clear contribution that uses your aries strengths."
+    ],
+    "south_patterns": "Past stability came from libra strategies such as pleasing, over-consulting, and dependence on external harmony. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 9th house this can appear as rigid doctrine, blind faith, or moral superiority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in beliefs, higher learning, travel, and publishing, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect beliefs, higher learning, travel, and publishing.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from libra habits anchored in the 9th house to aries initiative expressed through the 3rd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the vitality, boldness, and the willingness to go first of aries in the concrete arena of the 3rd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aries_4": {
+    "north_sign": "Aries",
+    "north_house": 4,
+    "south_sign": "Libra",
+    "south_house": 10,
+    "north_meaning": "Your growth path in Aries develops through claiming authorship, direct action, courage, and the capacity to move while the insight is fresh. This North Node asks you to trust your native aries gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 4th house locates this evolution in home, roots, lineage, and emotional security. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aries qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Libra and the 10th house. Where the past leaned on pleasing, over-consulting, and dependence on external harmony, you are now invited to cultivate the vitality, boldness, and the willingness to go first of aries so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Initiate one meaningful step this week that expresses aries qualities within the sphere of home, roots, lineage, and emotional security.",
+      "Decide a clear boundary around time or energy and protect it while you work in the 4th house themes.",
+      "Act a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Lead your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Nest a weekly routine that anchors aries growth in real time within home, roots, lineage, and emotional security.",
+      "Repair metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Record one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Re-parent with someone affected by this house area and offer a clear contribution that uses your aries strengths."
+    ],
+    "south_patterns": "Past stability came from libra strategies such as pleasing, over-consulting, and dependence on external harmony. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 10th house this can appear as status chasing, image over substance, or fear of visibility. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in career, reputation, achievement, and responsibility, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect career, reputation, achievement, and responsibility.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from libra habits anchored in the 10th house to aries initiative expressed through the 4th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the vitality, boldness, and the willingness to go first of aries in the concrete arena of the 4th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aries_5": {
+    "north_sign": "Aries",
+    "north_house": 5,
+    "south_sign": "Libra",
+    "south_house": 11,
+    "north_meaning": "Your growth path in Aries develops through claiming authorship, direct action, courage, and the capacity to move while the insight is fresh. This North Node asks you to trust your native aries gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 5th house locates this evolution in creative expression, romance, play, and personal joy. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aries qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Libra and the 11th house. Where the past leaned on pleasing, over-consulting, and dependence on external harmony, you are now invited to cultivate the vitality, boldness, and the willingness to go first of aries so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Initiate one meaningful step this week that expresses aries qualities within the sphere of creative expression, romance, play, and personal joy.",
+      "Decide a clear boundary around time or energy and protect it while you work in the 5th house themes.",
+      "Act a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Lead your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Play a weekly routine that anchors aries growth in real time within creative expression, romance, play, and personal joy.",
+      "Compose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Perform one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Risk with someone affected by this house area and offer a clear contribution that uses your aries strengths."
+    ],
+    "south_patterns": "Past stability came from libra strategies such as pleasing, over-consulting, and dependence on external harmony. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 11th house this can appear as group dependency, popularity anxiety, or aimless idealism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communities, networks, causes, and future vision, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communities, networks, causes, and future vision.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from libra habits anchored in the 11th house to aries initiative expressed through the 5th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the vitality, boldness, and the willingness to go first of aries in the concrete arena of the 5th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aries_6": {
+    "north_sign": "Aries",
+    "north_house": 6,
+    "south_sign": "Libra",
+    "south_house": 12,
+    "north_meaning": "Your growth path in Aries develops through claiming authorship, direct action, courage, and the capacity to move while the insight is fresh. This North Node asks you to trust your native aries gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 6th house locates this evolution in work, service, health, and daily improvements. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aries qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Libra and the 12th house. Where the past leaned on pleasing, over-consulting, and dependence on external harmony, you are now invited to cultivate the vitality, boldness, and the willingness to go first of aries so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Initiate one meaningful step this week that expresses aries qualities within the sphere of work, service, health, and daily improvements.",
+      "Decide a clear boundary around time or energy and protect it while you work in the 6th house themes.",
+      "Act a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Lead your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Schedule a weekly routine that anchors aries growth in real time within work, service, health, and daily improvements.",
+      "Measure metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Iterate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Serve with someone affected by this house area and offer a clear contribution that uses your aries strengths."
+    ],
+    "south_patterns": "Past stability came from libra strategies such as pleasing, over-consulting, and dependence on external harmony. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 12th house this can appear as isolation, self-sabotage, or avoidance through numbing. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in rest, retreat, spiritual practice, and the unconscious, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect rest, retreat, spiritual practice, and the unconscious.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from libra habits anchored in the 12th house to aries initiative expressed through the 6th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the vitality, boldness, and the willingness to go first of aries in the concrete arena of the 6th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aries_7": {
+    "north_sign": "Aries",
+    "north_house": 7,
+    "south_sign": "Libra",
+    "south_house": 1,
+    "north_meaning": "Your growth path in Aries develops through claiming authorship, direct action, courage, and the capacity to move while the insight is fresh. This North Node asks you to trust your native aries gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 7th house locates this evolution in partnerships, agreements, and mutuality. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aries qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Libra and the 1st house. Where the past leaned on pleasing, over-consulting, and dependence on external harmony, you are now invited to cultivate the vitality, boldness, and the willingness to go first of aries so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Initiate one meaningful step this week that expresses aries qualities within the sphere of partnerships, agreements, and mutuality.",
+      "Decide a clear boundary around time or energy and protect it while you work in the 7th house themes.",
+      "Act a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Lead your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Contract a weekly routine that anchors aries growth in real time within partnerships, agreements, and mutuality.",
+      "Clarify metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Relate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Negotiate with someone affected by this house area and offer a clear contribution that uses your aries strengths."
+    ],
+    "south_patterns": "Past stability came from libra strategies such as pleasing, over-consulting, and dependence on external harmony. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 1st house this can appear as outsourcing direction to others, image management over authenticity. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in identity, vitality, and beginnings, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect identity, vitality, and beginnings.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from libra habits anchored in the 1st house to aries initiative expressed through the 7th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the vitality, boldness, and the willingness to go first of aries in the concrete arena of the 7th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aries_8": {
+    "north_sign": "Aries",
+    "north_house": 8,
+    "south_sign": "Libra",
+    "south_house": 2,
+    "north_meaning": "Your growth path in Aries develops through claiming authorship, direct action, courage, and the capacity to move while the insight is fresh. This North Node asks you to trust your native aries gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 8th house locates this evolution in intimacy, shared resources, vulnerability, and transformation. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aries qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Libra and the 2nd house. Where the past leaned on pleasing, over-consulting, and dependence on external harmony, you are now invited to cultivate the vitality, boldness, and the willingness to go first of aries so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Initiate one meaningful step this week that expresses aries qualities within the sphere of intimacy, shared resources, vulnerability, and transformation.",
+      "Decide a clear boundary around time or energy and protect it while you work in the 8th house themes.",
+      "Act a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Lead your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Audit a weekly routine that anchors aries growth in real time within intimacy, shared resources, vulnerability, and transformation.",
+      "Disclose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Consolidate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Heal with someone affected by this house area and offer a clear contribution that uses your aries strengths."
+    ],
+    "south_patterns": "Past stability came from libra strategies such as pleasing, over-consulting, and dependence on external harmony. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 2nd house this can appear as insecurity about value, dependency on others' assets, or compulsive accumulation. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in resources, self-worth, skills, and material steadiness, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect resources, self-worth, skills, and material steadiness.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from libra habits anchored in the 2nd house to aries initiative expressed through the 8th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the vitality, boldness, and the willingness to go first of aries in the concrete arena of the 8th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aries_9": {
+    "north_sign": "Aries",
+    "north_house": 9,
+    "south_sign": "Libra",
+    "south_house": 3,
+    "north_meaning": "Your growth path in Aries develops through claiming authorship, direct action, courage, and the capacity to move while the insight is fresh. This North Node asks you to trust your native aries gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 9th house locates this evolution in beliefs, higher learning, travel, and publishing. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aries qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Libra and the 3rd house. Where the past leaned on pleasing, over-consulting, and dependence on external harmony, you are now invited to cultivate the vitality, boldness, and the willingness to go first of aries so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Initiate one meaningful step this week that expresses aries qualities within the sphere of beliefs, higher learning, travel, and publishing.",
+      "Decide a clear boundary around time or energy and protect it while you work in the 9th house themes.",
+      "Act a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Lead your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Apprentice a weekly routine that anchors aries growth in real time within beliefs, higher learning, travel, and publishing.",
+      "Research metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Pilgrim one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Synthesize with someone affected by this house area and offer a clear contribution that uses your aries strengths."
+    ],
+    "south_patterns": "Past stability came from libra strategies such as pleasing, over-consulting, and dependence on external harmony. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 3rd house this can appear as information hoarding without application, scattered tasks, or performative cleverness. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communication, craft, learning, and local networks, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communication, craft, learning, and local networks.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from libra habits anchored in the 3rd house to aries initiative expressed through the 9th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the vitality, boldness, and the willingness to go first of aries in the concrete arena of the 9th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aries_10": {
+    "north_sign": "Aries",
+    "north_house": 10,
+    "south_sign": "Libra",
+    "south_house": 4,
+    "north_meaning": "Your growth path in Aries develops through claiming authorship, direct action, courage, and the capacity to move while the insight is fresh. This North Node asks you to trust your native aries gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 10th house locates this evolution in career, reputation, achievement, and responsibility. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aries qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Libra and the 4th house. Where the past leaned on pleasing, over-consulting, and dependence on external harmony, you are now invited to cultivate the vitality, boldness, and the willingness to go first of aries so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Initiate one meaningful step this week that expresses aries qualities within the sphere of career, reputation, achievement, and responsibility.",
+      "Decide a clear boundary around time or energy and protect it while you work in the 10th house themes.",
+      "Act a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Lead your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Plan a weekly routine that anchors aries growth in real time within career, reputation, achievement, and responsibility.",
+      "Deliver metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Govern one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Announce with someone affected by this house area and offer a clear contribution that uses your aries strengths."
+    ],
+    "south_patterns": "Past stability came from libra strategies such as pleasing, over-consulting, and dependence on external harmony. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 4th house this can appear as living through family scripts, clinging to the past, or emotional withdrawal. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in home, roots, lineage, and emotional security, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect home, roots, lineage, and emotional security.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from libra habits anchored in the 4th house to aries initiative expressed through the 10th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the vitality, boldness, and the willingness to go first of aries in the concrete arena of the 10th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aries_11": {
+    "north_sign": "Aries",
+    "north_house": 11,
+    "south_sign": "Libra",
+    "south_house": 5,
+    "north_meaning": "Your growth path in Aries develops through claiming authorship, direct action, courage, and the capacity to move while the insight is fresh. This North Node asks you to trust your native aries gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 11th house locates this evolution in communities, networks, causes, and future vision. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aries qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Libra and the 5th house. Where the past leaned on pleasing, over-consulting, and dependence on external harmony, you are now invited to cultivate the vitality, boldness, and the willingness to go first of aries so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Initiate one meaningful step this week that expresses aries qualities within the sphere of communities, networks, causes, and future vision.",
+      "Decide a clear boundary around time or energy and protect it while you work in the 11th house themes.",
+      "Act a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Lead your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Organize a weekly routine that anchors aries growth in real time within communities, networks, causes, and future vision.",
+      "Convene metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Prototype one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Advocate with someone affected by this house area and offer a clear contribution that uses your aries strengths."
+    ],
+    "south_patterns": "Past stability came from libra strategies such as pleasing, over-consulting, and dependence on external harmony. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 5th house this can appear as spectator mentality, fear of exposure, or self-editing for approval. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in creative expression, romance, play, and personal joy, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect creative expression, romance, play, and personal joy.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from libra habits anchored in the 5th house to aries initiative expressed through the 11th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the vitality, boldness, and the willingness to go first of aries in the concrete arena of the 11th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aries_12": {
+    "north_sign": "Aries",
+    "north_house": 12,
+    "south_sign": "Libra",
+    "south_house": 6,
+    "north_meaning": "Your growth path in Aries develops through claiming authorship, direct action, courage, and the capacity to move while the insight is fresh. This North Node asks you to trust your native aries gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 12th house locates this evolution in rest, retreat, spiritual practice, and the unconscious. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aries qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Libra and the 6th house. Where the past leaned on pleasing, over-consulting, and dependence on external harmony, you are now invited to cultivate the vitality, boldness, and the willingness to go first of aries so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Initiate one meaningful step this week that expresses aries qualities within the sphere of rest, retreat, spiritual practice, and the unconscious.",
+      "Decide a clear boundary around time or energy and protect it while you work in the 12th house themes.",
+      "Act a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Lead your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Release a weekly routine that anchors aries growth in real time within rest, retreat, spiritual practice, and the unconscious.",
+      "Meditate metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Journal one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Restore with someone affected by this house area and offer a clear contribution that uses your aries strengths."
+    ],
+    "south_patterns": "Past stability came from libra strategies such as pleasing, over-consulting, and dependence on external harmony. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 6th house this can appear as overwork without boundaries, martyrdom, or anxious perfectionism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in work, service, health, and daily improvements, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect work, service, health, and daily improvements.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from libra habits anchored in the 6th house to aries initiative expressed through the 12th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the vitality, boldness, and the willingness to go first of aries in the concrete arena of the 12th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "taurus_1": {
+    "north_sign": "Taurus",
+    "north_house": 1,
+    "south_sign": "Scorpio",
+    "south_house": 7,
+    "north_meaning": "Your growth path in Taurus develops through stability, embodiment, craft, and the development of patient value creation. This North Node asks you to trust your native taurus gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 1st house locates this evolution in identity, vitality, and beginnings. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into taurus qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Scorpio and the 7th house. Where the past leaned on control, secrecy, and crisis orientation, you are now invited to cultivate the steadiness, sensual presence, and mastery through repetition of taurus so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Stabilize one meaningful step this week that expresses taurus qualities within the sphere of identity, vitality, and beginnings.",
+      "Build a clear boundary around time or energy and protect it while you work in the 1st house themes.",
+      "Ground a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Cultivate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Embody a weekly routine that anchors taurus growth in real time within identity, vitality, and beginnings.",
+      "Begin metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Declare one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Show with someone affected by this house area and offer a clear contribution that uses your taurus strengths."
+    ],
+    "south_patterns": "Past stability came from scorpio strategies such as control, secrecy, and crisis orientation. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 7th house this can appear as placation, indecision, or deferring authority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in partnerships, agreements, and mutuality, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect partnerships, agreements, and mutuality.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from scorpio habits anchored in the 7th house to taurus initiative expressed through the 1st house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the steadiness, sensual presence, and mastery through repetition of taurus in the concrete arena of the 1st house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "taurus_2": {
+    "north_sign": "Taurus",
+    "north_house": 2,
+    "south_sign": "Scorpio",
+    "south_house": 8,
+    "north_meaning": "Your growth path in Taurus develops through stability, embodiment, craft, and the development of patient value creation. This North Node asks you to trust your native taurus gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 2nd house locates this evolution in resources, self-worth, skills, and material steadiness. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into taurus qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Scorpio and the 8th house. Where the past leaned on control, secrecy, and crisis orientation, you are now invited to cultivate the steadiness, sensual presence, and mastery through repetition of taurus so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Stabilize one meaningful step this week that expresses taurus qualities within the sphere of resources, self-worth, skills, and material steadiness.",
+      "Build a clear boundary around time or energy and protect it while you work in the 2nd house themes.",
+      "Ground a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Cultivate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Budget a weekly routine that anchors taurus growth in real time within resources, self-worth, skills, and material steadiness.",
+      "Own metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Develop one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Price with someone affected by this house area and offer a clear contribution that uses your taurus strengths."
+    ],
+    "south_patterns": "Past stability came from scorpio strategies such as control, secrecy, and crisis orientation. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 8th house this can appear as entanglement, secrecy, power struggles, or resource fusion. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in intimacy, shared resources, vulnerability, and transformation, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect intimacy, shared resources, vulnerability, and transformation.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from scorpio habits anchored in the 8th house to taurus initiative expressed through the 2nd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the steadiness, sensual presence, and mastery through repetition of taurus in the concrete arena of the 2nd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "taurus_3": {
+    "north_sign": "Taurus",
+    "north_house": 3,
+    "south_sign": "Scorpio",
+    "south_house": 9,
+    "north_meaning": "Your growth path in Taurus develops through stability, embodiment, craft, and the development of patient value creation. This North Node asks you to trust your native taurus gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 3rd house locates this evolution in communication, craft, learning, and local networks. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into taurus qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Scorpio and the 9th house. Where the past leaned on control, secrecy, and crisis orientation, you are now invited to cultivate the steadiness, sensual presence, and mastery through repetition of taurus so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Stabilize one meaningful step this week that expresses taurus qualities within the sphere of communication, craft, learning, and local networks.",
+      "Build a clear boundary around time or energy and protect it while you work in the 3rd house themes.",
+      "Ground a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Cultivate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Study a weekly routine that anchors taurus growth in real time within communication, craft, learning, and local networks.",
+      "Practice metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Publish one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Map with someone affected by this house area and offer a clear contribution that uses your taurus strengths."
+    ],
+    "south_patterns": "Past stability came from scorpio strategies such as control, secrecy, and crisis orientation. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 9th house this can appear as rigid doctrine, blind faith, or moral superiority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in beliefs, higher learning, travel, and publishing, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect beliefs, higher learning, travel, and publishing.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from scorpio habits anchored in the 9th house to taurus initiative expressed through the 3rd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the steadiness, sensual presence, and mastery through repetition of taurus in the concrete arena of the 3rd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "taurus_4": {
+    "north_sign": "Taurus",
+    "north_house": 4,
+    "south_sign": "Scorpio",
+    "south_house": 10,
+    "north_meaning": "Your growth path in Taurus develops through stability, embodiment, craft, and the development of patient value creation. This North Node asks you to trust your native taurus gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 4th house locates this evolution in home, roots, lineage, and emotional security. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into taurus qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Scorpio and the 10th house. Where the past leaned on control, secrecy, and crisis orientation, you are now invited to cultivate the steadiness, sensual presence, and mastery through repetition of taurus so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Stabilize one meaningful step this week that expresses taurus qualities within the sphere of home, roots, lineage, and emotional security.",
+      "Build a clear boundary around time or energy and protect it while you work in the 4th house themes.",
+      "Ground a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Cultivate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Nest a weekly routine that anchors taurus growth in real time within home, roots, lineage, and emotional security.",
+      "Repair metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Record one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Re-parent with someone affected by this house area and offer a clear contribution that uses your taurus strengths."
+    ],
+    "south_patterns": "Past stability came from scorpio strategies such as control, secrecy, and crisis orientation. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 10th house this can appear as status chasing, image over substance, or fear of visibility. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in career, reputation, achievement, and responsibility, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect career, reputation, achievement, and responsibility.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from scorpio habits anchored in the 10th house to taurus initiative expressed through the 4th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the steadiness, sensual presence, and mastery through repetition of taurus in the concrete arena of the 4th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "taurus_5": {
+    "north_sign": "Taurus",
+    "north_house": 5,
+    "south_sign": "Scorpio",
+    "south_house": 11,
+    "north_meaning": "Your growth path in Taurus develops through stability, embodiment, craft, and the development of patient value creation. This North Node asks you to trust your native taurus gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 5th house locates this evolution in creative expression, romance, play, and personal joy. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into taurus qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Scorpio and the 11th house. Where the past leaned on control, secrecy, and crisis orientation, you are now invited to cultivate the steadiness, sensual presence, and mastery through repetition of taurus so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Stabilize one meaningful step this week that expresses taurus qualities within the sphere of creative expression, romance, play, and personal joy.",
+      "Build a clear boundary around time or energy and protect it while you work in the 5th house themes.",
+      "Ground a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Cultivate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Play a weekly routine that anchors taurus growth in real time within creative expression, romance, play, and personal joy.",
+      "Compose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Perform one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Risk with someone affected by this house area and offer a clear contribution that uses your taurus strengths."
+    ],
+    "south_patterns": "Past stability came from scorpio strategies such as control, secrecy, and crisis orientation. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 11th house this can appear as group dependency, popularity anxiety, or aimless idealism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communities, networks, causes, and future vision, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communities, networks, causes, and future vision.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from scorpio habits anchored in the 11th house to taurus initiative expressed through the 5th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the steadiness, sensual presence, and mastery through repetition of taurus in the concrete arena of the 5th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "taurus_6": {
+    "north_sign": "Taurus",
+    "north_house": 6,
+    "south_sign": "Scorpio",
+    "south_house": 12,
+    "north_meaning": "Your growth path in Taurus develops through stability, embodiment, craft, and the development of patient value creation. This North Node asks you to trust your native taurus gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 6th house locates this evolution in work, service, health, and daily improvements. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into taurus qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Scorpio and the 12th house. Where the past leaned on control, secrecy, and crisis orientation, you are now invited to cultivate the steadiness, sensual presence, and mastery through repetition of taurus so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Stabilize one meaningful step this week that expresses taurus qualities within the sphere of work, service, health, and daily improvements.",
+      "Build a clear boundary around time or energy and protect it while you work in the 6th house themes.",
+      "Ground a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Cultivate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Schedule a weekly routine that anchors taurus growth in real time within work, service, health, and daily improvements.",
+      "Measure metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Iterate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Serve with someone affected by this house area and offer a clear contribution that uses your taurus strengths."
+    ],
+    "south_patterns": "Past stability came from scorpio strategies such as control, secrecy, and crisis orientation. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 12th house this can appear as isolation, self-sabotage, or avoidance through numbing. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in rest, retreat, spiritual practice, and the unconscious, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect rest, retreat, spiritual practice, and the unconscious.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from scorpio habits anchored in the 12th house to taurus initiative expressed through the 6th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the steadiness, sensual presence, and mastery through repetition of taurus in the concrete arena of the 6th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "taurus_7": {
+    "north_sign": "Taurus",
+    "north_house": 7,
+    "south_sign": "Scorpio",
+    "south_house": 1,
+    "north_meaning": "Your growth path in Taurus develops through stability, embodiment, craft, and the development of patient value creation. This North Node asks you to trust your native taurus gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 7th house locates this evolution in partnerships, agreements, and mutuality. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into taurus qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Scorpio and the 1st house. Where the past leaned on control, secrecy, and crisis orientation, you are now invited to cultivate the steadiness, sensual presence, and mastery through repetition of taurus so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Stabilize one meaningful step this week that expresses taurus qualities within the sphere of partnerships, agreements, and mutuality.",
+      "Build a clear boundary around time or energy and protect it while you work in the 7th house themes.",
+      "Ground a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Cultivate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Contract a weekly routine that anchors taurus growth in real time within partnerships, agreements, and mutuality.",
+      "Clarify metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Relate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Negotiate with someone affected by this house area and offer a clear contribution that uses your taurus strengths."
+    ],
+    "south_patterns": "Past stability came from scorpio strategies such as control, secrecy, and crisis orientation. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 1st house this can appear as outsourcing direction to others, image management over authenticity. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in identity, vitality, and beginnings, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect identity, vitality, and beginnings.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from scorpio habits anchored in the 1st house to taurus initiative expressed through the 7th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the steadiness, sensual presence, and mastery through repetition of taurus in the concrete arena of the 7th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "taurus_8": {
+    "north_sign": "Taurus",
+    "north_house": 8,
+    "south_sign": "Scorpio",
+    "south_house": 2,
+    "north_meaning": "Your growth path in Taurus develops through stability, embodiment, craft, and the development of patient value creation. This North Node asks you to trust your native taurus gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 8th house locates this evolution in intimacy, shared resources, vulnerability, and transformation. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into taurus qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Scorpio and the 2nd house. Where the past leaned on control, secrecy, and crisis orientation, you are now invited to cultivate the steadiness, sensual presence, and mastery through repetition of taurus so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Stabilize one meaningful step this week that expresses taurus qualities within the sphere of intimacy, shared resources, vulnerability, and transformation.",
+      "Build a clear boundary around time or energy and protect it while you work in the 8th house themes.",
+      "Ground a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Cultivate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Audit a weekly routine that anchors taurus growth in real time within intimacy, shared resources, vulnerability, and transformation.",
+      "Disclose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Consolidate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Heal with someone affected by this house area and offer a clear contribution that uses your taurus strengths."
+    ],
+    "south_patterns": "Past stability came from scorpio strategies such as control, secrecy, and crisis orientation. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 2nd house this can appear as insecurity about value, dependency on others' assets, or compulsive accumulation. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in resources, self-worth, skills, and material steadiness, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect resources, self-worth, skills, and material steadiness.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from scorpio habits anchored in the 2nd house to taurus initiative expressed through the 8th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the steadiness, sensual presence, and mastery through repetition of taurus in the concrete arena of the 8th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "taurus_9": {
+    "north_sign": "Taurus",
+    "north_house": 9,
+    "south_sign": "Scorpio",
+    "south_house": 3,
+    "north_meaning": "Your growth path in Taurus develops through stability, embodiment, craft, and the development of patient value creation. This North Node asks you to trust your native taurus gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 9th house locates this evolution in beliefs, higher learning, travel, and publishing. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into taurus qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Scorpio and the 3rd house. Where the past leaned on control, secrecy, and crisis orientation, you are now invited to cultivate the steadiness, sensual presence, and mastery through repetition of taurus so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Stabilize one meaningful step this week that expresses taurus qualities within the sphere of beliefs, higher learning, travel, and publishing.",
+      "Build a clear boundary around time or energy and protect it while you work in the 9th house themes.",
+      "Ground a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Cultivate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Apprentice a weekly routine that anchors taurus growth in real time within beliefs, higher learning, travel, and publishing.",
+      "Research metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Pilgrim one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Synthesize with someone affected by this house area and offer a clear contribution that uses your taurus strengths."
+    ],
+    "south_patterns": "Past stability came from scorpio strategies such as control, secrecy, and crisis orientation. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 3rd house this can appear as information hoarding without application, scattered tasks, or performative cleverness. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communication, craft, learning, and local networks, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communication, craft, learning, and local networks.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from scorpio habits anchored in the 3rd house to taurus initiative expressed through the 9th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the steadiness, sensual presence, and mastery through repetition of taurus in the concrete arena of the 9th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "taurus_10": {
+    "north_sign": "Taurus",
+    "north_house": 10,
+    "south_sign": "Scorpio",
+    "south_house": 4,
+    "north_meaning": "Your growth path in Taurus develops through stability, embodiment, craft, and the development of patient value creation. This North Node asks you to trust your native taurus gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 10th house locates this evolution in career, reputation, achievement, and responsibility. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into taurus qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Scorpio and the 4th house. Where the past leaned on control, secrecy, and crisis orientation, you are now invited to cultivate the steadiness, sensual presence, and mastery through repetition of taurus so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Stabilize one meaningful step this week that expresses taurus qualities within the sphere of career, reputation, achievement, and responsibility.",
+      "Build a clear boundary around time or energy and protect it while you work in the 10th house themes.",
+      "Ground a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Cultivate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Plan a weekly routine that anchors taurus growth in real time within career, reputation, achievement, and responsibility.",
+      "Deliver metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Govern one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Announce with someone affected by this house area and offer a clear contribution that uses your taurus strengths."
+    ],
+    "south_patterns": "Past stability came from scorpio strategies such as control, secrecy, and crisis orientation. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 4th house this can appear as living through family scripts, clinging to the past, or emotional withdrawal. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in home, roots, lineage, and emotional security, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect home, roots, lineage, and emotional security.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from scorpio habits anchored in the 4th house to taurus initiative expressed through the 10th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the steadiness, sensual presence, and mastery through repetition of taurus in the concrete arena of the 10th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "taurus_11": {
+    "north_sign": "Taurus",
+    "north_house": 11,
+    "south_sign": "Scorpio",
+    "south_house": 5,
+    "north_meaning": "Your growth path in Taurus develops through stability, embodiment, craft, and the development of patient value creation. This North Node asks you to trust your native taurus gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 11th house locates this evolution in communities, networks, causes, and future vision. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into taurus qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Scorpio and the 5th house. Where the past leaned on control, secrecy, and crisis orientation, you are now invited to cultivate the steadiness, sensual presence, and mastery through repetition of taurus so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Stabilize one meaningful step this week that expresses taurus qualities within the sphere of communities, networks, causes, and future vision.",
+      "Build a clear boundary around time or energy and protect it while you work in the 11th house themes.",
+      "Ground a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Cultivate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Organize a weekly routine that anchors taurus growth in real time within communities, networks, causes, and future vision.",
+      "Convene metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Prototype one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Advocate with someone affected by this house area and offer a clear contribution that uses your taurus strengths."
+    ],
+    "south_patterns": "Past stability came from scorpio strategies such as control, secrecy, and crisis orientation. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 5th house this can appear as spectator mentality, fear of exposure, or self-editing for approval. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in creative expression, romance, play, and personal joy, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect creative expression, romance, play, and personal joy.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from scorpio habits anchored in the 5th house to taurus initiative expressed through the 11th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the steadiness, sensual presence, and mastery through repetition of taurus in the concrete arena of the 11th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "taurus_12": {
+    "north_sign": "Taurus",
+    "north_house": 12,
+    "south_sign": "Scorpio",
+    "south_house": 6,
+    "north_meaning": "Your growth path in Taurus develops through stability, embodiment, craft, and the development of patient value creation. This North Node asks you to trust your native taurus gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 12th house locates this evolution in rest, retreat, spiritual practice, and the unconscious. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into taurus qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Scorpio and the 6th house. Where the past leaned on control, secrecy, and crisis orientation, you are now invited to cultivate the steadiness, sensual presence, and mastery through repetition of taurus so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Stabilize one meaningful step this week that expresses taurus qualities within the sphere of rest, retreat, spiritual practice, and the unconscious.",
+      "Build a clear boundary around time or energy and protect it while you work in the 12th house themes.",
+      "Ground a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Cultivate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Release a weekly routine that anchors taurus growth in real time within rest, retreat, spiritual practice, and the unconscious.",
+      "Meditate metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Journal one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Restore with someone affected by this house area and offer a clear contribution that uses your taurus strengths."
+    ],
+    "south_patterns": "Past stability came from scorpio strategies such as control, secrecy, and crisis orientation. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 6th house this can appear as overwork without boundaries, martyrdom, or anxious perfectionism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in work, service, health, and daily improvements, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect work, service, health, and daily improvements.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from scorpio habits anchored in the 6th house to taurus initiative expressed through the 12th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the steadiness, sensual presence, and mastery through repetition of taurus in the concrete arena of the 12th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "gemini_1": {
+    "north_sign": "Gemini",
+    "north_house": 1,
+    "south_sign": "Sagittarius",
+    "south_house": 7,
+    "north_meaning": "Your growth path in Gemini develops through curiosity, communication, skill building, and learning through exchange. This North Node asks you to trust your native gemini gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 1st house locates this evolution in identity, vitality, and beginnings. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into gemini qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Sagittarius and the 7th house. Where the past leaned on certainty, preaching, and bypassing nuance, you are now invited to cultivate the mental agility, adaptable thinking, and practical intelligence of gemini so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Ask one meaningful step this week that expresses gemini qualities within the sphere of identity, vitality, and beginnings.",
+      "Observe a clear boundary around time or energy and protect it while you work in the 1st house themes.",
+      "Connect a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Document your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Embody a weekly routine that anchors gemini growth in real time within identity, vitality, and beginnings.",
+      "Begin metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Declare one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Show with someone affected by this house area and offer a clear contribution that uses your gemini strengths."
+    ],
+    "south_patterns": "Past stability came from sagittarius strategies such as certainty, preaching, and bypassing nuance. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 7th house this can appear as placation, indecision, or deferring authority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in partnerships, agreements, and mutuality, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect partnerships, agreements, and mutuality.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from sagittarius habits anchored in the 7th house to gemini initiative expressed through the 1st house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mental agility, adaptable thinking, and practical intelligence of gemini in the concrete arena of the 1st house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "gemini_2": {
+    "north_sign": "Gemini",
+    "north_house": 2,
+    "south_sign": "Sagittarius",
+    "south_house": 8,
+    "north_meaning": "Your growth path in Gemini develops through curiosity, communication, skill building, and learning through exchange. This North Node asks you to trust your native gemini gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 2nd house locates this evolution in resources, self-worth, skills, and material steadiness. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into gemini qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Sagittarius and the 8th house. Where the past leaned on certainty, preaching, and bypassing nuance, you are now invited to cultivate the mental agility, adaptable thinking, and practical intelligence of gemini so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Ask one meaningful step this week that expresses gemini qualities within the sphere of resources, self-worth, skills, and material steadiness.",
+      "Observe a clear boundary around time or energy and protect it while you work in the 2nd house themes.",
+      "Connect a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Document your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Budget a weekly routine that anchors gemini growth in real time within resources, self-worth, skills, and material steadiness.",
+      "Own metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Develop one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Price with someone affected by this house area and offer a clear contribution that uses your gemini strengths."
+    ],
+    "south_patterns": "Past stability came from sagittarius strategies such as certainty, preaching, and bypassing nuance. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 8th house this can appear as entanglement, secrecy, power struggles, or resource fusion. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in intimacy, shared resources, vulnerability, and transformation, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect intimacy, shared resources, vulnerability, and transformation.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from sagittarius habits anchored in the 8th house to gemini initiative expressed through the 2nd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mental agility, adaptable thinking, and practical intelligence of gemini in the concrete arena of the 2nd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "gemini_3": {
+    "north_sign": "Gemini",
+    "north_house": 3,
+    "south_sign": "Sagittarius",
+    "south_house": 9,
+    "north_meaning": "Your growth path in Gemini develops through curiosity, communication, skill building, and learning through exchange. This North Node asks you to trust your native gemini gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 3rd house locates this evolution in communication, craft, learning, and local networks. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into gemini qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Sagittarius and the 9th house. Where the past leaned on certainty, preaching, and bypassing nuance, you are now invited to cultivate the mental agility, adaptable thinking, and practical intelligence of gemini so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Ask one meaningful step this week that expresses gemini qualities within the sphere of communication, craft, learning, and local networks.",
+      "Observe a clear boundary around time or energy and protect it while you work in the 3rd house themes.",
+      "Connect a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Document your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Study a weekly routine that anchors gemini growth in real time within communication, craft, learning, and local networks.",
+      "Practice metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Publish one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Map with someone affected by this house area and offer a clear contribution that uses your gemini strengths."
+    ],
+    "south_patterns": "Past stability came from sagittarius strategies such as certainty, preaching, and bypassing nuance. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 9th house this can appear as rigid doctrine, blind faith, or moral superiority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in beliefs, higher learning, travel, and publishing, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect beliefs, higher learning, travel, and publishing.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from sagittarius habits anchored in the 9th house to gemini initiative expressed through the 3rd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mental agility, adaptable thinking, and practical intelligence of gemini in the concrete arena of the 3rd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "gemini_4": {
+    "north_sign": "Gemini",
+    "north_house": 4,
+    "south_sign": "Sagittarius",
+    "south_house": 10,
+    "north_meaning": "Your growth path in Gemini develops through curiosity, communication, skill building, and learning through exchange. This North Node asks you to trust your native gemini gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 4th house locates this evolution in home, roots, lineage, and emotional security. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into gemini qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Sagittarius and the 10th house. Where the past leaned on certainty, preaching, and bypassing nuance, you are now invited to cultivate the mental agility, adaptable thinking, and practical intelligence of gemini so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Ask one meaningful step this week that expresses gemini qualities within the sphere of home, roots, lineage, and emotional security.",
+      "Observe a clear boundary around time or energy and protect it while you work in the 4th house themes.",
+      "Connect a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Document your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Nest a weekly routine that anchors gemini growth in real time within home, roots, lineage, and emotional security.",
+      "Repair metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Record one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Re-parent with someone affected by this house area and offer a clear contribution that uses your gemini strengths."
+    ],
+    "south_patterns": "Past stability came from sagittarius strategies such as certainty, preaching, and bypassing nuance. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 10th house this can appear as status chasing, image over substance, or fear of visibility. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in career, reputation, achievement, and responsibility, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect career, reputation, achievement, and responsibility.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from sagittarius habits anchored in the 10th house to gemini initiative expressed through the 4th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mental agility, adaptable thinking, and practical intelligence of gemini in the concrete arena of the 4th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "gemini_5": {
+    "north_sign": "Gemini",
+    "north_house": 5,
+    "south_sign": "Sagittarius",
+    "south_house": 11,
+    "north_meaning": "Your growth path in Gemini develops through curiosity, communication, skill building, and learning through exchange. This North Node asks you to trust your native gemini gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 5th house locates this evolution in creative expression, romance, play, and personal joy. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into gemini qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Sagittarius and the 11th house. Where the past leaned on certainty, preaching, and bypassing nuance, you are now invited to cultivate the mental agility, adaptable thinking, and practical intelligence of gemini so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Ask one meaningful step this week that expresses gemini qualities within the sphere of creative expression, romance, play, and personal joy.",
+      "Observe a clear boundary around time or energy and protect it while you work in the 5th house themes.",
+      "Connect a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Document your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Play a weekly routine that anchors gemini growth in real time within creative expression, romance, play, and personal joy.",
+      "Compose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Perform one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Risk with someone affected by this house area and offer a clear contribution that uses your gemini strengths."
+    ],
+    "south_patterns": "Past stability came from sagittarius strategies such as certainty, preaching, and bypassing nuance. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 11th house this can appear as group dependency, popularity anxiety, or aimless idealism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communities, networks, causes, and future vision, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communities, networks, causes, and future vision.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from sagittarius habits anchored in the 11th house to gemini initiative expressed through the 5th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mental agility, adaptable thinking, and practical intelligence of gemini in the concrete arena of the 5th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "gemini_6": {
+    "north_sign": "Gemini",
+    "north_house": 6,
+    "south_sign": "Sagittarius",
+    "south_house": 12,
+    "north_meaning": "Your growth path in Gemini develops through curiosity, communication, skill building, and learning through exchange. This North Node asks you to trust your native gemini gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 6th house locates this evolution in work, service, health, and daily improvements. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into gemini qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Sagittarius and the 12th house. Where the past leaned on certainty, preaching, and bypassing nuance, you are now invited to cultivate the mental agility, adaptable thinking, and practical intelligence of gemini so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Ask one meaningful step this week that expresses gemini qualities within the sphere of work, service, health, and daily improvements.",
+      "Observe a clear boundary around time or energy and protect it while you work in the 6th house themes.",
+      "Connect a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Document your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Schedule a weekly routine that anchors gemini growth in real time within work, service, health, and daily improvements.",
+      "Measure metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Iterate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Serve with someone affected by this house area and offer a clear contribution that uses your gemini strengths."
+    ],
+    "south_patterns": "Past stability came from sagittarius strategies such as certainty, preaching, and bypassing nuance. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 12th house this can appear as isolation, self-sabotage, or avoidance through numbing. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in rest, retreat, spiritual practice, and the unconscious, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect rest, retreat, spiritual practice, and the unconscious.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from sagittarius habits anchored in the 12th house to gemini initiative expressed through the 6th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mental agility, adaptable thinking, and practical intelligence of gemini in the concrete arena of the 6th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "gemini_7": {
+    "north_sign": "Gemini",
+    "north_house": 7,
+    "south_sign": "Sagittarius",
+    "south_house": 1,
+    "north_meaning": "Your growth path in Gemini develops through curiosity, communication, skill building, and learning through exchange. This North Node asks you to trust your native gemini gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 7th house locates this evolution in partnerships, agreements, and mutuality. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into gemini qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Sagittarius and the 1st house. Where the past leaned on certainty, preaching, and bypassing nuance, you are now invited to cultivate the mental agility, adaptable thinking, and practical intelligence of gemini so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Ask one meaningful step this week that expresses gemini qualities within the sphere of partnerships, agreements, and mutuality.",
+      "Observe a clear boundary around time or energy and protect it while you work in the 7th house themes.",
+      "Connect a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Document your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Contract a weekly routine that anchors gemini growth in real time within partnerships, agreements, and mutuality.",
+      "Clarify metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Relate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Negotiate with someone affected by this house area and offer a clear contribution that uses your gemini strengths."
+    ],
+    "south_patterns": "Past stability came from sagittarius strategies such as certainty, preaching, and bypassing nuance. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 1st house this can appear as outsourcing direction to others, image management over authenticity. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in identity, vitality, and beginnings, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect identity, vitality, and beginnings.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from sagittarius habits anchored in the 1st house to gemini initiative expressed through the 7th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mental agility, adaptable thinking, and practical intelligence of gemini in the concrete arena of the 7th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "gemini_8": {
+    "north_sign": "Gemini",
+    "north_house": 8,
+    "south_sign": "Sagittarius",
+    "south_house": 2,
+    "north_meaning": "Your growth path in Gemini develops through curiosity, communication, skill building, and learning through exchange. This North Node asks you to trust your native gemini gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 8th house locates this evolution in intimacy, shared resources, vulnerability, and transformation. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into gemini qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Sagittarius and the 2nd house. Where the past leaned on certainty, preaching, and bypassing nuance, you are now invited to cultivate the mental agility, adaptable thinking, and practical intelligence of gemini so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Ask one meaningful step this week that expresses gemini qualities within the sphere of intimacy, shared resources, vulnerability, and transformation.",
+      "Observe a clear boundary around time or energy and protect it while you work in the 8th house themes.",
+      "Connect a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Document your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Audit a weekly routine that anchors gemini growth in real time within intimacy, shared resources, vulnerability, and transformation.",
+      "Disclose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Consolidate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Heal with someone affected by this house area and offer a clear contribution that uses your gemini strengths."
+    ],
+    "south_patterns": "Past stability came from sagittarius strategies such as certainty, preaching, and bypassing nuance. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 2nd house this can appear as insecurity about value, dependency on others' assets, or compulsive accumulation. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in resources, self-worth, skills, and material steadiness, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect resources, self-worth, skills, and material steadiness.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from sagittarius habits anchored in the 2nd house to gemini initiative expressed through the 8th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mental agility, adaptable thinking, and practical intelligence of gemini in the concrete arena of the 8th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "gemini_9": {
+    "north_sign": "Gemini",
+    "north_house": 9,
+    "south_sign": "Sagittarius",
+    "south_house": 3,
+    "north_meaning": "Your growth path in Gemini develops through curiosity, communication, skill building, and learning through exchange. This North Node asks you to trust your native gemini gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 9th house locates this evolution in beliefs, higher learning, travel, and publishing. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into gemini qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Sagittarius and the 3rd house. Where the past leaned on certainty, preaching, and bypassing nuance, you are now invited to cultivate the mental agility, adaptable thinking, and practical intelligence of gemini so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Ask one meaningful step this week that expresses gemini qualities within the sphere of beliefs, higher learning, travel, and publishing.",
+      "Observe a clear boundary around time or energy and protect it while you work in the 9th house themes.",
+      "Connect a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Document your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Apprentice a weekly routine that anchors gemini growth in real time within beliefs, higher learning, travel, and publishing.",
+      "Research metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Pilgrim one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Synthesize with someone affected by this house area and offer a clear contribution that uses your gemini strengths."
+    ],
+    "south_patterns": "Past stability came from sagittarius strategies such as certainty, preaching, and bypassing nuance. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 3rd house this can appear as information hoarding without application, scattered tasks, or performative cleverness. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communication, craft, learning, and local networks, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communication, craft, learning, and local networks.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from sagittarius habits anchored in the 3rd house to gemini initiative expressed through the 9th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mental agility, adaptable thinking, and practical intelligence of gemini in the concrete arena of the 9th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "gemini_10": {
+    "north_sign": "Gemini",
+    "north_house": 10,
+    "south_sign": "Sagittarius",
+    "south_house": 4,
+    "north_meaning": "Your growth path in Gemini develops through curiosity, communication, skill building, and learning through exchange. This North Node asks you to trust your native gemini gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 10th house locates this evolution in career, reputation, achievement, and responsibility. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into gemini qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Sagittarius and the 4th house. Where the past leaned on certainty, preaching, and bypassing nuance, you are now invited to cultivate the mental agility, adaptable thinking, and practical intelligence of gemini so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Ask one meaningful step this week that expresses gemini qualities within the sphere of career, reputation, achievement, and responsibility.",
+      "Observe a clear boundary around time or energy and protect it while you work in the 10th house themes.",
+      "Connect a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Document your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Plan a weekly routine that anchors gemini growth in real time within career, reputation, achievement, and responsibility.",
+      "Deliver metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Govern one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Announce with someone affected by this house area and offer a clear contribution that uses your gemini strengths."
+    ],
+    "south_patterns": "Past stability came from sagittarius strategies such as certainty, preaching, and bypassing nuance. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 4th house this can appear as living through family scripts, clinging to the past, or emotional withdrawal. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in home, roots, lineage, and emotional security, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect home, roots, lineage, and emotional security.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from sagittarius habits anchored in the 4th house to gemini initiative expressed through the 10th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mental agility, adaptable thinking, and practical intelligence of gemini in the concrete arena of the 10th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "gemini_11": {
+    "north_sign": "Gemini",
+    "north_house": 11,
+    "south_sign": "Sagittarius",
+    "south_house": 5,
+    "north_meaning": "Your growth path in Gemini develops through curiosity, communication, skill building, and learning through exchange. This North Node asks you to trust your native gemini gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 11th house locates this evolution in communities, networks, causes, and future vision. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into gemini qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Sagittarius and the 5th house. Where the past leaned on certainty, preaching, and bypassing nuance, you are now invited to cultivate the mental agility, adaptable thinking, and practical intelligence of gemini so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Ask one meaningful step this week that expresses gemini qualities within the sphere of communities, networks, causes, and future vision.",
+      "Observe a clear boundary around time or energy and protect it while you work in the 11th house themes.",
+      "Connect a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Document your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Organize a weekly routine that anchors gemini growth in real time within communities, networks, causes, and future vision.",
+      "Convene metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Prototype one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Advocate with someone affected by this house area and offer a clear contribution that uses your gemini strengths."
+    ],
+    "south_patterns": "Past stability came from sagittarius strategies such as certainty, preaching, and bypassing nuance. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 5th house this can appear as spectator mentality, fear of exposure, or self-editing for approval. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in creative expression, romance, play, and personal joy, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect creative expression, romance, play, and personal joy.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from sagittarius habits anchored in the 5th house to gemini initiative expressed through the 11th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mental agility, adaptable thinking, and practical intelligence of gemini in the concrete arena of the 11th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "gemini_12": {
+    "north_sign": "Gemini",
+    "north_house": 12,
+    "south_sign": "Sagittarius",
+    "south_house": 6,
+    "north_meaning": "Your growth path in Gemini develops through curiosity, communication, skill building, and learning through exchange. This North Node asks you to trust your native gemini gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 12th house locates this evolution in rest, retreat, spiritual practice, and the unconscious. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into gemini qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Sagittarius and the 6th house. Where the past leaned on certainty, preaching, and bypassing nuance, you are now invited to cultivate the mental agility, adaptable thinking, and practical intelligence of gemini so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Ask one meaningful step this week that expresses gemini qualities within the sphere of rest, retreat, spiritual practice, and the unconscious.",
+      "Observe a clear boundary around time or energy and protect it while you work in the 12th house themes.",
+      "Connect a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Document your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Release a weekly routine that anchors gemini growth in real time within rest, retreat, spiritual practice, and the unconscious.",
+      "Meditate metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Journal one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Restore with someone affected by this house area and offer a clear contribution that uses your gemini strengths."
+    ],
+    "south_patterns": "Past stability came from sagittarius strategies such as certainty, preaching, and bypassing nuance. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 6th house this can appear as overwork without boundaries, martyrdom, or anxious perfectionism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in work, service, health, and daily improvements, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect work, service, health, and daily improvements.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from sagittarius habits anchored in the 6th house to gemini initiative expressed through the 12th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mental agility, adaptable thinking, and practical intelligence of gemini in the concrete arena of the 12th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "cancer_1": {
+    "north_sign": "Cancer",
+    "north_house": 1,
+    "south_sign": "Capricorn",
+    "south_house": 7,
+    "north_meaning": "Your growth path in Cancer develops through belonging, emotional attunement, memory, and the courage to care. This North Node asks you to trust your native cancer gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 1st house locates this evolution in identity, vitality, and beginnings. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into cancer qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Capricorn and the 7th house. Where the past leaned on rigidity, status focus, and productivity over presence, you are now invited to cultivate the empathy, intuition, and the ability to create safe containers of cancer so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Nurture one meaningful step this week that expresses cancer qualities within the sphere of identity, vitality, and beginnings.",
+      "Protect a clear boundary around time or energy and protect it while you work in the 1st house themes.",
+      "Tend a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Soothe your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Embody a weekly routine that anchors cancer growth in real time within identity, vitality, and beginnings.",
+      "Begin metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Declare one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Show with someone affected by this house area and offer a clear contribution that uses your cancer strengths."
+    ],
+    "south_patterns": "Past stability came from capricorn strategies such as rigidity, status focus, and productivity over presence. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 7th house this can appear as placation, indecision, or deferring authority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in partnerships, agreements, and mutuality, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect partnerships, agreements, and mutuality.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from capricorn habits anchored in the 7th house to cancer initiative expressed through the 1st house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the empathy, intuition, and the ability to create safe containers of cancer in the concrete arena of the 1st house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "cancer_2": {
+    "north_sign": "Cancer",
+    "north_house": 2,
+    "south_sign": "Capricorn",
+    "south_house": 8,
+    "north_meaning": "Your growth path in Cancer develops through belonging, emotional attunement, memory, and the courage to care. This North Node asks you to trust your native cancer gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 2nd house locates this evolution in resources, self-worth, skills, and material steadiness. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into cancer qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Capricorn and the 8th house. Where the past leaned on rigidity, status focus, and productivity over presence, you are now invited to cultivate the empathy, intuition, and the ability to create safe containers of cancer so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Nurture one meaningful step this week that expresses cancer qualities within the sphere of resources, self-worth, skills, and material steadiness.",
+      "Protect a clear boundary around time or energy and protect it while you work in the 2nd house themes.",
+      "Tend a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Soothe your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Budget a weekly routine that anchors cancer growth in real time within resources, self-worth, skills, and material steadiness.",
+      "Own metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Develop one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Price with someone affected by this house area and offer a clear contribution that uses your cancer strengths."
+    ],
+    "south_patterns": "Past stability came from capricorn strategies such as rigidity, status focus, and productivity over presence. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 8th house this can appear as entanglement, secrecy, power struggles, or resource fusion. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in intimacy, shared resources, vulnerability, and transformation, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect intimacy, shared resources, vulnerability, and transformation.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from capricorn habits anchored in the 8th house to cancer initiative expressed through the 2nd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the empathy, intuition, and the ability to create safe containers of cancer in the concrete arena of the 2nd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "cancer_3": {
+    "north_sign": "Cancer",
+    "north_house": 3,
+    "south_sign": "Capricorn",
+    "south_house": 9,
+    "north_meaning": "Your growth path in Cancer develops through belonging, emotional attunement, memory, and the courage to care. This North Node asks you to trust your native cancer gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 3rd house locates this evolution in communication, craft, learning, and local networks. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into cancer qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Capricorn and the 9th house. Where the past leaned on rigidity, status focus, and productivity over presence, you are now invited to cultivate the empathy, intuition, and the ability to create safe containers of cancer so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Nurture one meaningful step this week that expresses cancer qualities within the sphere of communication, craft, learning, and local networks.",
+      "Protect a clear boundary around time or energy and protect it while you work in the 3rd house themes.",
+      "Tend a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Soothe your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Study a weekly routine that anchors cancer growth in real time within communication, craft, learning, and local networks.",
+      "Practice metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Publish one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Map with someone affected by this house area and offer a clear contribution that uses your cancer strengths."
+    ],
+    "south_patterns": "Past stability came from capricorn strategies such as rigidity, status focus, and productivity over presence. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 9th house this can appear as rigid doctrine, blind faith, or moral superiority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in beliefs, higher learning, travel, and publishing, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect beliefs, higher learning, travel, and publishing.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from capricorn habits anchored in the 9th house to cancer initiative expressed through the 3rd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the empathy, intuition, and the ability to create safe containers of cancer in the concrete arena of the 3rd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "cancer_4": {
+    "north_sign": "Cancer",
+    "north_house": 4,
+    "south_sign": "Capricorn",
+    "south_house": 10,
+    "north_meaning": "Your growth path in Cancer develops through belonging, emotional attunement, memory, and the courage to care. This North Node asks you to trust your native cancer gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 4th house locates this evolution in home, roots, lineage, and emotional security. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into cancer qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Capricorn and the 10th house. Where the past leaned on rigidity, status focus, and productivity over presence, you are now invited to cultivate the empathy, intuition, and the ability to create safe containers of cancer so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Nurture one meaningful step this week that expresses cancer qualities within the sphere of home, roots, lineage, and emotional security.",
+      "Protect a clear boundary around time or energy and protect it while you work in the 4th house themes.",
+      "Tend a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Soothe your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Nest a weekly routine that anchors cancer growth in real time within home, roots, lineage, and emotional security.",
+      "Repair metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Record one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Re-parent with someone affected by this house area and offer a clear contribution that uses your cancer strengths."
+    ],
+    "south_patterns": "Past stability came from capricorn strategies such as rigidity, status focus, and productivity over presence. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 10th house this can appear as status chasing, image over substance, or fear of visibility. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in career, reputation, achievement, and responsibility, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect career, reputation, achievement, and responsibility.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from capricorn habits anchored in the 10th house to cancer initiative expressed through the 4th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the empathy, intuition, and the ability to create safe containers of cancer in the concrete arena of the 4th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "cancer_5": {
+    "north_sign": "Cancer",
+    "north_house": 5,
+    "south_sign": "Capricorn",
+    "south_house": 11,
+    "north_meaning": "Your growth path in Cancer develops through belonging, emotional attunement, memory, and the courage to care. This North Node asks you to trust your native cancer gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 5th house locates this evolution in creative expression, romance, play, and personal joy. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into cancer qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Capricorn and the 11th house. Where the past leaned on rigidity, status focus, and productivity over presence, you are now invited to cultivate the empathy, intuition, and the ability to create safe containers of cancer so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Nurture one meaningful step this week that expresses cancer qualities within the sphere of creative expression, romance, play, and personal joy.",
+      "Protect a clear boundary around time or energy and protect it while you work in the 5th house themes.",
+      "Tend a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Soothe your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Play a weekly routine that anchors cancer growth in real time within creative expression, romance, play, and personal joy.",
+      "Compose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Perform one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Risk with someone affected by this house area and offer a clear contribution that uses your cancer strengths."
+    ],
+    "south_patterns": "Past stability came from capricorn strategies such as rigidity, status focus, and productivity over presence. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 11th house this can appear as group dependency, popularity anxiety, or aimless idealism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communities, networks, causes, and future vision, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communities, networks, causes, and future vision.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from capricorn habits anchored in the 11th house to cancer initiative expressed through the 5th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the empathy, intuition, and the ability to create safe containers of cancer in the concrete arena of the 5th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "cancer_6": {
+    "north_sign": "Cancer",
+    "north_house": 6,
+    "south_sign": "Capricorn",
+    "south_house": 12,
+    "north_meaning": "Your growth path in Cancer develops through belonging, emotional attunement, memory, and the courage to care. This North Node asks you to trust your native cancer gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 6th house locates this evolution in work, service, health, and daily improvements. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into cancer qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Capricorn and the 12th house. Where the past leaned on rigidity, status focus, and productivity over presence, you are now invited to cultivate the empathy, intuition, and the ability to create safe containers of cancer so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Nurture one meaningful step this week that expresses cancer qualities within the sphere of work, service, health, and daily improvements.",
+      "Protect a clear boundary around time or energy and protect it while you work in the 6th house themes.",
+      "Tend a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Soothe your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Schedule a weekly routine that anchors cancer growth in real time within work, service, health, and daily improvements.",
+      "Measure metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Iterate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Serve with someone affected by this house area and offer a clear contribution that uses your cancer strengths."
+    ],
+    "south_patterns": "Past stability came from capricorn strategies such as rigidity, status focus, and productivity over presence. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 12th house this can appear as isolation, self-sabotage, or avoidance through numbing. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in rest, retreat, spiritual practice, and the unconscious, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect rest, retreat, spiritual practice, and the unconscious.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from capricorn habits anchored in the 12th house to cancer initiative expressed through the 6th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the empathy, intuition, and the ability to create safe containers of cancer in the concrete arena of the 6th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "cancer_7": {
+    "north_sign": "Cancer",
+    "north_house": 7,
+    "south_sign": "Capricorn",
+    "south_house": 1,
+    "north_meaning": "Your growth path in Cancer develops through belonging, emotional attunement, memory, and the courage to care. This North Node asks you to trust your native cancer gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 7th house locates this evolution in partnerships, agreements, and mutuality. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into cancer qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Capricorn and the 1st house. Where the past leaned on rigidity, status focus, and productivity over presence, you are now invited to cultivate the empathy, intuition, and the ability to create safe containers of cancer so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Nurture one meaningful step this week that expresses cancer qualities within the sphere of partnerships, agreements, and mutuality.",
+      "Protect a clear boundary around time or energy and protect it while you work in the 7th house themes.",
+      "Tend a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Soothe your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Contract a weekly routine that anchors cancer growth in real time within partnerships, agreements, and mutuality.",
+      "Clarify metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Relate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Negotiate with someone affected by this house area and offer a clear contribution that uses your cancer strengths."
+    ],
+    "south_patterns": "Past stability came from capricorn strategies such as rigidity, status focus, and productivity over presence. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 1st house this can appear as outsourcing direction to others, image management over authenticity. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in identity, vitality, and beginnings, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect identity, vitality, and beginnings.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from capricorn habits anchored in the 1st house to cancer initiative expressed through the 7th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the empathy, intuition, and the ability to create safe containers of cancer in the concrete arena of the 7th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "cancer_8": {
+    "north_sign": "Cancer",
+    "north_house": 8,
+    "south_sign": "Capricorn",
+    "south_house": 2,
+    "north_meaning": "Your growth path in Cancer develops through belonging, emotional attunement, memory, and the courage to care. This North Node asks you to trust your native cancer gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 8th house locates this evolution in intimacy, shared resources, vulnerability, and transformation. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into cancer qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Capricorn and the 2nd house. Where the past leaned on rigidity, status focus, and productivity over presence, you are now invited to cultivate the empathy, intuition, and the ability to create safe containers of cancer so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Nurture one meaningful step this week that expresses cancer qualities within the sphere of intimacy, shared resources, vulnerability, and transformation.",
+      "Protect a clear boundary around time or energy and protect it while you work in the 8th house themes.",
+      "Tend a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Soothe your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Audit a weekly routine that anchors cancer growth in real time within intimacy, shared resources, vulnerability, and transformation.",
+      "Disclose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Consolidate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Heal with someone affected by this house area and offer a clear contribution that uses your cancer strengths."
+    ],
+    "south_patterns": "Past stability came from capricorn strategies such as rigidity, status focus, and productivity over presence. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 2nd house this can appear as insecurity about value, dependency on others' assets, or compulsive accumulation. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in resources, self-worth, skills, and material steadiness, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect resources, self-worth, skills, and material steadiness.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from capricorn habits anchored in the 2nd house to cancer initiative expressed through the 8th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the empathy, intuition, and the ability to create safe containers of cancer in the concrete arena of the 8th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "cancer_9": {
+    "north_sign": "Cancer",
+    "north_house": 9,
+    "south_sign": "Capricorn",
+    "south_house": 3,
+    "north_meaning": "Your growth path in Cancer develops through belonging, emotional attunement, memory, and the courage to care. This North Node asks you to trust your native cancer gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 9th house locates this evolution in beliefs, higher learning, travel, and publishing. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into cancer qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Capricorn and the 3rd house. Where the past leaned on rigidity, status focus, and productivity over presence, you are now invited to cultivate the empathy, intuition, and the ability to create safe containers of cancer so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Nurture one meaningful step this week that expresses cancer qualities within the sphere of beliefs, higher learning, travel, and publishing.",
+      "Protect a clear boundary around time or energy and protect it while you work in the 9th house themes.",
+      "Tend a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Soothe your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Apprentice a weekly routine that anchors cancer growth in real time within beliefs, higher learning, travel, and publishing.",
+      "Research metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Pilgrim one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Synthesize with someone affected by this house area and offer a clear contribution that uses your cancer strengths."
+    ],
+    "south_patterns": "Past stability came from capricorn strategies such as rigidity, status focus, and productivity over presence. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 3rd house this can appear as information hoarding without application, scattered tasks, or performative cleverness. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communication, craft, learning, and local networks, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communication, craft, learning, and local networks.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from capricorn habits anchored in the 3rd house to cancer initiative expressed through the 9th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the empathy, intuition, and the ability to create safe containers of cancer in the concrete arena of the 9th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "cancer_10": {
+    "north_sign": "Cancer",
+    "north_house": 10,
+    "south_sign": "Capricorn",
+    "south_house": 4,
+    "north_meaning": "Your growth path in Cancer develops through belonging, emotional attunement, memory, and the courage to care. This North Node asks you to trust your native cancer gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 10th house locates this evolution in career, reputation, achievement, and responsibility. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into cancer qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Capricorn and the 4th house. Where the past leaned on rigidity, status focus, and productivity over presence, you are now invited to cultivate the empathy, intuition, and the ability to create safe containers of cancer so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Nurture one meaningful step this week that expresses cancer qualities within the sphere of career, reputation, achievement, and responsibility.",
+      "Protect a clear boundary around time or energy and protect it while you work in the 10th house themes.",
+      "Tend a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Soothe your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Plan a weekly routine that anchors cancer growth in real time within career, reputation, achievement, and responsibility.",
+      "Deliver metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Govern one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Announce with someone affected by this house area and offer a clear contribution that uses your cancer strengths."
+    ],
+    "south_patterns": "Past stability came from capricorn strategies such as rigidity, status focus, and productivity over presence. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 4th house this can appear as living through family scripts, clinging to the past, or emotional withdrawal. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in home, roots, lineage, and emotional security, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect home, roots, lineage, and emotional security.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from capricorn habits anchored in the 4th house to cancer initiative expressed through the 10th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the empathy, intuition, and the ability to create safe containers of cancer in the concrete arena of the 10th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "cancer_11": {
+    "north_sign": "Cancer",
+    "north_house": 11,
+    "south_sign": "Capricorn",
+    "south_house": 5,
+    "north_meaning": "Your growth path in Cancer develops through belonging, emotional attunement, memory, and the courage to care. This North Node asks you to trust your native cancer gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 11th house locates this evolution in communities, networks, causes, and future vision. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into cancer qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Capricorn and the 5th house. Where the past leaned on rigidity, status focus, and productivity over presence, you are now invited to cultivate the empathy, intuition, and the ability to create safe containers of cancer so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Nurture one meaningful step this week that expresses cancer qualities within the sphere of communities, networks, causes, and future vision.",
+      "Protect a clear boundary around time or energy and protect it while you work in the 11th house themes.",
+      "Tend a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Soothe your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Organize a weekly routine that anchors cancer growth in real time within communities, networks, causes, and future vision.",
+      "Convene metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Prototype one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Advocate with someone affected by this house area and offer a clear contribution that uses your cancer strengths."
+    ],
+    "south_patterns": "Past stability came from capricorn strategies such as rigidity, status focus, and productivity over presence. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 5th house this can appear as spectator mentality, fear of exposure, or self-editing for approval. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in creative expression, romance, play, and personal joy, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect creative expression, romance, play, and personal joy.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from capricorn habits anchored in the 5th house to cancer initiative expressed through the 11th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the empathy, intuition, and the ability to create safe containers of cancer in the concrete arena of the 11th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "cancer_12": {
+    "north_sign": "Cancer",
+    "north_house": 12,
+    "south_sign": "Capricorn",
+    "south_house": 6,
+    "north_meaning": "Your growth path in Cancer develops through belonging, emotional attunement, memory, and the courage to care. This North Node asks you to trust your native cancer gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 12th house locates this evolution in rest, retreat, spiritual practice, and the unconscious. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into cancer qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Capricorn and the 6th house. Where the past leaned on rigidity, status focus, and productivity over presence, you are now invited to cultivate the empathy, intuition, and the ability to create safe containers of cancer so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Nurture one meaningful step this week that expresses cancer qualities within the sphere of rest, retreat, spiritual practice, and the unconscious.",
+      "Protect a clear boundary around time or energy and protect it while you work in the 12th house themes.",
+      "Tend a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Soothe your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Release a weekly routine that anchors cancer growth in real time within rest, retreat, spiritual practice, and the unconscious.",
+      "Meditate metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Journal one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Restore with someone affected by this house area and offer a clear contribution that uses your cancer strengths."
+    ],
+    "south_patterns": "Past stability came from capricorn strategies such as rigidity, status focus, and productivity over presence. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 6th house this can appear as overwork without boundaries, martyrdom, or anxious perfectionism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in work, service, health, and daily improvements, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect work, service, health, and daily improvements.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from capricorn habits anchored in the 6th house to cancer initiative expressed through the 12th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the empathy, intuition, and the ability to create safe containers of cancer in the concrete arena of the 12th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "leo_1": {
+    "north_sign": "Leo",
+    "north_house": 1,
+    "south_sign": "Aquarius",
+    "south_house": 7,
+    "north_meaning": "Your growth path in Leo develops through creative self-expression, heart, confidence, and the willingness to be seen. This North Node asks you to trust your native leo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 1st house locates this evolution in identity, vitality, and beginnings. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into leo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aquarius and the 7th house. Where the past leaned on detachment, abstraction, and group over person, you are now invited to cultivate the warmth, generosity, and the courage to stand at the center of leo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Create one meaningful step this week that expresses leo qualities within the sphere of identity, vitality, and beginnings.",
+      "Shine a clear boundary around time or energy and protect it while you work in the 1st house themes.",
+      "Perform a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Declare your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Embody a weekly routine that anchors leo growth in real time within identity, vitality, and beginnings.",
+      "Begin metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Declare one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Show with someone affected by this house area and offer a clear contribution that uses your leo strengths."
+    ],
+    "south_patterns": "Past stability came from aquarius strategies such as detachment, abstraction, and group over person. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 7th house this can appear as placation, indecision, or deferring authority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in partnerships, agreements, and mutuality, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect partnerships, agreements, and mutuality.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aquarius habits anchored in the 7th house to leo initiative expressed through the 1st house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the warmth, generosity, and the courage to stand at the center of leo in the concrete arena of the 1st house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "leo_2": {
+    "north_sign": "Leo",
+    "north_house": 2,
+    "south_sign": "Aquarius",
+    "south_house": 8,
+    "north_meaning": "Your growth path in Leo develops through creative self-expression, heart, confidence, and the willingness to be seen. This North Node asks you to trust your native leo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 2nd house locates this evolution in resources, self-worth, skills, and material steadiness. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into leo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aquarius and the 8th house. Where the past leaned on detachment, abstraction, and group over person, you are now invited to cultivate the warmth, generosity, and the courage to stand at the center of leo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Create one meaningful step this week that expresses leo qualities within the sphere of resources, self-worth, skills, and material steadiness.",
+      "Shine a clear boundary around time or energy and protect it while you work in the 2nd house themes.",
+      "Perform a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Declare your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Budget a weekly routine that anchors leo growth in real time within resources, self-worth, skills, and material steadiness.",
+      "Own metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Develop one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Price with someone affected by this house area and offer a clear contribution that uses your leo strengths."
+    ],
+    "south_patterns": "Past stability came from aquarius strategies such as detachment, abstraction, and group over person. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 8th house this can appear as entanglement, secrecy, power struggles, or resource fusion. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in intimacy, shared resources, vulnerability, and transformation, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect intimacy, shared resources, vulnerability, and transformation.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aquarius habits anchored in the 8th house to leo initiative expressed through the 2nd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the warmth, generosity, and the courage to stand at the center of leo in the concrete arena of the 2nd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "leo_3": {
+    "north_sign": "Leo",
+    "north_house": 3,
+    "south_sign": "Aquarius",
+    "south_house": 9,
+    "north_meaning": "Your growth path in Leo develops through creative self-expression, heart, confidence, and the willingness to be seen. This North Node asks you to trust your native leo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 3rd house locates this evolution in communication, craft, learning, and local networks. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into leo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aquarius and the 9th house. Where the past leaned on detachment, abstraction, and group over person, you are now invited to cultivate the warmth, generosity, and the courage to stand at the center of leo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Create one meaningful step this week that expresses leo qualities within the sphere of communication, craft, learning, and local networks.",
+      "Shine a clear boundary around time or energy and protect it while you work in the 3rd house themes.",
+      "Perform a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Declare your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Study a weekly routine that anchors leo growth in real time within communication, craft, learning, and local networks.",
+      "Practice metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Publish one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Map with someone affected by this house area and offer a clear contribution that uses your leo strengths."
+    ],
+    "south_patterns": "Past stability came from aquarius strategies such as detachment, abstraction, and group over person. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 9th house this can appear as rigid doctrine, blind faith, or moral superiority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in beliefs, higher learning, travel, and publishing, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect beliefs, higher learning, travel, and publishing.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aquarius habits anchored in the 9th house to leo initiative expressed through the 3rd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the warmth, generosity, and the courage to stand at the center of leo in the concrete arena of the 3rd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "leo_4": {
+    "north_sign": "Leo",
+    "north_house": 4,
+    "south_sign": "Aquarius",
+    "south_house": 10,
+    "north_meaning": "Your growth path in Leo develops through creative self-expression, heart, confidence, and the willingness to be seen. This North Node asks you to trust your native leo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 4th house locates this evolution in home, roots, lineage, and emotional security. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into leo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aquarius and the 10th house. Where the past leaned on detachment, abstraction, and group over person, you are now invited to cultivate the warmth, generosity, and the courage to stand at the center of leo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Create one meaningful step this week that expresses leo qualities within the sphere of home, roots, lineage, and emotional security.",
+      "Shine a clear boundary around time or energy and protect it while you work in the 4th house themes.",
+      "Perform a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Declare your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Nest a weekly routine that anchors leo growth in real time within home, roots, lineage, and emotional security.",
+      "Repair metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Record one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Re-parent with someone affected by this house area and offer a clear contribution that uses your leo strengths."
+    ],
+    "south_patterns": "Past stability came from aquarius strategies such as detachment, abstraction, and group over person. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 10th house this can appear as status chasing, image over substance, or fear of visibility. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in career, reputation, achievement, and responsibility, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect career, reputation, achievement, and responsibility.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aquarius habits anchored in the 10th house to leo initiative expressed through the 4th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the warmth, generosity, and the courage to stand at the center of leo in the concrete arena of the 4th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "leo_5": {
+    "north_sign": "Leo",
+    "north_house": 5,
+    "south_sign": "Aquarius",
+    "south_house": 11,
+    "north_meaning": "Your growth path in Leo develops through creative self-expression, heart, confidence, and the willingness to be seen. This North Node asks you to trust your native leo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 5th house locates this evolution in creative expression, romance, play, and personal joy. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into leo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aquarius and the 11th house. Where the past leaned on detachment, abstraction, and group over person, you are now invited to cultivate the warmth, generosity, and the courage to stand at the center of leo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Create one meaningful step this week that expresses leo qualities within the sphere of creative expression, romance, play, and personal joy.",
+      "Shine a clear boundary around time or energy and protect it while you work in the 5th house themes.",
+      "Perform a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Declare your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Play a weekly routine that anchors leo growth in real time within creative expression, romance, play, and personal joy.",
+      "Compose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Perform one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Risk with someone affected by this house area and offer a clear contribution that uses your leo strengths."
+    ],
+    "south_patterns": "Past stability came from aquarius strategies such as detachment, abstraction, and group over person. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 11th house this can appear as group dependency, popularity anxiety, or aimless idealism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communities, networks, causes, and future vision, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communities, networks, causes, and future vision.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aquarius habits anchored in the 11th house to leo initiative expressed through the 5th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the warmth, generosity, and the courage to stand at the center of leo in the concrete arena of the 5th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "leo_6": {
+    "north_sign": "Leo",
+    "north_house": 6,
+    "south_sign": "Aquarius",
+    "south_house": 12,
+    "north_meaning": "Your growth path in Leo develops through creative self-expression, heart, confidence, and the willingness to be seen. This North Node asks you to trust your native leo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 6th house locates this evolution in work, service, health, and daily improvements. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into leo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aquarius and the 12th house. Where the past leaned on detachment, abstraction, and group over person, you are now invited to cultivate the warmth, generosity, and the courage to stand at the center of leo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Create one meaningful step this week that expresses leo qualities within the sphere of work, service, health, and daily improvements.",
+      "Shine a clear boundary around time or energy and protect it while you work in the 6th house themes.",
+      "Perform a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Declare your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Schedule a weekly routine that anchors leo growth in real time within work, service, health, and daily improvements.",
+      "Measure metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Iterate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Serve with someone affected by this house area and offer a clear contribution that uses your leo strengths."
+    ],
+    "south_patterns": "Past stability came from aquarius strategies such as detachment, abstraction, and group over person. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 12th house this can appear as isolation, self-sabotage, or avoidance through numbing. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in rest, retreat, spiritual practice, and the unconscious, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect rest, retreat, spiritual practice, and the unconscious.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aquarius habits anchored in the 12th house to leo initiative expressed through the 6th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the warmth, generosity, and the courage to stand at the center of leo in the concrete arena of the 6th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "leo_7": {
+    "north_sign": "Leo",
+    "north_house": 7,
+    "south_sign": "Aquarius",
+    "south_house": 1,
+    "north_meaning": "Your growth path in Leo develops through creative self-expression, heart, confidence, and the willingness to be seen. This North Node asks you to trust your native leo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 7th house locates this evolution in partnerships, agreements, and mutuality. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into leo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aquarius and the 1st house. Where the past leaned on detachment, abstraction, and group over person, you are now invited to cultivate the warmth, generosity, and the courage to stand at the center of leo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Create one meaningful step this week that expresses leo qualities within the sphere of partnerships, agreements, and mutuality.",
+      "Shine a clear boundary around time or energy and protect it while you work in the 7th house themes.",
+      "Perform a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Declare your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Contract a weekly routine that anchors leo growth in real time within partnerships, agreements, and mutuality.",
+      "Clarify metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Relate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Negotiate with someone affected by this house area and offer a clear contribution that uses your leo strengths."
+    ],
+    "south_patterns": "Past stability came from aquarius strategies such as detachment, abstraction, and group over person. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 1st house this can appear as outsourcing direction to others, image management over authenticity. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in identity, vitality, and beginnings, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect identity, vitality, and beginnings.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aquarius habits anchored in the 1st house to leo initiative expressed through the 7th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the warmth, generosity, and the courage to stand at the center of leo in the concrete arena of the 7th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "leo_8": {
+    "north_sign": "Leo",
+    "north_house": 8,
+    "south_sign": "Aquarius",
+    "south_house": 2,
+    "north_meaning": "Your growth path in Leo develops through creative self-expression, heart, confidence, and the willingness to be seen. This North Node asks you to trust your native leo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 8th house locates this evolution in intimacy, shared resources, vulnerability, and transformation. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into leo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aquarius and the 2nd house. Where the past leaned on detachment, abstraction, and group over person, you are now invited to cultivate the warmth, generosity, and the courage to stand at the center of leo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Create one meaningful step this week that expresses leo qualities within the sphere of intimacy, shared resources, vulnerability, and transformation.",
+      "Shine a clear boundary around time or energy and protect it while you work in the 8th house themes.",
+      "Perform a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Declare your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Audit a weekly routine that anchors leo growth in real time within intimacy, shared resources, vulnerability, and transformation.",
+      "Disclose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Consolidate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Heal with someone affected by this house area and offer a clear contribution that uses your leo strengths."
+    ],
+    "south_patterns": "Past stability came from aquarius strategies such as detachment, abstraction, and group over person. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 2nd house this can appear as insecurity about value, dependency on others' assets, or compulsive accumulation. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in resources, self-worth, skills, and material steadiness, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect resources, self-worth, skills, and material steadiness.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aquarius habits anchored in the 2nd house to leo initiative expressed through the 8th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the warmth, generosity, and the courage to stand at the center of leo in the concrete arena of the 8th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "leo_9": {
+    "north_sign": "Leo",
+    "north_house": 9,
+    "south_sign": "Aquarius",
+    "south_house": 3,
+    "north_meaning": "Your growth path in Leo develops through creative self-expression, heart, confidence, and the willingness to be seen. This North Node asks you to trust your native leo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 9th house locates this evolution in beliefs, higher learning, travel, and publishing. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into leo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aquarius and the 3rd house. Where the past leaned on detachment, abstraction, and group over person, you are now invited to cultivate the warmth, generosity, and the courage to stand at the center of leo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Create one meaningful step this week that expresses leo qualities within the sphere of beliefs, higher learning, travel, and publishing.",
+      "Shine a clear boundary around time or energy and protect it while you work in the 9th house themes.",
+      "Perform a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Declare your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Apprentice a weekly routine that anchors leo growth in real time within beliefs, higher learning, travel, and publishing.",
+      "Research metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Pilgrim one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Synthesize with someone affected by this house area and offer a clear contribution that uses your leo strengths."
+    ],
+    "south_patterns": "Past stability came from aquarius strategies such as detachment, abstraction, and group over person. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 3rd house this can appear as information hoarding without application, scattered tasks, or performative cleverness. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communication, craft, learning, and local networks, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communication, craft, learning, and local networks.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aquarius habits anchored in the 3rd house to leo initiative expressed through the 9th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the warmth, generosity, and the courage to stand at the center of leo in the concrete arena of the 9th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "leo_10": {
+    "north_sign": "Leo",
+    "north_house": 10,
+    "south_sign": "Aquarius",
+    "south_house": 4,
+    "north_meaning": "Your growth path in Leo develops through creative self-expression, heart, confidence, and the willingness to be seen. This North Node asks you to trust your native leo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 10th house locates this evolution in career, reputation, achievement, and responsibility. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into leo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aquarius and the 4th house. Where the past leaned on detachment, abstraction, and group over person, you are now invited to cultivate the warmth, generosity, and the courage to stand at the center of leo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Create one meaningful step this week that expresses leo qualities within the sphere of career, reputation, achievement, and responsibility.",
+      "Shine a clear boundary around time or energy and protect it while you work in the 10th house themes.",
+      "Perform a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Declare your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Plan a weekly routine that anchors leo growth in real time within career, reputation, achievement, and responsibility.",
+      "Deliver metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Govern one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Announce with someone affected by this house area and offer a clear contribution that uses your leo strengths."
+    ],
+    "south_patterns": "Past stability came from aquarius strategies such as detachment, abstraction, and group over person. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 4th house this can appear as living through family scripts, clinging to the past, or emotional withdrawal. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in home, roots, lineage, and emotional security, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect home, roots, lineage, and emotional security.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aquarius habits anchored in the 4th house to leo initiative expressed through the 10th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the warmth, generosity, and the courage to stand at the center of leo in the concrete arena of the 10th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "leo_11": {
+    "north_sign": "Leo",
+    "north_house": 11,
+    "south_sign": "Aquarius",
+    "south_house": 5,
+    "north_meaning": "Your growth path in Leo develops through creative self-expression, heart, confidence, and the willingness to be seen. This North Node asks you to trust your native leo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 11th house locates this evolution in communities, networks, causes, and future vision. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into leo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aquarius and the 5th house. Where the past leaned on detachment, abstraction, and group over person, you are now invited to cultivate the warmth, generosity, and the courage to stand at the center of leo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Create one meaningful step this week that expresses leo qualities within the sphere of communities, networks, causes, and future vision.",
+      "Shine a clear boundary around time or energy and protect it while you work in the 11th house themes.",
+      "Perform a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Declare your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Organize a weekly routine that anchors leo growth in real time within communities, networks, causes, and future vision.",
+      "Convene metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Prototype one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Advocate with someone affected by this house area and offer a clear contribution that uses your leo strengths."
+    ],
+    "south_patterns": "Past stability came from aquarius strategies such as detachment, abstraction, and group over person. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 5th house this can appear as spectator mentality, fear of exposure, or self-editing for approval. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in creative expression, romance, play, and personal joy, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect creative expression, romance, play, and personal joy.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aquarius habits anchored in the 5th house to leo initiative expressed through the 11th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the warmth, generosity, and the courage to stand at the center of leo in the concrete arena of the 11th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "leo_12": {
+    "north_sign": "Leo",
+    "north_house": 12,
+    "south_sign": "Aquarius",
+    "south_house": 6,
+    "north_meaning": "Your growth path in Leo develops through creative self-expression, heart, confidence, and the willingness to be seen. This North Node asks you to trust your native leo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 12th house locates this evolution in rest, retreat, spiritual practice, and the unconscious. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into leo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aquarius and the 6th house. Where the past leaned on detachment, abstraction, and group over person, you are now invited to cultivate the warmth, generosity, and the courage to stand at the center of leo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Create one meaningful step this week that expresses leo qualities within the sphere of rest, retreat, spiritual practice, and the unconscious.",
+      "Shine a clear boundary around time or energy and protect it while you work in the 12th house themes.",
+      "Perform a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Declare your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Release a weekly routine that anchors leo growth in real time within rest, retreat, spiritual practice, and the unconscious.",
+      "Meditate metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Journal one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Restore with someone affected by this house area and offer a clear contribution that uses your leo strengths."
+    ],
+    "south_patterns": "Past stability came from aquarius strategies such as detachment, abstraction, and group over person. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 6th house this can appear as overwork without boundaries, martyrdom, or anxious perfectionism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in work, service, health, and daily improvements, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect work, service, health, and daily improvements.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aquarius habits anchored in the 6th house to leo initiative expressed through the 12th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the warmth, generosity, and the courage to stand at the center of leo in the concrete arena of the 12th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "virgo_1": {
+    "north_sign": "Virgo",
+    "north_house": 1,
+    "south_sign": "Pisces",
+    "south_house": 7,
+    "north_meaning": "Your growth path in Virgo develops through discernment, service, improvement, and the alchemy of turning chaos into usefulness. This North Node asks you to trust your native virgo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 1st house locates this evolution in identity, vitality, and beginnings. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into virgo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Pisces and the 7th house. Where the past leaned on vagueness, escapism, and blurring of boundaries, you are now invited to cultivate the clarity, humility, and devotion to what works of virgo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Refine one meaningful step this week that expresses virgo qualities within the sphere of identity, vitality, and beginnings.",
+      "Organize a clear boundary around time or energy and protect it while you work in the 1st house themes.",
+      "Edit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Research your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Embody a weekly routine that anchors virgo growth in real time within identity, vitality, and beginnings.",
+      "Begin metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Declare one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Show with someone affected by this house area and offer a clear contribution that uses your virgo strengths."
+    ],
+    "south_patterns": "Past stability came from pisces strategies such as vagueness, escapism, and blurring of boundaries. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 7th house this can appear as placation, indecision, or deferring authority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in partnerships, agreements, and mutuality, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect partnerships, agreements, and mutuality.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from pisces habits anchored in the 7th house to virgo initiative expressed through the 1st house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity, humility, and devotion to what works of virgo in the concrete arena of the 1st house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "virgo_2": {
+    "north_sign": "Virgo",
+    "north_house": 2,
+    "south_sign": "Pisces",
+    "south_house": 8,
+    "north_meaning": "Your growth path in Virgo develops through discernment, service, improvement, and the alchemy of turning chaos into usefulness. This North Node asks you to trust your native virgo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 2nd house locates this evolution in resources, self-worth, skills, and material steadiness. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into virgo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Pisces and the 8th house. Where the past leaned on vagueness, escapism, and blurring of boundaries, you are now invited to cultivate the clarity, humility, and devotion to what works of virgo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Refine one meaningful step this week that expresses virgo qualities within the sphere of resources, self-worth, skills, and material steadiness.",
+      "Organize a clear boundary around time or energy and protect it while you work in the 2nd house themes.",
+      "Edit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Research your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Budget a weekly routine that anchors virgo growth in real time within resources, self-worth, skills, and material steadiness.",
+      "Own metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Develop one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Price with someone affected by this house area and offer a clear contribution that uses your virgo strengths."
+    ],
+    "south_patterns": "Past stability came from pisces strategies such as vagueness, escapism, and blurring of boundaries. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 8th house this can appear as entanglement, secrecy, power struggles, or resource fusion. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in intimacy, shared resources, vulnerability, and transformation, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect intimacy, shared resources, vulnerability, and transformation.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from pisces habits anchored in the 8th house to virgo initiative expressed through the 2nd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity, humility, and devotion to what works of virgo in the concrete arena of the 2nd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "virgo_3": {
+    "north_sign": "Virgo",
+    "north_house": 3,
+    "south_sign": "Pisces",
+    "south_house": 9,
+    "north_meaning": "Your growth path in Virgo develops through discernment, service, improvement, and the alchemy of turning chaos into usefulness. This North Node asks you to trust your native virgo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 3rd house locates this evolution in communication, craft, learning, and local networks. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into virgo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Pisces and the 9th house. Where the past leaned on vagueness, escapism, and blurring of boundaries, you are now invited to cultivate the clarity, humility, and devotion to what works of virgo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Refine one meaningful step this week that expresses virgo qualities within the sphere of communication, craft, learning, and local networks.",
+      "Organize a clear boundary around time or energy and protect it while you work in the 3rd house themes.",
+      "Edit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Research your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Study a weekly routine that anchors virgo growth in real time within communication, craft, learning, and local networks.",
+      "Practice metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Publish one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Map with someone affected by this house area and offer a clear contribution that uses your virgo strengths."
+    ],
+    "south_patterns": "Past stability came from pisces strategies such as vagueness, escapism, and blurring of boundaries. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 9th house this can appear as rigid doctrine, blind faith, or moral superiority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in beliefs, higher learning, travel, and publishing, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect beliefs, higher learning, travel, and publishing.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from pisces habits anchored in the 9th house to virgo initiative expressed through the 3rd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity, humility, and devotion to what works of virgo in the concrete arena of the 3rd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "virgo_4": {
+    "north_sign": "Virgo",
+    "north_house": 4,
+    "south_sign": "Pisces",
+    "south_house": 10,
+    "north_meaning": "Your growth path in Virgo develops through discernment, service, improvement, and the alchemy of turning chaos into usefulness. This North Node asks you to trust your native virgo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 4th house locates this evolution in home, roots, lineage, and emotional security. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into virgo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Pisces and the 10th house. Where the past leaned on vagueness, escapism, and blurring of boundaries, you are now invited to cultivate the clarity, humility, and devotion to what works of virgo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Refine one meaningful step this week that expresses virgo qualities within the sphere of home, roots, lineage, and emotional security.",
+      "Organize a clear boundary around time or energy and protect it while you work in the 4th house themes.",
+      "Edit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Research your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Nest a weekly routine that anchors virgo growth in real time within home, roots, lineage, and emotional security.",
+      "Repair metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Record one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Re-parent with someone affected by this house area and offer a clear contribution that uses your virgo strengths."
+    ],
+    "south_patterns": "Past stability came from pisces strategies such as vagueness, escapism, and blurring of boundaries. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 10th house this can appear as status chasing, image over substance, or fear of visibility. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in career, reputation, achievement, and responsibility, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect career, reputation, achievement, and responsibility.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from pisces habits anchored in the 10th house to virgo initiative expressed through the 4th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity, humility, and devotion to what works of virgo in the concrete arena of the 4th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "virgo_5": {
+    "north_sign": "Virgo",
+    "north_house": 5,
+    "south_sign": "Pisces",
+    "south_house": 11,
+    "north_meaning": "Your growth path in Virgo develops through discernment, service, improvement, and the alchemy of turning chaos into usefulness. This North Node asks you to trust your native virgo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 5th house locates this evolution in creative expression, romance, play, and personal joy. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into virgo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Pisces and the 11th house. Where the past leaned on vagueness, escapism, and blurring of boundaries, you are now invited to cultivate the clarity, humility, and devotion to what works of virgo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Refine one meaningful step this week that expresses virgo qualities within the sphere of creative expression, romance, play, and personal joy.",
+      "Organize a clear boundary around time or energy and protect it while you work in the 5th house themes.",
+      "Edit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Research your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Play a weekly routine that anchors virgo growth in real time within creative expression, romance, play, and personal joy.",
+      "Compose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Perform one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Risk with someone affected by this house area and offer a clear contribution that uses your virgo strengths."
+    ],
+    "south_patterns": "Past stability came from pisces strategies such as vagueness, escapism, and blurring of boundaries. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 11th house this can appear as group dependency, popularity anxiety, or aimless idealism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communities, networks, causes, and future vision, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communities, networks, causes, and future vision.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from pisces habits anchored in the 11th house to virgo initiative expressed through the 5th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity, humility, and devotion to what works of virgo in the concrete arena of the 5th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "virgo_6": {
+    "north_sign": "Virgo",
+    "north_house": 6,
+    "south_sign": "Pisces",
+    "south_house": 12,
+    "north_meaning": "Your growth path in Virgo develops through discernment, service, improvement, and the alchemy of turning chaos into usefulness. This North Node asks you to trust your native virgo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 6th house locates this evolution in work, service, health, and daily improvements. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into virgo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Pisces and the 12th house. Where the past leaned on vagueness, escapism, and blurring of boundaries, you are now invited to cultivate the clarity, humility, and devotion to what works of virgo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Refine one meaningful step this week that expresses virgo qualities within the sphere of work, service, health, and daily improvements.",
+      "Organize a clear boundary around time or energy and protect it while you work in the 6th house themes.",
+      "Edit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Research your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Schedule a weekly routine that anchors virgo growth in real time within work, service, health, and daily improvements.",
+      "Measure metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Iterate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Serve with someone affected by this house area and offer a clear contribution that uses your virgo strengths."
+    ],
+    "south_patterns": "Past stability came from pisces strategies such as vagueness, escapism, and blurring of boundaries. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 12th house this can appear as isolation, self-sabotage, or avoidance through numbing. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in rest, retreat, spiritual practice, and the unconscious, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect rest, retreat, spiritual practice, and the unconscious.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from pisces habits anchored in the 12th house to virgo initiative expressed through the 6th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity, humility, and devotion to what works of virgo in the concrete arena of the 6th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "virgo_7": {
+    "north_sign": "Virgo",
+    "north_house": 7,
+    "south_sign": "Pisces",
+    "south_house": 1,
+    "north_meaning": "Your growth path in Virgo develops through discernment, service, improvement, and the alchemy of turning chaos into usefulness. This North Node asks you to trust your native virgo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 7th house locates this evolution in partnerships, agreements, and mutuality. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into virgo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Pisces and the 1st house. Where the past leaned on vagueness, escapism, and blurring of boundaries, you are now invited to cultivate the clarity, humility, and devotion to what works of virgo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Refine one meaningful step this week that expresses virgo qualities within the sphere of partnerships, agreements, and mutuality.",
+      "Organize a clear boundary around time or energy and protect it while you work in the 7th house themes.",
+      "Edit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Research your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Contract a weekly routine that anchors virgo growth in real time within partnerships, agreements, and mutuality.",
+      "Clarify metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Relate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Negotiate with someone affected by this house area and offer a clear contribution that uses your virgo strengths."
+    ],
+    "south_patterns": "Past stability came from pisces strategies such as vagueness, escapism, and blurring of boundaries. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 1st house this can appear as outsourcing direction to others, image management over authenticity. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in identity, vitality, and beginnings, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect identity, vitality, and beginnings.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from pisces habits anchored in the 1st house to virgo initiative expressed through the 7th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity, humility, and devotion to what works of virgo in the concrete arena of the 7th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "virgo_8": {
+    "north_sign": "Virgo",
+    "north_house": 8,
+    "south_sign": "Pisces",
+    "south_house": 2,
+    "north_meaning": "Your growth path in Virgo develops through discernment, service, improvement, and the alchemy of turning chaos into usefulness. This North Node asks you to trust your native virgo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 8th house locates this evolution in intimacy, shared resources, vulnerability, and transformation. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into virgo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Pisces and the 2nd house. Where the past leaned on vagueness, escapism, and blurring of boundaries, you are now invited to cultivate the clarity, humility, and devotion to what works of virgo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Refine one meaningful step this week that expresses virgo qualities within the sphere of intimacy, shared resources, vulnerability, and transformation.",
+      "Organize a clear boundary around time or energy and protect it while you work in the 8th house themes.",
+      "Edit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Research your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Audit a weekly routine that anchors virgo growth in real time within intimacy, shared resources, vulnerability, and transformation.",
+      "Disclose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Consolidate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Heal with someone affected by this house area and offer a clear contribution that uses your virgo strengths."
+    ],
+    "south_patterns": "Past stability came from pisces strategies such as vagueness, escapism, and blurring of boundaries. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 2nd house this can appear as insecurity about value, dependency on others' assets, or compulsive accumulation. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in resources, self-worth, skills, and material steadiness, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect resources, self-worth, skills, and material steadiness.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from pisces habits anchored in the 2nd house to virgo initiative expressed through the 8th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity, humility, and devotion to what works of virgo in the concrete arena of the 8th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "virgo_9": {
+    "north_sign": "Virgo",
+    "north_house": 9,
+    "south_sign": "Pisces",
+    "south_house": 3,
+    "north_meaning": "Your growth path in Virgo develops through discernment, service, improvement, and the alchemy of turning chaos into usefulness. This North Node asks you to trust your native virgo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 9th house locates this evolution in beliefs, higher learning, travel, and publishing. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into virgo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Pisces and the 3rd house. Where the past leaned on vagueness, escapism, and blurring of boundaries, you are now invited to cultivate the clarity, humility, and devotion to what works of virgo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Refine one meaningful step this week that expresses virgo qualities within the sphere of beliefs, higher learning, travel, and publishing.",
+      "Organize a clear boundary around time or energy and protect it while you work in the 9th house themes.",
+      "Edit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Research your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Apprentice a weekly routine that anchors virgo growth in real time within beliefs, higher learning, travel, and publishing.",
+      "Research metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Pilgrim one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Synthesize with someone affected by this house area and offer a clear contribution that uses your virgo strengths."
+    ],
+    "south_patterns": "Past stability came from pisces strategies such as vagueness, escapism, and blurring of boundaries. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 3rd house this can appear as information hoarding without application, scattered tasks, or performative cleverness. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communication, craft, learning, and local networks, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communication, craft, learning, and local networks.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from pisces habits anchored in the 3rd house to virgo initiative expressed through the 9th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity, humility, and devotion to what works of virgo in the concrete arena of the 9th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "virgo_10": {
+    "north_sign": "Virgo",
+    "north_house": 10,
+    "south_sign": "Pisces",
+    "south_house": 4,
+    "north_meaning": "Your growth path in Virgo develops through discernment, service, improvement, and the alchemy of turning chaos into usefulness. This North Node asks you to trust your native virgo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 10th house locates this evolution in career, reputation, achievement, and responsibility. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into virgo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Pisces and the 4th house. Where the past leaned on vagueness, escapism, and blurring of boundaries, you are now invited to cultivate the clarity, humility, and devotion to what works of virgo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Refine one meaningful step this week that expresses virgo qualities within the sphere of career, reputation, achievement, and responsibility.",
+      "Organize a clear boundary around time or energy and protect it while you work in the 10th house themes.",
+      "Edit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Research your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Plan a weekly routine that anchors virgo growth in real time within career, reputation, achievement, and responsibility.",
+      "Deliver metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Govern one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Announce with someone affected by this house area and offer a clear contribution that uses your virgo strengths."
+    ],
+    "south_patterns": "Past stability came from pisces strategies such as vagueness, escapism, and blurring of boundaries. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 4th house this can appear as living through family scripts, clinging to the past, or emotional withdrawal. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in home, roots, lineage, and emotional security, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect home, roots, lineage, and emotional security.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from pisces habits anchored in the 4th house to virgo initiative expressed through the 10th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity, humility, and devotion to what works of virgo in the concrete arena of the 10th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "virgo_11": {
+    "north_sign": "Virgo",
+    "north_house": 11,
+    "south_sign": "Pisces",
+    "south_house": 5,
+    "north_meaning": "Your growth path in Virgo develops through discernment, service, improvement, and the alchemy of turning chaos into usefulness. This North Node asks you to trust your native virgo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 11th house locates this evolution in communities, networks, causes, and future vision. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into virgo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Pisces and the 5th house. Where the past leaned on vagueness, escapism, and blurring of boundaries, you are now invited to cultivate the clarity, humility, and devotion to what works of virgo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Refine one meaningful step this week that expresses virgo qualities within the sphere of communities, networks, causes, and future vision.",
+      "Organize a clear boundary around time or energy and protect it while you work in the 11th house themes.",
+      "Edit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Research your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Organize a weekly routine that anchors virgo growth in real time within communities, networks, causes, and future vision.",
+      "Convene metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Prototype one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Advocate with someone affected by this house area and offer a clear contribution that uses your virgo strengths."
+    ],
+    "south_patterns": "Past stability came from pisces strategies such as vagueness, escapism, and blurring of boundaries. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 5th house this can appear as spectator mentality, fear of exposure, or self-editing for approval. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in creative expression, romance, play, and personal joy, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect creative expression, romance, play, and personal joy.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from pisces habits anchored in the 5th house to virgo initiative expressed through the 11th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity, humility, and devotion to what works of virgo in the concrete arena of the 11th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "virgo_12": {
+    "north_sign": "Virgo",
+    "north_house": 12,
+    "south_sign": "Pisces",
+    "south_house": 6,
+    "north_meaning": "Your growth path in Virgo develops through discernment, service, improvement, and the alchemy of turning chaos into usefulness. This North Node asks you to trust your native virgo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 12th house locates this evolution in rest, retreat, spiritual practice, and the unconscious. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into virgo qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Pisces and the 6th house. Where the past leaned on vagueness, escapism, and blurring of boundaries, you are now invited to cultivate the clarity, humility, and devotion to what works of virgo so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Refine one meaningful step this week that expresses virgo qualities within the sphere of rest, retreat, spiritual practice, and the unconscious.",
+      "Organize a clear boundary around time or energy and protect it while you work in the 12th house themes.",
+      "Edit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Research your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Release a weekly routine that anchors virgo growth in real time within rest, retreat, spiritual practice, and the unconscious.",
+      "Meditate metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Journal one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Restore with someone affected by this house area and offer a clear contribution that uses your virgo strengths."
+    ],
+    "south_patterns": "Past stability came from pisces strategies such as vagueness, escapism, and blurring of boundaries. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 6th house this can appear as overwork without boundaries, martyrdom, or anxious perfectionism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in work, service, health, and daily improvements, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect work, service, health, and daily improvements.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from pisces habits anchored in the 6th house to virgo initiative expressed through the 12th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity, humility, and devotion to what works of virgo in the concrete arena of the 12th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "libra_1": {
+    "north_sign": "Libra",
+    "north_house": 1,
+    "south_sign": "Aries",
+    "south_house": 7,
+    "north_meaning": "Your growth path in Libra develops through balance, collaboration, justice, and the art of shared decision making. This North Node asks you to trust your native libra gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 1st house locates this evolution in identity, vitality, and beginnings. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into libra qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aries and the 7th house. Where the past leaned on impatience, unilateral action, and struggle as identity, you are now invited to cultivate the grace, perspective, and the capacity to see from both sides of libra so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Relate one meaningful step this week that expresses libra qualities within the sphere of identity, vitality, and beginnings.",
+      "Negotiate a clear boundary around time or energy and protect it while you work in the 1st house themes.",
+      "Harmonize a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Mediate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Embody a weekly routine that anchors libra growth in real time within identity, vitality, and beginnings.",
+      "Begin metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Declare one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Show with someone affected by this house area and offer a clear contribution that uses your libra strengths."
+    ],
+    "south_patterns": "Past stability came from aries strategies such as impatience, unilateral action, and struggle as identity. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 7th house this can appear as placation, indecision, or deferring authority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in partnerships, agreements, and mutuality, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect partnerships, agreements, and mutuality.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aries habits anchored in the 7th house to libra initiative expressed through the 1st house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the grace, perspective, and the capacity to see from both sides of libra in the concrete arena of the 1st house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "libra_2": {
+    "north_sign": "Libra",
+    "north_house": 2,
+    "south_sign": "Aries",
+    "south_house": 8,
+    "north_meaning": "Your growth path in Libra develops through balance, collaboration, justice, and the art of shared decision making. This North Node asks you to trust your native libra gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 2nd house locates this evolution in resources, self-worth, skills, and material steadiness. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into libra qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aries and the 8th house. Where the past leaned on impatience, unilateral action, and struggle as identity, you are now invited to cultivate the grace, perspective, and the capacity to see from both sides of libra so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Relate one meaningful step this week that expresses libra qualities within the sphere of resources, self-worth, skills, and material steadiness.",
+      "Negotiate a clear boundary around time or energy and protect it while you work in the 2nd house themes.",
+      "Harmonize a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Mediate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Budget a weekly routine that anchors libra growth in real time within resources, self-worth, skills, and material steadiness.",
+      "Own metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Develop one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Price with someone affected by this house area and offer a clear contribution that uses your libra strengths."
+    ],
+    "south_patterns": "Past stability came from aries strategies such as impatience, unilateral action, and struggle as identity. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 8th house this can appear as entanglement, secrecy, power struggles, or resource fusion. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in intimacy, shared resources, vulnerability, and transformation, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect intimacy, shared resources, vulnerability, and transformation.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aries habits anchored in the 8th house to libra initiative expressed through the 2nd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the grace, perspective, and the capacity to see from both sides of libra in the concrete arena of the 2nd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "libra_3": {
+    "north_sign": "Libra",
+    "north_house": 3,
+    "south_sign": "Aries",
+    "south_house": 9,
+    "north_meaning": "Your growth path in Libra develops through balance, collaboration, justice, and the art of shared decision making. This North Node asks you to trust your native libra gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 3rd house locates this evolution in communication, craft, learning, and local networks. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into libra qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aries and the 9th house. Where the past leaned on impatience, unilateral action, and struggle as identity, you are now invited to cultivate the grace, perspective, and the capacity to see from both sides of libra so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Relate one meaningful step this week that expresses libra qualities within the sphere of communication, craft, learning, and local networks.",
+      "Negotiate a clear boundary around time or energy and protect it while you work in the 3rd house themes.",
+      "Harmonize a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Mediate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Study a weekly routine that anchors libra growth in real time within communication, craft, learning, and local networks.",
+      "Practice metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Publish one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Map with someone affected by this house area and offer a clear contribution that uses your libra strengths."
+    ],
+    "south_patterns": "Past stability came from aries strategies such as impatience, unilateral action, and struggle as identity. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 9th house this can appear as rigid doctrine, blind faith, or moral superiority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in beliefs, higher learning, travel, and publishing, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect beliefs, higher learning, travel, and publishing.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aries habits anchored in the 9th house to libra initiative expressed through the 3rd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the grace, perspective, and the capacity to see from both sides of libra in the concrete arena of the 3rd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "libra_4": {
+    "north_sign": "Libra",
+    "north_house": 4,
+    "south_sign": "Aries",
+    "south_house": 10,
+    "north_meaning": "Your growth path in Libra develops through balance, collaboration, justice, and the art of shared decision making. This North Node asks you to trust your native libra gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 4th house locates this evolution in home, roots, lineage, and emotional security. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into libra qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aries and the 10th house. Where the past leaned on impatience, unilateral action, and struggle as identity, you are now invited to cultivate the grace, perspective, and the capacity to see from both sides of libra so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Relate one meaningful step this week that expresses libra qualities within the sphere of home, roots, lineage, and emotional security.",
+      "Negotiate a clear boundary around time or energy and protect it while you work in the 4th house themes.",
+      "Harmonize a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Mediate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Nest a weekly routine that anchors libra growth in real time within home, roots, lineage, and emotional security.",
+      "Repair metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Record one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Re-parent with someone affected by this house area and offer a clear contribution that uses your libra strengths."
+    ],
+    "south_patterns": "Past stability came from aries strategies such as impatience, unilateral action, and struggle as identity. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 10th house this can appear as status chasing, image over substance, or fear of visibility. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in career, reputation, achievement, and responsibility, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect career, reputation, achievement, and responsibility.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aries habits anchored in the 10th house to libra initiative expressed through the 4th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the grace, perspective, and the capacity to see from both sides of libra in the concrete arena of the 4th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "libra_5": {
+    "north_sign": "Libra",
+    "north_house": 5,
+    "south_sign": "Aries",
+    "south_house": 11,
+    "north_meaning": "Your growth path in Libra develops through balance, collaboration, justice, and the art of shared decision making. This North Node asks you to trust your native libra gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 5th house locates this evolution in creative expression, romance, play, and personal joy. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into libra qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aries and the 11th house. Where the past leaned on impatience, unilateral action, and struggle as identity, you are now invited to cultivate the grace, perspective, and the capacity to see from both sides of libra so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Relate one meaningful step this week that expresses libra qualities within the sphere of creative expression, romance, play, and personal joy.",
+      "Negotiate a clear boundary around time or energy and protect it while you work in the 5th house themes.",
+      "Harmonize a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Mediate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Play a weekly routine that anchors libra growth in real time within creative expression, romance, play, and personal joy.",
+      "Compose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Perform one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Risk with someone affected by this house area and offer a clear contribution that uses your libra strengths."
+    ],
+    "south_patterns": "Past stability came from aries strategies such as impatience, unilateral action, and struggle as identity. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 11th house this can appear as group dependency, popularity anxiety, or aimless idealism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communities, networks, causes, and future vision, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communities, networks, causes, and future vision.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aries habits anchored in the 11th house to libra initiative expressed through the 5th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the grace, perspective, and the capacity to see from both sides of libra in the concrete arena of the 5th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "libra_6": {
+    "north_sign": "Libra",
+    "north_house": 6,
+    "south_sign": "Aries",
+    "south_house": 12,
+    "north_meaning": "Your growth path in Libra develops through balance, collaboration, justice, and the art of shared decision making. This North Node asks you to trust your native libra gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 6th house locates this evolution in work, service, health, and daily improvements. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into libra qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aries and the 12th house. Where the past leaned on impatience, unilateral action, and struggle as identity, you are now invited to cultivate the grace, perspective, and the capacity to see from both sides of libra so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Relate one meaningful step this week that expresses libra qualities within the sphere of work, service, health, and daily improvements.",
+      "Negotiate a clear boundary around time or energy and protect it while you work in the 6th house themes.",
+      "Harmonize a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Mediate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Schedule a weekly routine that anchors libra growth in real time within work, service, health, and daily improvements.",
+      "Measure metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Iterate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Serve with someone affected by this house area and offer a clear contribution that uses your libra strengths."
+    ],
+    "south_patterns": "Past stability came from aries strategies such as impatience, unilateral action, and struggle as identity. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 12th house this can appear as isolation, self-sabotage, or avoidance through numbing. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in rest, retreat, spiritual practice, and the unconscious, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect rest, retreat, spiritual practice, and the unconscious.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aries habits anchored in the 12th house to libra initiative expressed through the 6th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the grace, perspective, and the capacity to see from both sides of libra in the concrete arena of the 6th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "libra_7": {
+    "north_sign": "Libra",
+    "north_house": 7,
+    "south_sign": "Aries",
+    "south_house": 1,
+    "north_meaning": "Your growth path in Libra develops through balance, collaboration, justice, and the art of shared decision making. This North Node asks you to trust your native libra gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 7th house locates this evolution in partnerships, agreements, and mutuality. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into libra qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aries and the 1st house. Where the past leaned on impatience, unilateral action, and struggle as identity, you are now invited to cultivate the grace, perspective, and the capacity to see from both sides of libra so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Relate one meaningful step this week that expresses libra qualities within the sphere of partnerships, agreements, and mutuality.",
+      "Negotiate a clear boundary around time or energy and protect it while you work in the 7th house themes.",
+      "Harmonize a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Mediate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Contract a weekly routine that anchors libra growth in real time within partnerships, agreements, and mutuality.",
+      "Clarify metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Relate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Negotiate with someone affected by this house area and offer a clear contribution that uses your libra strengths."
+    ],
+    "south_patterns": "Past stability came from aries strategies such as impatience, unilateral action, and struggle as identity. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 1st house this can appear as outsourcing direction to others, image management over authenticity. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in identity, vitality, and beginnings, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect identity, vitality, and beginnings.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aries habits anchored in the 1st house to libra initiative expressed through the 7th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the grace, perspective, and the capacity to see from both sides of libra in the concrete arena of the 7th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "libra_8": {
+    "north_sign": "Libra",
+    "north_house": 8,
+    "south_sign": "Aries",
+    "south_house": 2,
+    "north_meaning": "Your growth path in Libra develops through balance, collaboration, justice, and the art of shared decision making. This North Node asks you to trust your native libra gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 8th house locates this evolution in intimacy, shared resources, vulnerability, and transformation. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into libra qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aries and the 2nd house. Where the past leaned on impatience, unilateral action, and struggle as identity, you are now invited to cultivate the grace, perspective, and the capacity to see from both sides of libra so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Relate one meaningful step this week that expresses libra qualities within the sphere of intimacy, shared resources, vulnerability, and transformation.",
+      "Negotiate a clear boundary around time or energy and protect it while you work in the 8th house themes.",
+      "Harmonize a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Mediate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Audit a weekly routine that anchors libra growth in real time within intimacy, shared resources, vulnerability, and transformation.",
+      "Disclose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Consolidate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Heal with someone affected by this house area and offer a clear contribution that uses your libra strengths."
+    ],
+    "south_patterns": "Past stability came from aries strategies such as impatience, unilateral action, and struggle as identity. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 2nd house this can appear as insecurity about value, dependency on others' assets, or compulsive accumulation. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in resources, self-worth, skills, and material steadiness, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect resources, self-worth, skills, and material steadiness.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aries habits anchored in the 2nd house to libra initiative expressed through the 8th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the grace, perspective, and the capacity to see from both sides of libra in the concrete arena of the 8th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "libra_9": {
+    "north_sign": "Libra",
+    "north_house": 9,
+    "south_sign": "Aries",
+    "south_house": 3,
+    "north_meaning": "Your growth path in Libra develops through balance, collaboration, justice, and the art of shared decision making. This North Node asks you to trust your native libra gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 9th house locates this evolution in beliefs, higher learning, travel, and publishing. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into libra qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aries and the 3rd house. Where the past leaned on impatience, unilateral action, and struggle as identity, you are now invited to cultivate the grace, perspective, and the capacity to see from both sides of libra so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Relate one meaningful step this week that expresses libra qualities within the sphere of beliefs, higher learning, travel, and publishing.",
+      "Negotiate a clear boundary around time or energy and protect it while you work in the 9th house themes.",
+      "Harmonize a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Mediate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Apprentice a weekly routine that anchors libra growth in real time within beliefs, higher learning, travel, and publishing.",
+      "Research metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Pilgrim one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Synthesize with someone affected by this house area and offer a clear contribution that uses your libra strengths."
+    ],
+    "south_patterns": "Past stability came from aries strategies such as impatience, unilateral action, and struggle as identity. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 3rd house this can appear as information hoarding without application, scattered tasks, or performative cleverness. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communication, craft, learning, and local networks, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communication, craft, learning, and local networks.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aries habits anchored in the 3rd house to libra initiative expressed through the 9th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the grace, perspective, and the capacity to see from both sides of libra in the concrete arena of the 9th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "libra_10": {
+    "north_sign": "Libra",
+    "north_house": 10,
+    "south_sign": "Aries",
+    "south_house": 4,
+    "north_meaning": "Your growth path in Libra develops through balance, collaboration, justice, and the art of shared decision making. This North Node asks you to trust your native libra gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 10th house locates this evolution in career, reputation, achievement, and responsibility. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into libra qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aries and the 4th house. Where the past leaned on impatience, unilateral action, and struggle as identity, you are now invited to cultivate the grace, perspective, and the capacity to see from both sides of libra so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Relate one meaningful step this week that expresses libra qualities within the sphere of career, reputation, achievement, and responsibility.",
+      "Negotiate a clear boundary around time or energy and protect it while you work in the 10th house themes.",
+      "Harmonize a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Mediate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Plan a weekly routine that anchors libra growth in real time within career, reputation, achievement, and responsibility.",
+      "Deliver metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Govern one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Announce with someone affected by this house area and offer a clear contribution that uses your libra strengths."
+    ],
+    "south_patterns": "Past stability came from aries strategies such as impatience, unilateral action, and struggle as identity. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 4th house this can appear as living through family scripts, clinging to the past, or emotional withdrawal. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in home, roots, lineage, and emotional security, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect home, roots, lineage, and emotional security.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aries habits anchored in the 4th house to libra initiative expressed through the 10th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the grace, perspective, and the capacity to see from both sides of libra in the concrete arena of the 10th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "libra_11": {
+    "north_sign": "Libra",
+    "north_house": 11,
+    "south_sign": "Aries",
+    "south_house": 5,
+    "north_meaning": "Your growth path in Libra develops through balance, collaboration, justice, and the art of shared decision making. This North Node asks you to trust your native libra gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 11th house locates this evolution in communities, networks, causes, and future vision. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into libra qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aries and the 5th house. Where the past leaned on impatience, unilateral action, and struggle as identity, you are now invited to cultivate the grace, perspective, and the capacity to see from both sides of libra so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Relate one meaningful step this week that expresses libra qualities within the sphere of communities, networks, causes, and future vision.",
+      "Negotiate a clear boundary around time or energy and protect it while you work in the 11th house themes.",
+      "Harmonize a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Mediate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Organize a weekly routine that anchors libra growth in real time within communities, networks, causes, and future vision.",
+      "Convene metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Prototype one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Advocate with someone affected by this house area and offer a clear contribution that uses your libra strengths."
+    ],
+    "south_patterns": "Past stability came from aries strategies such as impatience, unilateral action, and struggle as identity. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 5th house this can appear as spectator mentality, fear of exposure, or self-editing for approval. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in creative expression, romance, play, and personal joy, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect creative expression, romance, play, and personal joy.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aries habits anchored in the 5th house to libra initiative expressed through the 11th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the grace, perspective, and the capacity to see from both sides of libra in the concrete arena of the 11th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "libra_12": {
+    "north_sign": "Libra",
+    "north_house": 12,
+    "south_sign": "Aries",
+    "south_house": 6,
+    "north_meaning": "Your growth path in Libra develops through balance, collaboration, justice, and the art of shared decision making. This North Node asks you to trust your native libra gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 12th house locates this evolution in rest, retreat, spiritual practice, and the unconscious. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into libra qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Aries and the 6th house. Where the past leaned on impatience, unilateral action, and struggle as identity, you are now invited to cultivate the grace, perspective, and the capacity to see from both sides of libra so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Relate one meaningful step this week that expresses libra qualities within the sphere of rest, retreat, spiritual practice, and the unconscious.",
+      "Negotiate a clear boundary around time or energy and protect it while you work in the 12th house themes.",
+      "Harmonize a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Mediate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Release a weekly routine that anchors libra growth in real time within rest, retreat, spiritual practice, and the unconscious.",
+      "Meditate metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Journal one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Restore with someone affected by this house area and offer a clear contribution that uses your libra strengths."
+    ],
+    "south_patterns": "Past stability came from aries strategies such as impatience, unilateral action, and struggle as identity. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 6th house this can appear as overwork without boundaries, martyrdom, or anxious perfectionism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in work, service, health, and daily improvements, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect work, service, health, and daily improvements.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from aries habits anchored in the 6th house to libra initiative expressed through the 12th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the grace, perspective, and the capacity to see from both sides of libra in the concrete arena of the 12th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "scorpio_1": {
+    "north_sign": "Scorpio",
+    "north_house": 1,
+    "south_sign": "Taurus",
+    "south_house": 7,
+    "north_meaning": "Your growth path in Scorpio develops through depth, intimacy, honest power, and transformation through facing truth. This North Node asks you to trust your native scorpio gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 1st house locates this evolution in identity, vitality, and beginnings. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into scorpio qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Taurus and the 7th house. Where the past leaned on stagnation, comfort seeking, and resistance to necessary change, you are now invited to cultivate the focus, resilience, and the courage to work with shadow material of scorpio so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Probe one meaningful step this week that expresses scorpio qualities within the sphere of identity, vitality, and beginnings.",
+      "Purify a clear boundary around time or energy and protect it while you work in the 1st house themes.",
+      "Commit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Expose your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Embody a weekly routine that anchors scorpio growth in real time within identity, vitality, and beginnings.",
+      "Begin metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Declare one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Show with someone affected by this house area and offer a clear contribution that uses your scorpio strengths."
+    ],
+    "south_patterns": "Past stability came from taurus strategies such as stagnation, comfort seeking, and resistance to necessary change. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 7th house this can appear as placation, indecision, or deferring authority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in partnerships, agreements, and mutuality, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect partnerships, agreements, and mutuality.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from taurus habits anchored in the 7th house to scorpio initiative expressed through the 1st house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the focus, resilience, and the courage to work with shadow material of scorpio in the concrete arena of the 1st house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "scorpio_2": {
+    "north_sign": "Scorpio",
+    "north_house": 2,
+    "south_sign": "Taurus",
+    "south_house": 8,
+    "north_meaning": "Your growth path in Scorpio develops through depth, intimacy, honest power, and transformation through facing truth. This North Node asks you to trust your native scorpio gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 2nd house locates this evolution in resources, self-worth, skills, and material steadiness. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into scorpio qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Taurus and the 8th house. Where the past leaned on stagnation, comfort seeking, and resistance to necessary change, you are now invited to cultivate the focus, resilience, and the courage to work with shadow material of scorpio so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Probe one meaningful step this week that expresses scorpio qualities within the sphere of resources, self-worth, skills, and material steadiness.",
+      "Purify a clear boundary around time or energy and protect it while you work in the 2nd house themes.",
+      "Commit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Expose your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Budget a weekly routine that anchors scorpio growth in real time within resources, self-worth, skills, and material steadiness.",
+      "Own metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Develop one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Price with someone affected by this house area and offer a clear contribution that uses your scorpio strengths."
+    ],
+    "south_patterns": "Past stability came from taurus strategies such as stagnation, comfort seeking, and resistance to necessary change. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 8th house this can appear as entanglement, secrecy, power struggles, or resource fusion. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in intimacy, shared resources, vulnerability, and transformation, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect intimacy, shared resources, vulnerability, and transformation.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from taurus habits anchored in the 8th house to scorpio initiative expressed through the 2nd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the focus, resilience, and the courage to work with shadow material of scorpio in the concrete arena of the 2nd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "scorpio_3": {
+    "north_sign": "Scorpio",
+    "north_house": 3,
+    "south_sign": "Taurus",
+    "south_house": 9,
+    "north_meaning": "Your growth path in Scorpio develops through depth, intimacy, honest power, and transformation through facing truth. This North Node asks you to trust your native scorpio gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 3rd house locates this evolution in communication, craft, learning, and local networks. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into scorpio qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Taurus and the 9th house. Where the past leaned on stagnation, comfort seeking, and resistance to necessary change, you are now invited to cultivate the focus, resilience, and the courage to work with shadow material of scorpio so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Probe one meaningful step this week that expresses scorpio qualities within the sphere of communication, craft, learning, and local networks.",
+      "Purify a clear boundary around time or energy and protect it while you work in the 3rd house themes.",
+      "Commit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Expose your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Study a weekly routine that anchors scorpio growth in real time within communication, craft, learning, and local networks.",
+      "Practice metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Publish one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Map with someone affected by this house area and offer a clear contribution that uses your scorpio strengths."
+    ],
+    "south_patterns": "Past stability came from taurus strategies such as stagnation, comfort seeking, and resistance to necessary change. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 9th house this can appear as rigid doctrine, blind faith, or moral superiority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in beliefs, higher learning, travel, and publishing, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect beliefs, higher learning, travel, and publishing.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from taurus habits anchored in the 9th house to scorpio initiative expressed through the 3rd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the focus, resilience, and the courage to work with shadow material of scorpio in the concrete arena of the 3rd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "scorpio_4": {
+    "north_sign": "Scorpio",
+    "north_house": 4,
+    "south_sign": "Taurus",
+    "south_house": 10,
+    "north_meaning": "Your growth path in Scorpio develops through depth, intimacy, honest power, and transformation through facing truth. This North Node asks you to trust your native scorpio gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 4th house locates this evolution in home, roots, lineage, and emotional security. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into scorpio qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Taurus and the 10th house. Where the past leaned on stagnation, comfort seeking, and resistance to necessary change, you are now invited to cultivate the focus, resilience, and the courage to work with shadow material of scorpio so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Probe one meaningful step this week that expresses scorpio qualities within the sphere of home, roots, lineage, and emotional security.",
+      "Purify a clear boundary around time or energy and protect it while you work in the 4th house themes.",
+      "Commit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Expose your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Nest a weekly routine that anchors scorpio growth in real time within home, roots, lineage, and emotional security.",
+      "Repair metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Record one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Re-parent with someone affected by this house area and offer a clear contribution that uses your scorpio strengths."
+    ],
+    "south_patterns": "Past stability came from taurus strategies such as stagnation, comfort seeking, and resistance to necessary change. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 10th house this can appear as status chasing, image over substance, or fear of visibility. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in career, reputation, achievement, and responsibility, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect career, reputation, achievement, and responsibility.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from taurus habits anchored in the 10th house to scorpio initiative expressed through the 4th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the focus, resilience, and the courage to work with shadow material of scorpio in the concrete arena of the 4th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "scorpio_5": {
+    "north_sign": "Scorpio",
+    "north_house": 5,
+    "south_sign": "Taurus",
+    "south_house": 11,
+    "north_meaning": "Your growth path in Scorpio develops through depth, intimacy, honest power, and transformation through facing truth. This North Node asks you to trust your native scorpio gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 5th house locates this evolution in creative expression, romance, play, and personal joy. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into scorpio qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Taurus and the 11th house. Where the past leaned on stagnation, comfort seeking, and resistance to necessary change, you are now invited to cultivate the focus, resilience, and the courage to work with shadow material of scorpio so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Probe one meaningful step this week that expresses scorpio qualities within the sphere of creative expression, romance, play, and personal joy.",
+      "Purify a clear boundary around time or energy and protect it while you work in the 5th house themes.",
+      "Commit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Expose your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Play a weekly routine that anchors scorpio growth in real time within creative expression, romance, play, and personal joy.",
+      "Compose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Perform one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Risk with someone affected by this house area and offer a clear contribution that uses your scorpio strengths."
+    ],
+    "south_patterns": "Past stability came from taurus strategies such as stagnation, comfort seeking, and resistance to necessary change. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 11th house this can appear as group dependency, popularity anxiety, or aimless idealism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communities, networks, causes, and future vision, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communities, networks, causes, and future vision.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from taurus habits anchored in the 11th house to scorpio initiative expressed through the 5th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the focus, resilience, and the courage to work with shadow material of scorpio in the concrete arena of the 5th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "scorpio_6": {
+    "north_sign": "Scorpio",
+    "north_house": 6,
+    "south_sign": "Taurus",
+    "south_house": 12,
+    "north_meaning": "Your growth path in Scorpio develops through depth, intimacy, honest power, and transformation through facing truth. This North Node asks you to trust your native scorpio gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 6th house locates this evolution in work, service, health, and daily improvements. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into scorpio qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Taurus and the 12th house. Where the past leaned on stagnation, comfort seeking, and resistance to necessary change, you are now invited to cultivate the focus, resilience, and the courage to work with shadow material of scorpio so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Probe one meaningful step this week that expresses scorpio qualities within the sphere of work, service, health, and daily improvements.",
+      "Purify a clear boundary around time or energy and protect it while you work in the 6th house themes.",
+      "Commit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Expose your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Schedule a weekly routine that anchors scorpio growth in real time within work, service, health, and daily improvements.",
+      "Measure metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Iterate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Serve with someone affected by this house area and offer a clear contribution that uses your scorpio strengths."
+    ],
+    "south_patterns": "Past stability came from taurus strategies such as stagnation, comfort seeking, and resistance to necessary change. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 12th house this can appear as isolation, self-sabotage, or avoidance through numbing. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in rest, retreat, spiritual practice, and the unconscious, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect rest, retreat, spiritual practice, and the unconscious.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from taurus habits anchored in the 12th house to scorpio initiative expressed through the 6th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the focus, resilience, and the courage to work with shadow material of scorpio in the concrete arena of the 6th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "scorpio_7": {
+    "north_sign": "Scorpio",
+    "north_house": 7,
+    "south_sign": "Taurus",
+    "south_house": 1,
+    "north_meaning": "Your growth path in Scorpio develops through depth, intimacy, honest power, and transformation through facing truth. This North Node asks you to trust your native scorpio gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 7th house locates this evolution in partnerships, agreements, and mutuality. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into scorpio qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Taurus and the 1st house. Where the past leaned on stagnation, comfort seeking, and resistance to necessary change, you are now invited to cultivate the focus, resilience, and the courage to work with shadow material of scorpio so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Probe one meaningful step this week that expresses scorpio qualities within the sphere of partnerships, agreements, and mutuality.",
+      "Purify a clear boundary around time or energy and protect it while you work in the 7th house themes.",
+      "Commit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Expose your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Contract a weekly routine that anchors scorpio growth in real time within partnerships, agreements, and mutuality.",
+      "Clarify metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Relate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Negotiate with someone affected by this house area and offer a clear contribution that uses your scorpio strengths."
+    ],
+    "south_patterns": "Past stability came from taurus strategies such as stagnation, comfort seeking, and resistance to necessary change. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 1st house this can appear as outsourcing direction to others, image management over authenticity. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in identity, vitality, and beginnings, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect identity, vitality, and beginnings.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from taurus habits anchored in the 1st house to scorpio initiative expressed through the 7th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the focus, resilience, and the courage to work with shadow material of scorpio in the concrete arena of the 7th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "scorpio_8": {
+    "north_sign": "Scorpio",
+    "north_house": 8,
+    "south_sign": "Taurus",
+    "south_house": 2,
+    "north_meaning": "Your growth path in Scorpio develops through depth, intimacy, honest power, and transformation through facing truth. This North Node asks you to trust your native scorpio gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 8th house locates this evolution in intimacy, shared resources, vulnerability, and transformation. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into scorpio qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Taurus and the 2nd house. Where the past leaned on stagnation, comfort seeking, and resistance to necessary change, you are now invited to cultivate the focus, resilience, and the courage to work with shadow material of scorpio so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Probe one meaningful step this week that expresses scorpio qualities within the sphere of intimacy, shared resources, vulnerability, and transformation.",
+      "Purify a clear boundary around time or energy and protect it while you work in the 8th house themes.",
+      "Commit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Expose your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Audit a weekly routine that anchors scorpio growth in real time within intimacy, shared resources, vulnerability, and transformation.",
+      "Disclose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Consolidate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Heal with someone affected by this house area and offer a clear contribution that uses your scorpio strengths."
+    ],
+    "south_patterns": "Past stability came from taurus strategies such as stagnation, comfort seeking, and resistance to necessary change. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 2nd house this can appear as insecurity about value, dependency on others' assets, or compulsive accumulation. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in resources, self-worth, skills, and material steadiness, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect resources, self-worth, skills, and material steadiness.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from taurus habits anchored in the 2nd house to scorpio initiative expressed through the 8th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the focus, resilience, and the courage to work with shadow material of scorpio in the concrete arena of the 8th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "scorpio_9": {
+    "north_sign": "Scorpio",
+    "north_house": 9,
+    "south_sign": "Taurus",
+    "south_house": 3,
+    "north_meaning": "Your growth path in Scorpio develops through depth, intimacy, honest power, and transformation through facing truth. This North Node asks you to trust your native scorpio gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 9th house locates this evolution in beliefs, higher learning, travel, and publishing. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into scorpio qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Taurus and the 3rd house. Where the past leaned on stagnation, comfort seeking, and resistance to necessary change, you are now invited to cultivate the focus, resilience, and the courage to work with shadow material of scorpio so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Probe one meaningful step this week that expresses scorpio qualities within the sphere of beliefs, higher learning, travel, and publishing.",
+      "Purify a clear boundary around time or energy and protect it while you work in the 9th house themes.",
+      "Commit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Expose your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Apprentice a weekly routine that anchors scorpio growth in real time within beliefs, higher learning, travel, and publishing.",
+      "Research metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Pilgrim one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Synthesize with someone affected by this house area and offer a clear contribution that uses your scorpio strengths."
+    ],
+    "south_patterns": "Past stability came from taurus strategies such as stagnation, comfort seeking, and resistance to necessary change. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 3rd house this can appear as information hoarding without application, scattered tasks, or performative cleverness. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communication, craft, learning, and local networks, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communication, craft, learning, and local networks.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from taurus habits anchored in the 3rd house to scorpio initiative expressed through the 9th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the focus, resilience, and the courage to work with shadow material of scorpio in the concrete arena of the 9th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "scorpio_10": {
+    "north_sign": "Scorpio",
+    "north_house": 10,
+    "south_sign": "Taurus",
+    "south_house": 4,
+    "north_meaning": "Your growth path in Scorpio develops through depth, intimacy, honest power, and transformation through facing truth. This North Node asks you to trust your native scorpio gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 10th house locates this evolution in career, reputation, achievement, and responsibility. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into scorpio qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Taurus and the 4th house. Where the past leaned on stagnation, comfort seeking, and resistance to necessary change, you are now invited to cultivate the focus, resilience, and the courage to work with shadow material of scorpio so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Probe one meaningful step this week that expresses scorpio qualities within the sphere of career, reputation, achievement, and responsibility.",
+      "Purify a clear boundary around time or energy and protect it while you work in the 10th house themes.",
+      "Commit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Expose your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Plan a weekly routine that anchors scorpio growth in real time within career, reputation, achievement, and responsibility.",
+      "Deliver metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Govern one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Announce with someone affected by this house area and offer a clear contribution that uses your scorpio strengths."
+    ],
+    "south_patterns": "Past stability came from taurus strategies such as stagnation, comfort seeking, and resistance to necessary change. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 4th house this can appear as living through family scripts, clinging to the past, or emotional withdrawal. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in home, roots, lineage, and emotional security, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect home, roots, lineage, and emotional security.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from taurus habits anchored in the 4th house to scorpio initiative expressed through the 10th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the focus, resilience, and the courage to work with shadow material of scorpio in the concrete arena of the 10th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "scorpio_11": {
+    "north_sign": "Scorpio",
+    "north_house": 11,
+    "south_sign": "Taurus",
+    "south_house": 5,
+    "north_meaning": "Your growth path in Scorpio develops through depth, intimacy, honest power, and transformation through facing truth. This North Node asks you to trust your native scorpio gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 11th house locates this evolution in communities, networks, causes, and future vision. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into scorpio qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Taurus and the 5th house. Where the past leaned on stagnation, comfort seeking, and resistance to necessary change, you are now invited to cultivate the focus, resilience, and the courage to work with shadow material of scorpio so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Probe one meaningful step this week that expresses scorpio qualities within the sphere of communities, networks, causes, and future vision.",
+      "Purify a clear boundary around time or energy and protect it while you work in the 11th house themes.",
+      "Commit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Expose your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Organize a weekly routine that anchors scorpio growth in real time within communities, networks, causes, and future vision.",
+      "Convene metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Prototype one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Advocate with someone affected by this house area and offer a clear contribution that uses your scorpio strengths."
+    ],
+    "south_patterns": "Past stability came from taurus strategies such as stagnation, comfort seeking, and resistance to necessary change. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 5th house this can appear as spectator mentality, fear of exposure, or self-editing for approval. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in creative expression, romance, play, and personal joy, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect creative expression, romance, play, and personal joy.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from taurus habits anchored in the 5th house to scorpio initiative expressed through the 11th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the focus, resilience, and the courage to work with shadow material of scorpio in the concrete arena of the 11th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "scorpio_12": {
+    "north_sign": "Scorpio",
+    "north_house": 12,
+    "south_sign": "Taurus",
+    "south_house": 6,
+    "north_meaning": "Your growth path in Scorpio develops through depth, intimacy, honest power, and transformation through facing truth. This North Node asks you to trust your native scorpio gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 12th house locates this evolution in rest, retreat, spiritual practice, and the unconscious. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into scorpio qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Taurus and the 6th house. Where the past leaned on stagnation, comfort seeking, and resistance to necessary change, you are now invited to cultivate the focus, resilience, and the courage to work with shadow material of scorpio so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Probe one meaningful step this week that expresses scorpio qualities within the sphere of rest, retreat, spiritual practice, and the unconscious.",
+      "Purify a clear boundary around time or energy and protect it while you work in the 12th house themes.",
+      "Commit a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Expose your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Release a weekly routine that anchors scorpio growth in real time within rest, retreat, spiritual practice, and the unconscious.",
+      "Meditate metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Journal one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Restore with someone affected by this house area and offer a clear contribution that uses your scorpio strengths."
+    ],
+    "south_patterns": "Past stability came from taurus strategies such as stagnation, comfort seeking, and resistance to necessary change. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 6th house this can appear as overwork without boundaries, martyrdom, or anxious perfectionism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in work, service, health, and daily improvements, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect work, service, health, and daily improvements.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from taurus habits anchored in the 6th house to scorpio initiative expressed through the 12th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the focus, resilience, and the courage to work with shadow material of scorpio in the concrete arena of the 12th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "sagittarius_1": {
+    "north_sign": "Sagittarius",
+    "north_house": 1,
+    "south_sign": "Gemini",
+    "south_house": 7,
+    "north_meaning": "Your growth path in Sagittarius develops through vision, meaning, faith, and the courage to pursue a larger horizon. This North Node asks you to trust your native sagittarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 1st house locates this evolution in identity, vitality, and beginnings. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into sagittarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Gemini and the 7th house. Where the past leaned on mental circling, distraction, and information without integration, you are now invited to cultivate the optimism, philosophical breadth, and principled risk taking of sagittarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Explore one meaningful step this week that expresses sagittarius qualities within the sphere of identity, vitality, and beginnings.",
+      "Envision a clear boundary around time or energy and protect it while you work in the 1st house themes.",
+      "Study a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Teach your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Embody a weekly routine that anchors sagittarius growth in real time within identity, vitality, and beginnings.",
+      "Begin metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Declare one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Show with someone affected by this house area and offer a clear contribution that uses your sagittarius strengths."
+    ],
+    "south_patterns": "Past stability came from gemini strategies such as mental circling, distraction, and information without integration. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 7th house this can appear as placation, indecision, or deferring authority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in partnerships, agreements, and mutuality, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect partnerships, agreements, and mutuality.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from gemini habits anchored in the 7th house to sagittarius initiative expressed through the 1st house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the optimism, philosophical breadth, and principled risk taking of sagittarius in the concrete arena of the 1st house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "sagittarius_2": {
+    "north_sign": "Sagittarius",
+    "north_house": 2,
+    "south_sign": "Gemini",
+    "south_house": 8,
+    "north_meaning": "Your growth path in Sagittarius develops through vision, meaning, faith, and the courage to pursue a larger horizon. This North Node asks you to trust your native sagittarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 2nd house locates this evolution in resources, self-worth, skills, and material steadiness. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into sagittarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Gemini and the 8th house. Where the past leaned on mental circling, distraction, and information without integration, you are now invited to cultivate the optimism, philosophical breadth, and principled risk taking of sagittarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Explore one meaningful step this week that expresses sagittarius qualities within the sphere of resources, self-worth, skills, and material steadiness.",
+      "Envision a clear boundary around time or energy and protect it while you work in the 2nd house themes.",
+      "Study a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Teach your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Budget a weekly routine that anchors sagittarius growth in real time within resources, self-worth, skills, and material steadiness.",
+      "Own metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Develop one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Price with someone affected by this house area and offer a clear contribution that uses your sagittarius strengths."
+    ],
+    "south_patterns": "Past stability came from gemini strategies such as mental circling, distraction, and information without integration. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 8th house this can appear as entanglement, secrecy, power struggles, or resource fusion. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in intimacy, shared resources, vulnerability, and transformation, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect intimacy, shared resources, vulnerability, and transformation.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from gemini habits anchored in the 8th house to sagittarius initiative expressed through the 2nd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the optimism, philosophical breadth, and principled risk taking of sagittarius in the concrete arena of the 2nd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "sagittarius_3": {
+    "north_sign": "Sagittarius",
+    "north_house": 3,
+    "south_sign": "Gemini",
+    "south_house": 9,
+    "north_meaning": "Your growth path in Sagittarius develops through vision, meaning, faith, and the courage to pursue a larger horizon. This North Node asks you to trust your native sagittarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 3rd house locates this evolution in communication, craft, learning, and local networks. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into sagittarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Gemini and the 9th house. Where the past leaned on mental circling, distraction, and information without integration, you are now invited to cultivate the optimism, philosophical breadth, and principled risk taking of sagittarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Explore one meaningful step this week that expresses sagittarius qualities within the sphere of communication, craft, learning, and local networks.",
+      "Envision a clear boundary around time or energy and protect it while you work in the 3rd house themes.",
+      "Study a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Teach your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Study a weekly routine that anchors sagittarius growth in real time within communication, craft, learning, and local networks.",
+      "Practice metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Publish one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Map with someone affected by this house area and offer a clear contribution that uses your sagittarius strengths."
+    ],
+    "south_patterns": "Past stability came from gemini strategies such as mental circling, distraction, and information without integration. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 9th house this can appear as rigid doctrine, blind faith, or moral superiority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in beliefs, higher learning, travel, and publishing, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect beliefs, higher learning, travel, and publishing.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from gemini habits anchored in the 9th house to sagittarius initiative expressed through the 3rd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the optimism, philosophical breadth, and principled risk taking of sagittarius in the concrete arena of the 3rd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "sagittarius_4": {
+    "north_sign": "Sagittarius",
+    "north_house": 4,
+    "south_sign": "Gemini",
+    "south_house": 10,
+    "north_meaning": "Your growth path in Sagittarius develops through vision, meaning, faith, and the courage to pursue a larger horizon. This North Node asks you to trust your native sagittarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 4th house locates this evolution in home, roots, lineage, and emotional security. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into sagittarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Gemini and the 10th house. Where the past leaned on mental circling, distraction, and information without integration, you are now invited to cultivate the optimism, philosophical breadth, and principled risk taking of sagittarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Explore one meaningful step this week that expresses sagittarius qualities within the sphere of home, roots, lineage, and emotional security.",
+      "Envision a clear boundary around time or energy and protect it while you work in the 4th house themes.",
+      "Study a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Teach your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Nest a weekly routine that anchors sagittarius growth in real time within home, roots, lineage, and emotional security.",
+      "Repair metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Record one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Re-parent with someone affected by this house area and offer a clear contribution that uses your sagittarius strengths."
+    ],
+    "south_patterns": "Past stability came from gemini strategies such as mental circling, distraction, and information without integration. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 10th house this can appear as status chasing, image over substance, or fear of visibility. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in career, reputation, achievement, and responsibility, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect career, reputation, achievement, and responsibility.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from gemini habits anchored in the 10th house to sagittarius initiative expressed through the 4th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the optimism, philosophical breadth, and principled risk taking of sagittarius in the concrete arena of the 4th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "sagittarius_5": {
+    "north_sign": "Sagittarius",
+    "north_house": 5,
+    "south_sign": "Gemini",
+    "south_house": 11,
+    "north_meaning": "Your growth path in Sagittarius develops through vision, meaning, faith, and the courage to pursue a larger horizon. This North Node asks you to trust your native sagittarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 5th house locates this evolution in creative expression, romance, play, and personal joy. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into sagittarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Gemini and the 11th house. Where the past leaned on mental circling, distraction, and information without integration, you are now invited to cultivate the optimism, philosophical breadth, and principled risk taking of sagittarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Explore one meaningful step this week that expresses sagittarius qualities within the sphere of creative expression, romance, play, and personal joy.",
+      "Envision a clear boundary around time or energy and protect it while you work in the 5th house themes.",
+      "Study a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Teach your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Play a weekly routine that anchors sagittarius growth in real time within creative expression, romance, play, and personal joy.",
+      "Compose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Perform one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Risk with someone affected by this house area and offer a clear contribution that uses your sagittarius strengths."
+    ],
+    "south_patterns": "Past stability came from gemini strategies such as mental circling, distraction, and information without integration. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 11th house this can appear as group dependency, popularity anxiety, or aimless idealism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communities, networks, causes, and future vision, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communities, networks, causes, and future vision.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from gemini habits anchored in the 11th house to sagittarius initiative expressed through the 5th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the optimism, philosophical breadth, and principled risk taking of sagittarius in the concrete arena of the 5th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "sagittarius_6": {
+    "north_sign": "Sagittarius",
+    "north_house": 6,
+    "south_sign": "Gemini",
+    "south_house": 12,
+    "north_meaning": "Your growth path in Sagittarius develops through vision, meaning, faith, and the courage to pursue a larger horizon. This North Node asks you to trust your native sagittarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 6th house locates this evolution in work, service, health, and daily improvements. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into sagittarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Gemini and the 12th house. Where the past leaned on mental circling, distraction, and information without integration, you are now invited to cultivate the optimism, philosophical breadth, and principled risk taking of sagittarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Explore one meaningful step this week that expresses sagittarius qualities within the sphere of work, service, health, and daily improvements.",
+      "Envision a clear boundary around time or energy and protect it while you work in the 6th house themes.",
+      "Study a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Teach your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Schedule a weekly routine that anchors sagittarius growth in real time within work, service, health, and daily improvements.",
+      "Measure metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Iterate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Serve with someone affected by this house area and offer a clear contribution that uses your sagittarius strengths."
+    ],
+    "south_patterns": "Past stability came from gemini strategies such as mental circling, distraction, and information without integration. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 12th house this can appear as isolation, self-sabotage, or avoidance through numbing. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in rest, retreat, spiritual practice, and the unconscious, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect rest, retreat, spiritual practice, and the unconscious.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from gemini habits anchored in the 12th house to sagittarius initiative expressed through the 6th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the optimism, philosophical breadth, and principled risk taking of sagittarius in the concrete arena of the 6th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "sagittarius_7": {
+    "north_sign": "Sagittarius",
+    "north_house": 7,
+    "south_sign": "Gemini",
+    "south_house": 1,
+    "north_meaning": "Your growth path in Sagittarius develops through vision, meaning, faith, and the courage to pursue a larger horizon. This North Node asks you to trust your native sagittarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 7th house locates this evolution in partnerships, agreements, and mutuality. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into sagittarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Gemini and the 1st house. Where the past leaned on mental circling, distraction, and information without integration, you are now invited to cultivate the optimism, philosophical breadth, and principled risk taking of sagittarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Explore one meaningful step this week that expresses sagittarius qualities within the sphere of partnerships, agreements, and mutuality.",
+      "Envision a clear boundary around time or energy and protect it while you work in the 7th house themes.",
+      "Study a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Teach your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Contract a weekly routine that anchors sagittarius growth in real time within partnerships, agreements, and mutuality.",
+      "Clarify metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Relate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Negotiate with someone affected by this house area and offer a clear contribution that uses your sagittarius strengths."
+    ],
+    "south_patterns": "Past stability came from gemini strategies such as mental circling, distraction, and information without integration. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 1st house this can appear as outsourcing direction to others, image management over authenticity. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in identity, vitality, and beginnings, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect identity, vitality, and beginnings.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from gemini habits anchored in the 1st house to sagittarius initiative expressed through the 7th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the optimism, philosophical breadth, and principled risk taking of sagittarius in the concrete arena of the 7th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "sagittarius_8": {
+    "north_sign": "Sagittarius",
+    "north_house": 8,
+    "south_sign": "Gemini",
+    "south_house": 2,
+    "north_meaning": "Your growth path in Sagittarius develops through vision, meaning, faith, and the courage to pursue a larger horizon. This North Node asks you to trust your native sagittarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 8th house locates this evolution in intimacy, shared resources, vulnerability, and transformation. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into sagittarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Gemini and the 2nd house. Where the past leaned on mental circling, distraction, and information without integration, you are now invited to cultivate the optimism, philosophical breadth, and principled risk taking of sagittarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Explore one meaningful step this week that expresses sagittarius qualities within the sphere of intimacy, shared resources, vulnerability, and transformation.",
+      "Envision a clear boundary around time or energy and protect it while you work in the 8th house themes.",
+      "Study a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Teach your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Audit a weekly routine that anchors sagittarius growth in real time within intimacy, shared resources, vulnerability, and transformation.",
+      "Disclose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Consolidate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Heal with someone affected by this house area and offer a clear contribution that uses your sagittarius strengths."
+    ],
+    "south_patterns": "Past stability came from gemini strategies such as mental circling, distraction, and information without integration. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 2nd house this can appear as insecurity about value, dependency on others' assets, or compulsive accumulation. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in resources, self-worth, skills, and material steadiness, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect resources, self-worth, skills, and material steadiness.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from gemini habits anchored in the 2nd house to sagittarius initiative expressed through the 8th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the optimism, philosophical breadth, and principled risk taking of sagittarius in the concrete arena of the 8th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "sagittarius_9": {
+    "north_sign": "Sagittarius",
+    "north_house": 9,
+    "south_sign": "Gemini",
+    "south_house": 3,
+    "north_meaning": "Your growth path in Sagittarius develops through vision, meaning, faith, and the courage to pursue a larger horizon. This North Node asks you to trust your native sagittarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 9th house locates this evolution in beliefs, higher learning, travel, and publishing. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into sagittarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Gemini and the 3rd house. Where the past leaned on mental circling, distraction, and information without integration, you are now invited to cultivate the optimism, philosophical breadth, and principled risk taking of sagittarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Explore one meaningful step this week that expresses sagittarius qualities within the sphere of beliefs, higher learning, travel, and publishing.",
+      "Envision a clear boundary around time or energy and protect it while you work in the 9th house themes.",
+      "Study a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Teach your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Apprentice a weekly routine that anchors sagittarius growth in real time within beliefs, higher learning, travel, and publishing.",
+      "Research metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Pilgrim one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Synthesize with someone affected by this house area and offer a clear contribution that uses your sagittarius strengths."
+    ],
+    "south_patterns": "Past stability came from gemini strategies such as mental circling, distraction, and information without integration. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 3rd house this can appear as information hoarding without application, scattered tasks, or performative cleverness. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communication, craft, learning, and local networks, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communication, craft, learning, and local networks.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from gemini habits anchored in the 3rd house to sagittarius initiative expressed through the 9th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the optimism, philosophical breadth, and principled risk taking of sagittarius in the concrete arena of the 9th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "sagittarius_10": {
+    "north_sign": "Sagittarius",
+    "north_house": 10,
+    "south_sign": "Gemini",
+    "south_house": 4,
+    "north_meaning": "Your growth path in Sagittarius develops through vision, meaning, faith, and the courage to pursue a larger horizon. This North Node asks you to trust your native sagittarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 10th house locates this evolution in career, reputation, achievement, and responsibility. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into sagittarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Gemini and the 4th house. Where the past leaned on mental circling, distraction, and information without integration, you are now invited to cultivate the optimism, philosophical breadth, and principled risk taking of sagittarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Explore one meaningful step this week that expresses sagittarius qualities within the sphere of career, reputation, achievement, and responsibility.",
+      "Envision a clear boundary around time or energy and protect it while you work in the 10th house themes.",
+      "Study a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Teach your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Plan a weekly routine that anchors sagittarius growth in real time within career, reputation, achievement, and responsibility.",
+      "Deliver metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Govern one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Announce with someone affected by this house area and offer a clear contribution that uses your sagittarius strengths."
+    ],
+    "south_patterns": "Past stability came from gemini strategies such as mental circling, distraction, and information without integration. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 4th house this can appear as living through family scripts, clinging to the past, or emotional withdrawal. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in home, roots, lineage, and emotional security, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect home, roots, lineage, and emotional security.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from gemini habits anchored in the 4th house to sagittarius initiative expressed through the 10th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the optimism, philosophical breadth, and principled risk taking of sagittarius in the concrete arena of the 10th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "sagittarius_11": {
+    "north_sign": "Sagittarius",
+    "north_house": 11,
+    "south_sign": "Gemini",
+    "south_house": 5,
+    "north_meaning": "Your growth path in Sagittarius develops through vision, meaning, faith, and the courage to pursue a larger horizon. This North Node asks you to trust your native sagittarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 11th house locates this evolution in communities, networks, causes, and future vision. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into sagittarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Gemini and the 5th house. Where the past leaned on mental circling, distraction, and information without integration, you are now invited to cultivate the optimism, philosophical breadth, and principled risk taking of sagittarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Explore one meaningful step this week that expresses sagittarius qualities within the sphere of communities, networks, causes, and future vision.",
+      "Envision a clear boundary around time or energy and protect it while you work in the 11th house themes.",
+      "Study a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Teach your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Organize a weekly routine that anchors sagittarius growth in real time within communities, networks, causes, and future vision.",
+      "Convene metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Prototype one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Advocate with someone affected by this house area and offer a clear contribution that uses your sagittarius strengths."
+    ],
+    "south_patterns": "Past stability came from gemini strategies such as mental circling, distraction, and information without integration. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 5th house this can appear as spectator mentality, fear of exposure, or self-editing for approval. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in creative expression, romance, play, and personal joy, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect creative expression, romance, play, and personal joy.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from gemini habits anchored in the 5th house to sagittarius initiative expressed through the 11th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the optimism, philosophical breadth, and principled risk taking of sagittarius in the concrete arena of the 11th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "sagittarius_12": {
+    "north_sign": "Sagittarius",
+    "north_house": 12,
+    "south_sign": "Gemini",
+    "south_house": 6,
+    "north_meaning": "Your growth path in Sagittarius develops through vision, meaning, faith, and the courage to pursue a larger horizon. This North Node asks you to trust your native sagittarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 12th house locates this evolution in rest, retreat, spiritual practice, and the unconscious. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into sagittarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Gemini and the 6th house. Where the past leaned on mental circling, distraction, and information without integration, you are now invited to cultivate the optimism, philosophical breadth, and principled risk taking of sagittarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Explore one meaningful step this week that expresses sagittarius qualities within the sphere of rest, retreat, spiritual practice, and the unconscious.",
+      "Envision a clear boundary around time or energy and protect it while you work in the 12th house themes.",
+      "Study a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Teach your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Release a weekly routine that anchors sagittarius growth in real time within rest, retreat, spiritual practice, and the unconscious.",
+      "Meditate metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Journal one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Restore with someone affected by this house area and offer a clear contribution that uses your sagittarius strengths."
+    ],
+    "south_patterns": "Past stability came from gemini strategies such as mental circling, distraction, and information without integration. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 6th house this can appear as overwork without boundaries, martyrdom, or anxious perfectionism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in work, service, health, and daily improvements, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect work, service, health, and daily improvements.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from gemini habits anchored in the 6th house to sagittarius initiative expressed through the 12th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the optimism, philosophical breadth, and principled risk taking of sagittarius in the concrete arena of the 12th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "capricorn_1": {
+    "north_sign": "Capricorn",
+    "north_house": 1,
+    "south_sign": "Cancer",
+    "south_house": 7,
+    "north_meaning": "Your growth path in Capricorn develops through structure, mastery, endurance, and ethical leadership. This North Node asks you to trust your native capricorn gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 1st house locates this evolution in identity, vitality, and beginnings. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into capricorn qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Cancer and the 7th house. Where the past leaned on caretaking, mood-driven choices, and protective retreat, you are now invited to cultivate the discipline, patience, and accountability of capricorn so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Plan one meaningful step this week that expresses capricorn qualities within the sphere of identity, vitality, and beginnings.",
+      "Prioritize a clear boundary around time or energy and protect it while you work in the 1st house themes.",
+      "Build a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Govern your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Embody a weekly routine that anchors capricorn growth in real time within identity, vitality, and beginnings.",
+      "Begin metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Declare one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Show with someone affected by this house area and offer a clear contribution that uses your capricorn strengths."
+    ],
+    "south_patterns": "Past stability came from cancer strategies such as caretaking, mood-driven choices, and protective retreat. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 7th house this can appear as placation, indecision, or deferring authority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in partnerships, agreements, and mutuality, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect partnerships, agreements, and mutuality.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from cancer habits anchored in the 7th house to capricorn initiative expressed through the 1st house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the discipline, patience, and accountability of capricorn in the concrete arena of the 1st house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "capricorn_2": {
+    "north_sign": "Capricorn",
+    "north_house": 2,
+    "south_sign": "Cancer",
+    "south_house": 8,
+    "north_meaning": "Your growth path in Capricorn develops through structure, mastery, endurance, and ethical leadership. This North Node asks you to trust your native capricorn gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 2nd house locates this evolution in resources, self-worth, skills, and material steadiness. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into capricorn qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Cancer and the 8th house. Where the past leaned on caretaking, mood-driven choices, and protective retreat, you are now invited to cultivate the discipline, patience, and accountability of capricorn so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Plan one meaningful step this week that expresses capricorn qualities within the sphere of resources, self-worth, skills, and material steadiness.",
+      "Prioritize a clear boundary around time or energy and protect it while you work in the 2nd house themes.",
+      "Build a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Govern your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Budget a weekly routine that anchors capricorn growth in real time within resources, self-worth, skills, and material steadiness.",
+      "Own metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Develop one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Price with someone affected by this house area and offer a clear contribution that uses your capricorn strengths."
+    ],
+    "south_patterns": "Past stability came from cancer strategies such as caretaking, mood-driven choices, and protective retreat. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 8th house this can appear as entanglement, secrecy, power struggles, or resource fusion. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in intimacy, shared resources, vulnerability, and transformation, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect intimacy, shared resources, vulnerability, and transformation.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from cancer habits anchored in the 8th house to capricorn initiative expressed through the 2nd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the discipline, patience, and accountability of capricorn in the concrete arena of the 2nd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "capricorn_3": {
+    "north_sign": "Capricorn",
+    "north_house": 3,
+    "south_sign": "Cancer",
+    "south_house": 9,
+    "north_meaning": "Your growth path in Capricorn develops through structure, mastery, endurance, and ethical leadership. This North Node asks you to trust your native capricorn gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 3rd house locates this evolution in communication, craft, learning, and local networks. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into capricorn qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Cancer and the 9th house. Where the past leaned on caretaking, mood-driven choices, and protective retreat, you are now invited to cultivate the discipline, patience, and accountability of capricorn so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Plan one meaningful step this week that expresses capricorn qualities within the sphere of communication, craft, learning, and local networks.",
+      "Prioritize a clear boundary around time or energy and protect it while you work in the 3rd house themes.",
+      "Build a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Govern your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Study a weekly routine that anchors capricorn growth in real time within communication, craft, learning, and local networks.",
+      "Practice metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Publish one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Map with someone affected by this house area and offer a clear contribution that uses your capricorn strengths."
+    ],
+    "south_patterns": "Past stability came from cancer strategies such as caretaking, mood-driven choices, and protective retreat. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 9th house this can appear as rigid doctrine, blind faith, or moral superiority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in beliefs, higher learning, travel, and publishing, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect beliefs, higher learning, travel, and publishing.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from cancer habits anchored in the 9th house to capricorn initiative expressed through the 3rd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the discipline, patience, and accountability of capricorn in the concrete arena of the 3rd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "capricorn_4": {
+    "north_sign": "Capricorn",
+    "north_house": 4,
+    "south_sign": "Cancer",
+    "south_house": 10,
+    "north_meaning": "Your growth path in Capricorn develops through structure, mastery, endurance, and ethical leadership. This North Node asks you to trust your native capricorn gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 4th house locates this evolution in home, roots, lineage, and emotional security. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into capricorn qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Cancer and the 10th house. Where the past leaned on caretaking, mood-driven choices, and protective retreat, you are now invited to cultivate the discipline, patience, and accountability of capricorn so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Plan one meaningful step this week that expresses capricorn qualities within the sphere of home, roots, lineage, and emotional security.",
+      "Prioritize a clear boundary around time or energy and protect it while you work in the 4th house themes.",
+      "Build a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Govern your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Nest a weekly routine that anchors capricorn growth in real time within home, roots, lineage, and emotional security.",
+      "Repair metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Record one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Re-parent with someone affected by this house area and offer a clear contribution that uses your capricorn strengths."
+    ],
+    "south_patterns": "Past stability came from cancer strategies such as caretaking, mood-driven choices, and protective retreat. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 10th house this can appear as status chasing, image over substance, or fear of visibility. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in career, reputation, achievement, and responsibility, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect career, reputation, achievement, and responsibility.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from cancer habits anchored in the 10th house to capricorn initiative expressed through the 4th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the discipline, patience, and accountability of capricorn in the concrete arena of the 4th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "capricorn_5": {
+    "north_sign": "Capricorn",
+    "north_house": 5,
+    "south_sign": "Cancer",
+    "south_house": 11,
+    "north_meaning": "Your growth path in Capricorn develops through structure, mastery, endurance, and ethical leadership. This North Node asks you to trust your native capricorn gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 5th house locates this evolution in creative expression, romance, play, and personal joy. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into capricorn qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Cancer and the 11th house. Where the past leaned on caretaking, mood-driven choices, and protective retreat, you are now invited to cultivate the discipline, patience, and accountability of capricorn so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Plan one meaningful step this week that expresses capricorn qualities within the sphere of creative expression, romance, play, and personal joy.",
+      "Prioritize a clear boundary around time or energy and protect it while you work in the 5th house themes.",
+      "Build a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Govern your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Play a weekly routine that anchors capricorn growth in real time within creative expression, romance, play, and personal joy.",
+      "Compose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Perform one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Risk with someone affected by this house area and offer a clear contribution that uses your capricorn strengths."
+    ],
+    "south_patterns": "Past stability came from cancer strategies such as caretaking, mood-driven choices, and protective retreat. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 11th house this can appear as group dependency, popularity anxiety, or aimless idealism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communities, networks, causes, and future vision, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communities, networks, causes, and future vision.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from cancer habits anchored in the 11th house to capricorn initiative expressed through the 5th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the discipline, patience, and accountability of capricorn in the concrete arena of the 5th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "capricorn_6": {
+    "north_sign": "Capricorn",
+    "north_house": 6,
+    "south_sign": "Cancer",
+    "south_house": 12,
+    "north_meaning": "Your growth path in Capricorn develops through structure, mastery, endurance, and ethical leadership. This North Node asks you to trust your native capricorn gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 6th house locates this evolution in work, service, health, and daily improvements. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into capricorn qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Cancer and the 12th house. Where the past leaned on caretaking, mood-driven choices, and protective retreat, you are now invited to cultivate the discipline, patience, and accountability of capricorn so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Plan one meaningful step this week that expresses capricorn qualities within the sphere of work, service, health, and daily improvements.",
+      "Prioritize a clear boundary around time or energy and protect it while you work in the 6th house themes.",
+      "Build a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Govern your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Schedule a weekly routine that anchors capricorn growth in real time within work, service, health, and daily improvements.",
+      "Measure metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Iterate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Serve with someone affected by this house area and offer a clear contribution that uses your capricorn strengths."
+    ],
+    "south_patterns": "Past stability came from cancer strategies such as caretaking, mood-driven choices, and protective retreat. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 12th house this can appear as isolation, self-sabotage, or avoidance through numbing. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in rest, retreat, spiritual practice, and the unconscious, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect rest, retreat, spiritual practice, and the unconscious.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from cancer habits anchored in the 12th house to capricorn initiative expressed through the 6th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the discipline, patience, and accountability of capricorn in the concrete arena of the 6th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "capricorn_7": {
+    "north_sign": "Capricorn",
+    "north_house": 7,
+    "south_sign": "Cancer",
+    "south_house": 1,
+    "north_meaning": "Your growth path in Capricorn develops through structure, mastery, endurance, and ethical leadership. This North Node asks you to trust your native capricorn gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 7th house locates this evolution in partnerships, agreements, and mutuality. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into capricorn qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Cancer and the 1st house. Where the past leaned on caretaking, mood-driven choices, and protective retreat, you are now invited to cultivate the discipline, patience, and accountability of capricorn so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Plan one meaningful step this week that expresses capricorn qualities within the sphere of partnerships, agreements, and mutuality.",
+      "Prioritize a clear boundary around time or energy and protect it while you work in the 7th house themes.",
+      "Build a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Govern your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Contract a weekly routine that anchors capricorn growth in real time within partnerships, agreements, and mutuality.",
+      "Clarify metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Relate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Negotiate with someone affected by this house area and offer a clear contribution that uses your capricorn strengths."
+    ],
+    "south_patterns": "Past stability came from cancer strategies such as caretaking, mood-driven choices, and protective retreat. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 1st house this can appear as outsourcing direction to others, image management over authenticity. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in identity, vitality, and beginnings, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect identity, vitality, and beginnings.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from cancer habits anchored in the 1st house to capricorn initiative expressed through the 7th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the discipline, patience, and accountability of capricorn in the concrete arena of the 7th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "capricorn_8": {
+    "north_sign": "Capricorn",
+    "north_house": 8,
+    "south_sign": "Cancer",
+    "south_house": 2,
+    "north_meaning": "Your growth path in Capricorn develops through structure, mastery, endurance, and ethical leadership. This North Node asks you to trust your native capricorn gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 8th house locates this evolution in intimacy, shared resources, vulnerability, and transformation. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into capricorn qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Cancer and the 2nd house. Where the past leaned on caretaking, mood-driven choices, and protective retreat, you are now invited to cultivate the discipline, patience, and accountability of capricorn so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Plan one meaningful step this week that expresses capricorn qualities within the sphere of intimacy, shared resources, vulnerability, and transformation.",
+      "Prioritize a clear boundary around time or energy and protect it while you work in the 8th house themes.",
+      "Build a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Govern your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Audit a weekly routine that anchors capricorn growth in real time within intimacy, shared resources, vulnerability, and transformation.",
+      "Disclose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Consolidate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Heal with someone affected by this house area and offer a clear contribution that uses your capricorn strengths."
+    ],
+    "south_patterns": "Past stability came from cancer strategies such as caretaking, mood-driven choices, and protective retreat. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 2nd house this can appear as insecurity about value, dependency on others' assets, or compulsive accumulation. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in resources, self-worth, skills, and material steadiness, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect resources, self-worth, skills, and material steadiness.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from cancer habits anchored in the 2nd house to capricorn initiative expressed through the 8th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the discipline, patience, and accountability of capricorn in the concrete arena of the 8th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "capricorn_9": {
+    "north_sign": "Capricorn",
+    "north_house": 9,
+    "south_sign": "Cancer",
+    "south_house": 3,
+    "north_meaning": "Your growth path in Capricorn develops through structure, mastery, endurance, and ethical leadership. This North Node asks you to trust your native capricorn gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 9th house locates this evolution in beliefs, higher learning, travel, and publishing. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into capricorn qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Cancer and the 3rd house. Where the past leaned on caretaking, mood-driven choices, and protective retreat, you are now invited to cultivate the discipline, patience, and accountability of capricorn so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Plan one meaningful step this week that expresses capricorn qualities within the sphere of beliefs, higher learning, travel, and publishing.",
+      "Prioritize a clear boundary around time or energy and protect it while you work in the 9th house themes.",
+      "Build a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Govern your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Apprentice a weekly routine that anchors capricorn growth in real time within beliefs, higher learning, travel, and publishing.",
+      "Research metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Pilgrim one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Synthesize with someone affected by this house area and offer a clear contribution that uses your capricorn strengths."
+    ],
+    "south_patterns": "Past stability came from cancer strategies such as caretaking, mood-driven choices, and protective retreat. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 3rd house this can appear as information hoarding without application, scattered tasks, or performative cleverness. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communication, craft, learning, and local networks, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communication, craft, learning, and local networks.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from cancer habits anchored in the 3rd house to capricorn initiative expressed through the 9th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the discipline, patience, and accountability of capricorn in the concrete arena of the 9th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "capricorn_10": {
+    "north_sign": "Capricorn",
+    "north_house": 10,
+    "south_sign": "Cancer",
+    "south_house": 4,
+    "north_meaning": "Your growth path in Capricorn develops through structure, mastery, endurance, and ethical leadership. This North Node asks you to trust your native capricorn gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 10th house locates this evolution in career, reputation, achievement, and responsibility. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into capricorn qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Cancer and the 4th house. Where the past leaned on caretaking, mood-driven choices, and protective retreat, you are now invited to cultivate the discipline, patience, and accountability of capricorn so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Plan one meaningful step this week that expresses capricorn qualities within the sphere of career, reputation, achievement, and responsibility.",
+      "Prioritize a clear boundary around time or energy and protect it while you work in the 10th house themes.",
+      "Build a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Govern your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Plan a weekly routine that anchors capricorn growth in real time within career, reputation, achievement, and responsibility.",
+      "Deliver metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Govern one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Announce with someone affected by this house area and offer a clear contribution that uses your capricorn strengths."
+    ],
+    "south_patterns": "Past stability came from cancer strategies such as caretaking, mood-driven choices, and protective retreat. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 4th house this can appear as living through family scripts, clinging to the past, or emotional withdrawal. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in home, roots, lineage, and emotional security, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect home, roots, lineage, and emotional security.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from cancer habits anchored in the 4th house to capricorn initiative expressed through the 10th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the discipline, patience, and accountability of capricorn in the concrete arena of the 10th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "capricorn_11": {
+    "north_sign": "Capricorn",
+    "north_house": 11,
+    "south_sign": "Cancer",
+    "south_house": 5,
+    "north_meaning": "Your growth path in Capricorn develops through structure, mastery, endurance, and ethical leadership. This North Node asks you to trust your native capricorn gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 11th house locates this evolution in communities, networks, causes, and future vision. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into capricorn qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Cancer and the 5th house. Where the past leaned on caretaking, mood-driven choices, and protective retreat, you are now invited to cultivate the discipline, patience, and accountability of capricorn so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Plan one meaningful step this week that expresses capricorn qualities within the sphere of communities, networks, causes, and future vision.",
+      "Prioritize a clear boundary around time or energy and protect it while you work in the 11th house themes.",
+      "Build a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Govern your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Organize a weekly routine that anchors capricorn growth in real time within communities, networks, causes, and future vision.",
+      "Convene metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Prototype one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Advocate with someone affected by this house area and offer a clear contribution that uses your capricorn strengths."
+    ],
+    "south_patterns": "Past stability came from cancer strategies such as caretaking, mood-driven choices, and protective retreat. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 5th house this can appear as spectator mentality, fear of exposure, or self-editing for approval. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in creative expression, romance, play, and personal joy, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect creative expression, romance, play, and personal joy.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from cancer habits anchored in the 5th house to capricorn initiative expressed through the 11th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the discipline, patience, and accountability of capricorn in the concrete arena of the 11th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "capricorn_12": {
+    "north_sign": "Capricorn",
+    "north_house": 12,
+    "south_sign": "Cancer",
+    "south_house": 6,
+    "north_meaning": "Your growth path in Capricorn develops through structure, mastery, endurance, and ethical leadership. This North Node asks you to trust your native capricorn gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 12th house locates this evolution in rest, retreat, spiritual practice, and the unconscious. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into capricorn qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Cancer and the 6th house. Where the past leaned on caretaking, mood-driven choices, and protective retreat, you are now invited to cultivate the discipline, patience, and accountability of capricorn so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Plan one meaningful step this week that expresses capricorn qualities within the sphere of rest, retreat, spiritual practice, and the unconscious.",
+      "Prioritize a clear boundary around time or energy and protect it while you work in the 12th house themes.",
+      "Build a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Govern your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Release a weekly routine that anchors capricorn growth in real time within rest, retreat, spiritual practice, and the unconscious.",
+      "Meditate metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Journal one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Restore with someone affected by this house area and offer a clear contribution that uses your capricorn strengths."
+    ],
+    "south_patterns": "Past stability came from cancer strategies such as caretaking, mood-driven choices, and protective retreat. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 6th house this can appear as overwork without boundaries, martyrdom, or anxious perfectionism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in work, service, health, and daily improvements, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect work, service, health, and daily improvements.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from cancer habits anchored in the 6th house to capricorn initiative expressed through the 12th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the discipline, patience, and accountability of capricorn in the concrete arena of the 12th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aquarius_1": {
+    "north_sign": "Aquarius",
+    "north_house": 1,
+    "south_sign": "Leo",
+    "south_house": 7,
+    "north_meaning": "Your growth path in Aquarius develops through originality, systems thinking, reform, and allegiance to principle over popularity. This North Node asks you to trust your native aquarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 1st house locates this evolution in identity, vitality, and beginnings. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aquarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Leo and the 7th house. Where the past leaned on ego validation, theatricality, and approval seeking, you are now invited to cultivate the clarity of vision, civic-mindedness, and future orientation of aquarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Innovate one meaningful step this week that expresses aquarius qualities within the sphere of identity, vitality, and beginnings.",
+      "Systemize a clear boundary around time or energy and protect it while you work in the 1st house themes.",
+      "Disrupt a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Organize your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Embody a weekly routine that anchors aquarius growth in real time within identity, vitality, and beginnings.",
+      "Begin metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Declare one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Show with someone affected by this house area and offer a clear contribution that uses your aquarius strengths."
+    ],
+    "south_patterns": "Past stability came from leo strategies such as ego validation, theatricality, and approval seeking. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 7th house this can appear as placation, indecision, or deferring authority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in partnerships, agreements, and mutuality, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect partnerships, agreements, and mutuality.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from leo habits anchored in the 7th house to aquarius initiative expressed through the 1st house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity of vision, civic-mindedness, and future orientation of aquarius in the concrete arena of the 1st house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aquarius_2": {
+    "north_sign": "Aquarius",
+    "north_house": 2,
+    "south_sign": "Leo",
+    "south_house": 8,
+    "north_meaning": "Your growth path in Aquarius develops through originality, systems thinking, reform, and allegiance to principle over popularity. This North Node asks you to trust your native aquarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 2nd house locates this evolution in resources, self-worth, skills, and material steadiness. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aquarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Leo and the 8th house. Where the past leaned on ego validation, theatricality, and approval seeking, you are now invited to cultivate the clarity of vision, civic-mindedness, and future orientation of aquarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Innovate one meaningful step this week that expresses aquarius qualities within the sphere of resources, self-worth, skills, and material steadiness.",
+      "Systemize a clear boundary around time or energy and protect it while you work in the 2nd house themes.",
+      "Disrupt a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Organize your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Budget a weekly routine that anchors aquarius growth in real time within resources, self-worth, skills, and material steadiness.",
+      "Own metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Develop one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Price with someone affected by this house area and offer a clear contribution that uses your aquarius strengths."
+    ],
+    "south_patterns": "Past stability came from leo strategies such as ego validation, theatricality, and approval seeking. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 8th house this can appear as entanglement, secrecy, power struggles, or resource fusion. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in intimacy, shared resources, vulnerability, and transformation, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect intimacy, shared resources, vulnerability, and transformation.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from leo habits anchored in the 8th house to aquarius initiative expressed through the 2nd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity of vision, civic-mindedness, and future orientation of aquarius in the concrete arena of the 2nd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aquarius_3": {
+    "north_sign": "Aquarius",
+    "north_house": 3,
+    "south_sign": "Leo",
+    "south_house": 9,
+    "north_meaning": "Your growth path in Aquarius develops through originality, systems thinking, reform, and allegiance to principle over popularity. This North Node asks you to trust your native aquarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 3rd house locates this evolution in communication, craft, learning, and local networks. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aquarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Leo and the 9th house. Where the past leaned on ego validation, theatricality, and approval seeking, you are now invited to cultivate the clarity of vision, civic-mindedness, and future orientation of aquarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Innovate one meaningful step this week that expresses aquarius qualities within the sphere of communication, craft, learning, and local networks.",
+      "Systemize a clear boundary around time or energy and protect it while you work in the 3rd house themes.",
+      "Disrupt a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Organize your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Study a weekly routine that anchors aquarius growth in real time within communication, craft, learning, and local networks.",
+      "Practice metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Publish one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Map with someone affected by this house area and offer a clear contribution that uses your aquarius strengths."
+    ],
+    "south_patterns": "Past stability came from leo strategies such as ego validation, theatricality, and approval seeking. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 9th house this can appear as rigid doctrine, blind faith, or moral superiority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in beliefs, higher learning, travel, and publishing, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect beliefs, higher learning, travel, and publishing.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from leo habits anchored in the 9th house to aquarius initiative expressed through the 3rd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity of vision, civic-mindedness, and future orientation of aquarius in the concrete arena of the 3rd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aquarius_4": {
+    "north_sign": "Aquarius",
+    "north_house": 4,
+    "south_sign": "Leo",
+    "south_house": 10,
+    "north_meaning": "Your growth path in Aquarius develops through originality, systems thinking, reform, and allegiance to principle over popularity. This North Node asks you to trust your native aquarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 4th house locates this evolution in home, roots, lineage, and emotional security. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aquarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Leo and the 10th house. Where the past leaned on ego validation, theatricality, and approval seeking, you are now invited to cultivate the clarity of vision, civic-mindedness, and future orientation of aquarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Innovate one meaningful step this week that expresses aquarius qualities within the sphere of home, roots, lineage, and emotional security.",
+      "Systemize a clear boundary around time or energy and protect it while you work in the 4th house themes.",
+      "Disrupt a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Organize your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Nest a weekly routine that anchors aquarius growth in real time within home, roots, lineage, and emotional security.",
+      "Repair metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Record one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Re-parent with someone affected by this house area and offer a clear contribution that uses your aquarius strengths."
+    ],
+    "south_patterns": "Past stability came from leo strategies such as ego validation, theatricality, and approval seeking. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 10th house this can appear as status chasing, image over substance, or fear of visibility. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in career, reputation, achievement, and responsibility, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect career, reputation, achievement, and responsibility.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from leo habits anchored in the 10th house to aquarius initiative expressed through the 4th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity of vision, civic-mindedness, and future orientation of aquarius in the concrete arena of the 4th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aquarius_5": {
+    "north_sign": "Aquarius",
+    "north_house": 5,
+    "south_sign": "Leo",
+    "south_house": 11,
+    "north_meaning": "Your growth path in Aquarius develops through originality, systems thinking, reform, and allegiance to principle over popularity. This North Node asks you to trust your native aquarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 5th house locates this evolution in creative expression, romance, play, and personal joy. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aquarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Leo and the 11th house. Where the past leaned on ego validation, theatricality, and approval seeking, you are now invited to cultivate the clarity of vision, civic-mindedness, and future orientation of aquarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Innovate one meaningful step this week that expresses aquarius qualities within the sphere of creative expression, romance, play, and personal joy.",
+      "Systemize a clear boundary around time or energy and protect it while you work in the 5th house themes.",
+      "Disrupt a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Organize your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Play a weekly routine that anchors aquarius growth in real time within creative expression, romance, play, and personal joy.",
+      "Compose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Perform one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Risk with someone affected by this house area and offer a clear contribution that uses your aquarius strengths."
+    ],
+    "south_patterns": "Past stability came from leo strategies such as ego validation, theatricality, and approval seeking. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 11th house this can appear as group dependency, popularity anxiety, or aimless idealism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communities, networks, causes, and future vision, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communities, networks, causes, and future vision.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from leo habits anchored in the 11th house to aquarius initiative expressed through the 5th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity of vision, civic-mindedness, and future orientation of aquarius in the concrete arena of the 5th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aquarius_6": {
+    "north_sign": "Aquarius",
+    "north_house": 6,
+    "south_sign": "Leo",
+    "south_house": 12,
+    "north_meaning": "Your growth path in Aquarius develops through originality, systems thinking, reform, and allegiance to principle over popularity. This North Node asks you to trust your native aquarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 6th house locates this evolution in work, service, health, and daily improvements. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aquarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Leo and the 12th house. Where the past leaned on ego validation, theatricality, and approval seeking, you are now invited to cultivate the clarity of vision, civic-mindedness, and future orientation of aquarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Innovate one meaningful step this week that expresses aquarius qualities within the sphere of work, service, health, and daily improvements.",
+      "Systemize a clear boundary around time or energy and protect it while you work in the 6th house themes.",
+      "Disrupt a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Organize your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Schedule a weekly routine that anchors aquarius growth in real time within work, service, health, and daily improvements.",
+      "Measure metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Iterate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Serve with someone affected by this house area and offer a clear contribution that uses your aquarius strengths."
+    ],
+    "south_patterns": "Past stability came from leo strategies such as ego validation, theatricality, and approval seeking. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 12th house this can appear as isolation, self-sabotage, or avoidance through numbing. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in rest, retreat, spiritual practice, and the unconscious, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect rest, retreat, spiritual practice, and the unconscious.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from leo habits anchored in the 12th house to aquarius initiative expressed through the 6th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity of vision, civic-mindedness, and future orientation of aquarius in the concrete arena of the 6th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aquarius_7": {
+    "north_sign": "Aquarius",
+    "north_house": 7,
+    "south_sign": "Leo",
+    "south_house": 1,
+    "north_meaning": "Your growth path in Aquarius develops through originality, systems thinking, reform, and allegiance to principle over popularity. This North Node asks you to trust your native aquarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 7th house locates this evolution in partnerships, agreements, and mutuality. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aquarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Leo and the 1st house. Where the past leaned on ego validation, theatricality, and approval seeking, you are now invited to cultivate the clarity of vision, civic-mindedness, and future orientation of aquarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Innovate one meaningful step this week that expresses aquarius qualities within the sphere of partnerships, agreements, and mutuality.",
+      "Systemize a clear boundary around time or energy and protect it while you work in the 7th house themes.",
+      "Disrupt a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Organize your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Contract a weekly routine that anchors aquarius growth in real time within partnerships, agreements, and mutuality.",
+      "Clarify metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Relate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Negotiate with someone affected by this house area and offer a clear contribution that uses your aquarius strengths."
+    ],
+    "south_patterns": "Past stability came from leo strategies such as ego validation, theatricality, and approval seeking. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 1st house this can appear as outsourcing direction to others, image management over authenticity. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in identity, vitality, and beginnings, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect identity, vitality, and beginnings.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from leo habits anchored in the 1st house to aquarius initiative expressed through the 7th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity of vision, civic-mindedness, and future orientation of aquarius in the concrete arena of the 7th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aquarius_8": {
+    "north_sign": "Aquarius",
+    "north_house": 8,
+    "south_sign": "Leo",
+    "south_house": 2,
+    "north_meaning": "Your growth path in Aquarius develops through originality, systems thinking, reform, and allegiance to principle over popularity. This North Node asks you to trust your native aquarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 8th house locates this evolution in intimacy, shared resources, vulnerability, and transformation. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aquarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Leo and the 2nd house. Where the past leaned on ego validation, theatricality, and approval seeking, you are now invited to cultivate the clarity of vision, civic-mindedness, and future orientation of aquarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Innovate one meaningful step this week that expresses aquarius qualities within the sphere of intimacy, shared resources, vulnerability, and transformation.",
+      "Systemize a clear boundary around time or energy and protect it while you work in the 8th house themes.",
+      "Disrupt a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Organize your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Audit a weekly routine that anchors aquarius growth in real time within intimacy, shared resources, vulnerability, and transformation.",
+      "Disclose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Consolidate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Heal with someone affected by this house area and offer a clear contribution that uses your aquarius strengths."
+    ],
+    "south_patterns": "Past stability came from leo strategies such as ego validation, theatricality, and approval seeking. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 2nd house this can appear as insecurity about value, dependency on others' assets, or compulsive accumulation. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in resources, self-worth, skills, and material steadiness, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect resources, self-worth, skills, and material steadiness.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from leo habits anchored in the 2nd house to aquarius initiative expressed through the 8th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity of vision, civic-mindedness, and future orientation of aquarius in the concrete arena of the 8th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aquarius_9": {
+    "north_sign": "Aquarius",
+    "north_house": 9,
+    "south_sign": "Leo",
+    "south_house": 3,
+    "north_meaning": "Your growth path in Aquarius develops through originality, systems thinking, reform, and allegiance to principle over popularity. This North Node asks you to trust your native aquarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 9th house locates this evolution in beliefs, higher learning, travel, and publishing. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aquarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Leo and the 3rd house. Where the past leaned on ego validation, theatricality, and approval seeking, you are now invited to cultivate the clarity of vision, civic-mindedness, and future orientation of aquarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Innovate one meaningful step this week that expresses aquarius qualities within the sphere of beliefs, higher learning, travel, and publishing.",
+      "Systemize a clear boundary around time or energy and protect it while you work in the 9th house themes.",
+      "Disrupt a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Organize your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Apprentice a weekly routine that anchors aquarius growth in real time within beliefs, higher learning, travel, and publishing.",
+      "Research metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Pilgrim one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Synthesize with someone affected by this house area and offer a clear contribution that uses your aquarius strengths."
+    ],
+    "south_patterns": "Past stability came from leo strategies such as ego validation, theatricality, and approval seeking. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 3rd house this can appear as information hoarding without application, scattered tasks, or performative cleverness. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communication, craft, learning, and local networks, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communication, craft, learning, and local networks.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from leo habits anchored in the 3rd house to aquarius initiative expressed through the 9th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity of vision, civic-mindedness, and future orientation of aquarius in the concrete arena of the 9th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aquarius_10": {
+    "north_sign": "Aquarius",
+    "north_house": 10,
+    "south_sign": "Leo",
+    "south_house": 4,
+    "north_meaning": "Your growth path in Aquarius develops through originality, systems thinking, reform, and allegiance to principle over popularity. This North Node asks you to trust your native aquarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 10th house locates this evolution in career, reputation, achievement, and responsibility. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aquarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Leo and the 4th house. Where the past leaned on ego validation, theatricality, and approval seeking, you are now invited to cultivate the clarity of vision, civic-mindedness, and future orientation of aquarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Innovate one meaningful step this week that expresses aquarius qualities within the sphere of career, reputation, achievement, and responsibility.",
+      "Systemize a clear boundary around time or energy and protect it while you work in the 10th house themes.",
+      "Disrupt a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Organize your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Plan a weekly routine that anchors aquarius growth in real time within career, reputation, achievement, and responsibility.",
+      "Deliver metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Govern one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Announce with someone affected by this house area and offer a clear contribution that uses your aquarius strengths."
+    ],
+    "south_patterns": "Past stability came from leo strategies such as ego validation, theatricality, and approval seeking. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 4th house this can appear as living through family scripts, clinging to the past, or emotional withdrawal. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in home, roots, lineage, and emotional security, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect home, roots, lineage, and emotional security.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from leo habits anchored in the 4th house to aquarius initiative expressed through the 10th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity of vision, civic-mindedness, and future orientation of aquarius in the concrete arena of the 10th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aquarius_11": {
+    "north_sign": "Aquarius",
+    "north_house": 11,
+    "south_sign": "Leo",
+    "south_house": 5,
+    "north_meaning": "Your growth path in Aquarius develops through originality, systems thinking, reform, and allegiance to principle over popularity. This North Node asks you to trust your native aquarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 11th house locates this evolution in communities, networks, causes, and future vision. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aquarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Leo and the 5th house. Where the past leaned on ego validation, theatricality, and approval seeking, you are now invited to cultivate the clarity of vision, civic-mindedness, and future orientation of aquarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Innovate one meaningful step this week that expresses aquarius qualities within the sphere of communities, networks, causes, and future vision.",
+      "Systemize a clear boundary around time or energy and protect it while you work in the 11th house themes.",
+      "Disrupt a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Organize your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Organize a weekly routine that anchors aquarius growth in real time within communities, networks, causes, and future vision.",
+      "Convene metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Prototype one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Advocate with someone affected by this house area and offer a clear contribution that uses your aquarius strengths."
+    ],
+    "south_patterns": "Past stability came from leo strategies such as ego validation, theatricality, and approval seeking. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 5th house this can appear as spectator mentality, fear of exposure, or self-editing for approval. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in creative expression, romance, play, and personal joy, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect creative expression, romance, play, and personal joy.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from leo habits anchored in the 5th house to aquarius initiative expressed through the 11th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity of vision, civic-mindedness, and future orientation of aquarius in the concrete arena of the 11th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "aquarius_12": {
+    "north_sign": "Aquarius",
+    "north_house": 12,
+    "south_sign": "Leo",
+    "south_house": 6,
+    "north_meaning": "Your growth path in Aquarius develops through originality, systems thinking, reform, and allegiance to principle over popularity. This North Node asks you to trust your native aquarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 12th house locates this evolution in rest, retreat, spiritual practice, and the unconscious. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into aquarius qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Leo and the 6th house. Where the past leaned on ego validation, theatricality, and approval seeking, you are now invited to cultivate the clarity of vision, civic-mindedness, and future orientation of aquarius so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Innovate one meaningful step this week that expresses aquarius qualities within the sphere of rest, retreat, spiritual practice, and the unconscious.",
+      "Systemize a clear boundary around time or energy and protect it while you work in the 12th house themes.",
+      "Disrupt a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Organize your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Release a weekly routine that anchors aquarius growth in real time within rest, retreat, spiritual practice, and the unconscious.",
+      "Meditate metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Journal one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Restore with someone affected by this house area and offer a clear contribution that uses your aquarius strengths."
+    ],
+    "south_patterns": "Past stability came from leo strategies such as ego validation, theatricality, and approval seeking. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 6th house this can appear as overwork without boundaries, martyrdom, or anxious perfectionism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in work, service, health, and daily improvements, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect work, service, health, and daily improvements.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from leo habits anchored in the 6th house to aquarius initiative expressed through the 12th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the clarity of vision, civic-mindedness, and future orientation of aquarius in the concrete arena of the 12th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "pisces_1": {
+    "north_sign": "Pisces",
+    "north_house": 1,
+    "south_sign": "Virgo",
+    "south_house": 7,
+    "north_meaning": "Your growth path in Pisces develops through compassion, imagination, surrender, and trust in a larger flow of meaning. This North Node asks you to trust your native pisces gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 1st house locates this evolution in identity, vitality, and beginnings. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into pisces qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Virgo and the 7th house. Where the past leaned on over-analysis, perfectionism, and working to fix what is not broken, you are now invited to cultivate the mysticism, empathy, and creative transcendence of pisces so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Allow one meaningful step this week that expresses pisces qualities within the sphere of identity, vitality, and beginnings.",
+      "Listen a clear boundary around time or energy and protect it while you work in the 1st house themes.",
+      "Pray a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Consecrate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Embody a weekly routine that anchors pisces growth in real time within identity, vitality, and beginnings.",
+      "Begin metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Declare one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Show with someone affected by this house area and offer a clear contribution that uses your pisces strengths."
+    ],
+    "south_patterns": "Past stability came from virgo strategies such as over-analysis, perfectionism, and working to fix what is not broken. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 7th house this can appear as placation, indecision, or deferring authority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in partnerships, agreements, and mutuality, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect partnerships, agreements, and mutuality.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from virgo habits anchored in the 7th house to pisces initiative expressed through the 1st house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mysticism, empathy, and creative transcendence of pisces in the concrete arena of the 1st house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "pisces_2": {
+    "north_sign": "Pisces",
+    "north_house": 2,
+    "south_sign": "Virgo",
+    "south_house": 8,
+    "north_meaning": "Your growth path in Pisces develops through compassion, imagination, surrender, and trust in a larger flow of meaning. This North Node asks you to trust your native pisces gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 2nd house locates this evolution in resources, self-worth, skills, and material steadiness. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into pisces qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Virgo and the 8th house. Where the past leaned on over-analysis, perfectionism, and working to fix what is not broken, you are now invited to cultivate the mysticism, empathy, and creative transcendence of pisces so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Allow one meaningful step this week that expresses pisces qualities within the sphere of resources, self-worth, skills, and material steadiness.",
+      "Listen a clear boundary around time or energy and protect it while you work in the 2nd house themes.",
+      "Pray a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Consecrate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Budget a weekly routine that anchors pisces growth in real time within resources, self-worth, skills, and material steadiness.",
+      "Own metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Develop one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Price with someone affected by this house area and offer a clear contribution that uses your pisces strengths."
+    ],
+    "south_patterns": "Past stability came from virgo strategies such as over-analysis, perfectionism, and working to fix what is not broken. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 8th house this can appear as entanglement, secrecy, power struggles, or resource fusion. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in intimacy, shared resources, vulnerability, and transformation, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect intimacy, shared resources, vulnerability, and transformation.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from virgo habits anchored in the 8th house to pisces initiative expressed through the 2nd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mysticism, empathy, and creative transcendence of pisces in the concrete arena of the 2nd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "pisces_3": {
+    "north_sign": "Pisces",
+    "north_house": 3,
+    "south_sign": "Virgo",
+    "south_house": 9,
+    "north_meaning": "Your growth path in Pisces develops through compassion, imagination, surrender, and trust in a larger flow of meaning. This North Node asks you to trust your native pisces gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 3rd house locates this evolution in communication, craft, learning, and local networks. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into pisces qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Virgo and the 9th house. Where the past leaned on over-analysis, perfectionism, and working to fix what is not broken, you are now invited to cultivate the mysticism, empathy, and creative transcendence of pisces so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Allow one meaningful step this week that expresses pisces qualities within the sphere of communication, craft, learning, and local networks.",
+      "Listen a clear boundary around time or energy and protect it while you work in the 3rd house themes.",
+      "Pray a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Consecrate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Study a weekly routine that anchors pisces growth in real time within communication, craft, learning, and local networks.",
+      "Practice metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Publish one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Map with someone affected by this house area and offer a clear contribution that uses your pisces strengths."
+    ],
+    "south_patterns": "Past stability came from virgo strategies such as over-analysis, perfectionism, and working to fix what is not broken. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 9th house this can appear as rigid doctrine, blind faith, or moral superiority. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in beliefs, higher learning, travel, and publishing, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect beliefs, higher learning, travel, and publishing.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from virgo habits anchored in the 9th house to pisces initiative expressed through the 3rd house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mysticism, empathy, and creative transcendence of pisces in the concrete arena of the 3rd house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "pisces_4": {
+    "north_sign": "Pisces",
+    "north_house": 4,
+    "south_sign": "Virgo",
+    "south_house": 10,
+    "north_meaning": "Your growth path in Pisces develops through compassion, imagination, surrender, and trust in a larger flow of meaning. This North Node asks you to trust your native pisces gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 4th house locates this evolution in home, roots, lineage, and emotional security. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into pisces qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Virgo and the 10th house. Where the past leaned on over-analysis, perfectionism, and working to fix what is not broken, you are now invited to cultivate the mysticism, empathy, and creative transcendence of pisces so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Allow one meaningful step this week that expresses pisces qualities within the sphere of home, roots, lineage, and emotional security.",
+      "Listen a clear boundary around time or energy and protect it while you work in the 4th house themes.",
+      "Pray a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Consecrate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Nest a weekly routine that anchors pisces growth in real time within home, roots, lineage, and emotional security.",
+      "Repair metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Record one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Re-parent with someone affected by this house area and offer a clear contribution that uses your pisces strengths."
+    ],
+    "south_patterns": "Past stability came from virgo strategies such as over-analysis, perfectionism, and working to fix what is not broken. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 10th house this can appear as status chasing, image over substance, or fear of visibility. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in career, reputation, achievement, and responsibility, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect career, reputation, achievement, and responsibility.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from virgo habits anchored in the 10th house to pisces initiative expressed through the 4th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mysticism, empathy, and creative transcendence of pisces in the concrete arena of the 4th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "pisces_5": {
+    "north_sign": "Pisces",
+    "north_house": 5,
+    "south_sign": "Virgo",
+    "south_house": 11,
+    "north_meaning": "Your growth path in Pisces develops through compassion, imagination, surrender, and trust in a larger flow of meaning. This North Node asks you to trust your native pisces gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 5th house locates this evolution in creative expression, romance, play, and personal joy. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into pisces qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Virgo and the 11th house. Where the past leaned on over-analysis, perfectionism, and working to fix what is not broken, you are now invited to cultivate the mysticism, empathy, and creative transcendence of pisces so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Allow one meaningful step this week that expresses pisces qualities within the sphere of creative expression, romance, play, and personal joy.",
+      "Listen a clear boundary around time or energy and protect it while you work in the 5th house themes.",
+      "Pray a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Consecrate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Play a weekly routine that anchors pisces growth in real time within creative expression, romance, play, and personal joy.",
+      "Compose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Perform one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Risk with someone affected by this house area and offer a clear contribution that uses your pisces strengths."
+    ],
+    "south_patterns": "Past stability came from virgo strategies such as over-analysis, perfectionism, and working to fix what is not broken. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 11th house this can appear as group dependency, popularity anxiety, or aimless idealism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communities, networks, causes, and future vision, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communities, networks, causes, and future vision.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from virgo habits anchored in the 11th house to pisces initiative expressed through the 5th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mysticism, empathy, and creative transcendence of pisces in the concrete arena of the 5th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "pisces_6": {
+    "north_sign": "Pisces",
+    "north_house": 6,
+    "south_sign": "Virgo",
+    "south_house": 12,
+    "north_meaning": "Your growth path in Pisces develops through compassion, imagination, surrender, and trust in a larger flow of meaning. This North Node asks you to trust your native pisces gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 6th house locates this evolution in work, service, health, and daily improvements. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into pisces qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Virgo and the 12th house. Where the past leaned on over-analysis, perfectionism, and working to fix what is not broken, you are now invited to cultivate the mysticism, empathy, and creative transcendence of pisces so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Allow one meaningful step this week that expresses pisces qualities within the sphere of work, service, health, and daily improvements.",
+      "Listen a clear boundary around time or energy and protect it while you work in the 6th house themes.",
+      "Pray a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Consecrate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Schedule a weekly routine that anchors pisces growth in real time within work, service, health, and daily improvements.",
+      "Measure metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Iterate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Serve with someone affected by this house area and offer a clear contribution that uses your pisces strengths."
+    ],
+    "south_patterns": "Past stability came from virgo strategies such as over-analysis, perfectionism, and working to fix what is not broken. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 12th house this can appear as isolation, self-sabotage, or avoidance through numbing. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in rest, retreat, spiritual practice, and the unconscious, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect rest, retreat, spiritual practice, and the unconscious.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from virgo habits anchored in the 12th house to pisces initiative expressed through the 6th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mysticism, empathy, and creative transcendence of pisces in the concrete arena of the 6th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "pisces_7": {
+    "north_sign": "Pisces",
+    "north_house": 7,
+    "south_sign": "Virgo",
+    "south_house": 1,
+    "north_meaning": "Your growth path in Pisces develops through compassion, imagination, surrender, and trust in a larger flow of meaning. This North Node asks you to trust your native pisces gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 7th house locates this evolution in partnerships, agreements, and mutuality. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into pisces qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Virgo and the 1st house. Where the past leaned on over-analysis, perfectionism, and working to fix what is not broken, you are now invited to cultivate the mysticism, empathy, and creative transcendence of pisces so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Allow one meaningful step this week that expresses pisces qualities within the sphere of partnerships, agreements, and mutuality.",
+      "Listen a clear boundary around time or energy and protect it while you work in the 7th house themes.",
+      "Pray a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Consecrate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Contract a weekly routine that anchors pisces growth in real time within partnerships, agreements, and mutuality.",
+      "Clarify metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Relate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Negotiate with someone affected by this house area and offer a clear contribution that uses your pisces strengths."
+    ],
+    "south_patterns": "Past stability came from virgo strategies such as over-analysis, perfectionism, and working to fix what is not broken. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 1st house this can appear as outsourcing direction to others, image management over authenticity. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in identity, vitality, and beginnings, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect identity, vitality, and beginnings.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from virgo habits anchored in the 1st house to pisces initiative expressed through the 7th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mysticism, empathy, and creative transcendence of pisces in the concrete arena of the 7th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "pisces_8": {
+    "north_sign": "Pisces",
+    "north_house": 8,
+    "south_sign": "Virgo",
+    "south_house": 2,
+    "north_meaning": "Your growth path in Pisces develops through compassion, imagination, surrender, and trust in a larger flow of meaning. This North Node asks you to trust your native pisces gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 8th house locates this evolution in intimacy, shared resources, vulnerability, and transformation. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into pisces qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Virgo and the 2nd house. Where the past leaned on over-analysis, perfectionism, and working to fix what is not broken, you are now invited to cultivate the mysticism, empathy, and creative transcendence of pisces so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Allow one meaningful step this week that expresses pisces qualities within the sphere of intimacy, shared resources, vulnerability, and transformation.",
+      "Listen a clear boundary around time or energy and protect it while you work in the 8th house themes.",
+      "Pray a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Consecrate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Audit a weekly routine that anchors pisces growth in real time within intimacy, shared resources, vulnerability, and transformation.",
+      "Disclose metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Consolidate one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Heal with someone affected by this house area and offer a clear contribution that uses your pisces strengths."
+    ],
+    "south_patterns": "Past stability came from virgo strategies such as over-analysis, perfectionism, and working to fix what is not broken. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 2nd house this can appear as insecurity about value, dependency on others' assets, or compulsive accumulation. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in resources, self-worth, skills, and material steadiness, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect resources, self-worth, skills, and material steadiness.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from virgo habits anchored in the 2nd house to pisces initiative expressed through the 8th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mysticism, empathy, and creative transcendence of pisces in the concrete arena of the 8th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "pisces_9": {
+    "north_sign": "Pisces",
+    "north_house": 9,
+    "south_sign": "Virgo",
+    "south_house": 3,
+    "north_meaning": "Your growth path in Pisces develops through compassion, imagination, surrender, and trust in a larger flow of meaning. This North Node asks you to trust your native pisces gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 9th house locates this evolution in beliefs, higher learning, travel, and publishing. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into pisces qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Virgo and the 3rd house. Where the past leaned on over-analysis, perfectionism, and working to fix what is not broken, you are now invited to cultivate the mysticism, empathy, and creative transcendence of pisces so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Allow one meaningful step this week that expresses pisces qualities within the sphere of beliefs, higher learning, travel, and publishing.",
+      "Listen a clear boundary around time or energy and protect it while you work in the 9th house themes.",
+      "Pray a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Consecrate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Apprentice a weekly routine that anchors pisces growth in real time within beliefs, higher learning, travel, and publishing.",
+      "Research metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Pilgrim one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Synthesize with someone affected by this house area and offer a clear contribution that uses your pisces strengths."
+    ],
+    "south_patterns": "Past stability came from virgo strategies such as over-analysis, perfectionism, and working to fix what is not broken. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 3rd house this can appear as information hoarding without application, scattered tasks, or performative cleverness. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in communication, craft, learning, and local networks, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect communication, craft, learning, and local networks.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from virgo habits anchored in the 3rd house to pisces initiative expressed through the 9th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mysticism, empathy, and creative transcendence of pisces in the concrete arena of the 9th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "pisces_10": {
+    "north_sign": "Pisces",
+    "north_house": 10,
+    "south_sign": "Virgo",
+    "south_house": 4,
+    "north_meaning": "Your growth path in Pisces develops through compassion, imagination, surrender, and trust in a larger flow of meaning. This North Node asks you to trust your native pisces gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 10th house locates this evolution in career, reputation, achievement, and responsibility. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into pisces qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Virgo and the 4th house. Where the past leaned on over-analysis, perfectionism, and working to fix what is not broken, you are now invited to cultivate the mysticism, empathy, and creative transcendence of pisces so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Allow one meaningful step this week that expresses pisces qualities within the sphere of career, reputation, achievement, and responsibility.",
+      "Listen a clear boundary around time or energy and protect it while you work in the 10th house themes.",
+      "Pray a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Consecrate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Plan a weekly routine that anchors pisces growth in real time within career, reputation, achievement, and responsibility.",
+      "Deliver metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Govern one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Announce with someone affected by this house area and offer a clear contribution that uses your pisces strengths."
+    ],
+    "south_patterns": "Past stability came from virgo strategies such as over-analysis, perfectionism, and working to fix what is not broken. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 4th house this can appear as living through family scripts, clinging to the past, or emotional withdrawal. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in home, roots, lineage, and emotional security, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect home, roots, lineage, and emotional security.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from virgo habits anchored in the 4th house to pisces initiative expressed through the 10th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mysticism, empathy, and creative transcendence of pisces in the concrete arena of the 10th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "pisces_11": {
+    "north_sign": "Pisces",
+    "north_house": 11,
+    "south_sign": "Virgo",
+    "south_house": 5,
+    "north_meaning": "Your growth path in Pisces develops through compassion, imagination, surrender, and trust in a larger flow of meaning. This North Node asks you to trust your native pisces gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 11th house locates this evolution in communities, networks, causes, and future vision. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into pisces qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Virgo and the 5th house. Where the past leaned on over-analysis, perfectionism, and working to fix what is not broken, you are now invited to cultivate the mysticism, empathy, and creative transcendence of pisces so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Allow one meaningful step this week that expresses pisces qualities within the sphere of communities, networks, causes, and future vision.",
+      "Listen a clear boundary around time or energy and protect it while you work in the 11th house themes.",
+      "Pray a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Consecrate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Organize a weekly routine that anchors pisces growth in real time within communities, networks, causes, and future vision.",
+      "Convene metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Prototype one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Advocate with someone affected by this house area and offer a clear contribution that uses your pisces strengths."
+    ],
+    "south_patterns": "Past stability came from virgo strategies such as over-analysis, perfectionism, and working to fix what is not broken. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 5th house this can appear as spectator mentality, fear of exposure, or self-editing for approval. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in creative expression, romance, play, and personal joy, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect creative expression, romance, play, and personal joy.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from virgo habits anchored in the 5th house to pisces initiative expressed through the 11th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mysticism, empathy, and creative transcendence of pisces in the concrete arena of the 11th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  },
+  "pisces_12": {
+    "north_sign": "Pisces",
+    "north_house": 12,
+    "south_sign": "Virgo",
+    "south_house": 6,
+    "north_meaning": "Your growth path in Pisces develops through compassion, imagination, surrender, and trust in a larger flow of meaning. This North Node asks you to trust your native pisces gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.\n\nThe 12th house locates this evolution in rest, retreat, spiritual practice, and the unconscious. Here you learn by doing, and by measuring outcomes in the practical arena of this house. As you lean into pisces qualities inside this domain, you build confidence and consistency.\n\nThis path exists to balance habits associated with Virgo and the 6th house. Where the past leaned on over-analysis, perfectionism, and working to fix what is not broken, you are now invited to cultivate the mysticism, empathy, and creative transcendence of pisces so that your life is directed from the inside out.",
+    "north_guidance_sign": [
+      "Allow one meaningful step this week that expresses pisces qualities within the sphere of rest, retreat, spiritual practice, and the unconscious.",
+      "Listen a clear boundary around time or energy and protect it while you work in the 12th house themes.",
+      "Pray a small experiment, then review the result and refine your next move based on direct feedback.",
+      "Consecrate your process by naming a single priority each day and completing it before you respond to others."
+    ],
+    "north_guidance_house": [
+      "Release a weekly routine that anchors pisces growth in real time within rest, retreat, spiritual practice, and the unconscious.",
+      "Meditate metrics that matter for this house and track them for four weeks to reveal patterns.",
+      "Journal one process in this domain and reduce friction points so action becomes easier to repeat.",
+      "Restore with someone affected by this house area and offer a clear contribution that uses your pisces strengths."
+    ],
+    "south_patterns": "Past stability came from virgo strategies such as over-analysis, perfectionism, and working to fix what is not broken. These habits once created balance, yet they now delay decisions and dilute your agency when overused.\n\nIn the 6th house this can appear as overwork without boundaries, martyrdom, or anxious perfectionism. The cost is momentum and clarity in the very areas where your North Node seeks development.",
+    "south_guidance": [
+      "Name your first preference before any discussion in work, service, health, and daily improvements, then keep it visible as you consider input.",
+      "Set a decision deadline and limit consultation to two trusted sources when choices affect work, service, health, and daily improvements.",
+      "Schedule weekly solo time to act in this domain without external feedback, then record results.",
+      "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
+    ],
+    "combined_insight": "The journey moves from virgo habits anchored in the 6th house to pisces initiative expressed through the 12th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mysticism, empathy, and creative transcendence of pisces in the concrete arena of the 12th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+  }
+}
