@@ -764,16 +764,15 @@ def process_form():
         # Log the raw request data for debugging
         print("Raw request data:", request.data)
         print("Request JSON:", request.json)
-
         data = request.json
-
         # Log each expected field
         print("Birth Date:", data.get('Birth Date'))
         print("Birth Time:", data.get('Birth Time'))
         print("City:", data.get('City'))
         print("Country:", data.get('Country'))
         print("Email:", data.get('Email'))
-
+        
+        print("=== STARTING CHART CALCULATION ===")
         # Calculate nodes and big three
         chart_data = calculate_nodes_and_big_three(
             data['Birth Date'],
@@ -781,18 +780,18 @@ def process_form():
             data['City'],
             data['Country']
         )
-
+        print("Chart data calculated:", chart_data)
+        
+        print("=== STARTING REPORT GENERATION ===")
         # Generate full report
         report_text = generate_full_report(chart_data)
-
+        print("Report generated successfully")
+        
         # Create PDF
         pdf_path = create_pdf_report(report_text)
-
         # Send email
         send_report_email(data['Email'], report_text, pdf_path)
-
         return jsonify({"status": "success", "message": "Report sent successfully"})
-
     except Exception as e:
         print("Error in process_form:", str(e))
         return jsonify({"error": str(e)}), 400
