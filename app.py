@@ -253,54 +253,81 @@ temp_files = {}
 def calculate_nodes_and_big_three(date, time, city, country):
     """Calculate North/South Node positions and Sun/Moon/Rising signs"""
     try:
-        # Geocode city
-        geolocator = Nominatim(user_agent="node_calc")
-        loc = geolocator.geocode(f"{city}, {country}")
-        lat, lon = loc.latitude, loc.longitude
-        
-        # Get timezone
+        # Cached coordinates for reliability
+        CITY_COORDS = {
+            "Berkeley, USA": (37.8715, -122.2730),
+            "San Francisco, USA": (37.7749, -122.4194),
+            "Los Angeles, USA": (34.0522, -118.2437),
+            "New York, USA": (40.7128, -74.0060),
+            "Chicago, USA": (41.8781, -87.6298),
+            "Houston, USA": (29.7604, -95.3698),
+            "Miami, USA": (25.7617, -80.1918),
+            "Atlanta, USA": (33.7490, -84.3880),
+            "Washington, USA": (38.9072, -77.0369),
+            "Dallas, USA": (32.7767, -96.7970),
+            "London, UK": (51.5074, -0.1278),
+            "Paris, France": (48.8566, 2.3522),
+            "Tokyo, Japan": (35.6895, 139.6917),
+            "Sydney, Australia": (-33.8688, 151.2093),
+            "Toronto, Canada": (43.6532, -79.3832),
+        }
+
+        # Normalize key
+        city_key = f"{city.strip()}, {country.strip()}"
+        city_key = " ".join(city_key.split())
+
+        if city_key in CITY_COORDS:
+            lat, lon = CITY_COORDS[city_key]
+        else:
+            geolocator = Nominatim(
+                user_agent="nodes-backend/1.0 (support@nodalpathways.com)",
+                timeout=10
+            )
+            loc = geolocator.geocode(city_key)
+            if loc is None:
+                raise ValueError(f"Could not find coordinates for {city_key}")
+            lat, lon = loc.latitude, loc.longitude
+
+        # Timezone
         tf = TimezoneFinder()
         tz_str = tf.timezone_at(lng=lon, lat=lat)
+        if not tz_str:
+            raise ValueError(f"Could not resolve timezone for {city_key}")
         tz = pytz.timezone(tz_str)
-        
+
         # Build datetime
-        dt = datetime.strptime(date + " " + time, "%Y-%m-%d %H:%M")
+        dt = datetime.strptime(f"{date} {time}", "%Y-%m-%d %H:%M")
         utc_dt = tz.localize(dt).astimezone(pytz.utc)
-        
-        # Calculate julian day
+
+        # Julian day
         jd = swe.julday(
             utc_dt.year,
             utc_dt.month,
             utc_dt.day,
             utc_dt.hour + utc_dt.minute / 60.0
         )
-        
-        # North Node position
+
+        # Node
         node, *_ = swe.calc_ut(jd, swe.TRUE_NODE)
         node_long = node[0] % 360.0
         node_sign_index = int(node_long // 30)
         node_sign = SIGNS[node_sign_index]
         node_degree = node_long % 30
-        
-        # Sun position
+
+        # Sun
         sun, *_ = swe.calc_ut(jd, swe.SUN)
-        sun_long = sun[0] % 360.0
-        sun_sign_index = int(sun_long // 30)
-        sun_sign = SIGNS[sun_sign_index]
-        
-        # Moon position
+        sun_sign = SIGNS[int((sun[0] % 360.0) // 30)]
+
+        # Moon
         moon, *_ = swe.calc_ut(jd, swe.MOON)
-        moon_long = moon[0] % 360.0
-        moon_sign_index = int(moon_long // 30)
-        moon_sign = SIGNS[moon_sign_index]
-        
-        # Houses (Placidus) and Rising sign
+        moon_sign = SIGNS[int((moon[0] % 360.0) // 30)]
+
+        # Rising
         houses, ascmc = swe.houses_ex(jd, lat, lon, b'P')
         asc_long = ascmc[0] % 360.0
-        rising_sign_index = int(asc_long // 30)
-        rising_sign = SIGNS[rising_sign_index]
-        
-        # Calculate which house the North Node is in
+        rising_sign = SIGNS[int(asc_long // 30)]
+
+        # Node house
         node_house = None
         for i in range(12):
             start = houses[i]
@@ -308,11 +335,11 @@ def calculate_nodes_and_big_three(date, time, city, country):
             if start <= node_long < end or (end < start and (node_long >= start or node_long < end)):
                 node_house = i + 1
                 break
-        
-        # South Node (opposite sign and house)
+
+        # South Node
         south_sign = SIGNS[(node_sign_index + 6) % 12]
         south_house = (node_house + 6 - 1) % 12 + 1 if node_house else None
-        
+
         return {
             "north_node": {"sign": node_sign, "degree": round(node_degree, 2), "house": node_house},
             "south_node": {"sign": south_sign, "degree": round(node_degree, 2), "house": south_house},
@@ -320,8 +347,10 @@ def calculate_nodes_and_big_three(date, time, city, country):
             "moon_sign": moon_sign,
             "rising_sign": rising_sign
         }
+
     except Exception as e:
         raise Exception(f"Calculation error: {str(e)}")
+
 
 def generate_full_report(chart_data):
     """Generate rich, narrative-style report with context and explanations"""
