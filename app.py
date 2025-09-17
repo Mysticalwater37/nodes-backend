@@ -197,7 +197,7 @@ def generate_full_report(chart_data):
         if north_node.get("house"):
             house_data = KNOWLEDGE_BASE["houses"][north_node["house"]]
             report.append(f"Your North Node's placement in the {north_node['house']}th house adds depth. "
-                          f"{house_data['focus']} This shows the life areas where your {north_node['sign']} growth "
+                          f"{house_data['meaning']} This shows the life areas where your {north_node['sign']} growth "
                           f"will be most transformative.")
             for i, guidance in enumerate(house_data['guidance']):
                 guidance_clean = guidance.rstrip('.').lower()
