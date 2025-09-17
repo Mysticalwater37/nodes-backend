@@ -14,6 +14,7 @@ import uuid
 import os
 import resend
 import base64
+from knowledgebase import KNOWLEDGE_BASE
 
 app = Flask(__name__)
 
@@ -29,104 +30,6 @@ SIGNS = [
 ]
 
 # Hardcoded knowledge base (from your JSON file)
-KNOWLEDGE_BASE = {
-    "north_nodes": {
-        "Aries": {
-            "meaning": "Growth through independence, courage, and initiating new paths.",
-            "guidance": [
-                "Take initiative in daily decisions without seeking approval.",
-                "Pursue solo projects where you set the direction.",
-                "Speak up for what you want, even in low-stakes situations."
-            ]
-        },
-        "Taurus": {
-            "meaning": "Growth through stability, patience, and building lasting value.",
-            "guidance": [
-                "Create grounding daily rituals.",
-                "Spend intentional time in nature.",
-                "Focus on long-term projects rather than quick wins."
-            ]
-        },
-        "Gemini": {
-            "meaning": "Growth through curiosity, communication, and learning.",
-            "guidance": [
-                "Ask open questions in conversations.",
-                "Read or explore a new subject regularly.",
-                "Share what you learn with others in simple ways."
-            ]
-        },
-        "Cancer": {
-            "meaning": "Growth through nurturing, emotional connection, and creating a sense of home.",
-            "guidance": [
-                "Cook or prepare meals with intention.",
-                "Spend quality time with family or chosen family.",
-                "Allow yourself to feel emotions without judgment."
-            ]
-        },
-        "Leo": {
-            "meaning": "Growth through creativity, joy, and self-expression.",
-            "guidance": [
-                "Do something playful without worrying about outcomes.",
-                "Express yourself through art, music, or performance.",
-                "Celebrate your achievements without minimizing them."
-            ]
-        },
-        "Virgo": {
-            "meaning": "Growth through service, refinement, and practical mastery.",
-            "guidance": [
-                "Organize a small part of your environment.",
-                "Improve a skill through steady practice.",
-                "Support someone with thoughtful, practical help."
-            ]
-        },
-        "Libra": {
-            "meaning": "Growth through relationships, fairness, and cooperation.",
-            "guidance": [
-                "Listen deeply before responding in conversation.",
-                "Seek compromise instead of insisting on control.",
-                "Invest time in building balanced partnerships."
-            ]
-        },
-        "Scorpio": {
-            "meaning": "Growth through transformation, depth, and shared power.",
-            "guidance": [
-                "Reflect on what you need to release to move forward.",
-                "Practice honesty in moments of vulnerability.",
-                "Lean into change rather than resisting it."
-            ]
-        },
-        "Sagittarius": {
-            "meaning": "Growth through exploration, wisdom, and expanding horizons.",
-            "guidance": [
-                "Learn from people with different worldviews.",
-                "Travel physically or through books and ideas.",
-                "Reflect on your personal beliefs and how they guide you."
-            ]
-        },
-        "Capricorn": {
-            "meaning": "Growth through discipline, responsibility, and building legacy.",
-            "guidance": [
-                "Set one achievable long-term goal.",
-                "Track your progress steadily without rushing.",
-                "Take ownership of your role in group efforts."
-            ]
-        },
-        "Aquarius": {
-            "meaning": "Growth through innovation, community, and forward vision.",
-            "guidance": [
-                "Contribute to a cause bigger than yourself.",
-                "Experiment with new tools or technology.",
-                "Connect with communities that share your values."
-            ]
-        },
-        "Pisces": {
-            "meaning": "Growth through compassion, spirituality, and trust in flow.",
-            "guidance": [
-                "Spend time in stillness or meditation.",
-                "Engage with music, art, or practices that connect you to spirit.",
-                "Allow intuition to guide one small choice today."
-            ]
-        }
     },
     "south_nodes": {
         "Aries": {
