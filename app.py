@@ -195,7 +195,7 @@ def generate_full_report(chart_data):
 
         # House Guidance
         if north_node.get("house"):
-            house_data = KNOWLEDGE_BASE["houses"][str(north_node["house"])]
+            house_data = KNOWLEDGE_BASE["houses"][north_node["house"]]
             report.append(f"Your North Node's placement in the {north_node['house']}th house adds depth. "
                           f"{house_data['focus']} This shows the life areas where your {north_node['sign']} growth "
                           f"will be most transformative.")
