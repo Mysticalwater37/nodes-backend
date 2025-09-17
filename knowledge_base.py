@@ -4541,6 +4541,45 @@ KNOWLEDGE_BASE = {
         "Practice clean disagreement by stating your position clearly and summarizing the other view without self-erasure."
       ],
       "combined_insight": "The journey moves from virgo habits anchored in the 6th house to pisces initiative expressed through the 12th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mysticism, empathy, and creative transcendence of pisces in the concrete arena of the 12th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
+     }
+  },
+  "north_nodes": {
+    "Gemini": {
+      "lesson": "To embrace curiosity, flexible thinking, and mindful communication",
+      "shadow": "Escapism through idealism or dogma"
+    },
+    "Sagittarius": {
+      "lesson": "To trust in the bigger picture, seek wisdom, and share truth",
+      "shadow": "Fear of commitment to specific paths or truths"
+    }
+  },
+  "south_nodes": {
+    "Gemini": {
+      "gift": "Sharp intellect, adaptability, and wit",
+      "trap": "Avoiding depth through surface-level info or scattered energy"
+    },
+    "Sagittarius": {
+      "gift": "Philosophical insight, optimism, and adventurous spirit",
+      "trap": "Rigid beliefs, overconfidence, or restlessness"
+    }
+  },
+  "houses": {
+    "1": {
+      "theme": "Identity and self-image",
+      "focus": "Personal power, beginnings, and how you assert yourself"
+    },
+    "2": {
+      "theme": "Value and security",
+      "focus": "Self-worth, money, and material stability"
+    },
+    "6": {
+      "theme": "Daily life and purpose",
+      "focus": "Health, habits, service, and meaningful routines"
+    },
+    "10": {
+      "theme": "Legacy and public life",
+      "focus": "Career, ambition, status, and long-term goals"
     }
   }
 }
+
