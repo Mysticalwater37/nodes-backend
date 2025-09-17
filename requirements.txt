@@ -2,6 +2,8 @@ Flask
 Flask-Cors
 pyswisseph
 geopy
+timezonefinder
 pytz
 reportlab
 resend
+uuid
