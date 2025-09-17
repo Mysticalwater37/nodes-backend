@@ -767,42 +767,30 @@ def make_report():
 @app.route('/process-form', methods=['POST'])
 def process_form():
     """Process Google Form submission and email report"""
+    print("=== PROCESS FORM STARTED ===")
     try:
-        # Log the raw request data for debugging
-        print("Raw request data:", request.data)
-        print("Request JSON:", request.json)
         data = request.json
-        # Log each expected field
-        print("Birth Date:", data.get('Birth Date'))
-        print("Birth Time:", data.get('Birth Time'))
-        print("City:", data.get('City'))
-        print("Country:", data.get('Country'))
-        print("Email:", data.get('Email'))
+        print(f"Received data: {data}")
         
-        print("=== STARTING CHART CALCULATION ===")
-        # Calculate nodes and big three
+        print("=== ABOUT TO CALCULATE CHART DATA ===")
         chart_data = calculate_nodes_and_big_three(
             data['Birth Date'],
             data.get('Birth Time', '12:00'),
             data['City'],
             data['Country']
         )
-        print("Chart data calculated:", chart_data)
+        print(f"Chart calculation completed: {chart_data}")
         
-        print("=== STARTING REPORT GENERATION ===")
-        # Generate full report
+        print("=== ABOUT TO GENERATE REPORT ===")
         report_text = generate_full_report(chart_data)
-        print("Report generated successfully")
+        print("Report generation completed")
         
-        # Create PDF
-        pdf_path = create_pdf_report(report_text)
-        # Send email
-        send_report_email(data['Email'], report_text, pdf_path)
         return jsonify({"status": "success", "message": "Report sent successfully"})
     except Exception as e:
-        print("Error in process_form:", str(e))
+        print(f"DETAILED ERROR: {str(e)}")
+        import traceback
+        print(f"FULL TRACEBACK: {traceback.format_exc()}")
         return jsonify({"error": str(e)}), 400
-
 
 @app.route('/download/<file_id>', methods=['GET'])
 def download_file(file_id):
