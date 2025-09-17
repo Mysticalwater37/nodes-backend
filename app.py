@@ -14,9 +14,16 @@ import uuid
 import os
 import resend
 import base64
+from flask import Flask, jsonify  # Add this import
 from knowledge_base import KNOWLEDGE_BASE
-
 app = Flask(__name__)
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
+@app.route('/test', methods=['GET'])
+def test():
+    print("TEST ROUTE WORKING")
+    return jsonify({"status": "test successful"})
 
 # Path to Swiss Ephemeris data files
 swe.set_ephe_path('.')  
