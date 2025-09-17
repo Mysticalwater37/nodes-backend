@@ -4580,6 +4580,355 @@ KNOWLEDGE_BASE = {
       "theme": "Legacy and public life",
       "focus": "Career, ambition, status, and long-term goals"
     }
+  },
+  KNOWLEDGE_BASE = {
+  "sun_signs": {
+    # ... your existing sun_signs data stays the same
+  },
+  
+  "moon_signs": {
+    # ... your existing moon_signs data stays the same  
+  },
+  
+  "rising_signs": {
+    # ... your existing rising_signs data stays the same
+  },
+  
+  # NEW: Extract north node sign meanings
+  "north_nodes": {
+    "Aries": {
+      "meaning": "Your growth path in Aries develops through claiming authorship, direct action, courage, and the capacity to move while the insight is fresh. This North Node asks you to trust your native aries gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.",
+      "guidance": [
+        "Initiate one meaningful step this week that expresses aries qualities.",
+        "Decide a clear boundary around time or energy and protect it.",
+        "Act on a small experiment, then review the result and refine your next move.",
+        "Lead your process by naming a single priority each day."
+      ]
+    },
+    "Taurus": {
+      "meaning": "Your growth path in Taurus develops through stability, embodiment, craft, and the development of patient value creation. This North Node asks you to trust your native taurus gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.",
+      "guidance": [
+        "Stabilize one meaningful step this week that expresses taurus qualities.",
+        "Build a clear boundary around time or energy and protect it.",
+        "Ground a small experiment, then review the result and refine your next move.",
+        "Cultivate your process by naming a single priority each day."
+      ]
+    },
+    "Gemini": {
+      "meaning": "Your growth path in Gemini develops through curiosity, communication, skill building, and learning through exchange. This North Node asks you to trust your native gemini gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.",
+      "guidance": [
+        "Ask one meaningful step this week that expresses gemini qualities.",
+        "Observe a clear boundary around time or energy and protect it.",
+        "Connect a small experiment, then review the result and refine your next move.",
+        "Document your process by naming a single priority each day."
+      ]
+    },
+    "Cancer": {
+      "meaning": "Your growth path in Cancer develops through belonging, emotional attunement, memory, and the courage to care. This North Node asks you to trust your native cancer gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.",
+      "guidance": [
+        "Nurture one meaningful step this week that expresses cancer qualities.",
+        "Protect a clear boundary around time or energy and protect it.",
+        "Tend a small experiment, then review the result and refine your next move.",
+        "Soothe your process by naming a single priority each day."
+      ]
+    },
+    "Leo": {
+      "meaning": "Your growth path in Leo develops through creative self-expression, heart, confidence, and the willingness to be seen. This North Node asks you to trust your native leo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.",
+      "guidance": [
+        "Create one meaningful step this week that expresses leo qualities.",
+        "Shine a clear boundary around time or energy and protect it.",
+        "Perform a small experiment, then review the result and refine your next move.",
+        "Declare your process by naming a single priority each day."
+      ]
+    },
+    "Virgo": {
+      "meaning": "Your growth path in Virgo develops through discernment, service, improvement, and the alchemy of turning chaos into usefulness. This North Node asks you to trust your native virgo gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.",
+      "guidance": [
+        "Refine one meaningful step this week that expresses virgo qualities.",
+        "Organize a clear boundary around time or energy and protect it.",
+        "Edit a small experiment, then review the result and refine your next move.",
+        "Research your process by naming a single priority each day."
+      ]
+    },
+    "Libra": {
+      "meaning": "Your growth path in Libra develops through balance, collaboration, justice, and the art of shared decision making. This North Node asks you to trust your native libra gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.",
+      "guidance": [
+        "Relate one meaningful step this week that expresses libra qualities.",
+        "Negotiate a clear boundary around time or energy and protect it.",
+        "Harmonize a small experiment, then review the result and refine your next move.",
+        "Mediate your process by naming a single priority each day."
+      ]
+    },
+    "Scorpio": {
+      "meaning": "Your growth path in Scorpio develops through depth, intimacy, honest power, and transformation through facing truth. This North Node asks you to trust your native scorpio gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.",
+      "guidance": [
+        "Probe one meaningful step this week that expresses scorpio qualities.",
+        "Purify a clear boundary around time or energy and protect it.",
+        "Commit a small experiment, then review the result and refine your next move.",
+        "Expose your process by naming a single priority each day."
+      ]
+    },
+    "Sagittarius": {
+      "meaning": "Your growth path in Sagittarius develops through vision, meaning, faith, and the courage to pursue a larger horizon. This North Node asks you to trust your native sagittarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.",
+      "guidance": [
+        "Explore one meaningful step this week that expresses sagittarius qualities.",
+        "Envision a clear boundary around time or energy and protect it.",
+        "Study a small experiment, then review the result and refine your next move.",
+        "Teach your process by naming a single priority each day."
+      ]
+    },
+    "Capricorn": {
+      "meaning": "Your growth path in Capricorn develops through structure, mastery, endurance, and ethical leadership. This North Node asks you to trust your native capricorn gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.",
+      "guidance": [
+        "Plan one meaningful step this week that expresses capricorn qualities.",
+        "Prioritize a clear boundary around time or energy and protect it.",
+        "Build a small experiment, then review the result and refine your next move.",
+        "Govern your process by naming a single priority each day."
+      ]
+    },
+    "Aquarius": {
+      "meaning": "Your growth path in Aquarius develops through originality, systems thinking, reform, and allegiance to principle over popularity. This North Node asks you to trust your native aquarius gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.",
+      "guidance": [
+        "Innovate one meaningful step this week that expresses aquarius qualities.",
+        "Systemize a clear boundary around time or energy and protect it.",
+        "Disrupt a small experiment, then review the result and refine your next move.",
+        "Organize your process by naming a single priority each day."
+      ]
+    },
+    "Pisces": {
+      "meaning": "Your growth path in Pisces develops through compassion, imagination, surrender, and trust in a larger flow of meaning. This North Node asks you to trust your native pisces gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.",
+      "guidance": [
+        "Allow one meaningful step this week that expresses pisces qualities.",
+        "Listen a clear boundary around time or energy and protect it.",
+        "Pray a small experiment, then review the result and refine your next move.",
+        "Consecrate your process by naming a single priority each day."
+      ]
+    }
+  },
+  
+  # NEW: Extract south node sign meanings (opposite of north nodes)
+  "south_nodes": {
+    "Aries": {
+      "meaning": "Past stability came from libra strategies such as pleasing, over-consulting, and dependence on external harmony. These habits once created balance, yet they now delay decisions and dilute your agency when overused.",
+      "guidance": [
+        "Name your first preference before any discussion, then keep it visible as you consider input.",
+        "Set a decision deadline and limit consultation to two trusted sources.",
+        "Schedule weekly solo time to act without external feedback, then record results.",
+        "Practice clean disagreement by stating your position clearly."
+      ]
+    },
+    "Taurus": {
+      "meaning": "Past stability came from scorpio strategies such as control, secrecy, and crisis orientation. These habits once created balance, yet they now delay decisions and dilute your agency when overused.",
+      "guidance": [
+        "Name your first preference before any discussion, then keep it visible as you consider input.",
+        "Set a decision deadline and limit consultation to two trusted sources.",
+        "Schedule weekly solo time to act without external feedback, then record results.",
+        "Practice clean disagreement by stating your position clearly."
+      ]
+    },
+    "Gemini": {
+      "meaning": "Past stability came from sagittarius strategies such as certainty, preaching, and bypassing nuance. These habits once created balance, yet they now delay decisions and dilute your agency when overused.",
+      "guidance": [
+        "Name your first preference before any discussion, then keep it visible as you consider input.",
+        "Set a decision deadline and limit consultation to two trusted sources.",
+        "Schedule weekly solo time to act without external feedback, then record results.",
+        "Practice clean disagreement by stating your position clearly."
+      ]
+    },
+    "Cancer": {
+      "meaning": "Past stability came from capricorn strategies such as rigidity, status focus, and productivity over presence. These habits once created balance, yet they now delay decisions and dilute your agency when overused.",
+      "guidance": [
+        "Name your first preference before any discussion, then keep it visible as you consider input.",
+        "Set a decision deadline and limit consultation to two trusted sources.",
+        "Schedule weekly solo time to act without external feedback, then record results.",
+        "Practice clean disagreement by stating your position clearly."
+      ]
+    },
+    "Leo": {
+      "meaning": "Past stability came from aquarius strategies such as detachment, abstraction, and group over person. These habits once created balance, yet they now delay decisions and dilute your agency when overused.",
+      "guidance": [
+        "Name your first preference before any discussion, then keep it visible as you consider input.",
+        "Set a decision deadline and limit consultation to two trusted sources.",
+        "Schedule weekly solo time to act without external feedback, then record results.",
+        "Practice clean disagreement by stating your position clearly."
+      ]
+    },
+    "Virgo": {
+      "meaning": "Past stability came from pisces strategies such as vagueness, escapism, and blurring of boundaries. These habits once created balance, yet they now delay decisions and dilute your agency when overused.",
+      "guidance": [
+        "Name your first preference before any discussion, then keep it visible as you consider input.",
+        "Set a decision deadline and limit consultation to two trusted sources.",
+        "Schedule weekly solo time to act without external feedback, then record results.",
+        "Practice clean disagreement by stating your position clearly."
+      ]
+    },
+    "Libra": {
+      "meaning": "Past stability came from aries strategies such as impatience, unilateral action, and struggle as identity. These habits once created balance, yet they now delay decisions and dilute your agency when overused.",
+      "guidance": [
+        "Name your first preference before any discussion, then keep it visible as you consider input.",
+        "Set a decision deadline and limit consultation to two trusted sources.",
+        "Schedule weekly solo time to act without external feedback, then record results.",
+        "Practice clean disagreement by stating your position clearly."
+      ]
+    },
+    "Scorpio": {
+      "meaning": "Past stability came from taurus strategies such as stagnation, comfort seeking, and resistance to necessary change. These habits once created balance, yet they now delay decisions and dilute your agency when overused.",
+      "guidance": [
+        "Name your first preference before any discussion, then keep it visible as you consider input.",
+        "Set a decision deadline and limit consultation to two trusted sources.",
+        "Schedule weekly solo time to act without external feedback, then record results.",
+        "Practice clean disagreement by stating your position clearly."
+      ]
+    },
+    "Sagittarius": {
+      "meaning": "Past stability came from gemini strategies such as mental circling, distraction, and information without integration. These habits once created balance, yet they now delay decisions and dilute your agency when overused.",
+      "guidance": [
+        "Name your first preference before any discussion, then keep it visible as you consider input.",
+        "Set a decision deadline and limit consultation to two trusted sources.",
+        "Schedule weekly solo time to act without external feedback, then record results.",
+        "Practice clean disagreement by stating your position clearly."
+      ]
+    },
+    "Capricorn": {
+      "meaning": "Past stability came from cancer strategies such as caretaking, mood-driven choices, and protective retreat. These habits once created balance, yet they now delay decisions and dilute your agency when overused.",
+      "guidance": [
+        "Name your first preference before any discussion, then keep it visible as you consider input.",
+        "Set a decision deadline and limit consultation to two trusted sources.",
+        "Schedule weekly solo time to act without external feedback, then record results.",
+        "Practice clean disagreement by stating your position clearly."
+      ]
+    },
+    "Aquarius": {
+      "meaning": "Past stability came from leo strategies such as ego validation, theatricality, and approval seeking. These habits once created balance, yet they now delay decisions and dilute your agency when overused.",
+      "guidance": [
+        "Name your first preference before any discussion, then keep it visible as you consider input.",
+        "Set a decision deadline and limit consultation to two trusted sources.",
+        "Schedule weekly solo time to act without external feedback, then record results.",
+        "Practice clean disagreement by stating your position clearly."
+      ]
+    },
+    "Pisces": {
+      "meaning": "Past stability came from virgo strategies such as over-analysis, perfectionism, and working to fix what is not broken. These habits once created balance, yet they now delay decisions and dilute your agency when overused.",
+      "guidance": [
+        "Name your first preference before any discussion, then keep it visible as you consider input.",
+        "Set a decision deadline and limit consultation to two trusted sources.",
+        "Schedule weekly solo time to act without external feedback, then record results.",
+        "Practice clean disagreement by stating your position clearly."
+      ]
+    }
+  },
+  
+  # NEW: Add house meanings
+  "houses": {
+    1: {
+      "meaning": "Identity, vitality, and beginnings. The arena of self-expression and personal initiative.",
+      "guidance": [
+        "Embody a weekly routine that anchors growth in real time.",
+        "Begin metrics that matter and track them for four weeks.",
+        "Declare one process and reduce friction points.",
+        "Show with someone affected and offer a clear contribution."
+      ]
+    },
+    2: {
+      "meaning": "Resources, self-worth, skills, and material steadiness. The arena of values and possessions.",
+      "guidance": [
+        "Budget a weekly routine that anchors growth in real time.",
+        "Own metrics that matter and track them for four weeks.",
+        "Develop one process and reduce friction points.",
+        "Price with someone affected and offer a clear contribution."
+      ]
+    },
+    3: {
+      "meaning": "Communication, craft, learning, and local networks. The arena of everyday interactions.",
+      "guidance": [
+        "Study a weekly routine that anchors growth in real time.",
+        "Practice metrics that matter and track them for four weeks.",
+        "Publish one process and reduce friction points.",
+        "Map with someone affected and offer a clear contribution."
+      ]
+    },
+    4: {
+      "meaning": "Home, roots, lineage, and emotional security. The arena of foundation and belonging.",
+      "guidance": [
+        "Nest a weekly routine that anchors growth in real time.",
+        "Repair metrics that matter and track them for four weeks.",
+        "Record one process and reduce friction points.",
+        "Re-parent with someone affected and offer a clear contribution."
+      ]
+    },
+    5: {
+      "meaning": "Creative expression, romance, play, and personal joy. The arena of heart and creativity.",
+      "guidance": [
+        "Play a weekly routine that anchors growth in real time.",
+        "Compose metrics that matter and track them for four weeks.",
+        "Perform one process and reduce friction points.",
+        "Risk with someone affected and offer a clear contribution."
+      ]
+    },
+    6: {
+      "meaning": "Work, service, health, and daily improvements. The arena of practical application.",
+      "guidance": [
+        "Schedule a weekly routine that anchors growth in real time.",
+        "Measure metrics that matter and track them for four weeks.",
+        "Iterate one process and reduce friction points.",
+        "Serve with someone affected and offer a clear contribution."
+      ]
+    },
+    7: {
+      "meaning": "Partnerships, agreements, and mutuality. The arena of relationship and collaboration.",
+      "guidance": [
+        "Contract a weekly routine that anchors growth in real time.",
+        "Clarify metrics that matter and track them for four weeks.",
+        "Relate one process and reduce friction points.",
+        "Negotiate with someone affected and offer a clear contribution."
+      ]
+    },
+    8: {
+      "meaning": "Intimacy, shared resources, vulnerability, and transformation. The arena of depth and change.",
+      "guidance": [
+        "Audit a weekly routine that anchors growth in real time.",
+        "Disclose metrics that matter and track them for four weeks.",
+        "Consolidate one process and reduce friction points.",
+        "Heal with someone affected and offer a clear contribution."
+      ]
+    },
+    9: {
+      "meaning": "Beliefs, higher learning, travel, and publishing. The arena of meaning and expansion.",
+      "guidance": [
+        "Apprentice a weekly routine that anchors growth in real time.",
+        "Research metrics that matter and track them for four weeks.",
+        "Pilgrim one process and reduce friction points.",
+        "Synthesize with someone affected and offer a clear contribution."
+      ]
+    },
+    10: {
+      "meaning": "Career, reputation, achievement, and responsibility. The arena of public contribution.",
+      "guidance": [
+        "Plan a weekly routine that anchors growth in real time.",
+        "Deliver metrics that matter and track them for four weeks.",
+        "Govern one process and reduce friction points.",
+        "Announce with someone affected and offer a clear contribution."
+      ]
+    },
+    11: {
+      "meaning": "Communities, networks, causes, and future vision. The arena of collective purpose.",
+      "guidance": [
+        "Organize a weekly routine that anchors growth in real time.",
+        "Convene metrics that matter and track them for four weeks.",
+        "Prototype one process and reduce friction points.",
+        "Advocate with someone affected and offer a clear contribution."
+      ]
+    },
+    12: {
+      "meaning": "Rest, retreat, spiritual practice, and the unconscious. The arena of transcendence and release.",
+      "guidance": [
+        "Release a weekly routine that anchors growth in real time.",
+        "Meditate metrics that matter and track them for four weeks.",
+        "Journal one process and reduce friction points.",
+        "Restore with someone affected and offer a clear contribution."
+      ]
+    }
   }
+}
 }
 
