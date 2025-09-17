@@ -4877,6 +4877,8 @@ KNOWLEDGE_BASE = {
         "Journal one process and reduce friction points.",
         "Restore with someone affected and offer a clear contribution."
       ],
+      },
+    },
   "north_node_combinations": {
   "aries_1": {
     "north_sign": "Aries",
