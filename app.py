@@ -766,19 +766,20 @@ def process_form():
         data = request.json
         
         # Log each expected field
-        print("Date:", data.get('date'))
-        print("Time:", data.get('time'))
-        print("City:", data.get('city'))
-        print("Country:", data.get('country'))
-        print("Email:", data.get('email'))
+           data.get('Birth Date')
+           data.get('Birth Time')
+           data.get('City')
+           data.get('Country')
+           data.get('Email')
+
         
         # Calculate nodes and big three
         chart_data = calculate_nodes_and_big_three(
-            data['date'],
-            data.get('time', '12:00'),
-            data['city'],
-            data['country']
-        )
+           data['Birth Date'],
+           data.get('Birth Time', '12:00'),
+           data['City'],
+           data['Country']
+     )
         
         # Generate full report
         report_text = generate_full_report(chart_data)
