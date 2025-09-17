@@ -171,57 +171,96 @@ def generate_full_report(chart_data):
         report.append(f"North Node in {north_node['sign']} • South Node in {south_node['sign']}")
         report.append("")
 
-        # North Node
+        # North Node - bulletproof lookups
         report.append("NORTH NODE GUIDANCE")
         report.append("-" * 20)
         north_sign_data = KNOWLEDGE_BASE["north_nodes"][north_node["sign"]]
+        
+        # Handle multiple possible key names for meaning
+        north_meaning = (north_sign_data.get("meaning") or 
+                        north_sign_data.get("north_meaning") or 
+                        "This placement guides your soul's growth.")
+        
+        # Handle multiple possible key names for guidance
+        north_guidance = (north_sign_data.get("guidance") or 
+                         north_sign_data.get("north_guidance_sign") or 
+                         north_sign_data.get("north_guidance") or [])
+        
         report.append(
             f"Your North Node in {north_node['sign']} reveals your soul's primary growth direction. "
-            f"{north_sign_data['meaning']} This placement asks you to embrace qualities that may feel "
+            f"{north_meaning} This placement asks you to embrace qualities that may feel "
             f"unfamiliar or challenging at first, but will ultimately lead to fulfillment."
         )
         report.append("")
 
-        report.append("To develop these qualities, focus on practical steps:")
-        for i, guidance in enumerate(north_sign_data['guidance']):
-            guidance_clean = guidance.rstrip('.').lower()
-            if i == 0:
-                report.append(f"Start by {guidance_clean}.")
-            elif i == len(north_sign_data['guidance']) - 1:
-                report.append(f"Most importantly, {guidance_clean}.")
-            else:
-                report.append(f"Additionally, {guidance_clean}.")
-        report.append("")
-
-        # House Guidance
-        if north_node.get("house"):
-            house_data = KNOWLEDGE_BASE["houses"][north_node["house"]]
-            report.append(f"Your North Node's placement in the {north_node['house']}th house adds depth. "
-                          f"{house_data['meaning']} This shows the life areas where your {north_node['sign']} growth "
-                          f"will be most transformative.")
-            for i, guidance in enumerate(house_data['guidance']):
+        if north_guidance:
+            report.append("To develop these qualities, focus on practical steps:")
+            for i, guidance in enumerate(north_guidance):
                 guidance_clean = guidance.rstrip('.').lower()
                 if i == 0:
-                    report.append(f"Begin by learning to {guidance_clean}.")
-                elif i == len(house_data['guidance']) - 1:
-                    report.append(f"Most importantly, focus on how to {guidance_clean}.")
+                    report.append(f"Start by {guidance_clean}.")
+                elif i == len(north_guidance) - 1:
+                    report.append(f"Most importantly, {guidance_clean}.")
                 else:
-                    report.append(f"Practice {guidance_clean}.")
+                    report.append(f"Additionally, {guidance_clean}.")
             report.append("")
 
-        # South Node
+        # House Guidance - bulletproof lookups
+        if north_node.get("house"):
+            house_data = KNOWLEDGE_BASE["houses"][str(north_node["house"])]
+            
+            # Handle multiple possible key names for house meaning
+            house_meaning = (house_data.get("meaning") or 
+                           house_data.get("focus") or 
+                           house_data.get("north_meaning") or 
+                           "This house placement adds depth to your growth.")
+            
+            # Handle multiple possible key names for house guidance
+            house_guidance = (house_data.get("guidance") or 
+                            house_data.get("north_guidance_house") or 
+                            house_data.get("north_guidance") or [])
+            
+            report.append(f"Your North Node's placement in the {north_node['house']}th house adds depth. "
+                          f"{house_meaning} This shows the life areas where your {north_node['sign']} growth "
+                          f"will be most transformative.")
+            
+            if house_guidance:
+                for i, guidance in enumerate(house_guidance):
+                    guidance_clean = guidance.rstrip('.').lower()
+                    if i == 0:
+                        report.append(f"Begin by learning to {guidance_clean}.")
+                    elif i == len(house_guidance) - 1:
+                        report.append(f"Most importantly, focus on how to {guidance_clean}.")
+                    else:
+                        report.append(f"Practice {guidance_clean}.")
+                report.append("")
+
+        # South Node - bulletproof lookups
         report.append("SOUTH NODE AWARENESS")
         report.append("-" * 20)
         south_sign_data = KNOWLEDGE_BASE["south_nodes"][south_node["sign"]]
+        
+        # Handle multiple possible key names for patterns
+        south_patterns = (south_sign_data.get("patterns") or 
+                         south_sign_data.get("south_patterns") or 
+                         south_sign_data.get("meaning") or 
+                         "familiar patterns from past experiences")
+        
+        # Handle multiple possible key names for south guidance
+        south_guidance = (south_sign_data.get("guidance") or 
+                         south_sign_data.get("south_guidance") or [])
+        
         report.append(
             f"Your South Node in {south_node['sign']} represents gifts and patterns from past lifetimes. "
-            f"The challenge lies in {south_sign_data['patterns'].lower()} — familiar tendencies that can hold "
+            f"The challenge lies in {south_patterns.lower()} — familiar tendencies that can hold "
             f"you back if overused."
         )
-        report.append("To find balance, practice awareness in these areas:")
-        for guidance in south_sign_data['guidance']:
-            report.append(f"- {guidance}")
-        report.append("")
+        
+        if south_guidance:
+            report.append("To find balance, practice awareness in these areas:")
+            for guidance in south_guidance:
+                report.append(f"- {guidance}")
+            report.append("")
 
         # Sun Interaction
         report.append("YOUR NODES AND SUN SIGN")
