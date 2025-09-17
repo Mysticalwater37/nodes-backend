@@ -327,6 +327,8 @@ def generate_full_report(chart_data):
 
         report.append("NORTH NODE GUIDANCE")
         report.append("-" * 20)
+        print(f"Looking for north node sign: '{north_node['sign']}'")
+        print(f"Available signs: {list(KNOWLEDGE_BASE['north_nodes'].keys())}")
         north_sign_data = KNOWLEDGE_BASE["north_nodes"][north_node["sign"]]
         report.append(f"Your North Node in {north_node['sign']} reveals your soul's primary growth direction in this lifetime. {north_sign_data['meaning']} This placement asks you to embrace qualities that may feel unfamiliar or challenging at first, but will ultimately lead to your greatest fulfillment and spiritual evolution.")
         report.append("")
