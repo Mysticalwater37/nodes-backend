@@ -20,6 +20,9 @@ app = Flask(__name__)
 import logging
 logging.basicConfig(level=logging.DEBUG)
 
+print("=== APP STARTING - IMPORTS SUCCESSFUL ===")  # Add this line
+print(f"KNOWLEDGE_BASE loaded with keys: {list(KNOWLEDGE_BASE.keys())}")  # Add this line
+
 @app.route('/test', methods=['GET'])
 def test():
     print("TEST ROUTE WORKING")
