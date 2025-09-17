@@ -350,7 +350,6 @@ def generate_full_report(chart_data):
         report.append("")
         
         report.append("Astrology is interpretive and meant for reflection only.")
-        
         return "\n".join(report)
     except Exception as e:
         raise Exception(f"Report generation error: {str(e)}")
