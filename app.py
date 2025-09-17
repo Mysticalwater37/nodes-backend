@@ -26,7 +26,12 @@ print(f"KNOWLEDGE_BASE loaded with keys: {list(KNOWLEDGE_BASE.keys())}")  # Add 
 @app.route('/test', methods=['GET'])
 def test():
     print("TEST ROUTE WORKING")
-    return jsonify({"status": "test successful"})
+    print("=== CHECKING KNOWLEDGE BASE ===")
+    print(f"KNOWLEDGE_BASE keys: {list(KNOWLEDGE_BASE.keys())}")
+    return jsonify({
+        "status": "test successful", 
+        "kb_keys": list(KNOWLEDGE_BASE.keys())
+    })
 
 # Path to Swiss Ephemeris data files
 swe.set_ephe_path('.')  
