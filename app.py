@@ -762,39 +762,39 @@ def process_form():
         # Log the raw request data for debugging
         print("Raw request data:", request.data)
         print("Request JSON:", request.json)
-        
-        data = request.json
-        
-        # Log each expected field
-           data.get('Birth Date')
-           data.get('Birth Time')
-           data.get('City')
-           data.get('Country')
-           data.get('Email')
 
-        
+        data = request.json
+
+        # Log each expected field
+        print("Birth Date:", data.get('Birth Date'))
+        print("Birth Time:", data.get('Birth Time'))
+        print("City:", data.get('City'))
+        print("Country:", data.get('Country'))
+        print("Email:", data.get('Email'))
+
         # Calculate nodes and big three
         chart_data = calculate_nodes_and_big_three(
-           data['Birth Date'],
-           data.get('Birth Time', '12:00'),
-           data['City'],
-           data['Country']
-     )
-        
+            data['Birth Date'],
+            data.get('Birth Time', '12:00'),
+            data['City'],
+            data['Country']
+        )
+
         # Generate full report
         report_text = generate_full_report(chart_data)
-        
+
         # Create PDF
         pdf_path = create_pdf_report(report_text)
-        
+
         # Send email
-        send_report_email(data['email'], report_text, pdf_path)
-        
+        send_report_email(data['Email'], report_text, pdf_path)
+
         return jsonify({"status": "success", "message": "Report sent successfully"})
-        
+
     except Exception as e:
         print("Error in process_form:", str(e))
         return jsonify({"error": str(e)}), 400
+
 
 @app.route('/download/<file_id>', methods=['GET'])
 def download_file(file_id):
