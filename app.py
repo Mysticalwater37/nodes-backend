@@ -30,7 +30,6 @@ SIGNS = [
 ]
 
 # Hardcoded knowledge base (from your JSON file)
-    },
     "south_nodes": {
         "Aries": {
             "patterns": "Over-focus on self, impulsivity, neglect of cooperation.",
