@@ -14,7 +14,7 @@ import uuid
 import os
 import resend
 import base64
-from knowledgebase import KNOWLEDGE_BASE
+from knowledge_base import KNOWLEDGE_BASE
 
 app = Flask(__name__)
 
