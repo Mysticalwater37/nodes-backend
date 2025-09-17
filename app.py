@@ -16,6 +16,9 @@ import resend
 import base64
 from flask import Flask, jsonify  # Add this import
 from knowledge_base import KNOWLEDGE_BASE
+import knowledge_base as kb
+print(">>> LOADED KNOWLEDGE_BASE KEYS:", list(kb.KNOWLEDGE_BASE.keys()))
+print(">>> LOADED FROM FILE:", kb.__file__)
 app = Flask(__name__)
 import logging
 logging.basicConfig(level=logging.DEBUG)
