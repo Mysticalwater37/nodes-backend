@@ -4544,19 +4544,6 @@ KNOWLEDGE_BASE = {
      }
   },
   
-  KNOWLEDGE_BASE = {
-  "sun_signs": {
-    # ... your existing sun_signs data stays the same
-  },
-  
-  "moon_signs": {
-    # ... your existing moon_signs data stays the same  
-  },
-  
-  "rising_signs": {
-    # ... your existing rising_signs data stays the same
-  },
-  
   # NEW: Extract north node sign meanings
   "north_nodes": {
     "Aries": {
