@@ -4543,8 +4543,6 @@ KNOWLEDGE_BASE = {
       "combined_insight": "The journey moves from virgo habits anchored in the 6th house to pisces initiative expressed through the 12th house. As you shift from managing perceptions to directing action, relationships with people and systems become cleaner and more honest.\n\nThe evolutionary purpose is integrity. By developing the mysticism, empathy, and creative transcendence of pisces in the concrete arena of the 12th house, you align identity and behavior, which strengthens trust, resilience, and meaningful contribution."
      }
   },
-  
-  # NEW: Extract north node sign meanings
   "north_nodes": {
     "Aries": {
       "meaning": "Your growth path in Aries develops through claiming authorship, direct action, courage, and the capacity to move while the insight is fresh. This North Node asks you to trust your native aries gifts and apply them deliberately. Progress comes from practice and contact with real conditions rather than theory alone.",
@@ -4655,8 +4653,6 @@ KNOWLEDGE_BASE = {
       ]
     }
   },
-  
-  # NEW: Extract south node sign meanings (opposite of north nodes)
   "south_nodes": {
     "Aries": {
       "meaning": "Past stability came from libra strategies such as pleasing, over-consulting, and dependence on external harmony. These habits once created balance, yet they now delay decisions and dilute your agency when overused.",
@@ -4767,8 +4763,6 @@ KNOWLEDGE_BASE = {
       ]
     }
   },
-  
-  # NEW: Add house meanings
   "houses": {
     1: {
       "meaning": "Identity, vitality, and beginnings. The arena of self-expression and personal initiative.",
