@@ -207,7 +207,7 @@ def generate_full_report(chart_data):
 
         # House Guidance - bulletproof lookups
         if north_node.get("house"):
-            house_data = KNOWLEDGE_BASE["houses"][str(north_node["house"])]
+            house_data = KNOWLEDGE_BASE["houses"][north_node["house"]]
             
             # Handle multiple possible key names for house meaning
             house_meaning = (house_data.get("meaning") or 
