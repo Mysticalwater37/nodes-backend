@@ -502,7 +502,7 @@ def create_html_report(chart_data):
             north_guidance_html += f"<li>{guidance}</li>"
         
         south_guidance_html = ""
-        south_patterns = south_sign_data.get("patterns") or south_sign_data.get("south_patterns") or ""
+        south_patterns = south_sign_data.get("patterns") or south_sign_data.get("meaning") or ""
         south_guidance = south_sign_data.get("guidance") or south_sign_data.get("south_guidance") or []
         
         for guidance in south_guidance:
