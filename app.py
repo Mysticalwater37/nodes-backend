@@ -472,6 +472,65 @@ def create_pdf_report(report_text):
     doc.build(story)
     return filepath
 
+def create_html_report(chart_data):
+    """Generate HTML report using template"""
+    try:
+        # Read the HTML template
+        with open('template.html', 'r', encoding='utf-8') as f:
+            html_template = f.read()
+        
+        # Get data from chart_data
+        north_node = chart_data["north_node"]
+        south_node = chart_data["south_node"]
+        
+        # Get knowledge base data
+        north_sign_data = KNOWLEDGE_BASE["north_nodes"][north_node["sign"]]
+        south_sign_data = KNOWLEDGE_BASE["south_nodes"][south_node["sign"]]
+        
+        if north_node.get("house"):
+            house_data = KNOWLEDGE_BASE["houses"][north_node["house"]]
+            house_meaning = house_data.get("meaning", "House guidance")
+        else:
+            house_meaning = "House placement not available"
+        
+        # Format guidance lists as HTML
+        north_guidance_html = ""
+        north_meaning = north_sign_data.get("meaning") or north_sign_data.get("north_meaning") or ""
+        north_guidance = north_sign_data.get("guidance") or north_sign_data.get("north_guidance_sign") or []
+        
+        for guidance in north_guidance:
+            north_guidance_html += f"<li>{guidance}</li>"
+        
+        south_guidance_html = ""
+        south_patterns = south_sign_data.get("patterns") or south_sign_data.get("south_patterns") or ""
+        south_guidance = south_sign_data.get("guidance") or south_sign_data.get("south_guidance") or []
+        
+        for guidance in south_guidance:
+            south_guidance_html += f"<li>{guidance}</li>"
+        
+        # Replace placeholders
+        html_content = html_template.replace('{sun_sign}', chart_data['sun_sign'])
+        html_content = html_content.replace('{moon_sign}', chart_data['moon_sign'])
+        html_content = html_content.replace('{rising_sign}', chart_data['rising_sign'])
+        html_content = html_content.replace('{north_node_sign}', north_node['sign'])
+        html_content = html_content.replace('{south_node_sign}', south_node['sign'])
+        html_content = html_content.replace('{north_node_meaning}', north_meaning)
+        html_content = html_content.replace('{north_node_guidance_items}', north_guidance_html)
+        html_content = html_content.replace('{north_node_house}', str(north_node.get('house', 'Unknown')))
+        html_content = html_content.replace('{house_meaning}', house_meaning)
+        html_content = html_content.replace('{south_node_patterns}', south_patterns)
+        html_content = html_content.replace('{south_node_guidance_items}', south_guidance_html)
+        
+        # Integration text (simplified for now)
+        html_content = html_content.replace('{sun_integration}', f"Your {chart_data['sun_sign']} Sun supports your North Node growth.")
+        html_content = html_content.replace('{moon_integration}', f"Your {chart_data['moon_sign']} Moon provides emotional support for your path.")
+        html_content = html_content.replace('{rising_integration}', f"Your {chart_data['rising_sign']} Rising influences how you approach your growth.")
+        
+        return html_content
+        
+    except Exception as e:
+        raise Exception(f"HTML report generation error: {str(e)}")
+
 def send_report_email(email, report_text, pdf_path):
     """Send report via email"""
     try:
