@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodal Pathways Report</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            line-height: 1.7;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            color: #2c3654;
+            background: linear-gradient(180deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        .header {
+            text-align: center;
+            background: linear-gradient(180deg, #e8f4f8 0%, #b8d4e3 30%, #7fb3d3 70%, #2c3e50 100%);
+            color: #2c3e50;
+            padding: 60px 30px;
+            margin: -40px -20px 40px -20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: "✦ ☾ ✧ ⟡ ✦ ☽ ✧ ⊹ ✦ ☾ ✧ ⟡";
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.2em;
+            opacity: 0.4;
+            color: #5d9cec;
+            letter-spacing: 20px;
+        }
+        
+        .header::after {
+            content: "◊ ◊ ◊ ◊ ◊ ◊ ◊ ◊ ◊ ◊ ◊ ◊";
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8em;
+            opacity: 0.3;
+            color: #2c3e50;
+            letter-spacing: 15px;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.6em;
+            margin: 30px 0 20px 0;
+            letter-spacing: 3px;
+            text-shadow: 0 2px 4px rgba(255,255,255,0.3);
+            position: relative;
+            z-index: 2;
+        }
+        
+        .blueprint {
+            background: linear-gradient(135deg, rgba(147, 112, 219, 0.1) 0%, rgba(93, 156, 236, 0.1) 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border: 1px solid rgba(93, 156, 236, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        
+        .blueprint h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            font-size: 1.4em;
+        }
+        
+        .blueprint .chart-info {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #34495e;
+            margin: 15px 0;
+        }
+        
+        .section {
+            margin: 40px 0;
+            padding: 30px 0;
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            font-size: 1.6em;
+            margin-bottom: 25px;
+        }
+        
+        .section h3 {
+            color: #34495e;
+            font-size: 1.3em;
+            margin: 25px 0 15px 0;
+        }
+        
+        .guidance-list {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .guidance-list li {
+            margin: 12px 0;
+            padding-left: 10px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #d8bfd8 0%, #e6e6fa 100%);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #9370db;
+        }
+        
+        .integration {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 5px solid #2196f3;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #bdc3c7;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        @media print {
+            body { padding: 20px; }
+            .section { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Nodal Pathways Report</h1>
+    </div>
+    
+    <div class="blueprint">
+        <h2>Your Astrological Blueprint</h2>
+        <div class="chart-info">
+            Sun in {sun_sign} • Moon in {moon_sign} • Rising in {rising_sign}
+        </div>
+        <div class="chart-info">
+            North Node in {north_node_sign} • South Node in {south_node_sign}
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>North Node Guidance</h2>
+        <p>Your North Node in <strong>{north_node_sign}</strong> reveals your soul's primary growth direction. {north_node_meaning}</p>
+        
+        <div class="guidance-list">
+            <h3>Practical Steps for Growth:</h3>
+            <ul>
+                {north_node_guidance_items}
+            </ul>
+        </div>
+        
+        <div class="highlight">
+            <h3>House Placement: {north_node_house}th House</h3>
+            <p>{house_meaning} This shows the life areas where your {north_node_sign} growth will be most transformative.</p>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>South Node Awareness</h2>
+        <p>Your South Node in <strong>{south_node_sign}</strong> represents gifts and patterns from past experiences. {south_node_patterns}</p>
+        
+        <div class="guidance-list">
+            <h3>Areas for Balance:</h3>
+            <ul>
+                {south_node_guidance_items}
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Integration with Your Big Three</h2>
+        
+        <h3>Your Sun Sign Connection</h3>
+        <p>{sun_integration}</p>
+        
+        <h3>Your Moon Sign Connection</h3>
+        <p>{moon_integration}</p>
+        
+        <h3>Your Rising Sign Connection</h3>
+        <p>{rising_integration}</p>
+    </div>
+    
+    <div class="integration">
+        <h2>Integrated Guidance</h2>
+        <p>Your journey moves from {south_node_sign} patterns toward {north_node_sign} mastery. Use your {sun_sign} Sun, {moon_sign} Moon, and {rising_sign} Rising together to support this growth.</p>
+    </div>
+    
+    <div class="footer">
+        <p>Astrology is interpretive and meant for reflection only.</p>
+        <p>© Nodal Pathways</p>
+    </div>
+</body>
+</html>
