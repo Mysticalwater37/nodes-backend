@@ -6,4 +6,4 @@ timezonefinder
 pytz
 reportlab
 resend
-uuid
+weasyprint
