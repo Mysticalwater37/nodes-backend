@@ -632,18 +632,19 @@ def process_form():
         )
         print(f"Chart calculation completed: {chart_data}")
         
-        print("=== ABOUT TO GENERATE REPORT ===")
-        report_text = generate_full_report(chart_data)
-        print("Report generation completed")
+        print("=== ABOUT TO GENERATE HTML REPORT ===")
+        html_content = create_html_report(chart_data)
+        print("HTML report generation completed")
         
-        print("=== ABOUT TO CREATE PDF ===")
-        pdf_path = create_pdf_report(report_text)
-        print(f"PDF created at {pdf_path}")
+        print("=== ABOUT TO CREATE PDF FROM HTML ===")
+        pdf_path = f"report_{uuid.uuid4()}.pdf"
+        HTML(string=html_content).write_pdf(pdf_path)
+        print(f"Styled PDF created at {pdf_path}")
         
         print("=== ABOUT TO SEND EMAIL ===")
         send_report_email(
             data['Email'],
-            report_text,
+            html_content,
             pdf_path
         )
         print("Email sent successfully")
