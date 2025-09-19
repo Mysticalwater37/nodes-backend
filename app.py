@@ -560,7 +560,7 @@ def create_pdf_report(report_text):
     return filepath
 
 def create_html_report(chart_data, ai_content, first_name):
-    """Generate HTML report with white background and large readable fonts"""
+    """Generate HTML report with dark blue background and properly formatted headers"""
     try:
         # Create chart basics section
         chart_basics = f"""
@@ -575,7 +575,7 @@ def create_html_report(chart_data, ai_content, first_name):
         </div>
         """
         
-        # Create the complete HTML with white background and large fonts
+        # Create the complete HTML with dark blue background and large readable fonts
         html_content = f"""
         <!DOCTYPE html>
         <html>
@@ -600,8 +600,8 @@ def create_html_report(chart_data, ai_content, first_name):
                     font-family: 'Inter', sans-serif;
                     font-size: 22px;
                     line-height: 1.8;
-                    background: #ffffff;
-                    color: #1a1a1a;
+                    background: linear-gradient(135deg, #4a5568 0%, #2d3748 30%, #1a202c 100%);
+                    color: #ffffff;
                     min-height: 100vh;
                     padding: 40px 0;
                 }}
@@ -609,33 +609,51 @@ def create_html_report(chart_data, ai_content, first_name):
                 .container {{
                     max-width: 100%;
                     margin: 0 auto;
-                    background: #ffffff;
-                    border-radius: 20px;
+                    background: rgba(26, 32, 44, 0.95);
+                    border-radius: 24px;
                     overflow: hidden;
-                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-                    border: 2px solid #d4af37;
+                    border: 1px solid rgba(237, 213, 152, 0.2);
+                    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
                 }}
                 
                 .header {{
                     text-align: center;
                     padding: 60px 40px 40px 40px;
-                    background: linear-gradient(135deg, #f8f6f0 0%, #ffffff 100%);
-                    border-bottom: 3px solid #d4af37;
+                    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+                    position: relative;
+                    overflow: hidden;
+                }}
+                
+                .header::before {{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: radial-gradient(circle at 30% 20%, rgba(237, 213, 152, 0.1) 0%, transparent 50%),
+                                radial-gradient(circle at 70% 80%, rgba(237, 213, 152, 0.08) 0%, transparent 50%);
+                    pointer-events: none;
                 }}
                 
                 .header h1 {{
                     font-family: 'Playfair Display', serif;
                     font-size: 3.8em;
-                    color: #d4af37;
+                    color: #edd598;
                     margin-bottom: 20px;
-                    font-weight: 600;
+                    font-weight: 500;
                     letter-spacing: -1px;
+                    position: relative;
+                    z-index: 1;
                 }}
                 
                 .header .subtitle {{
                     font-size: 1.5em;
-                    color: #666666;
+                    color: #cbd5e0;
                     font-weight: 400;
+                    position: relative;
+                    z-index: 1;
+                    opacity: 0.9;
                     text-align: center;
                 }}
                 
@@ -646,11 +664,11 @@ def create_html_report(chart_data, ai_content, first_name):
                 
                 .chart-basics h3 {{
                     font-family: 'Playfair Display', serif;
-                    color: #d4af37;
+                    color: #edd598;
                     text-align: center;
                     margin-bottom: 35px;
                     font-size: 2.2em;
-                    font-weight: 600;
+                    font-weight: 500;
                 }}
                 
                 .basics-grid {{
@@ -660,24 +678,25 @@ def create_html_report(chart_data, ai_content, first_name):
                 }}
                 
                 .basic-item {{
-                    background: #f9f7f1;
-                    border: 2px solid #d4af37;
-                    padding: 28px;
-                    border-radius: 15px;
+                    background: rgba(255, 255, 255, 0.05);
+                    border: 1px solid rgba(237, 213, 152, 0.2);
+                    padding: 28px 22px;
+                    border-radius: 12px;
                     font-size: 1.3em;
-                    font-weight: 500;
-                    color: #1a1a1a;
+                    font-weight: 400;
+                    color: #e2e8f0;
                     transition: all 0.2s ease;
-                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+                    backdrop-filter: blur(10px);
                 }}
                 
                 .basic-item:hover {{
-                    transform: translateY(-2px);
-                    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+                    background: rgba(255, 255, 255, 0.08);
+                    border-color: rgba(237, 213, 152, 0.3);
+                    transform: translateY(-1px);
                 }}
                 
                 .basic-item strong {{
-                    color: #d4af37;
+                    color: #edd598;
                     font-weight: 600;
                     display: inline-block;
                     margin-right: 8px;
@@ -685,31 +704,23 @@ def create_html_report(chart_data, ai_content, first_name):
                 
                 .report-content {{
                     padding: 50px 40px;
-                    background: #ffffff;
                 }}
                 
                 h2 {{
                     font-family: 'Playfair Display', serif;
-                    color: #d4af37;
+                    color: #edd598;
                     font-size: 2.6em;
-                    margin: 50px 0 35px 0;
+                    margin: 30px 0 35px 0;
                     text-align: center;
-                    font-weight: 600;
+                    font-weight: 500;
                     position: relative;
-                }}
-                
-                h2::before,
-                h2::after {{
-                    content: "✦";
-                    margin: 0 20px;
-                    font-size: 0.7em;
-                    opacity: 0.8;
-                    color: #d4af37;
+                    letter-spacing: -0.5px;
+                    line-height: 1.2;
                 }}
                 
                 p {{
                     margin-bottom: 28px;
-                    color: #2c2c2c;
+                    color: #e2e8f0;
                     text-align: justify;
                     font-size: 1.4em;
                     line-height: 1.9;
@@ -724,34 +735,45 @@ def create_html_report(chart_data, ai_content, first_name):
                 .footer {{
                     text-align: center;
                     padding: 50px 40px;
-                    background: linear-gradient(135deg, #f8f6f0 0%, #ffffff 100%);
-                    color: #666666;
+                    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+                    color: #a0aec0;
                     font-size: 1.2em;
-                    border-top: 3px solid #d4af37;
+                    position: relative;
+                }}
+                
+                .footer::before {{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    height: 2px;
+                    background: linear-gradient(90deg, transparent 0%, #edd598 50%, transparent 100%);
                 }}
                 
                 .footer .logo {{
                     font-family: 'Playfair Display', serif;
-                    color: #d4af37;
+                    color: #edd598;
                     font-size: 1.6em;
                     margin-bottom: 15px;
-                    font-weight: 600;
+                    font-weight: 500;
                 }}
                 
                 .disclaimer {{
-                    background: rgba(212, 175, 55, 0.1);
-                    border: 2px solid #d4af37;
-                    border-radius: 15px;
+                    background: rgba(237, 213, 152, 0.1);
+                    border: 1px solid rgba(237, 213, 152, 0.3);
+                    border-radius: 16px;
                     padding: 35px;
                     margin: 50px 40px;
-                    color: #4a4a4a;
+                    color: #cbd5e0;
                     text-align: center;
                     line-height: 1.8;
                     font-size: 1.2em;
+                    backdrop-filter: blur(10px);
                 }}
                 
                 .disclaimer strong {{
-                    color: #d4af37;
+                    color: #edd598;
                     font-weight: 600;
                 }}
                 
@@ -763,13 +785,12 @@ def create_html_report(chart_data, ai_content, first_name):
                     }}
                     
                     .container {{
-                        border-radius: 15px;
+                        border-radius: 16px;
                         margin: 0;
-                        border-width: 1px;
                     }}
                     
                     .header {{
-                        padding: 50px 25px 35px 25px;
+                        padding: 50px 30px 35px 30px;
                     }}
                     
                     .header h1 {{
@@ -781,7 +802,7 @@ def create_html_report(chart_data, ai_content, first_name):
                     }}
                     
                     .chart-basics {{
-                        margin: 35px 20px;
+                        margin: 35px 25px;
                     }}
                     
                     .chart-basics h3 {{
@@ -805,12 +826,7 @@ def create_html_report(chart_data, ai_content, first_name):
                     
                     h2 {{
                         font-size: 2.4em;
-                        margin: 40px 0 30px 0;
-                    }}
-                    
-                    h2::before,
-                    h2::after {{
-                        display: none;
+                        margin: 25px 0 30px 0;
                     }}
                     
                     p {{
@@ -859,7 +875,7 @@ def create_html_report(chart_data, ai_content, first_name):
         <body>
             <div class="container">
                 <div class="header">
-                    <h1>⭐ Nodal Pathways ⭐</h1>
+                    <h1>Nodal Pathways</h1>
                     <div class="subtitle">Personalized Astrological Report for {first_name}</div>
                 </div>
                 
@@ -877,7 +893,7 @@ def create_html_report(chart_data, ai_content, first_name):
                 </div>
                 
                 <div class="footer">
-                    <div class="logo">⭐ Nodal Pathways ⭐</div>
+                    <div class="logo">Nodal Pathways</div>
                     <p>Guiding you on your cosmic journey of self-discovery</p>
                 </div>
             </div>
