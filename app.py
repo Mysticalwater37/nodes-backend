@@ -383,7 +383,7 @@ def generate_pdf_with_playwright(html_content):
         pdf_bytes = page.pdf(
             format='A4',
             margin={
-                'top': '0.75in',
+                'top': '1.25in',   
                 'right': '0.75in', 
                 'bottom': '0.75in',
                 'left': '0.75in'
