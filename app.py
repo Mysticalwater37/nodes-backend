@@ -4,30 +4,16 @@ from geopy.geocoders import Nominatim
 from timezonefinder import TimezoneFinder
 from datetime import datetime
 import pytz
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak
-from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
-from reportlab.lib.units import inch
-from reportlab.lib.pagesizes import letter
-from reportlab.lib.colors import HexColor
-from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_JUSTIFY
 import uuid
 import os
 import resend
 import base64
-from knowledge_base import KNOWLEDGE_BASE
-import knowledge_base as kb
-from weasyprint import HTML
 import openai 
 from playwright.sync_api import sync_playwright
-print(">>> LOADED KNOWLEDGE_BASE KEYS:", list(kb.KNOWLEDGE_BASE.keys()))
-print(">>> LOADED FROM FILE:", kb.__file__)
 app = Flask(__name__)
 import logging
 logging.basicConfig(level=logging.DEBUG)
 openai.api_key = os.getenv("OPENAI_API_KEY")
-
-print("=== APP STARTING - IMPORTS SUCCESSFUL ===")  # Add this line
-print(f"KNOWLEDGE_BASE loaded with keys: {list(KNOWLEDGE_BASE.keys())}")  # Add this line
 
 @app.route('/test', methods=['GET'])
 def test():
