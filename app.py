@@ -20,6 +20,7 @@ from weasyprint import HTML
 print(">>> LOADED KNOWLEDGE_BASE KEYS:", list(kb.KNOWLEDGE_BASE.keys()))
 print(">>> LOADED FROM FILE:", kb.__file__)
 app = Flask(__name__)
+openai.api_key = os.getenv("OPENAI_API_KEY")
 import logging
 logging.basicConfig(level=logging.DEBUG)
 
@@ -308,6 +309,49 @@ def generate_full_report(chart_data):
     except Exception as e:
         raise Exception(f"Report generation error: {str(e)}")
 
+def generate_ai_report(chart_data, first_name):
+    sun_sign = chart_data.get('sun_sign', 'Unknown')
+    moon_sign = chart_data.get('moon_sign', 'Unknown') 
+    rising_sign = chart_data.get('rising_sign', 'Unknown')
+    north_node_sign = chart_data.get('north_node_sign', 'Unknown')
+    south_node_sign = chart_data.get('south_node_sign', 'Unknown')
+    
+    prompt = f"""Write a personalized astrological report for {first_name} with these placements:
+Sun in {sun_sign}, Moon in {moon_sign}, Rising {rising_sign}, North Node {north_node_sign}, South Node {south_node_sign}
+
+Create exactly these HTML sections:
+<h2>Your Cosmic Blueprint</h2>
+<p>[2-3 paragraphs introducing {first_name} to their unique chart combination]</p>
+
+<h2>Your Inner Light: Sun in {sun_sign}</h2>
+<p>[2 paragraphs about {first_name}'s core identity and {sun_sign} traits]</p>
+
+<h2>Your Emotional Nature: Moon in {moon_sign}</h2>
+<p>[2 paragraphs about {first_name}'s emotional patterns and {moon_sign} qualities]</p>
+
+<h2>Your Rising Persona: {rising_sign} Ascending</h2>
+<p>[2 paragraphs about how {first_name} presents to the world]</p>
+
+<h2>Your Soul's Journey: The Nodal Pathway</h2>
+<p>[3 paragraphs about {first_name}'s growth from {south_node_sign} to {north_node_sign}]</p>
+
+<h2>Integration and Growth</h2>
+<p>[2-3 paragraphs of guidance for {first_name}]</p>
+
+Use {first_name}'s name naturally throughout. Professional counseling tone."""
+
+    try:
+        response = openai.ChatCompletion.create(
+            model="gpt-4",
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=2500,
+            temperature=0.7
+        )
+        return response.choices[0].message.content.strip()
+    except Exception as e:
+        print(f"OpenAI error: {e}")
+        return f"<h2>Your Personal Report</h2><p>Hello {first_name}, please contact support.</p>"
+
 def create_pdf_report(report_text):
     """Create a beautifully formatted PDF from report text"""
     filename = f"nodal_report_{uuid.uuid4()}.pdf"
@@ -472,65 +516,142 @@ def create_pdf_report(report_text):
     doc.build(story)
     return filepath
 
-def create_html_report(chart_data):
-    """Generate HTML report using template"""
+def create_html_report(chart_data, ai_content, first_name):
+    """Generate HTML report using AI content and celestial styling"""
     try:
-        # Read the HTML template
-        with open('template.html', 'r', encoding='utf-8') as f:
-            html_template = f.read()
+        # Create chart basics section
+        chart_basics = f"""
+        <div class="chart-basics">
+            <h3>Chart Essentials for {first_name}</h3>
+            <div class="basics-grid">
+                <div class="basic-item"><strong>Sun Sign:</strong> {chart_data['sun_sign']}</div>
+                <div class="basic-item"><strong>Moon Sign:</strong> {chart_data['moon_sign']}</div>
+                <div class="basic-item"><strong>Rising Sign:</strong> {chart_data['rising_sign']}</div>
+                <div class="basic-item"><strong>North Node:</strong> {chart_data['north_node']['sign']}</div>
+            </div>
+        </div>
+        """
         
-        # Get data from chart_data
-        north_node = chart_data["north_node"]
-        south_node = chart_data["south_node"]
-        
-        # Get knowledge base data
-        north_sign_data = KNOWLEDGE_BASE["north_nodes"][north_node["sign"]]
-        south_sign_data = KNOWLEDGE_BASE["south_nodes"][south_node["sign"]]
-        
-        if north_node.get("house"):
-            house_data = KNOWLEDGE_BASE["houses"][north_node["house"]]
-            house_meaning = house_data.get("meaning", "House guidance")
-        else:
-            house_meaning = "House placement not available"
-        
-        # Format guidance lists as HTML
-        north_guidance_html = ""
-        north_meaning = north_sign_data.get("meaning") or north_sign_data.get("north_meaning") or ""
-        north_guidance = north_sign_data.get("guidance") or north_sign_data.get("north_guidance_sign") or []
-        
-        for guidance in north_guidance:
-            north_guidance_html += f"<li>{guidance}</li>"
-        
-        south_guidance_html = ""
-        south_patterns = south_sign_data.get("patterns") or south_sign_data.get("meaning") or ""
-        south_guidance = south_sign_data.get("guidance") or south_sign_data.get("south_guidance") or []
-        
-        for guidance in south_guidance:
-            south_guidance_html += f"<li>{guidance}</li>"
-        
-        # Replace placeholders
-        html_content = html_template.replace('{sun_sign}', chart_data['sun_sign'])
-        html_content = html_content.replace('{moon_sign}', chart_data['moon_sign'])
-        html_content = html_content.replace('{rising_sign}', chart_data['rising_sign'])
-        html_content = html_content.replace('{north_node_sign}', north_node['sign'])
-        html_content = html_content.replace('{south_node_sign}', south_node['sign'])
-        html_content = html_content.replace('{north_node_meaning}', north_meaning)
-        html_content = html_content.replace('{north_node_guidance_items}', north_guidance_html)
-        html_content = html_content.replace('{north_node_house}', str(north_node.get('house', 'Unknown')))
-        html_content = html_content.replace('{house_meaning}', house_meaning)
-        html_content = html_content.replace('{south_node_patterns}', south_patterns)
-        html_content = html_content.replace('{south_node_guidance_items}', south_guidance_html)
-        
-        # Integration text (simplified for now)
-        html_content = html_content.replace('{sun_integration}', f"Your {chart_data['sun_sign']} Sun supports your North Node growth.")
-        html_content = html_content.replace('{moon_integration}', f"Your {chart_data['moon_sign']} Moon provides emotional support for your path.")
-        html_content = html_content.replace('{rising_integration}', f"Your {chart_data['rising_sign']} Rising influences how you approach your growth.")
+        # Create the complete HTML with celestial styling
+        html_content = f"""
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Nodal Pathways Report - {first_name}</title>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+                
+                body {{
+                    font-family: 'Source Sans Pro', sans-serif;
+                    line-height: 1.6;
+                    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+                    color: #e8e8e8;
+                    margin: 0;
+                    padding: 40px;
+                }}
+                
+                .container {{
+                    max-width: 800px;
+                    margin: 0 auto;
+                    background: rgba(255,255,255,0.02);
+                    padding: 40px;
+                    border-radius: 15px;
+                }}
+                
+                .header {{
+                    text-align: center;
+                    margin-bottom: 40px;
+                    border-bottom: 2px solid #d4af37;
+                    padding-bottom: 20px;
+                }}
+                
+                .header h1 {{
+                    font-family: 'Cinzel', serif;
+                    font-size: 2.5em;
+                    color: #d4af37;
+                    margin-bottom: 10px;
+                }}
+                
+                .chart-basics {{
+                    background: rgba(255,255,255,0.05);
+                    border: 1px solid rgba(212,175,55,0.3);
+                    border-radius: 10px;
+                    padding: 25px;
+                    margin: 30px 0;
+                }}
+                
+                .chart-basics h3 {{
+                    font-family: 'Cinzel', serif;
+                    color: #d4af37;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }}
+                
+                .basics-grid {{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 15px;
+                }}
+                
+                .basic-item {{
+                    background: rgba(255,255,255,0.03);
+                    padding: 12px;
+                    border-radius: 5px;
+                    border-left: 3px solid #d4af37;
+                }}
+                
+                h2 {{
+                    font-family: 'Cinzel', serif;
+                    color: #d4af37;
+                    font-size: 1.5em;
+                    margin: 30px 0 15px 0;
+                    text-align: center;
+                }}
+                
+                p {{
+                    margin-bottom: 15px;
+                    color: #e0e0e0;
+                    text-align: justify;
+                    line-height: 1.7;
+                }}
+                
+                .footer {{
+                    text-align: center;
+                    margin-top: 50px;
+                    padding-top: 20px;
+                    border-top: 1px solid rgba(212,175,55,0.3);
+                    color: #b8b8b8;
+                }}
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="header">
+                    <h1>⭐ Nodal Pathways ⭐</h1>
+                    <p>Personalized Astrological Report for {first_name}</p>
+                </div>
+                
+                {chart_basics}
+                
+                <div class="report-content">
+                    {ai_content}
+                </div>
+                
+                <div class="footer">
+                    <p><strong>Disclaimer:</strong> This report is for entertainment and self-reflection purposes.</p>
+                    <p>⭐ Nodal Pathways - Your cosmic journey of self-discovery ⭐</p>
+                </div>
+            </div>
+        </body>
+        </html>
+        """
         
         return html_content
         
     except Exception as e:
         raise Exception(f"HTML report generation error: {str(e)}")
-
+        
 def send_report_email(email, report_text, pdf_path):
     """Send report via email"""
     try:
@@ -632,9 +753,10 @@ def process_form():
         )
         print(f"Chart calculation completed: {chart_data}")
         
-        print("=== ABOUT TO GENERATE HTML REPORT ===")
-        html_content = create_html_report(chart_data)
-        print("HTML report generation completed")
+        print("=== ABOUT TO GENERATE AI REPORT ===")
+        first_name = data.get('First Name', 'Friend')
+        ai_content = generate_ai_report(chart_data, first_name)
+        html_content = create_html_report(chart_data, ai_content, first_name)
         
         print("=== ABOUT TO CREATE PDF FROM HTML ===")
         pdf_path = f"report_{uuid.uuid4()}.pdf"
