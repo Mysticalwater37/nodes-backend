@@ -612,6 +612,7 @@ def create_html_report(chart_data, ai_content, first_name):
                     position: relative;
                     z-index: 1;
                     opacity: 0.9;
+                    text-align: center;
                 }}
                 
                 .chart-basics {{
