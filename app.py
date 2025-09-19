@@ -331,8 +331,8 @@ def generate_ai_report(chart_data, first_name):
     sun_sign = chart_data.get('sun_sign', 'Unknown')
     moon_sign = chart_data.get('moon_sign', 'Unknown') 
     rising_sign = chart_data.get('rising_sign', 'Unknown')
-    north_node_sign = chart_data.get('north_node_sign', 'Unknown')
-    south_node_sign = chart_data.get('south_node_sign', 'Unknown')
+    north_node_sign = chart_data.get('north_node', {}).get('sign', 'Unknown')
+    south_node_sign = chart_data.get('south_node', {}).get('sign', 'Unknown')
     
     prompt = f"""Write a personalized astrological report for {first_name} with these placements:
 Sun in {sun_sign}, Moon in {moon_sign}, Rising {rising_sign}, North Node {north_node_sign}, South Node {south_node_sign}
