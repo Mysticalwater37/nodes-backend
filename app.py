@@ -17,6 +17,7 @@ import base64
 from knowledge_base import KNOWLEDGE_BASE
 import knowledge_base as kb
 from weasyprint import HTML
+import openai 
 print(">>> LOADED KNOWLEDGE_BASE KEYS:", list(kb.KNOWLEDGE_BASE.keys()))
 print(">>> LOADED FROM FILE:", kb.__file__)
 app = Flask(__name__)
