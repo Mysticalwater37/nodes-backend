@@ -53,8 +53,8 @@ SIGNS = [
 temp_files = {}
 
 def calculate_nodes_and_big_three(date, time, location):
-   """Calculate North/South Node positions and Sun/Moon/Rising signs"""
-   try:
+    """Calculate North/South Node positions and Sun/Moon/Rising signs"""
+    try:
         # Cached coordinates for reliability
         CITY_COORDS = {
             "Berkeley, USA": (37.8715, -122.2730),
