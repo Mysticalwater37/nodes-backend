@@ -984,9 +984,10 @@ def process_form():
         html_content = create_html_report(chart_data, ai_content, first_name)
         
         print("=== ABOUT TO CREATE PDF FROM HTML ===")
+        pdf_bytes = generate_pdf_with_playwright(html_content)
         pdf_path = f"report_{uuid.uuid4()}.pdf"
-        HTML(string=html_content).write_pdf(pdf_path)
-        print(f"Styled PDF created at {pdf_path}")
+        with open(pdf_path, 'wb') as f:
+             f.write(pdf_bytes)
         
         print("=== ABOUT TO SEND EMAIL ===")
         send_report_email(
