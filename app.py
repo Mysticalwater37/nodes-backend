@@ -80,10 +80,10 @@ def calculate_nodes_and_big_three(date, time, location):
         
         # Check if location matches any cached cities
         for cached_city, coords in CITY_COORDS.items():
-            if location.lower() in cached_city.lower() or cached_city.lower() in location.lower():
-                latitude, longitude = coords
-                print(f"Using cached coordinates for {cached_city}: {latitude}, {longitude}")
-                break
+        if location.lower() in cached_city.lower() or cached_city.lower() in location.lower():
+           latitude, longitude = coords
+            print(f"Using cached coordinates for {cached_city}: {latitude}, {longitude}")
+            break
         
         # If not in cache, try geocoding
         if latitude is None:
