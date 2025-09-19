@@ -970,12 +970,21 @@ def process_form():
         print(f"Received data: {data}")
         
         print("=== ABOUT TO CALCULATE CHART DATA ===")
+        city = data.get('City', '')
+        state = data.get('State', '')  
+        country = data.get('Country', '')
+
+        if state:
+            full_location = f"{city}, {state}, {country}"
+        else:
+            full_location = f"{city}, {country}"
+
         chart_data = calculate_nodes_and_big_three(
             data['Birth Date'],
             data.get('Birth Time', '12:00'),
-            data['City'],
-            data['Country']
+            full_location
         )
+
         print(f"Chart calculation completed: {chart_data}")
         
         print("=== ABOUT TO GENERATE AI REPORT ===")
