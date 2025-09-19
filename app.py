@@ -53,7 +53,7 @@ SIGNS = [
 temp_files = {}
 
 def calculate_nodes_and_big_three(date, time, location):
-    """Calculate North/South Node positions and Sun/Moon/Rising signs"""
+   """Calculate North/South Node positions and Sun/Moon/Rising signs"""
     try:
         # Cached coordinates for reliability
         CITY_COORDS = {
@@ -72,6 +72,8 @@ def calculate_nodes_and_big_three(date, time, location):
             "Tokyo, Japan": (35.6895, 139.6917),
             "Sydney, Australia": (-33.8688, 151.2093),
             "Toronto, Canada": (43.6532, -79.3832),
+            "San Rafael, USA": (37.9735, -122.5311),
+            "San Rafael, CA, USA": (37.9735, -122.5311),
         }
         
         # Try to find coordinates in cache first
@@ -80,10 +82,10 @@ def calculate_nodes_and_big_three(date, time, location):
         
         # Check if location matches any cached cities
         for cached_city, coords in CITY_COORDS.items():
-        if location.lower() in cached_city.lower() or cached_city.lower() in location.lower():
-           latitude, longitude = coords
-            print(f"Using cached coordinates for {cached_city}: {latitude}, {longitude}")
-            break
+            if location.lower() in cached_city.lower() or cached_city.lower() in location.lower():
+                latitude, longitude = coords
+                print(f"Using cached coordinates for {cached_city}: {latitude}, {longitude}")
+                break
         
         # If not in cache, try geocoding
         if latitude is None:
@@ -165,6 +167,7 @@ def calculate_nodes_and_big_three(date, time, location):
     except Exception as e:
         print(f"Error in chart calculation: {e}")
         return None
+
 
 def generate_full_report(chart_data):
     """Generate rich, narrative-style report with context and explanations"""
