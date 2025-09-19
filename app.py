@@ -51,7 +51,7 @@ SIGNS = [
 # Store for temporary files
 temp_files = {}
 
-def calculate_nodes_and_big_three(date, time, city, country):
+def calculate_nodes_and_big_three(date, time, location):
     """Calculate North/South Node positions and Sun/Moon/Rising signs"""
     try:
         # Cached coordinates for reliability
@@ -72,85 +72,98 @@ def calculate_nodes_and_big_three(date, time, city, country):
             "Sydney, Australia": (-33.8688, 151.2093),
             "Toronto, Canada": (43.6532, -79.3832),
         }
-
-        # Normalize key
-        city_key = f"{city.strip()}, {country.strip()}"
-        city_key = " ".join(city_key.split())
-
-        if city_key in CITY_COORDS:
-            lat, lon = CITY_COORDS[city_key]
-        else:
-            geolocator = Nominatim(
-                user_agent="nodes-backend/1.0 (support@nodalpathways.com)",
-                timeout=10
-            )
-            loc = geolocator.geocode(city_key)
-            if loc is None:
-                raise ValueError(f"Could not find coordinates for {city_key}")
-            lat, lon = loc.latitude, loc.longitude
-
-        # Timezone
-        tf = TimezoneFinder()
-        tz_str = tf.timezone_at(lng=lon, lat=lat)
-        if not tz_str:
-            raise ValueError(f"Could not resolve timezone for {city_key}")
-        tz = pytz.timezone(tz_str)
-
-        # Build datetime
-        dt = datetime.strptime(f"{date} {time}", "%Y-%m-%d %H:%M")
-        utc_dt = tz.localize(dt).astimezone(pytz.utc)
-
-        # Julian day
-        jd = swe.julday(
-            utc_dt.year,
-            utc_dt.month,
-            utc_dt.day,
-            utc_dt.hour + utc_dt.minute / 60.0
-        )
-
-        # Node
-        node, *_ = swe.calc_ut(jd, swe.TRUE_NODE)
-        node_long = node[0] % 360.0
-        node_sign_index = int(node_long // 30)
-        node_sign = SIGNS[node_sign_index]
-        node_degree = node_long % 30
-
-        # Sun
-        sun, *_ = swe.calc_ut(jd, swe.SUN)
-        sun_sign = SIGNS[int((sun[0] % 360.0) // 30)]
-
-        # Moon
-        moon, *_ = swe.calc_ut(jd, swe.MOON)
-        moon_sign = SIGNS[int((moon[0] % 360.0) // 30)]
-
-        # Rising
-        houses, ascmc = swe.houses_ex(jd, lat, lon, b'P')
-        asc_long = ascmc[0] % 360.0
-        rising_sign = SIGNS[int(asc_long // 30)]
-
-        # Node house
-        node_house = None
-        for i in range(12):
-            start = houses[i]
-            end = houses[(i + 1) % 12]
-            if start <= node_long < end or (end < start and (node_long >= start or node_long < end)):
-                node_house = i + 1
+        
+        # Try to find coordinates in cache first
+        latitude = None
+        longitude = None
+        
+        # Check if location matches any cached cities
+        for cached_city, coords in CITY_COORDS.items():
+            if location.lower() in cached_city.lower() or cached_city.lower() in location.lower():
+                latitude, longitude = coords
+                print(f"Using cached coordinates for {cached_city}: {latitude}, {longitude}")
                 break
-
-        # South Node
-        south_sign = SIGNS[(node_sign_index + 6) % 12]
-        south_house = (node_house + 6 - 1) % 12 + 1 if node_house else None
-
-        return {
-            "north_node": {"sign": node_sign, "degree": round(node_degree, 2), "house": node_house},
-            "south_node": {"sign": south_sign, "degree": round(node_degree, 2), "house": south_house},
-            "sun_sign": sun_sign,
-            "moon_sign": moon_sign,
-            "rising_sign": rising_sign
+        
+        # If not in cache, try geocoding
+        if latitude is None:
+            print(f"Location '{location}' not in cache, attempting geocoding...")
+            geolocator = Nominatim(user_agent="astro_app")
+            location_data = geolocator.geocode(location)
+            
+            if not location_data:
+                raise ValueError(f"Could not find location: {location}")
+            
+            latitude = location_data.latitude
+            longitude = location_data.longitude
+            print(f"Geocoded {location}: {latitude}, {longitude}")
+        
+        # Parse birth date and time
+        birth_dt = datetime.strptime(date, '%Y-%m-%d')
+        birth_time_dt = datetime.strptime(time, '%H:%M').time()
+        
+        # Get timezone
+        tf = TimezoneFinder()
+        timezone_str = tf.timezone_at(lat=latitude, lng=longitude)
+        
+        if not timezone_str:
+            timezone_str = 'UTC'
+        
+        # Create timezone-aware datetime
+        local_tz = pytz.timezone(timezone_str)
+        birth_datetime = local_tz.localize(
+            datetime.combine(birth_dt.date(), birth_time_dt)
+        )
+        
+        # Convert to UTC
+        utc_datetime = birth_datetime.astimezone(pytz.UTC)
+        
+        # Calculate Julian day
+        julian_day = swe.julday(
+            utc_datetime.year,
+            utc_datetime.month, 
+            utc_datetime.day,
+            utc_datetime.hour + utc_datetime.minute/60.0
+        )
+        
+        # Calculate planetary positions
+        sun_pos = swe.calc_ut(julian_day, swe.SUN)[0][0]
+        moon_pos = swe.calc_ut(julian_day, swe.MOON)[0][0]
+        
+        # Calculate Ascendant
+        houses = swe.houses(julian_day, latitude, longitude)[1]
+        ascendant = houses[0]
+        
+        # Calculate lunar nodes
+        north_node_pos = swe.calc_ut(julian_day, swe.MEAN_NODE)[0][0]
+        south_node_pos = (north_node_pos + 180) % 360
+        
+        # Convert positions to signs
+        def degree_to_sign(degree):
+            signs = ["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
+                    "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"]
+            sign_index = int(degree // 30)
+            return signs[sign_index]
+        
+        result = {
+            'sun_sign': degree_to_sign(sun_pos),
+            'moon_sign': degree_to_sign(moon_pos),
+            'rising_sign': degree_to_sign(ascendant),
+            'north_node': {
+                'sign': degree_to_sign(north_node_pos),
+                'degree': north_node_pos % 30
+            },
+            'south_node': {
+                'sign': degree_to_sign(south_node_pos),
+                'degree': south_node_pos % 30
+            }
         }
-
+        
+        print(f"Chart calculation successful: {result}")
+        return result
+        
     except Exception as e:
-        raise Exception(f"Calculation error: {str(e)}")
+        print(f"Error in chart calculation: {e}")
+        return None
 
 def generate_full_report(chart_data):
     """Generate rich, narrative-style report with context and explanations"""
