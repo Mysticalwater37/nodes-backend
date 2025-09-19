@@ -370,6 +370,31 @@ Use {first_name}'s name naturally throughout. Professional counseling tone."""
         print(f"OpenAI error: {e}")
         return f"<h2>Your Personal Report</h2><p>Hello {first_name}, please contact support.</p>"
 
+def generate_pdf_with_playwright(html_content):
+    """Generate PDF using Playwright"""
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        page = browser.new_page()
+        
+        # Set content
+        page.set_content(html_content)
+        
+        # Generate PDF with options
+        pdf_bytes = page.pdf(
+            format='A4',
+            margin={
+                'top': '0.75in',
+                'right': '0.75in', 
+                'bottom': '0.75in',
+                'left': '0.75in'
+            },
+            print_background=True,  # Important for your blue background
+            prefer_css_page_size=False
+        )
+        
+        browser.close()
+        return pdf_bytes
+
 def create_pdf_report(report_text):
     """Create a beautifully formatted PDF from report text"""
     filename = f"nodal_report_{uuid.uuid4()}.pdf"
