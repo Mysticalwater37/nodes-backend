@@ -21,9 +21,9 @@ import openai
 print(">>> LOADED KNOWLEDGE_BASE KEYS:", list(kb.KNOWLEDGE_BASE.keys()))
 print(">>> LOADED FROM FILE:", kb.__file__)
 app = Flask(__name__)
-openai.api_key = os.getenv("OPENAI_API_KEY")
 import logging
 logging.basicConfig(level=logging.DEBUG)
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 print("=== APP STARTING - IMPORTS SUCCESSFUL ===")  # Add this line
 print(f"KNOWLEDGE_BASE loaded with keys: {list(KNOWLEDGE_BASE.keys())}")  # Add this line
