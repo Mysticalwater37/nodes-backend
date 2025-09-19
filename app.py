@@ -560,7 +560,7 @@ def create_pdf_report(report_text):
     return filepath
 
 def create_html_report(chart_data, ai_content, first_name):
-    """Generate HTML report using AI content and app-inspired styling"""
+    """Generate HTML report with white background and large readable fonts"""
     try:
         # Create chart basics section
         chart_basics = f"""
@@ -575,7 +575,7 @@ def create_html_report(chart_data, ai_content, first_name):
         </div>
         """
         
-        # Create the complete HTML with app-inspired styling
+        # Create the complete HTML with white background and large fonts
         html_content = f"""
         <!DOCTYPE html>
         <html>
@@ -583,7 +583,7 @@ def create_html_report(chart_data, ai_content, first_name):
             <meta charset="UTF-8">
             <title>Nodal Pathways Report - {first_name}</title>
             <style>
-                @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap');
                 
                 * {{
                     margin: 0;
@@ -593,128 +593,109 @@ def create_html_report(chart_data, ai_content, first_name):
                 
                 @page {{
                     size: A4;
-                    margin: 0.75in;
+                    margin: 1.25in 0.75in 0.75in 0.75in;
                 }}
                 
                 body {{
                     font-family: 'Inter', sans-serif;
-                    font-size: 16px;
-                    line-height: 1.7;
-                    background: linear-gradient(135deg, #4a5568 0%, #2d3748 30%, #1a202c 100%);
-                    color: #ffffff;
+                    font-size: 22px;
+                    line-height: 1.8;
+                    background: #ffffff;
+                    color: #1a1a1a;
                     min-height: 100vh;
-                    padding: 30px 0;
+                    padding: 40px 0;
                 }}
                 
                 .container {{
                     max-width: 100%;
                     margin: 0 auto;
-                    background: rgba(26, 32, 44, 0.95);
-                    border-radius: 24px;
+                    background: #ffffff;
+                    border-radius: 20px;
                     overflow: hidden;
-                    border: 1px solid rgba(237, 213, 152, 0.2);
-                    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                    border: 2px solid #d4af37;
                 }}
                 
                 .header {{
                     text-align: center;
-                    padding: 50px 40px;
-                    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
-                    position: relative;
-                    overflow: hidden;
-                }}
-                
-                .header::before {{
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    background: radial-gradient(circle at 30% 20%, rgba(237, 213, 152, 0.1) 0%, transparent 50%),
-                                radial-gradient(circle at 70% 80%, rgba(237, 213, 152, 0.08) 0%, transparent 50%);
-                    pointer-events: none;
+                    padding: 60px 40px 40px 40px;
+                    background: linear-gradient(135deg, #f8f6f0 0%, #ffffff 100%);
+                    border-bottom: 3px solid #d4af37;
                 }}
                 
                 .header h1 {{
                     font-family: 'Playfair Display', serif;
-                    font-size: 3.2em;
-                    color: #edd598;
+                    font-size: 3.8em;
+                    color: #d4af37;
                     margin-bottom: 20px;
-                    font-weight: 500;
+                    font-weight: 600;
                     letter-spacing: -1px;
-                    position: relative;
-                    z-index: 1;
                 }}
                 
                 .header .subtitle {{
-                    font-size: 1.3em;
-                    color: #cbd5e0;
+                    font-size: 1.5em;
+                    color: #666666;
                     font-weight: 400;
-                    position: relative;
-                    z-index: 1;
-                    opacity: 0.9;
                     text-align: center;
                 }}
                 
                 .chart-basics {{
-                    margin: 40px;
+                    margin: 50px 40px;
                     padding: 0;
                 }}
                 
                 .chart-basics h3 {{
                     font-family: 'Playfair Display', serif;
-                    color: #edd598;
+                    color: #d4af37;
                     text-align: center;
-                    margin-bottom: 30px;
-                    font-size: 1.8em;
-                    font-weight: 500;
+                    margin-bottom: 35px;
+                    font-size: 2.2em;
+                    font-weight: 600;
                 }}
                 
                 .basics-grid {{
                     display: grid;
                     grid-template-columns: 1fr 1fr;
-                    gap: 15px;
+                    gap: 20px;
                 }}
                 
                 .basic-item {{
-                    background: rgba(255, 255, 255, 0.05);
-                    border: 1px solid rgba(237, 213, 152, 0.2);
-                    padding: 18px 22px;
-                    border-radius: 12px;
-                    font-size: 1.1em;
-                    font-weight: 400;
-                    color: #e2e8f0;
+                    background: #f9f7f1;
+                    border: 2px solid #d4af37;
+                    padding: 28px;
+                    border-radius: 15px;
+                    font-size: 1.3em;
+                    font-weight: 500;
+                    color: #1a1a1a;
                     transition: all 0.2s ease;
-                    backdrop-filter: blur(10px);
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
                 }}
                 
                 .basic-item:hover {{
-                    background: rgba(255, 255, 255, 0.08);
-                    border-color: rgba(237, 213, 152, 0.3);
-                    transform: translateY(-1px);
+                    transform: translateY(-2px);
+                    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
                 }}
                 
                 .basic-item strong {{
-                    color: #edd598;
+                    color: #d4af37;
                     font-weight: 600;
                     display: inline-block;
                     margin-right: 8px;
                 }}
                 
                 .report-content {{
-                    padding: 40px;
+                    padding: 50px 40px;
+                    background: #ffffff;
                 }}
                 
                 h2 {{
                     font-family: 'Playfair Display', serif;
-                    color: #edd598;
-                    font-size: 2.2em;
-                    margin: 45px 0 30px 0;
+                    color: #d4af37;
+                    font-size: 2.6em;
+                    margin: 50px 0 35px 0;
                     text-align: center;
-                    font-weight: 500;
+                    font-weight: 600;
                     position: relative;
-                    letter-spacing: -0.5px;
                 }}
                 
                 h2::before,
@@ -722,16 +703,16 @@ def create_html_report(chart_data, ai_content, first_name):
                     content: "✦";
                     margin: 0 20px;
                     font-size: 0.7em;
-                    opacity: 0.7;
-                    color: #edd598;
+                    opacity: 0.8;
+                    color: #d4af37;
                 }}
                 
                 p {{
-                    margin-bottom: 22px;
-                    color: #e2e8f0;
+                    margin-bottom: 28px;
+                    color: #2c2c2c;
                     text-align: justify;
-                    font-size: 1.15em;
-                    line-height: 1.8;
+                    font-size: 1.4em;
+                    line-height: 1.9;
                     text-indent: 1.5em;
                     font-weight: 400;
                 }}
@@ -742,71 +723,70 @@ def create_html_report(chart_data, ai_content, first_name):
                 
                 .footer {{
                     text-align: center;
-                    padding: 40px;
-                    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
-                    color: #a0aec0;
-                    font-size: 1em;
-                    position: relative;
-                }}
-                
-                .footer::before {{
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    height: 2px;
-                    background: linear-gradient(90deg, transparent 0%, #edd598 50%, transparent 100%);
+                    padding: 50px 40px;
+                    background: linear-gradient(135deg, #f8f6f0 0%, #ffffff 100%);
+                    color: #666666;
+                    font-size: 1.2em;
+                    border-top: 3px solid #d4af37;
                 }}
                 
                 .footer .logo {{
                     font-family: 'Playfair Display', serif;
-                    color: #edd598;
-                    font-size: 1.4em;
+                    color: #d4af37;
+                    font-size: 1.6em;
                     margin-bottom: 15px;
-                    font-weight: 500;
-                }}
-                
-                .disclaimer {{
-                    background: rgba(237, 213, 152, 0.1);
-                    border: 1px solid rgba(237, 213, 152, 0.3);
-                    border-radius: 16px;
-                    padding: 30px;
-                    margin: 40px;
-                    color: #cbd5e0;
-                    text-align: center;
-                    line-height: 1.7;
-                    font-size: 0.95em;
-                    backdrop-filter: blur(10px);
-                }}
-                
-                .disclaimer strong {{
-                    color: #edd598;
                     font-weight: 600;
                 }}
                 
-                /* Mobile responsiveness */
+                .disclaimer {{
+                    background: rgba(212, 175, 55, 0.1);
+                    border: 2px solid #d4af37;
+                    border-radius: 15px;
+                    padding: 35px;
+                    margin: 50px 40px;
+                    color: #4a4a4a;
+                    text-align: center;
+                    line-height: 1.8;
+                    font-size: 1.2em;
+                }}
+                
+                .disclaimer strong {{
+                    color: #d4af37;
+                    font-weight: 600;
+                }}
+                
+                /* Mobile responsiveness - Very large fonts */
                 @media screen and (max-width: 768px) {{
                     body {{
-                        font-size: 18px;
+                        font-size: 28px;
                         padding: 20px 10px;
                     }}
                     
                     .container {{
-                        border-radius: 16px;
+                        border-radius: 15px;
                         margin: 0;
+                        border-width: 1px;
                     }}
                     
                     .header {{
-                        padding: 40px 30px;
+                        padding: 50px 25px 35px 25px;
                     }}
                     
                     .header h1 {{
-                        font-size: 2.8em;
+                        font-size: 3.2em;
                     }}
                     
                     .header .subtitle {{
-                        font-size: 1.2em;
+                        font-size: 1.4em;
+                    }}
+                    
+                    .chart-basics {{
+                        margin: 35px 20px;
+                    }}
+                    
+                    .chart-basics h3 {{
+                        font-size: 2em;
+                        margin-bottom: 25px;
                     }}
                     
                     .basics-grid {{
@@ -815,20 +795,17 @@ def create_html_report(chart_data, ai_content, first_name):
                     }}
                     
                     .basic-item {{
-                        font-size: 1.2em;
-                        padding: 22px;
+                        font-size: 1.5em;
+                        padding: 28px 22px;
                     }}
                     
-                    .chart-basics,
-                    .report-content,
-                    .disclaimer {{
-                        margin: 25px 20px;
-                        padding: 30px 25px;
+                    .report-content {{
+                        padding: 40px 25px;
                     }}
                     
                     h2 {{
-                        font-size: 2em;
-                        margin: 35px 0 25px 0;
+                        font-size: 2.4em;
+                        margin: 40px 0 30px 0;
                     }}
                     
                     h2::before,
@@ -837,28 +814,44 @@ def create_html_report(chart_data, ai_content, first_name):
                     }}
                     
                     p {{
-                        font-size: 1.25em;
-                        line-height: 1.9;
-                        margin-bottom: 25px;
+                        font-size: 1.6em;
+                        line-height: 2.1;
+                        margin-bottom: 32px;
+                        text-indent: 0;
+                    }}
+                    
+                    .footer {{
+                        padding: 40px 25px;
+                        font-size: 1.3em;
+                    }}
+                    
+                    .disclaimer {{
+                        margin: 40px 20px;
+                        padding: 30px 25px;
+                        font-size: 1.4em;
                     }}
                 }}
                 
                 @media screen and (max-width: 480px) {{
                     body {{
-                        font-size: 20px;
+                        font-size: 30px;
                     }}
                     
                     .header h1 {{
-                        font-size: 2.4em;
+                        font-size: 2.8em;
                     }}
                     
                     p {{
-                        font-size: 1.3em;
-                        line-height: 2;
+                        font-size: 1.7em;
+                        line-height: 2.2;
                     }}
                     
                     .basic-item {{
-                        font-size: 1.3em;
+                        font-size: 1.6em;
+                    }}
+                    
+                    h2 {{
+                        font-size: 2.2em;
                     }}
                 }}
             </style>
