@@ -322,28 +322,24 @@ def generate_ai_report(chart_data, first_name):
     
     prompt = f"""Write a personalized astrological report for {first_name} with these placements:
 Sun in {sun_sign}, Moon in {moon_sign}, Rising {rising_sign}, North Node {north_node_sign}, South Node {south_node_sign}
-
 Create exactly these HTML sections:
 <h2>Your Cosmic Blueprint</h2>
 <p>[2-3 paragraphs introducing {first_name} to their unique chart combination]</p>
-
-<h2>Your Inner Light: Sun in {sun_sign}</h2>
+<h2>Your Inner Light:</h2>
+<h3>Sun in {sun_sign}</h3>
 <p>[2 paragraphs about {first_name}'s core identity and {sun_sign} traits]</p>
-
-<h2>Your Emotional Nature: Moon in {moon_sign}</h2>
+<h2>Your Emotional Nature:</h2>
+<h3>Moon in {moon_sign}</h3>
 <p>[2 paragraphs about {first_name}'s emotional patterns and {moon_sign} qualities]</p>
-
-<h2>Your Rising Persona: {rising_sign} Ascending</h2>
+<h2>Your Rising Persona:</h2>
+<h3>{rising_sign} Ascending</h3>
 <p>[2 paragraphs about how {first_name} presents to the world]</p>
-
-<h2>Your Soul's Journey: The Nodal Pathway</h2>
+<h2>Your Soul's Journey:</h2>
+<h3>The Nodal Pathway</h3>
 <p>[3 paragraphs about {first_name}'s growth from {south_node_sign} to {north_node_sign}]</p>
-
 <h2>Integration and Growth</h2>
 <p>[2-3 paragraphs of guidance for {first_name}]</p>
-
 Use {first_name}'s name naturally throughout. Professional counseling tone."""
-
     try:
         response = openai.ChatCompletion.create(
             model="gpt-4",
@@ -704,6 +700,17 @@ def create_html_report(chart_data, ai_content, first_name):
                     line-height: 1.2;
                 }}
                 
+                h3 {{
+                    font-family: 'Playfair Display', serif;
+                    color: #cbd5e0;
+                    font-size: 1.8em;
+                    margin: -15px 0 25px 0;
+                    text-align: center;
+                    font-weight: 400;
+                    font-style: italic;
+                    opacity: 0.9;
+                }}
+                
                 p {{
                     margin-bottom: 28px;
                     color: #e2e8f0;
@@ -815,6 +822,11 @@ def create_html_report(chart_data, ai_content, first_name):
                         margin: 25px 0 30px 0;
                     }}
                     
+                    h3 {{
+                        font-size: 1.6em;
+                        margin: -10px 0 20px 0;
+                    }}
+                    
                     p {{
                         font-size: 1.6em;
                         line-height: 2.1;
@@ -854,6 +866,10 @@ def create_html_report(chart_data, ai_content, first_name):
                     
                     h2 {{
                         font-size: 2.2em;
+                    }}
+                    
+                    h3 {{
+                        font-size: 1.5em;
                     }}
                 }}
             </style>
