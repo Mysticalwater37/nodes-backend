@@ -4,9 +4,7 @@ pyswisseph
 geopy
 timezonefinder
 pytz
-reportlab
 resend
-weasyprint
 openai==0.28.1
 python-dotenv
 playwright
