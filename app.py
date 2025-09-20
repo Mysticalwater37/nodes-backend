@@ -358,8 +358,8 @@ try:
         max_tokens=2500,
         temperature=0.7
     )
-    ai_content = response.choices[0].message.content.strip()
-    return ai_content
+        ai_content = response.choices[0].message.content.strip()
+        return ai_content
 except Exception as e:
     print(f"OpenAI error: {e}")
     return f"SECTION: Your Personal Report\nHello {first_name}, please contact support for your personalized report."
