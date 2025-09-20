@@ -967,8 +967,17 @@ def make_report():
 def process_form():
     """Process Google Form submission and email report"""
     print("=== PROCESS FORM STARTED ===")
+    print("=== RAW REQUEST DEBUG ===")
+    print(f"Content-Type: {request.content_type}")
+    print(f"Request data: {request.data}")
+    print(f"Request JSON: {request.json}")
+    print("=== END DEBUG ===")
+    
     try:
         data = request.json
+        if data is None:
+            return jsonify({"error": "Failed to parse JSON"}), 400
+            
         print(f"Received data: {data}")
         
         print("=== ABOUT TO CALCULATE CHART DATA ===")
