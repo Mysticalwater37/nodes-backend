@@ -364,6 +364,8 @@ Use {first_name}'s name naturally throughout. Professional counseling tone."""
         print(f"OpenAI error: {e}")
         return f"SECTION: Your Personal Report\nHello {first_name}, please contact support for your personalized report."
 
+# Replace your existing create_pdf_report function with this:
+
 def create_pdf_report(report_text):
     """Create a beautifully formatted PDF from report text"""
     filename = f"nodal_report_{uuid.uuid4()}.pdf"
@@ -380,8 +382,8 @@ def create_pdf_report(report_text):
     )
     
     # Define color scheme to match your celestial branding
-    primary_color = HexColor('#2C3E50')  # Deep navy (like your dark section)
-    accent_color = HexColor('#6B9BD8')   # Soft blue (like your header gradient)
+    primary_color = HexColor('#2C3E50')  # Deep navy
+    accent_color = HexColor('#6B9BD8')   # Soft blue
     secondary_color = HexColor('#8FA8C7')  # Lighter celestial blue
     text_color = HexColor('#2C3E50')     # Dark navy for readability
     
@@ -400,7 +402,7 @@ def create_pdf_report(report_text):
         fontName='Helvetica-Bold'
     )
     
- # Custom main heading style - bolder and larger
+    # Custom main heading style - bolder and larger
     main_heading_style = ParagraphStyle(
         'MainHeading',
         parent=styles['Heading2'],
@@ -426,7 +428,7 @@ def create_pdf_report(report_text):
         fontName='Helvetica-Bold'
     )
     
-   # Custom body style - larger for mobile
+    # Custom body style - larger for mobile
     body_style = ParagraphStyle(
         'CustomBody',
         parent=styles['Normal'],
@@ -461,7 +463,7 @@ def create_pdf_report(report_text):
         leading=18,
         alignment=TA_JUSTIFY,
         fontName='Helvetica-Oblique',
-        backColor=HexColor('#F0F6FF'),  # Soft celestial blue background
+        backColor=HexColor('#F0F6FF'),
         borderWidth=1,
         borderColor=secondary_color,
         borderPadding=10
@@ -490,7 +492,7 @@ def create_pdf_report(report_text):
             continue
             
         # Title
-        if "NODAL PATHWAYS REPORT" in line:
+        if "NODAL PATHWAYS REPORT" in line or "Nodal Pathways" in line:
             story.append(Paragraph(line, title_style))
             story.append(Spacer(1, 20))
         
@@ -498,25 +500,34 @@ def create_pdf_report(report_text):
         elif line.startswith("=") or line.startswith("-"):
             continue
         
-        # Main sections
-        elif any(keyword in line for keyword in ["NORTH NODE GUIDANCE", "SOUTH NODE AWARENESS", "COMBINED INSIGHT", "YOUR NODES AND SUN SIGN", "YOUR NODES AND MOON SIGN", "YOUR NODES AND RISING SIGN", "INTEGRATED GUIDANCE"]):
+        # Main sections - UPDATE THESE TO MATCH YOUR WORKING FORMAT
+        elif any(keyword in line for keyword in [
+            "Your Cosmic Blueprint", 
+            "Your Inner Light:", 
+            "Your Emotional Nature:", 
+            "Your Rising Persona:", 
+            "Your Soul's Journey:", 
+            "Integration and Growth"
+        ]):
             story.append(Paragraph(line, main_heading_style))
         
-        # Subsections
-        elif any(keyword in line for keyword in ["North Node in", "South Node in", "House guidance:", "Areas to be mindful"]):
+        # Subsections - UPDATE THESE TOO
+        elif any(keyword in line for keyword in [
+            "Sun in", "Moon in", "Ascending", "The Nodal Pathway"
+        ]):
             story.append(Paragraph(line, sub_heading_style))
         
         # Bullet points
         elif line.startswith("•"):
-            formatted_line = line.replace("•", "&#8226;")  # Use proper bullet character
+            formatted_line = line.replace("•", "&#8226;")
             story.append(Paragraph(formatted_line, bullet_style))
         
         # Combined insight content (special formatting)
-        elif "journey involves moving from" in line or "Use your South Node experience" in line:
+        elif "journey involves moving from" in line or "Use your" in line:
             story.append(Paragraph(line, insight_style))
         
         # Footer/disclaimer
-        elif "Astrology is interpretive" in line:
+        elif "Disclaimer:" in line or "Astrology is interpretive" in line:
             story.append(Spacer(1, 30))
             story.append(Paragraph(line, footer_style))
         
