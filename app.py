@@ -368,14 +368,6 @@ def create_pdf_report(report_text):
     filename = f"nodal_report_{uuid.uuid4()}.pdf"
     filepath = f"/tmp/{filename}"
     
-    # Custom page template with dark background
-    def add_page_background(canvas, doc):
-        """Add dark background to every page"""
-        canvas.saveState()
-        canvas.setFillColor(HexColor('#1a202c'))
-        canvas.rect(0, 0, doc.pagesize[0], doc.pagesize[1], fill=1, stroke=0)
-        canvas.restoreState()
-    
     # Create document with proper margins
     doc = SimpleDocTemplate(
         filepath, 
@@ -386,18 +378,19 @@ def create_pdf_report(report_text):
         bottomMargin=1*inch
     )
     
-    # Define color scheme to match your beautiful blue theme
-    dark_bg = HexColor('#1a202c')      # Dark navy background
-    gold_color = HexColor('#edd598')   # Gold for headers
-    light_blue = HexColor('#cbd5e0')   # Light blue for text
-    white = HexColor('#ffffff')        # White for body text
-    accent_blue = HexColor('#4a5568')  # Medium blue for accents
+    # Define color scheme - using darker text colors that will show on white background
+    # We'll make this look professional with a light theme instead
+    dark_blue = HexColor('#1a365d')    # Dark blue for headers
+    gold_color = HexColor('#b7791f')   # Darker gold for headers
+    navy_blue = HexColor('#2d3748')    # Navy for text
+    black = HexColor('#1a202c')        # Dark text for body
+    gray = HexColor('#4a5568')         # Gray for subtitles
     
-    # Title style - large gold header
+    # Title style - large dark blue header
     title_style = ParagraphStyle(
         'CustomTitle',
         fontSize=32,
-        textColor=gold_color,
+        textColor=dark_blue,
         spaceAfter=30,
         spaceBefore=20,
         alignment=TA_CENTER,
@@ -409,7 +402,7 @@ def create_pdf_report(report_text):
     subtitle_style = ParagraphStyle(
         'Subtitle',
         fontSize=16,
-        textColor=light_blue,
+        textColor=gray,
         spaceAfter=40,
         alignment=TA_CENTER,
         fontName='Helvetica',
@@ -426,28 +419,31 @@ def create_pdf_report(report_text):
         alignment=TA_LEFT,
         fontName='Helvetica-Bold',
         leading=24,
-        leftIndent=0
+        leftIndent=0,
+        borderWidth=1,
+        borderColor=gold_color,
+        borderPadding=10
     )
     
-    # Body text style - white text, larger font
+    # Body text style - dark text, readable
     body_style = ParagraphStyle(
         'Body',
         fontSize=12,
-        textColor=white,
+        textColor=black,
         spaceAfter=15,
         spaceBefore=5,
         alignment=TA_JUSTIFY,
         fontName='Helvetica',
         leading=18,
-        leftIndent=10,
-        rightIndent=10
+        leftIndent=20,
+        rightIndent=20
     )
     
     # Disclaimer style
     disclaimer_style = ParagraphStyle(
         'Disclaimer',
         fontSize=10,
-        textColor=light_blue,
+        textColor=gray,
         spaceAfter=20,
         spaceBefore=30,
         alignment=TA_CENTER,
@@ -466,11 +462,9 @@ def create_pdf_report(report_text):
     story.append(Spacer(1, 0.3*inch))
     
     # Better content parsing - split by common section headers
-    # Look for patterns like "Your Inner Light:", "Your Emotional Nature:", etc.
     content = report_text.strip()
     
     # Split into sections by looking for title patterns
-    import re
     section_pattern = r'(Your [^:]+:|The [^:]+:|Integration and Growth|Chart Essentials|Your Cosmic Blueprint)'
     sections = re.split(section_pattern, content)
     
@@ -511,8 +505,8 @@ def create_pdf_report(report_text):
     story.append(Spacer(1, 0.5*inch))
     story.append(Paragraph("Disclaimer: This report is for entertainment and self-reflection purposes only.", disclaimer_style))
     
-    # Build the PDF with dark background
-    doc.build(story, onFirstPage=add_page_background, onLaterPages=add_page_background)
+    # Build the PDF - no background function, just clean styling
+    doc.build(story)
     return filepath
     
 def create_html_report(chart_data, ai_content, first_name):
