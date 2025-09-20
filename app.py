@@ -333,36 +333,30 @@ Sun in {sun_sign}, Moon in {moon_sign}, Rising {rising_sign}, North Node {north_
 Create exactly these sections:
 SECTION: Your Cosmic Blueprint
 [2-3 paragraphs introducing {first_name} to their unique chart combination]
-
 SECTION: Your Inner Light - Sun in {sun_sign}
 [2 paragraphs about {first_name}'s core identity and {sun_sign} traits]
-
 SECTION: Your Emotional Nature - Moon in {moon_sign}
 [2 paragraphs about {first_name}'s emotional patterns and {moon_sign} qualities]
-
 SECTION: Your Rising Persona - {rising_sign} Ascending
 [2 paragraphs about how {first_name} presents to the world]
-
 SECTION: Your Soul's Journey - The Nodal Pathway
 [3 paragraphs about {first_name}'s growth from {south_node_sign} to {north_node_sign}]
-
 SECTION: Integration and Growth
 [2-3 paragraphs of guidance for {first_name}]
-
 Use {first_name}'s name naturally throughout. Professional counseling tone."""
     
-try:
-    response = openai.ChatCompletion.create(
-        model="gpt-4",
-        messages=[{"role": "user", "content": prompt}],
-        max_tokens=2500,
-        temperature=0.7
-    )
+    try:
+        response = openai.ChatCompletion.create(
+            model="gpt-4",
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=2500,
+            temperature=0.7
+        )
         ai_content = response.choices[0].message.content.strip()
         return ai_content
-except Exception as e:
-    print(f"OpenAI error: {e}")
-    return f"SECTION: Your Personal Report\nHello {first_name}, please contact support for your personalized report."
+    except Exception as e:
+        print(f"OpenAI error: {e}")
+        return f"SECTION: Your Personal Report\nHello {first_name}, please contact support for your personalized report."
 
 def create_pdf_report(report_text):
     """Create a beautifully formatted PDF with dark blue theme matching your brand"""
