@@ -373,7 +373,7 @@ def create_pdf_report(report_text):
     # Create document with proper margins
     doc = SimpleDocTemplate(
         filepath, 
-        pagesize=letter,
+        pagesize=A4,
         rightMargin=1*inch, 
         leftMargin=1*inch,
         topMargin=1*inch, 
