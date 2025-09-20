@@ -358,7 +358,14 @@ Use {first_name}'s name naturally throughout. Professional counseling tone."""
             max_tokens=2500,
             temperature=0.7
         )
-        return response.choices[0].message.content.strip()
+        ai_content = response.choices[0].message.content.strip()
+
+        # Add this debug line to see exactly what OpenAI returns
+        print("=== OPENAI RAW OUTPUT ===")
+        print(ai_content)
+        print("=== END OPENAI OUTPUT ===")
+        return ai_content
+
     except Exception as e:
         print(f"OpenAI error: {e}")
         return f"SECTION: Your Personal Report\nHello {first_name}, please contact support for your personalized report."
