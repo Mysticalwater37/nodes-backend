@@ -363,10 +363,8 @@ Use {first_name}'s name naturally throughout. Professional counseling tone."""
         print(f"OpenAI error: {e}")
         return f"SECTION: Your Personal Report\nHello {first_name}, please contact support for your personalized report."
 
-# Replace your existing create_pdf_report function with this:
-
 def create_pdf_report(report_text):
-    """Create a beautifully formatted PDF from report text"""
+    """Create a beautifully formatted PDF with dark blue theme matching your brand"""
     filename = f"nodal_report_{uuid.uuid4()}.pdf"
     filepath = f"/tmp/{filename}"
     
@@ -374,165 +372,150 @@ def create_pdf_report(report_text):
     doc = SimpleDocTemplate(
         filepath, 
         pagesize=A4,
-        rightMargin=1*inch, 
-        leftMargin=1*inch,
+        rightMargin=0.75*inch, 
+        leftMargin=0.75*inch,
         topMargin=1*inch, 
         bottomMargin=1*inch
     )
     
-    # Define color scheme to match your celestial branding
-    primary_color = HexColor('#2C3E50')  # Deep navy
-    accent_color = HexColor('#6B9BD8')   # Soft blue
-    secondary_color = HexColor('#8FA8C7')  # Lighter celestial blue
-    text_color = HexColor('#2C3E50')     # Dark navy for readability
+    # Define color scheme to match your beautiful blue theme
+    dark_bg = HexColor('#1a202c')      # Dark navy background
+    gold_color = HexColor('#edd598')   # Gold for headers
+    light_blue = HexColor('#cbd5e0')   # Light blue for text
+    white = HexColor('#ffffff')        # White for body text
+    accent_blue = HexColor('#4a5568')  # Medium blue for accents
     
     # Get base styles
     styles = getSampleStyleSheet()
     
-    # Custom title style - celestial themed
+    # Title style - large gold header
     title_style = ParagraphStyle(
         'CustomTitle',
-        parent=styles['Heading1'],
-        fontSize=24,
-        textColor=primary_color,
-        spaceAfter=40,
+        fontSize=36,
+        textColor=gold_color,
+        spaceAfter=30,
         spaceBefore=20,
         alignment=TA_CENTER,
-        fontName='Helvetica-Bold'
+        fontName='Helvetica-Bold',
+        leading=40
     )
     
-    # Custom main heading style - bolder and larger
-    main_heading_style = ParagraphStyle(
-        'MainHeading',
-        parent=styles['Heading2'],
-        fontSize=22,
-        textColor=accent_color,
+    # Subtitle style 
+    subtitle_style = ParagraphStyle(
+        'Subtitle',
+        fontSize=18,
+        textColor=light_blue,
+        spaceAfter=40,
+        alignment=TA_CENTER,
+        fontName='Helvetica',
+        leading=22
+    )
+    
+    # Section header style - gold and prominent
+    section_style = ParagraphStyle(
+        'SectionHeader',
+        fontSize=24,
+        textColor=gold_color,
+        spaceAfter=20,
+        spaceBefore=40,
+        alignment=TA_CENTER,
+        fontName='Helvetica-Bold',
+        leading=28,
+        borderWidth=2,
+        borderColor=gold_color,
+        borderPadding=15,
+        backColor=HexColor('#2d3748')  # Slightly lighter dark background
+    )
+    
+    # Body text style - white text, larger font
+    body_style = ParagraphStyle(
+        'Body',
+        fontSize=16,
+        textColor=white,
+        spaceAfter=18,
+        spaceBefore=5,
+        alignment=TA_JUSTIFY,
+        fontName='Helvetica',
+        leading=24,
+        leftIndent=10,
+        rightIndent=10
+    )
+    
+    # Chart essentials style
+    chart_style = ParagraphStyle(
+        'ChartEssentials',
+        fontSize=14,
+        textColor=light_blue,
+        spaceAfter=8,
+        alignment=TA_CENTER,
+        fontName='Helvetica',
+        leading=20
+    )
+    
+    # Disclaimer style
+    disclaimer_style = ParagraphStyle(
+        'Disclaimer',
+        fontSize=12,
+        textColor=light_blue,
         spaceAfter=20,
         spaceBefore=30,
-        fontName='Helvetica-Bold',
-        borderWidth=2,
-        borderColor=secondary_color,
-        borderPadding=12,
-        backColor=HexColor('#F0F6FF')
-    )
-    
-    # Custom subheading style
-    sub_heading_style = ParagraphStyle(
-        'SubHeading',
-        parent=styles['Heading3'],
-        fontSize=16,
-        textColor=primary_color,
-        spaceAfter=10,
-        spaceBefore=15,
-        fontName='Helvetica-Bold'
-    )
-    
-    # Custom body style - larger for mobile
-    body_style = ParagraphStyle(
-        'CustomBody',
-        parent=styles['Normal'],
-        fontSize=18,
-        textColor=text_color,
-        spaceAfter=12,
-        leading=20,
-        alignment=TA_JUSTIFY,
-        fontName='Helvetica'
-    )
-    
-    # Custom bullet style
-    bullet_style = ParagraphStyle(
-        'BulletStyle',
-        parent=styles['Normal'],
-        fontSize=16,
-        textColor=text_color,
-        spaceAfter=6,
-        leading=16,
-        leftIndent=20,
-        bulletIndent=10,
-        fontName='Helvetica'
-    )
-    
-    # Custom insight style with celestial theme
-    insight_style = ParagraphStyle(
-        'InsightStyle',
-        parent=styles['Normal'],
-        fontSize=16,
-        textColor=text_color,
-        spaceAfter=12,
-        leading=18,
-        alignment=TA_JUSTIFY,
-        fontName='Helvetica-Oblique',
-        backColor=HexColor('#F0F6FF'),
-        borderWidth=1,
-        borderColor=secondary_color,
-        borderPadding=10
-    )
-    
-    # Custom footer style
-    footer_style = ParagraphStyle(
-        'FooterStyle',
-        parent=styles['Normal'],
-        fontSize=14,
-        textColor=HexColor('#7F8C8D'),
-        spaceAfter=12,
-        spaceBefore=20,
         alignment=TA_CENTER,
-        fontName='Helvetica-Oblique'
+        fontName='Helvetica-Oblique',
+        leading=16,
+        leftIndent=40,
+        rightIndent=40
     )
     
     story = []
     
-    # Process the report text
-    lines = report_text.split("\n")
+    # Add title page elements
+    story.append(Spacer(1, 0.5*inch))
+    story.append(Paragraph("Nodal Pathways", title_style))
+    story.append(Paragraph("Personalized Astrological Report", subtitle_style))
     
-    for i, line in enumerate(lines):
-        line = line.strip()
-        if not line:
+    # Parse the report content
+    sections = report_text.split('SECTION:')
+    
+    for section in sections:
+        if not section.strip():
             continue
             
-        # Title
-        if "NODAL PATHWAYS REPORT" in line or "Nodal Pathways" in line:
-            story.append(Paragraph(line, title_style))
-            story.append(Spacer(1, 20))
-        
-        # Skip separator lines
-        elif line.startswith("=") or line.startswith("-"):
+        lines = section.strip().split('\n')
+        if not lines:
             continue
+            
+        # First line is the section header
+        header = lines[0].strip()
         
-        # Main sections - UPDATE THESE TO MATCH YOUR WORKING FORMAT
-        elif any(keyword in line for keyword in [
-            "Your Cosmic Blueprint", 
-            "Your Inner Light:", 
-            "Your Emotional Nature:", 
-            "Your Rising Persona:", 
-            "Your Soul's Journey:", 
-            "Integration and Growth"
-        ]):
-            story.append(Paragraph(line, main_heading_style))
+        # Add section header with beautiful styling
+        story.append(Paragraph(header, section_style))
         
-        # Subsections - UPDATE THESE TOO
-        elif any(keyword in line for keyword in [
-            "Sun in", "Moon in", "Ascending", "The Nodal Pathway"
-        ]):
-            story.append(Paragraph(line, sub_heading_style))
+        # Process the content paragraphs
+        content_lines = []
+        for line in lines[1:]:
+            if line.strip():
+                content_lines.append(line.strip())
         
-        # Bullet points
-        elif line.startswith("•"):
-            formatted_line = line.replace("•", "&#8226;")
-            story.append(Paragraph(formatted_line, bullet_style))
+        # Group lines into paragraphs (assuming paragraphs are separated by empty lines)
+        current_paragraph = []
+        for line in content_lines:
+            if line:
+                current_paragraph.append(line)
+            else:
+                if current_paragraph:
+                    para_text = ' '.join(current_paragraph)
+                    story.append(Paragraph(para_text, body_style))
+                    current_paragraph = []
         
-        # Combined insight content (special formatting)
-        elif "journey involves moving from" in line or "Use your" in line:
-            story.append(Paragraph(line, insight_style))
-        
-        # Footer/disclaimer
-        elif "Disclaimer:" in line or "Astrology is interpretive" in line:
-            story.append(Spacer(1, 30))
-            story.append(Paragraph(line, footer_style))
-        
-        # Regular body text
-        else:
-            story.append(Paragraph(line, body_style))
+        # Add final paragraph if exists
+        if current_paragraph:
+            para_text = ' '.join(current_paragraph)
+            story.append(Paragraph(para_text, body_style))
+    
+    # Add footer elements
+    story.append(Spacer(1, 0.5*inch))
+    story.append(Paragraph("Nodal Pathways", section_style))
+    story.append(Paragraph("Guiding you on your cosmic journey of self-discovery", disclaimer_style))
     
     # Build the PDF
     doc.build(story)
