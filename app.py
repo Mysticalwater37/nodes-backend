@@ -9,7 +9,6 @@ import os
 import resend
 import base64
 import openai 
-from playwright.sync_api import sync_playwright
 from reportlab.lib.pagesizes import A4
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
