@@ -10,6 +10,15 @@ import resend
 import base64
 import openai 
 from playwright.sync_api import sync_playwright
+from reportlab.lib.pagesizes import A4
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.lib.units import inch
+from reportlab.lib.colors import HexColor
+from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY
+from io import BytesIO
+import re
+
 app = Flask(__name__)
 import logging
 logging.basicConfig(level=logging.DEBUG)
@@ -322,20 +331,27 @@ def generate_ai_report(chart_data, first_name):
     
     prompt = f"""Write a personalized astrological report for {first_name} with these placements:
 Sun in {sun_sign}, Moon in {moon_sign}, Rising {rising_sign}, North Node {north_node_sign}, South Node {south_node_sign}
-Create exactly these HTML sections:
-<h2>Your Cosmic Blueprint</h2>
-<p>[2-3 paragraphs introducing {first_name} to their unique chart combination]</p>
-<h2>Your Inner Light:<br>Sun in {sun_sign}</h2>
-<p>[2 paragraphs about {first_name}'s core identity and {sun_sign} traits]</p>
-<h2>Your Emotional Nature:<br>Moon in {moon_sign}</h2>
-<p>[2 paragraphs about {first_name}'s emotional patterns and {moon_sign} qualities]</p>
-<h2>Your Rising Persona:<br>{rising_sign} Ascending</h2>
-<p>[2 paragraphs about how {first_name} presents to the world]</p>
-<h2>Your Soul's Journey:<br>The Nodal Pathway</h2>
-<p>[3 paragraphs about {first_name}'s growth from {south_node_sign} to {north_node_sign}]</p>
-<h2>Integration and Growth</h2>
-<p>[2-3 paragraphs of guidance for {first_name}]</p>
+Create exactly these sections:
+SECTION: Your Cosmic Blueprint
+[2-3 paragraphs introducing {first_name} to their unique chart combination]
+
+SECTION: Your Inner Light - Sun in {sun_sign}
+[2 paragraphs about {first_name}'s core identity and {sun_sign} traits]
+
+SECTION: Your Emotional Nature - Moon in {moon_sign}
+[2 paragraphs about {first_name}'s emotional patterns and {moon_sign} qualities]
+
+SECTION: Your Rising Persona - {rising_sign} Ascending
+[2 paragraphs about how {first_name} presents to the world]
+
+SECTION: Your Soul's Journey - The Nodal Pathway
+[3 paragraphs about {first_name}'s growth from {south_node_sign} to {north_node_sign}]
+
+SECTION: Integration and Growth
+[2-3 paragraphs of guidance for {first_name}]
+
 Use {first_name}'s name naturally throughout. Professional counseling tone."""
+    
     try:
         response = openai.ChatCompletion.create(
             model="gpt-4",
@@ -346,32 +362,7 @@ Use {first_name}'s name naturally throughout. Professional counseling tone."""
         return response.choices[0].message.content.strip()
     except Exception as e:
         print(f"OpenAI error: {e}")
-        return f"<h2>Your Personal Report</h2><p>Hello {first_name}, please contact support.</p>"
-
-def generate_pdf_with_playwright(html_content):
-    """Generate PDF using Playwright"""
-    with sync_playwright() as p:
-        browser = p.chromium.launch()
-        page = browser.new_page()
-        
-        # Set content
-        page.set_content(html_content)
-        
-        # Generate PDF with options
-        pdf_bytes = page.pdf(
-            format='A4',
-            margin={
-                'top': '1.25in',   
-                'right': '0.75in', 
-                'bottom': '0.75in',
-                'left': '0.75in'
-            },
-            print_background=True,  # Important for your blue background
-            prefer_css_page_size=False
-        )
-        
-        browser.close()
-        return pdf_bytes
+        return f"SECTION: Your Personal Report\nHello {first_name}, please contact support for your personalized report."
 
 def create_pdf_report(report_text):
     """Create a beautifully formatted PDF from report text"""
@@ -1016,11 +1007,8 @@ def process_form():
         ai_content = generate_ai_report(chart_data, first_name)
         html_content = create_html_report(chart_data, ai_content, first_name)
         
-        print("=== ABOUT TO CREATE PDF FROM HTML ===")
-        pdf_bytes = generate_pdf_with_playwright(html_content)
-        pdf_path = f"report_{uuid.uuid4()}.pdf"
-        with open(pdf_path, 'wb') as f:
-             f.write(pdf_bytes)
+        print("=== CREATING PDF WITH REPORTLAB ===")
+        pdf_path = create_pdf_report(ai_content)
         
         print("=== ABOUT TO SEND EMAIL ===")
         send_report_email(
