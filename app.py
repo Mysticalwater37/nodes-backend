@@ -351,24 +351,18 @@ SECTION: Integration and Growth
 
 Use {first_name}'s name naturally throughout. Professional counseling tone."""
     
-    try:
-        response = openai.ChatCompletion.create(
-            model="gpt-4",
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=2500,
-            temperature=0.7
-        )
-        ai_content = response.choices[0].message.content.strip()
-
-        # Add this debug line to see exactly what OpenAI returns
-        print("=== OPENAI RAW OUTPUT ===")
-        print(ai_content)
-        print("=== END OPENAI OUTPUT ===")
-        return ai_content
-
-    except Exception as e:
-        print(f"OpenAI error: {e}")
-        return f"SECTION: Your Personal Report\nHello {first_name}, please contact support for your personalized report."
+try:
+    response = openai.ChatCompletion.create(
+        model="gpt-4",
+        messages=[{"role": "user", "content": prompt}],
+        max_tokens=2500,
+        temperature=0.7
+    )
+    ai_content = response.choices[0].message.content.strip()
+    return ai_content
+except Exception as e:
+    print(f"OpenAI error: {e}")
+    return f"SECTION: Your Personal Report\nHello {first_name}, please contact support for your personalized report."
 
 def create_pdf_report(report_text):
     """Create a beautifully formatted PDF with dark blue theme matching your brand"""
@@ -531,10 +525,6 @@ def create_pdf_report(report_text):
 def create_html_report(chart_data, ai_content, first_name):
     """Generate HTML report with dark blue background and properly formatted headers"""
     try:
-        # Check if chart_data is valid
-        if not chart_data:
-            raise Exception("Chart data is missing or invalid")
-
         chart_basics = f"""
         <div class="chart-basics">
             <h3>Chart Essentials for {first_name}</h3>
