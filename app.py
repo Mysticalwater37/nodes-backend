@@ -512,7 +512,10 @@ def create_pdf_report(report_text):
 def create_html_report(chart_data, ai_content, first_name):
     """Generate HTML report with dark blue background and properly formatted headers"""
     try:
-        # Create chart basics section
+        # Check if chart_data is valid
+        if not chart_data:
+            raise Exception("Chart data is missing or invalid")
+
         chart_basics = f"""
         <div class="chart-basics">
             <h3>Chart Essentials for {first_name}</h3>
