@@ -376,8 +376,8 @@ def create_pdf_report(report_text):
     # Define color scheme to match your beautiful blue theme
     dark_bg = HexColor('#1a202c')      # Dark navy background
     gold_color = HexColor('#edd598')   # Gold for headers
-    light_blue = HexColor('#cbd5e0')   # Light blue for text
-    white = HexColor('#ffffff')        # White for body text
+    white = HexColor('#1a202c')        # Dark text for body text
+    light_blue = HexColor('#4a5568')   # Dark gray for text
     accent_blue = HexColor('#4a5568')  # Medium blue for accents
     
     # Get base styles
