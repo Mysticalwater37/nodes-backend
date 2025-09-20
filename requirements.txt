@@ -7,5 +7,4 @@ pytz
 resend
 openai==0.28.1
 python-dotenv
-playwright
 reportlab
