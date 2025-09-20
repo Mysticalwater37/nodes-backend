@@ -571,7 +571,7 @@ def create_html_report(chart_data, ai_content, first_name):
                 
                 @page {{
                     size: A4;
-                    margin: 1.25in 0.75in 0.75in 0.75in;
+                    margin: 1.5in 0.75in 1in 0.75in;
                 }}
                 
                 body {{
@@ -582,6 +582,8 @@ def create_html_report(chart_data, ai_content, first_name):
                     color: #ffffff;
                     min-height: 100vh;
                     padding: 40px 0;
+                    orphans: 3;
+                    widows: 3;
                 }}
                 
                 .container {{
@@ -633,6 +635,7 @@ def create_html_report(chart_data, ai_content, first_name):
                     z-index: 1;
                     opacity: 0.9;
                     text-align: center;
+                    line-height: 1.4;
                 }}
                 
                 .chart-basics {{
@@ -688,23 +691,18 @@ def create_html_report(chart_data, ai_content, first_name):
                     font-family: 'Playfair Display', serif;
                     color: #edd598;
                     font-size: 2.6em;
-                    margin: 30px 0 35px 0;
+                    margin: 80px 0 35px 0;
                     text-align: center;
                     font-weight: 500;
                     position: relative;
                     letter-spacing: -0.5px;
-                    line-height: 1.2;
+                    line-height: 1.3;
+                    page-break-after: avoid;
+                    break-after: avoid;
                 }}
                 
-                h3 {{
-                    font-family: 'Playfair Display', serif;
-                    color: #cbd5e0;
-                    font-size: 1.8em;
-                    margin: -15px 0 25px 0;
-                    text-align: center;
-                    font-weight: 400;
-                    font-style: italic;
-                    opacity: 0.9;
+                .report-content > *:first-child {{
+                    margin-top: 80px !important;
                 }}
                 
                 p {{
@@ -815,12 +813,7 @@ def create_html_report(chart_data, ai_content, first_name):
                     
                     h2 {{
                         font-size: 2.4em;
-                        margin: 25px 0 30px 0;
-                    }}
-                    
-                    h3 {{
-                        font-size: 1.6em;
-                        margin: -10px 0 20px 0;
+                        margin: 60px 0 30px 0;
                     }}
                     
                     p {{
@@ -863,10 +856,6 @@ def create_html_report(chart_data, ai_content, first_name):
                     h2 {{
                         font-size: 2.2em;
                     }}
-                    
-                    h3 {{
-                        font-size: 1.5em;
-                    }}
                 }}
             </style>
         </head>
@@ -874,7 +863,7 @@ def create_html_report(chart_data, ai_content, first_name):
             <div class="container">
                 <div class="header">
                     <h1>Nodal Pathways</h1>
-                    <div class="subtitle">Personalized Astrological Report for {first_name}</div>
+                    <div class="subtitle">Personalized Astrological Report<br>for {first_name}</div>
                 </div>
                 
                 {chart_basics}
