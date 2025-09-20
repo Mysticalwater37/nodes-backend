@@ -377,8 +377,8 @@ def create_pdf_report(report_text):
     dark_bg = HexColor('#1a202c')      # Dark navy background
     gold_color = HexColor('#edd598')   # Gold for headers
     white = HexColor('#1a202c')        # Dark text for body text
-    light_blue = HexColor('#4a5568')   # Dark gray for text
-    accent_blue = HexColor('#4a5568')  # Medium blue for accents
+    light_blue = HexColor('#1a202c')   # Same as body text for maximum visibility
+    accent_blue = HexColor('#1a202c')  # Same as body text
     
     # Get base styles
     styles = getSampleStyleSheet()
