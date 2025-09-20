@@ -368,6 +368,14 @@ def create_pdf_report(report_text):
     filename = f"nodal_report_{uuid.uuid4()}.pdf"
     filepath = f"/tmp/{filename}"
     
+    # Custom page template with dark background
+    def add_page_background(canvas, doc):
+        """Add dark background to every page"""
+        canvas.saveState()
+        canvas.setFillColor(HexColor('#1a202c'))
+        canvas.rect(0, 0, doc.pagesize[0], doc.pagesize[1], fill=1, stroke=0)
+        canvas.restoreState()
+    
     # Create document with proper margins
     doc = SimpleDocTemplate(
         filepath, 
@@ -385,83 +393,66 @@ def create_pdf_report(report_text):
     white = HexColor('#ffffff')        # White for body text
     accent_blue = HexColor('#4a5568')  # Medium blue for accents
     
-    # Get base styles
-    styles = getSampleStyleSheet()
-    
     # Title style - large gold header
     title_style = ParagraphStyle(
         'CustomTitle',
-        fontSize=36,
+        fontSize=32,
         textColor=gold_color,
         spaceAfter=30,
         spaceBefore=20,
         alignment=TA_CENTER,
         fontName='Helvetica-Bold',
-        leading=40
+        leading=36
     )
     
     # Subtitle style 
     subtitle_style = ParagraphStyle(
         'Subtitle',
-        fontSize=18,
+        fontSize=16,
         textColor=light_blue,
         spaceAfter=40,
-        alignment=TA_CENTER,
-        fontName='Helvetica',
-        leading=22
-    )
-    
-    # Section header style - gold and prominent
-    section_style = ParagraphStyle(
-        'SectionHeader',
-        fontSize=24,
-        textColor=gold_color,
-        spaceAfter=20,
-        spaceBefore=40,
-        alignment=TA_CENTER,
-        fontName='Helvetica-Bold',
-        leading=28,
-        borderWidth=2,
-        borderColor=gold_color,
-        borderPadding=15,
-        backColor=HexColor('#2d3748')  # Slightly lighter dark background
-    )
-    
-    # Body text style - white text, larger font
-    body_style = ParagraphStyle(
-        'Body',
-        fontSize=16,
-        textColor=white,
-        spaceAfter=18,
-        spaceBefore=5,
-        alignment=TA_JUSTIFY,
-        fontName='Helvetica',
-        leading=24,
-        leftIndent=10,
-        rightIndent=10
-    )
-    
-    # Chart essentials style
-    chart_style = ParagraphStyle(
-        'ChartEssentials',
-        fontSize=14,
-        textColor=light_blue,
-        spaceAfter=8,
         alignment=TA_CENTER,
         fontName='Helvetica',
         leading=20
     )
     
+    # Section header style - gold and prominent
+    section_style = ParagraphStyle(
+        'SectionHeader',
+        fontSize=20,
+        textColor=gold_color,
+        spaceAfter=20,
+        spaceBefore=30,
+        alignment=TA_LEFT,
+        fontName='Helvetica-Bold',
+        leading=24,
+        leftIndent=0
+    )
+    
+    # Body text style - white text, larger font
+    body_style = ParagraphStyle(
+        'Body',
+        fontSize=12,
+        textColor=white,
+        spaceAfter=15,
+        spaceBefore=5,
+        alignment=TA_JUSTIFY,
+        fontName='Helvetica',
+        leading=18,
+        leftIndent=10,
+        rightIndent=10
+    )
+    
     # Disclaimer style
     disclaimer_style = ParagraphStyle(
         'Disclaimer',
-        fontSize=12,
+        fontSize=10,
         textColor=light_blue,
         spaceAfter=20,
         spaceBefore=30,
         alignment=TA_CENTER,
         fontName='Helvetica-Oblique',
-        leading=16,
+        leading=14,
         leftIndent=40,
         rightIndent=40
     )
@@ -472,55 +463,58 @@ def create_pdf_report(report_text):
     story.append(Spacer(1, 0.5*inch))
     story.append(Paragraph("Nodal Pathways", title_style))
     story.append(Paragraph("Personalized Astrological Report", subtitle_style))
+    story.append(Spacer(1, 0.3*inch))
     
-    # Parse the report content
-    sections = report_text.split('SECTION:')
+    # Better content parsing - split by common section headers
+    # Look for patterns like "Your Inner Light:", "Your Emotional Nature:", etc.
+    content = report_text.strip()
     
-    for section in sections:
-        if not section.strip():
+    # Split into sections by looking for title patterns
+    import re
+    section_pattern = r'(Your [^:]+:|The [^:]+:|Integration and Growth|Chart Essentials|Your Cosmic Blueprint)'
+    sections = re.split(section_pattern, content)
+    
+    # Process sections
+    current_section = ""
+    for i, part in enumerate(sections):
+        if not part.strip():
             continue
             
-        lines = section.strip().split('\n')
-        if not lines:
-            continue
+        # Check if this part looks like a section header
+        if re.match(section_pattern, part.strip()):
+            current_section = part.strip()
+        else:
+            # This is content for the current section
+            if current_section:
+                # Add section header
+                story.append(Paragraph(current_section, section_style))
+                current_section = ""
             
-        # First line is the section header
-        header = lines[0].strip()
-        
-        # Add section header with beautiful styling
-        story.append(Paragraph(header, section_style))
-        
-        # Process the content paragraphs
-        content_lines = []
-        for line in lines[1:]:
-            if line.strip():
-                content_lines.append(line.strip())
-        
-        # Group lines into paragraphs (assuming paragraphs are separated by empty lines)
-        current_paragraph = []
-        for line in content_lines:
-            if line:
-                current_paragraph.append(line)
-            else:
-                if current_paragraph:
-                    para_text = ' '.join(current_paragraph)
-                    story.append(Paragraph(para_text, body_style))
-                    current_paragraph = []
-        
-        # Add final paragraph if exists
-        if current_paragraph:
-            para_text = ' '.join(current_paragraph)
-            story.append(Paragraph(para_text, body_style))
+            # Split content into paragraphs
+            paragraphs = [p.strip() for p in part.split('\n\n') if p.strip()]
+            
+            for paragraph in paragraphs:
+                if len(paragraph) > 50:  # Only add substantial paragraphs
+                    # Clean up the paragraph
+                    clean_paragraph = paragraph.replace('\n', ' ').strip()
+                    story.append(Paragraph(clean_paragraph, body_style))
+    
+    # If no sections were found, just add the content as is
+    if len(story) <= 3:  # Only title elements added
+        paragraphs = [p.strip() for p in report_text.split('\n\n') if p.strip()]
+        for paragraph in paragraphs:
+            if len(paragraph) > 20:
+                clean_paragraph = paragraph.replace('\n', ' ').strip()
+                story.append(Paragraph(clean_paragraph, body_style))
     
     # Add footer elements
     story.append(Spacer(1, 0.5*inch))
-    story.append(Paragraph("Nodal Pathways", section_style))
-    story.append(Paragraph("Guiding you on your cosmic journey of self-discovery", disclaimer_style))
+    story.append(Paragraph("Disclaimer: This report is for entertainment and self-reflection purposes only.", disclaimer_style))
     
-    # Build the PDF
-    doc.build(story)
+    # Build the PDF with dark background
+    doc.build(story, onFirstPage=add_page_background, onLaterPages=add_page_background)
     return filepath
-
+    
 def create_html_report(chart_data, ai_content, first_name):
     """Generate HTML report with dark blue background and properly formatted headers"""
     try:
