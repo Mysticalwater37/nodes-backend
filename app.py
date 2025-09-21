@@ -948,12 +948,15 @@ def get_nodes():
 
         return jsonify(chart_data)
 
-    except Exception as e:
+     except Exception as e:
         import traceback
+        tb = traceback.format_exc()
         print("[/nodes] ERROR:", str(e))
-        print(traceback.format_exc())
-        return jsonify({"error": str(e)}), 400
-
+        print(tb)
+        return jsonify({
+        "error": str(e),
+        "traceback": tb
+        }), 400
 
 @app.route('/report', methods=['POST'])
 def make_report():
