@@ -867,23 +867,27 @@ def send_report_email(email, report_text, pdf_path):
 # Your existing endpoints
 @app.route('/nodes', methods=['POST'])
 def get_nodes():
-    try:
-        data = request.json
-        city = data.get('city', '')
-        state = data.get('state', '')  
-        country = data.get('country', '')
+    print("HIT /nodes")
+    data = request.get_json(silent=True)
+    if not data:
+        return jsonify({"error": "Failed to parse JSON body"}), 400
 
-        if state:
-            full_location = f"{city}, {state}, {country}"
-        else:
-            full_location = f"{city}, {country}"
+    city = data.get('city', '')
+    state = data.get('state', '')  
+    country = data.get('country', '')
 
-        chart_data = calculate_nodes_and_big_three(
-            data['date'],
-            data.get('time', '12:00'),
-            full_location
-        )
-        return jsonify(chart_data)
+    if state:
+        full_location = f"{city}, {state}, {country}"
+    else:
+        full_location = f"{city}, {country}"
+
+    chart_data = calculate_nodes_and_big_three(
+        data['date'],
+        data.get('time', '12:00'),
+        full_location
+    )
+    return jsonify(chart_data)
+
     except Exception as e:
         return jsonify({"error": str(e)}), 400
 
