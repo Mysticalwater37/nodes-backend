@@ -183,7 +183,9 @@ def calculate_nodes_and_big_three(date, time, location):
         return chart_data
 
     except Exception as e:
+        import traceback
         print(f"Error in chart calculation: {e}")
+        print(traceback.format_exc())
         return None
 
 def generate_full_report(chart_data):
