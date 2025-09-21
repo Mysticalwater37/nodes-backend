@@ -1038,8 +1038,15 @@ def process_form():
         response = requests.get(geocode_url)
         geo_data = response.json()
 
+        # Log raw response
+        print("Geocoding API response:", geo_data)
+
         if geo_data["status"] != "OK":
-            return jsonify({"error": f"Failed to geocode location: {full_location}"}), 400
+            return jsonify({
+                "error": f"Failed to geocode location: {full_location}",
+                "status": geo_data.get("status"),
+                "message": geo_data.get("error_message")
+            }), 400
 
         latitude = geo_data["results"][0]["geometry"]["location"]["lat"]
         longitude = geo_data["results"][0]["geometry"]["location"]["lng"]
