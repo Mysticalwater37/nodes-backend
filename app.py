@@ -46,6 +46,13 @@ SIGNS = [
 # Store for temporary files
 temp_files = {}
 
+import os
+import requests
+from datetime import datetime
+import pytz
+import swisseph as swe
+from timezonefinder import TimezoneFinder
+
 def calculate_nodes_and_big_three(date, time, location):
     """Calculate North/South Node positions and Sun/Moon/Rising signs"""
     try:
@@ -74,46 +81,51 @@ def calculate_nodes_and_big_three(date, time, location):
         latitude = None
         longitude = None
         
-        # Check if location matches any cached cities
         for cached_city, coords in CITY_COORDS.items():
             if location.lower() in cached_city.lower() or cached_city.lower() in location.lower():
                 latitude, longitude = coords
                 print(f"Using cached coordinates for {cached_city}: {latitude}, {longitude}")
                 break
         
-       # If not in cache, try geocoding with Positionstack
-if latitude is None:
-    try:
-        print(f"Location '{location}' not in cache, attempting geocoding...")
+        # If not in cache, try geocoding with Positionstack
+        if latitude is None:
+            try:
+                print(f"Location '{location}' not in cache, attempting geocoding...")
 
-        api_key = os.getenv("POSITIONSTACK_API_KEY")
-        if not api_key:
-            raise ValueError("POSITIONSTACK_API_KEY is not set in environment")
+                api_key = os.getenv("POSITIONSTACK_API_KEY")
+                if not api_key:
+                    raise ValueError("POSITIONSTACK_API_KEY is not set in environment")
 
-        url = "https://api.positionstack.com/v1/forward"
-        params = {
-            "access_key": api_key,
-            "query": location,
-            "limit": 1,
-            "output": "json"
-        }
+                url = "https://api.positionstack.com/v1/forward"
+                params = {
+                    "access_key": api_key,
+                    "query": location,
+                    "limit": 1,
+                    "output": "json"
+                }
 
-        response = requests.get(url, params=params, timeout=10)
+                response = requests.get(url, params=params, timeout=10)
 
-        if response.status_code != 200:
-            raise ValueError(f"Positionstack error {response.status_code}: {response.text}")
+                if response.status_code != 200:
+                    raise ValueError(f"Positionstack error {response.status_code}: {response.text}")
 
-        data = response.json()
-        if "data" in data and len(data["data"]) > 0:
-            latitude = data["data"][0]["latitude"]
-            longitude = data["data"][0]["longitude"]
-            print(f"Geocoded {location}: {latitude}, {longitude}")
-        else:
-            raise ValueError(f"Could not find location: {location}")
+                data = response.json()
+                if "data" in data and len(data["data"]) > 0:
+                    latitude = data["data"][0]["latitude"]
+                    longitude = data["data"][0]["longitude"]
+                    print(f"Geocoded {location}: {latitude}, {longitude}")
+                else:
+                    raise ValueError(f"Could not find location: {location}")
+
+            except Exception as e:
+                print(f"Geocoding error: {e}")
+                raise
+
+        # (Your existing astro/timezone code continues here…)
 
     except Exception as e:
-        print(f"Geocoding error: {e}")
-        raise
+        print(f"Error in chart calculation: {e}")
+        return None
 
 def generate_full_report(chart_data):
     """Generate rich, narrative-style report with context and explanations"""
