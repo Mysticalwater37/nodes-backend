@@ -52,6 +52,22 @@ def ping():
     print(f"Raw body: {request.data}")
     return jsonify({"parsed": request.get_json(silent=True)})
 
+@app.route('/geo-debug', methods=['POST'])
+def geo_debug():
+    data = request.get_json(silent=True) or {}
+    city = data.get("city", "")
+    state = data.get("state", "")
+    country = data.get("country", "")
+
+    print(f"[geo-debug] Input: {city}, {state}, {country}")
+    lat, lon = geocode_google(city, state, country)
+    print(f"[geo-debug] Output: {lat}, {lon}")
+
+    return jsonify({
+        "input": {"city": city, "state": state, "country": country},
+        "coords": {"lat": lat, "lon": lon}
+    })
+
 # ===== Google Geocoding Helper =====
 def geocode_google(city: str, state: str, country: str):
     """Use Google Geocoding API only."""
@@ -94,6 +110,8 @@ def calculate_nodes_and_big_three(date, time, location):
         _country = location.split(",")[-1].strip() if location else ""
 
         lat, lon = geocode_google(_city, _state, _country)
+        print(f"[debug] Got coords from Google: {lat}, {lon}")
+
 
         if lat is None or lon is None:
             raise ValueError(f"Could not geocode location: {_city}, {_state}, {_country}")
@@ -107,6 +125,7 @@ def calculate_nodes_and_big_three(date, time, location):
         # --- Find timezone from coordinates ---
         tz_finder = TimezoneFinder()
         tz_name = tz_finder.timezone_at(lng=longitude, lat=latitude)
+        print(f"[debug] Found timezone: {tz_name}")
         if not tz_name:
             raise ValueError(f"Could not find timezone for {location}")
         tz = pytz.timezone(tz_name)
@@ -160,7 +179,7 @@ def calculate_nodes_and_big_three(date, time, location):
             "datetime_utc": dt_utc.isoformat(),
             "timezone": tz_name
         }
-
+        print(f"[debug] Chart data built: {chart_data}")
         return chart_data
 
     except Exception as e:
