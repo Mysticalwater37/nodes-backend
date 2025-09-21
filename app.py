@@ -81,18 +81,34 @@ def calculate_nodes_and_big_three(date, time, location):
                 print(f"Using cached coordinates for {cached_city}: {latitude}, {longitude}")
                 break
         
-        # If not in cache, try geocoding
+        # If not in cache, try geocoding with Positionstack
         if latitude is None:
-            print(f"Location '{location}' not in cache, attempting geocoding...")
-            geolocator = Nominatim(user_agent="astro_app")
-            location_data = geolocator.geocode(location)
-            
-            if not location_data:
+            try:
+                print(f"Location '{location}' not in cache, attempting geocoding...")
+                import requests
+                import os
+                
+                api_key = os.getenv("POSITIONSTACK_API_KEY")
+                url = "http://api.positionstack.com/v1/forward"
+                params = {
+                    'access_key': api_key,
+                    'query': location,
+                    'limit': 1
+                }
+                
+                response = requests.get(url, params=params, timeout=10)
+                data = response.json()
+                
+                if data.get('data') and len(data['data']) > 0:
+                    latitude = data['data'][0]['latitude']
+                    longitude = data['data'][0]['longitude']
+                    print(f"Geocoded {location}: {latitude}, {longitude}")
+                else:
+                    raise ValueError(f"Could not find location: {location}")
+                    
+            except Exception as e:
+                print(f"Geocoding error: {e}")
                 raise ValueError(f"Could not find location: {location}")
-            
-            latitude = location_data.latitude
-            longitude = location_data.longitude
-            print(f"Geocoded {location}: {latitude}, {longitude}")
         
         # Parse birth date and time
         birth_dt = datetime.strptime(date, '%Y-%m-%d')
@@ -161,7 +177,6 @@ def calculate_nodes_and_big_three(date, time, location):
     except Exception as e:
         print(f"Error in chart calculation: {e}")
         return None
-
 
 def generate_full_report(chart_data):
     """Generate rich, narrative-style report with context and explanations"""
