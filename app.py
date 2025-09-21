@@ -137,6 +137,36 @@ def calculate_nodes_and_big_three(date, time, location):
         _state = location.split(",")[1].strip() if location and len(location.split(",")) > 2 else ""
         _country = location.split(",")[-1].strip() if location else ""
 
+        # Map common state abbreviations to full names
+        STATE_MAP = {
+            "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas", "CA": "California",
+            "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware", "FL": "Florida", "GA": "Georgia",
+            "HI": "Hawaii", "ID": "Idaho", "IL": "Illinois", "IN": "Indiana", "IA": "Iowa",
+            "KS": "Kansas", "KY": "Kentucky", "LA": "Louisiana", "ME": "Maine", "MD": "Maryland",
+            "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota", "MS": "Mississippi", "MO": "Missouri",
+            "MT": "Montana", "NE": "Nebraska", "NV": "Nevada", "NH": "New Hampshire", "NJ": "New Jersey",
+            "NM": "New Mexico", "NY": "New York", "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio",
+            "OK": "Oklahoma", "OR": "Oregon", "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina",
+            "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "UT": "Utah", "VT": "Vermont",
+            "VA": "Virginia", "WA": "Washington", "WV": "West Virginia", "WI": "Wisconsin", "WY": "Wyoming"
+        }
+
+        # Map common country abbreviations to full names
+        COUNTRY_MAP = {
+            "USA": "United States", "U.S.A.": "United States", "US": "United States",
+            "UK": "United Kingdom", "UAE": "United Arab Emirates",
+            "DRC": "Democratic Republic of the Congo", "CAR": "Central African Republic",
+            "S. KOREA": "South Korea", "N. KOREA": "North Korea",
+            "PRC": "China", "RUSS.": "Russia"
+        }
+
+        # Normalize state and country before lookup
+        if _state:
+            _state = STATE_MAP.get(_state.upper(), _state)
+        if _country:
+            _country = COUNTRY_MAP.get(_country.upper(), _country)
+
+        # Now do the lookup
         lat, lon = get_coords_local(_city, _state, _country)
         if lat is None or lon is None:
             print(f"[geo] Local miss for '{_city}, {_state}, {_country}'. Trying Nominatim...")
@@ -167,18 +197,15 @@ def calculate_nodes_and_big_three(date, time, location):
                         dt_utc.hour + dt_utc.minute/60.0)
 
         # Sun & Moon
-        sun = swe.calc_ut(jd, swe.SUN)[0]
-        moon = swe.calc_ut(jd, swe.MOON)[0]
-        sun_lon = sun[0]
-        moon_lon = moon[0]
+        sun_lon = swe.calc_ut(jd, swe.SUN)[0]
+        moon_lon = swe.calc_ut(jd, swe.MOON)[0]
 
         # Ascendant (Rising sign)
-        ascmc = swe.houses(jd, latitude, longitude)[0]
+        ascmc, _, _, _ = swe.houses(jd, latitude, longitude)
         asc_lon = ascmc[0]
 
         # Nodes (True Node)
-        node = swe.calc_ut(jd, swe.TRUE_NODE)[0]
-        node_lon = node[0]
+        node_lon = swe.calc_ut(jd, swe.TRUE_NODE)[0]
 
         # Signs lookup
         SIGNS = [
@@ -210,9 +237,7 @@ def calculate_nodes_and_big_three(date, time, location):
         return chart_data
 
     except Exception as e:
-        import traceback
         print(f"Error in chart calculation: {e}")
-        print(traceback.format_exc())
         return None
 
 def generate_full_report(chart_data):
