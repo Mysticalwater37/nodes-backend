@@ -1,3 +1,4 @@
+# ===== Imports =====
 from flask import Flask, request, jsonify, send_file
 import swisseph as swe
 from geopy.geocoders import Nominatim
@@ -8,7 +9,11 @@ import uuid
 import os
 import resend
 import base64
-import openai 
+import openai
+import requests
+import logging
+import re
+
 from reportlab.lib.pagesizes import A4
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
@@ -16,42 +21,30 @@ from reportlab.lib.units import inch
 from reportlab.lib.colors import HexColor
 from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY, TA_LEFT
 from io import BytesIO
-import re
 
+# ===== App Setup =====
 app = Flask(__name__)
-import logging
 logging.basicConfig(level=logging.DEBUG)
+
+# ===== API Keys =====
 openai.api_key = os.getenv("OPENAI_API_KEY")
-
-@app.route('/test', methods=['GET'])
-def test():
-    print("TEST ROUTE WORKING")
-    print("=== CHECKING KNOWLEDGE BASE ===")
-    print(f"KNOWLEDGE_BASE keys: {list(KNOWLEDGE_BASE.keys())}")
-    return jsonify({
-        "status": "test successful", 
-        "kb_keys": list(KNOWLEDGE_BASE.keys())
-    })
-
-# Path to Swiss Ephemeris data files
-swe.set_ephe_path('.')  
-
-# Set your Resend API key from environment variable
 resend.api_key = os.getenv("RESEND_API_KEY")
 
+# ===== Ephemeris Path =====
+swe.set_ephe_path('.')  
+
+# ===== Global Storage =====
 SIGNS = [
     "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
     "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"
 ]
-# Store for temporary files
 temp_files = {}
 
-import os
-import requests
-from datetime import datetime
-import pytz
-import swisseph as swe
-from timezonefinder import TimezoneFinder
+# ===== Debug Routes =====
+@app.route('/test', methods=['GET'])
+def test():
+    print("HIT /test route")
+    return jsonify({"status": "ok"})
 
 def calculate_nodes_and_big_three(date, time, location):
     """Calculate North/South Node positions and Sun/Moon/Rising signs"""
