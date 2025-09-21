@@ -936,6 +936,8 @@ def process_form():
 
     try:
         # Safely parse JSON
+        print(f"Headers: {dict(request.headers)}")
+        print(f"Request data (raw): {request.data}")
         data = request.get_json(silent=True)
         if not data:
             return jsonify({"error": "Failed to parse JSON body"}), 400
