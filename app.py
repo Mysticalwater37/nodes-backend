@@ -980,19 +980,19 @@ def download_file(file_id):
     try:
         if file_id not in temp_files:
             return jsonify({"error": "File not found"}), 404
-            
+
         filepath = temp_files[file_id]
-        
+
         if not os.path.exists(filepath):
             return jsonify({"error": "File no longer available"}), 404
-            
+
         return send_file(
             filepath,
             as_attachment=True,
             download_name="nodal_pathways_report.pdf",
             mimetype="application/pdf"
         )
-        
+
     except Exception as e:
         return jsonify({"error": str(e)}), 400
 
