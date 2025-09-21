@@ -45,6 +45,14 @@ temp_files = {}
 def test():
     print("HIT /test route")
     return jsonify({"status": "ok"})
+@app.route('/ping', methods=['POST'])
+def ping():
+    print("HIT /ping")
+    print(f"Content-Type: {request.content_type}")
+    print(f"Headers: {dict(request.headers)}")
+    print(f"Raw body: {request.data}")
+    return jsonify({"parsed": request.get_json(silent=True)})
+
 
 def calculate_nodes_and_big_three(date, time, location):
     """Calculate North/South Node positions and Sun/Moon/Rising signs"""
