@@ -920,36 +920,53 @@ def send_report_email(email, report_text, pdf_path):
         raise Exception(f"Email sending error: {str(e)}")
 
 # Your existing endpoints
-@app.route('/nodes', methods=['POST'])
-def get_nodes():
+def calculate_nodes_and_big_three(birthdate, birthtime, latitude, longitude):
     try:
-        data = request.json
-        city = data.get('city', '')
-        state = data.get('state', '')
-        country = data.get('country', '')
+        import swisseph as swe
+        import datetime
 
-        if state:
-            full_location = f"{city}, {state}, {country}"
-        else:
-            full_location = f"{city}, {country}"
+        # Combine date and time
+        dt_str = f"{birthdate} {birthtime}"
+        dt = datetime.datetime.strptime(dt_str, "%Y-%m-%d %H:%M")
 
-        chart_data = calculate_nodes_and_big_three(
-            data['date'],
-            data.get('time', '12:00'),
-            full_location
-        )
+        # Convert to Julian Day
+        jd_ut = swe.julday(dt.year, dt.month, dt.day, 
+                          dt.hour + dt.minute/60.0)
 
-        return jsonify(chart_data)
+        # Sun
+        sun_long, _ = swe.calc_ut(jd_ut, swe.SUN)
+        sun_sign = get_zodiac_sign(sun_long[0])
+
+        # Moon
+        moon_long, _ = swe.calc_ut(jd_ut, swe.MOON)
+        moon_sign = get_zodiac_sign(moon_long[0])
+
+        # Ascendant (Rising)
+        ascmc = swe.houses(jd_ut, latitude, longitude, b'P')
+        rising_long = ascmc[0][0]
+        rising_sign = get_zodiac_sign(rising_long)
+
+        # Nodes
+        north_node_long, _ = swe.calc_ut(jd_ut, swe.TRUE_NODE)
+        north_node_sign = get_zodiac_sign(north_node_long[0])
+
+        south_node_long = (north_node_long[0] + 180.0) % 360.0
+        south_node_sign = get_zodiac_sign(south_node_long)
+
+        return {
+            "sun_sign": sun_sign,
+            "moon_sign": moon_sign,
+            "rising_sign": rising_sign,
+            "north_node": {"sign": north_node_sign},
+            "south_node": {"sign": south_node_sign}
+        }
 
     except Exception as e:
         import traceback
         tb = traceback.format_exc()
-        print("[/nodes] ERROR:", str(e))
+        print("[calculate_nodes_and_big_three] ERROR:", str(e))
         print(tb)
-        return jsonify({
-            "error": str(e),
-            "traceback": tb
-        }), 400
+        raise
 
 @app.route('/report', methods=['POST'])
 def make_report():
