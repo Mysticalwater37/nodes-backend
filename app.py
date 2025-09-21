@@ -467,24 +467,24 @@ def create_pdf_report(report_text, first_name="Friend"):
         leading=44
     )
     
-    # Subtitle style - personalized
+    # Subtitle style 
     subtitle_style = ParagraphStyle(
         'Subtitle',
         fontSize=22,
         textColor=light_blue,
-        spaceAfter=50,
+        spaceAfter=40,
         alignment=TA_CENTER,
         fontName='Helvetica',
         leading=28
     )
     
-    # Section header style
+    # Section header style - gold and prominent
     section_style = ParagraphStyle(
         'SectionHeader',
         fontSize=28,
         textColor=gold_color,
-        spaceAfter=30,
-        spaceBefore=60,
+        spaceAfter=24,
+        spaceBefore=44,
         alignment=TA_CENTER,
         fontName='Helvetica-Bold',
         leading=34,
@@ -494,30 +494,30 @@ def create_pdf_report(report_text, first_name="Friend"):
         backColor=HexColor('#2d3748')
     )
     
-    # Body text style
+    # Body text style - white text, larger font
     body_style = ParagraphStyle(
         'Body',
-        fontSize=18,            # bumped from 16
+        fontSize=20,
         textColor=white,
-        spaceAfter=22,          # more spacing between paragraphs
+        spaceAfter=22,
         spaceBefore=8,
         alignment=TA_JUSTIFY,
         fontName='Helvetica',
-        leading=28,             # line height
-        leftIndent=10,
-        rightIndent=10
+        leading=28,
+        leftIndent=12,
+        rightIndent=12
     )
-    
+
     # Disclaimer style
     disclaimer_style = ParagraphStyle(
         'Disclaimer',
-        fontSize=14,
+        fontSize=16,
         textColor=light_blue,
-        spaceAfter=25,
-        spaceBefore=40,
+        spaceAfter=22,
+        spaceBefore=34,
         alignment=TA_CENTER,
         fontName='Helvetica-Oblique',
-        leading=20,
+        leading=22,
         leftIndent=40,
         rightIndent=40
     )
