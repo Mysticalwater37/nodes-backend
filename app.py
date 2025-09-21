@@ -1001,7 +1001,6 @@ def make_report():
         return jsonify({"error": str(e)}), 400
 
 # New endpoint for Google Forms processing
-# New endpoint for Google Forms processing
 @app.route('/process-form', methods=['POST'])
 def process_form():
     """Process Google Form submission and email report"""
@@ -1027,18 +1026,32 @@ def process_form():
         birth_date = data.get('Birth Date', '')
         birth_time = data.get('Birth Time', '12:00')
 
+        # Build full location string
         full_location = f"{city}, {state}, {country}" if state else f"{city}, {country}"
 
-        chart_data = calculate_nodes_and_big_three(birth_date, birth_time, full_location)
+        # === Geocode with Google Maps ===
+        geocode_url = f"https://maps.googleapis.com/maps/api/geocode/json?address={full_location}&key={GOOGLE_API_KEY}"
+        response = requests.get(geocode_url)
+        geo_data = response.json()
 
-        # Guard clause to prevent NoneType errors
+        if geo_data["status"] != "OK":
+            return jsonify({"error": f"Failed to geocode location: {full_location}"}), 400
+
+        latitude = geo_data["results"][0]["geometry"]["location"]["lat"]
+        longitude = geo_data["results"][0]["geometry"]["location"]["lng"]
+
+        # Now call Swiss Ephemeris calculation with lat/long
+        chart_data = calculate_nodes_and_big_three(birth_date, birth_time, latitude, longitude)
+
         if not chart_data:
-            return jsonify({"error": f"Could not geocode location: {full_location}"}), 400
+            return jsonify({"error": f"Chart calculation failed for: {full_location}"}), 400
 
+        # Generate AI content and reports
         ai_content = generate_ai_report(chart_data, first_name)
         html_content = create_html_report(chart_data, ai_content, first_name)
         pdf_path = create_pdf_report(ai_content, first_name)
 
+        # Email the report
         send_report_email(email, html_content, pdf_path)
         print("Email sent successfully")
 
@@ -1048,27 +1061,6 @@ def process_form():
         import traceback
         print(f"DETAILED ERROR: {str(e)}")
         print(f"FULL TRACEBACK: {traceback.format_exc()}")
-        return jsonify({"error": str(e)}), 400
-
-@app.route('/download/<file_id>', methods=['GET'])
-def download_file(file_id):
-    try:
-        if file_id not in temp_files:
-            return jsonify({"error": "File not found"}), 404
-
-        filepath = temp_files[file_id]
-
-        if not os.path.exists(filepath):
-            return jsonify({"error": "File no longer available"}), 404
-
-        return send_file(
-            filepath,
-            as_attachment=True,
-            download_name="nodal_pathways_report.pdf",
-            mimetype="application/pdf"
-        )
-
-    except Exception as e:
         return jsonify({"error": str(e)}), 400
 
 if __name__ == '__main__':
