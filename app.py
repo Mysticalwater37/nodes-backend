@@ -110,13 +110,12 @@ def calculate_nodes_and_big_three(date, time, location):
         _country = location.split(",")[-1].strip() if location else ""
 
         lat, lon = geocode_google(_city, _state, _country)
-        print(f"[debug] Got coords from Google: {lat}, {lon}")
-
 
         if lat is None or lon is None:
             raise ValueError(f"Could not geocode location: {_city}, {_state}, {_country}")
 
         latitude, longitude = lat, lon
+        print(f"[debug] Using coords: {latitude}, {longitude} for '{location}'")
 
         # --- Parse date & time ---
         dt_str = f"{date} {time}"
@@ -125,32 +124,47 @@ def calculate_nodes_and_big_three(date, time, location):
         # --- Find timezone from coordinates ---
         tz_finder = TimezoneFinder()
         tz_name = tz_finder.timezone_at(lng=longitude, lat=latitude)
-        print(f"[debug] Found timezone: {tz_name}")
+        if not tz_name:
+            # fallback if timezone_at fails
+            tz_name = tz_finder.closest_timezone_at(lng=longitude, lat=latitude)
         if not tz_name:
             raise ValueError(f"Could not find timezone for {location}")
         tz = pytz.timezone(tz_name)
         dt_local = tz.localize(naive_dt)
-
-        # Convert to UTC for Swiss Ephemeris
         dt_utc = dt_local.astimezone(pytz.utc)
 
-        # --- Swiss Ephemeris calculations ---
-        jd = swe.julday(dt_utc.year, dt_utc.month, dt_utc.day,
-                        dt_utc.hour + dt_utc.minute/60.0)
+        print(f"[debug] Local datetime: {dt_local}, UTC: {dt_utc}, TZ: {tz_name}")
 
-        # Sun & Moon
-        sun_result = swe.calc_ut(jd, swe.SUN)
-        moon_result = swe.calc_ut(jd, swe.MOON)
-        sun_lon = sun_result[0] if isinstance(sun_result, tuple) else sun_result
-        moon_lon = moon_result[0] if isinstance(moon_result, tuple) else moon_result
+        # --- Swiss Ephemeris calculations ---
+        jd = swe.julday(
+            dt_utc.year, dt_utc.month, dt_utc.day,
+            dt_utc.hour + dt_utc.minute / 60.0
+        )
+        print(f"[debug] Julian Day: {jd}")
+
+        # Helper: safely extract longitude
+        def _lon(result):
+            if isinstance(result, (list, tuple)):
+                # sometimes (rc, [lon, lat, dist])
+                if len(result) > 1 and isinstance(result[1], (list, tuple)):
+                    return result[1][0]
+                # sometimes (lon, lat, dist)
+                return result[0]
+            return result
+
+        # Sun, Moon, Node
+        sun_lon = _lon(swe.calc_ut(jd, swe.SUN))
+        moon_lon = _lon(swe.calc_ut(jd, swe.MOON))
+        node_lon = _lon(swe.calc_ut(jd, swe.TRUE_NODE))
+
+        print(f"[debug] Sun longitude: {sun_lon}")
+        print(f"[debug] Moon longitude: {moon_lon}")
+        print(f"[debug] Node longitude: {node_lon}")
 
         # Ascendant (Rising sign)
-        ascmc = swe.houses(jd, latitude, longitude)[0]
+        cusps, ascmc = swe.houses(jd, latitude, longitude)
         asc_lon = ascmc[0]
-
-        # Nodes (True Node)
-        node_result = swe.calc_ut(jd, swe.TRUE_NODE)
-        node_lon = node_result[0] if isinstance(node_result, tuple) else node_result
+        print(f"[debug] Ascendant longitude: {asc_lon}")
 
         # Signs lookup
         SIGNS = [
@@ -179,7 +193,8 @@ def calculate_nodes_and_big_three(date, time, location):
             "datetime_utc": dt_utc.isoformat(),
             "timezone": tz_name
         }
-        print(f"[debug] Chart data built: {chart_data}")
+
+        print(f"[debug] Chart data built successfully: {chart_data}")
         return chart_data
 
     except Exception as e:
