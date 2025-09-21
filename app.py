@@ -888,6 +888,7 @@ def make_report():
         return jsonify({"error": str(e)}), 400
 
 # New endpoint for Google Forms processing
+# New endpoint for Google Forms processing
 @app.route('/process-form', methods=['POST'])
 def process_form():
     """Process Google Form submission and email report"""
@@ -916,8 +917,11 @@ def process_form():
         full_location = f"{city}, {state}, {country}" if state else f"{city}, {country}"
 
         chart_data = calculate_nodes_and_big_three(birth_date, birth_time, full_location)
+
+        # Guard clause to prevent NoneType errors
         if not chart_data:
-        return jsonify({"error": f"Could not geocode location: {full_location}"}), 400
+            return jsonify({"error": f"Could not geocode location: {full_location}"}), 400
+
         ai_content = generate_ai_report(chart_data, first_name)
         html_content = create_html_report(chart_data, ai_content, first_name)
         pdf_path = create_pdf_report(ai_content)
