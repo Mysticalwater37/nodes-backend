@@ -89,7 +89,7 @@ def calculate_nodes_and_big_three(date, time, location):
                 import os
                 
                 api_key = os.getenv("POSITIONSTACK_API_KEY")
-                url = "http://api.positionstack.com/v1/forward"
+                url = "https://api.positionstack.com/v1/forward"
                 params = {
                     'access_key': api_key,
                     'query': location,
