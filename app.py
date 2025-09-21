@@ -924,8 +924,6 @@ def send_report_email(email, report_text, pdf_path):
 def get_nodes():
     try:
         data = request.json
-        print("[/nodes] Incoming payload:", data)
-
         city = data.get('city', '')
         state = data.get('state', '')
         country = data.get('country', '')
@@ -941,21 +939,16 @@ def get_nodes():
             full_location
         )
 
-        print("[/nodes] Chart data returned:", chart_data)
-
-        if not chart_data:
-            return jsonify({"error": "Chart calculation failed"}), 400
-
         return jsonify(chart_data)
 
-     except Exception as e:
+    except Exception as e:
         import traceback
         tb = traceback.format_exc()
         print("[/nodes] ERROR:", str(e))
         print(tb)
         return jsonify({
-        "error": str(e),
-        "traceback": tb
+            "error": str(e),
+            "traceback": tb
         }), 400
 
 @app.route('/report', methods=['POST'])
