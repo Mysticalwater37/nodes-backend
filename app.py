@@ -956,7 +956,7 @@ def make_report():
 # New endpoint for Google Forms processing
 @app.route('/process-form', methods=['POST'])
 def process_form():
-    """Process Google Form submission and generate chart data"""
+    """Process Google Form submission and email report"""
     try:
         data = request.get_json(silent=True)
         if not data:
@@ -977,8 +977,6 @@ def process_form():
         response = requests.get(geocode_url)
         geo_data = response.json()
 
-        print("Geocoding API response:", geo_data)
-
         if geo_data["status"] != "OK":
             return jsonify({
                 "error": f"Failed to geocode location: {full_location}",
@@ -989,15 +987,22 @@ def process_form():
         latitude = geo_data["results"][0]["geometry"]["location"]["lat"]
         longitude = geo_data["results"][0]["geometry"]["location"]["lng"]
 
-        # ✅ pass lat/long now instead of location
+        # === Astrology calculation ===
         chart_data = calculate_nodes_and_big_three(birth_date, birth_time, latitude, longitude)
-
         if not chart_data:
             return jsonify({"error": f"Chart calculation failed for: {full_location}"}), 400
 
-        # For now just return chart data to confirm it works
+        # === AI + Report generation ===
+        ai_content = generate_ai_report(chart_data, first_name)
+        html_content = create_html_report(chart_data, ai_content, first_name)
+        pdf_path = create_pdf_report(ai_content, first_name)
+
+        # === Email report ===
+        send_report_email(email, html_content, pdf_path)
+
         return jsonify({
             "status": "success",
+            "message": f"Report sent successfully to {email}",
             "chart_data": chart_data
         })
 
