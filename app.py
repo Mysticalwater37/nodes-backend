@@ -1,7 +1,6 @@
 # ===== Imports =====
 from flask import Flask, request, jsonify, send_file
 import swisseph as swe
-from geopy.geocoders import Nominatim
 from timezonefinder import TimezoneFinder
 from datetime import datetime
 import pytz
@@ -21,79 +20,6 @@ from reportlab.lib.units import inch
 from reportlab.lib.colors import HexColor
 from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY, TA_LEFT
 from io import BytesIO
-
-import sqlite3, unicodedata
-from typing import Tuple, Optional
-
-DB_PATH = os.getenv("CITIES_DB_PATH", "world_cities.db")
-NOMINATIM_USER_AGENT = os.getenv("NOMINATIM_USER_AGENT", "nodes_backend/1.0")
-GEOCODE_CACHE = {}
-
-def _norm(s: str) -> str:
-    if not s:
-        return ""
-    s = s.strip().lower()
-    s = "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c))
-    return " ".join(s.split())
-
-def get_coords_local(city: str, state: str, country: str) -> Tuple[Optional[float], Optional[float]]:
-    """Look up coordinates in the local SQLite DB."""
-    key = (_norm(city), _norm(state), _norm(country))
-    if key in GEOCODE_CACHE:
-        return GEOCODE_CACHE[key]
-
-    if not os.path.exists(DB_PATH):
-        print(f"[geo] DB not found at {DB_PATH}")
-        return (None, None)
-
-    try:
-        conn = sqlite3.connect(DB_PATH)
-        cur = conn.cursor()
-
-        cur.execute("""
-            SELECT latitude, longitude
-            FROM cities
-            WHERE city_norm=? AND state_norm=? AND country_norm=?
-            ORDER BY population DESC
-            LIMIT 1
-        """, key)
-        row = cur.fetchone()
-
-        if not row:
-            cur.execute("""
-                SELECT latitude, longitude
-                FROM cities
-                WHERE city_norm=? AND country_norm=?
-                ORDER BY population DESC
-                LIMIT 1
-            """, (key[0], key[2]))
-            row = cur.fetchone()
-
-        conn.close()
-
-        if row:
-            GEOCODE_CACHE[key] = (row[0], row[1])
-            return (row[0], row[1])
-
-        return (None, None)
-    except Exception as e:
-        print(f"[geo] Local DB error: {e}")
-        return (None, None)
-
-def geocode_nominatim(city: str, state: str, country: str) -> Tuple[Optional[float], Optional[float]]:
-    """Fallback to Nominatim if local DB lookup fails."""
-    try:
-        from geopy.geocoders import Nominatim
-        location_str = ", ".join([x for x in [city, state, country] if x])
-        geolocator = Nominatim(user_agent=NOMINATIM_USER_AGENT)
-        loc = geolocator.geocode(location_str, timeout=10, addressdetails=False, language="en")
-        if loc:
-            print(f"[geo] Nominatim hit: {loc.latitude},{loc.longitude} for '{location_str}'")
-            return (loc.latitude, loc.longitude)
-        print(f"[geo] Nominatim returned no result for '{location_str}'")
-    except Exception as e:
-        print(f"[geo] Nominatim exception: {e}")
-    return (None, None)
 
 # ===== App Setup =====
 app = Flask(__name__)
@@ -126,51 +52,48 @@ def ping():
     print(f"Raw body: {request.data}")
     return jsonify({"parsed": request.get_json(silent=True)})
 
+# ===== Google Geocoding Helper =====
+def geocode_google(city: str, state: str, country: str):
+    """Use Google Geocoding API only."""
+    try:
+        api_key = os.getenv("GOOGLE_MAPS_API_KEY")
+        if not api_key:
+            print("[geo] GOOGLE_MAPS_API_KEY is missing")
+            return (None, None)
 
-from geopy.geocoders import Nominatim
+        location_str = ", ".join([x for x in [city, state, country] if x])
+        url = "https://maps.googleapis.com/maps/api/geocode/json"
+        params = {"address": location_str, "key": api_key}
+
+        resp = requests.get(url, params=params, timeout=10)
+        print(f"[geo] Google URL: {resp.url} code={resp.status_code}")
+
+        if resp.status_code == 200:
+            js = resp.json()
+            if js.get("results"):
+                loc = js["results"][0]["geometry"]["location"]
+                lat, lon = loc["lat"], loc["lng"]
+                print(f"[geo] Google hit: {lat},{lon} for '{location_str}'")
+                return (lat, lon)
+            else:
+                print(f"[geo] Google returned no results for '{location_str}'")
+        else:
+            print(f"[geo] Google error: {resp.text[:300]}")
+
+    except Exception as e:
+        print(f"[geo] Google exception: {e}")
+
+    return (None, None)
 
 def calculate_nodes_and_big_three(date, time, location):
     """Calculate North/South Node positions and Sun/Moon/Rising signs"""
     try:
-        # --- Geocoding: local DB first, then Nominatim fallback ---
+        # --- Geocoding: Google only ---
         _city = location.split(",")[0].strip() if location else ""
         _state = location.split(",")[1].strip() if location and len(location.split(",")) > 2 else ""
         _country = location.split(",")[-1].strip() if location else ""
 
-        # Map common state abbreviations to full names
-        STATE_MAP = {
-            "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas", "CA": "California",
-            "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware", "FL": "Florida", "GA": "Georgia",
-            "HI": "Hawaii", "ID": "Idaho", "IL": "Illinois", "IN": "Indiana", "IA": "Iowa",
-            "KS": "Kansas", "KY": "Kentucky", "LA": "Louisiana", "ME": "Maine", "MD": "Maryland",
-            "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota", "MS": "Mississippi", "MO": "Missouri",
-            "MT": "Montana", "NE": "Nebraska", "NV": "Nevada", "NH": "New Hampshire", "NJ": "New Jersey",
-            "NM": "New Mexico", "NY": "New York", "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio",
-            "OK": "Oklahoma", "OR": "Oregon", "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina",
-            "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "UT": "Utah", "VT": "Vermont",
-            "VA": "Virginia", "WA": "Washington", "WV": "West Virginia", "WI": "Wisconsin", "WY": "Wyoming"
-        }
-
-        # Map common country abbreviations to full names
-        COUNTRY_MAP = {
-            "USA": "United States", "U.S.A.": "United States", "US": "United States",
-            "UK": "United Kingdom", "UAE": "United Arab Emirates",
-            "DRC": "Democratic Republic of the Congo", "CAR": "Central African Republic",
-            "S. KOREA": "South Korea", "N. KOREA": "North Korea",
-            "PRC": "China", "RUSS.": "Russia"
-        }
-
-        # Normalize state and country before lookup
-        if _state:
-            _state = STATE_MAP.get(_state.upper(), _state)
-        if _country:
-            _country = COUNTRY_MAP.get(_country.upper(), _country)
-
-        # Now do the lookup
-        lat, lon = get_coords_local(_city, _state, _country)
-        if lat is None or lon is None:
-            print(f"[geo] Local miss for '{_city}, {_state}, {_country}'. Trying Nominatim...")
-            lat, lon = geocode_nominatim(_city, _state, _country)
+        lat, lon = geocode_google(_city, _state, _country)
 
         if lat is None or lon is None:
             raise ValueError(f"Could not geocode location: {_city}, {_state}, {_country}")
@@ -197,21 +120,25 @@ def calculate_nodes_and_big_three(date, time, location):
                         dt_utc.hour + dt_utc.minute/60.0)
 
         # Sun & Moon
-        sun_lon = swe.calc_ut(jd, swe.SUN)[0]
-        moon_lon = swe.calc_ut(jd, swe.MOON)[0]
+        sun_result = swe.calc_ut(jd, swe.SUN)
+        moon_result = swe.calc_ut(jd, swe.MOON)
+        sun_lon = sun_result[0] if isinstance(sun_result, tuple) else sun_result
+        moon_lon = moon_result[0] if isinstance(moon_result, tuple) else moon_result
 
         # Ascendant (Rising sign)
-        ascmc, _, _, _ = swe.houses(jd, latitude, longitude)
+        ascmc = swe.houses(jd, latitude, longitude)[0]
         asc_lon = ascmc[0]
 
         # Nodes (True Node)
-        node_lon = swe.calc_ut(jd, swe.TRUE_NODE)[0]
+        node_result = swe.calc_ut(jd, swe.TRUE_NODE)
+        node_lon = node_result[0] if isinstance(node_result, tuple) else node_result
 
         # Signs lookup
         SIGNS = [
             "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
             "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"
         ]
+
         def get_sign(degree):
             return SIGNS[int(degree // 30)]
 
