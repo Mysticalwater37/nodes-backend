@@ -410,12 +410,11 @@ Use {first_name}'s name naturally throughout. Professional counseling tone."""
         print(f"OpenAI error: {e}")
         return f"SECTION: Your Personal Report\nHello {first_name}, please contact support for your personalized report."
 
-def create_pdf_report(report_text):
+def create_pdf_report(report_text, first_name="Friend"):
     """Create a beautifully formatted PDF with dark blue theme matching your brand"""
     filename = f"nodal_report_{uuid.uuid4()}.pdf"
     filepath = f"/tmp/{filename}"
     
-    # Create document with proper margins
     doc = SimpleDocTemplate(
         filepath, 
         pagesize=A4,
@@ -425,104 +424,88 @@ def create_pdf_report(report_text):
         bottomMargin=1*inch
     )
     
-    # Define color scheme to match your beautiful blue theme
-    dark_bg = HexColor('#1a202c')      # Dark navy background
-    gold_color = HexColor('#edd598')   # Gold for headers
-    white = HexColor('#1a202c')        # Dark text for body text
-    light_blue = HexColor('#1a202c')   # Same as body text for maximum visibility
-    accent_blue = HexColor('#1a202c')  # Same as body text
+    # Colors
+    dark_bg = HexColor('#1a202c')      
+    gold_color = HexColor('#edd598')   
+    white = HexColor('#1a202c')        
+    light_blue = HexColor('#1a202c')   
     
-    # Get base styles
-    styles = getSampleStyleSheet()
-    
-    # Title style - large gold header
+    # Title style
     title_style = ParagraphStyle(
         'CustomTitle',
-        fontSize=36,
+        fontSize=38,
         textColor=gold_color,
-        spaceAfter=30,
-        spaceBefore=20,
+        spaceAfter=40,
+        spaceBefore=30,
         alignment=TA_CENTER,
         fontName='Helvetica-Bold',
-        leading=40
+        leading=44
     )
     
-    # Subtitle style 
+    # Subtitle style - personalized
     subtitle_style = ParagraphStyle(
         'Subtitle',
-        fontSize=18,
+        fontSize=22,
         textColor=light_blue,
-        spaceAfter=40,
+        spaceAfter=50,
         alignment=TA_CENTER,
         fontName='Helvetica',
-        leading=22
+        leading=28
     )
     
-    # Section header style - gold and prominent
+    # Section header style
     section_style = ParagraphStyle(
         'SectionHeader',
-        fontSize=24,
+        fontSize=28,
         textColor=gold_color,
-        spaceAfter=20,
-        spaceBefore=40,
+        spaceAfter=30,
+        spaceBefore=60,
         alignment=TA_CENTER,
         fontName='Helvetica-Bold',
-        leading=28,
+        leading=34,
         borderWidth=2,
         borderColor=gold_color,
-        borderPadding=15,
-        backColor=HexColor('#2d3748')  # Slightly lighter dark background
+        borderPadding=18,
+        backColor=HexColor('#2d3748')
     )
     
-    # Body text style - white text, larger font
+    # Body text style
     body_style = ParagraphStyle(
         'Body',
-        fontSize=16,
+        fontSize=18,            # bumped from 16
         textColor=white,
-        spaceAfter=18,
-        spaceBefore=5,
+        spaceAfter=22,          # more spacing between paragraphs
+        spaceBefore=8,
         alignment=TA_JUSTIFY,
         fontName='Helvetica',
-        leading=24,
+        leading=28,             # line height
         leftIndent=10,
         rightIndent=10
-    )
-    
-    # Chart essentials style
-    chart_style = ParagraphStyle(
-        'ChartEssentials',
-        fontSize=14,
-        textColor=light_blue,
-        spaceAfter=8,
-        alignment=TA_CENTER,
-        fontName='Helvetica',
-        leading=20
     )
     
     # Disclaimer style
     disclaimer_style = ParagraphStyle(
         'Disclaimer',
-        fontSize=12,
+        fontSize=14,
         textColor=light_blue,
-        spaceAfter=20,
-        spaceBefore=30,
+        spaceAfter=25,
+        spaceBefore=40,
         alignment=TA_CENTER,
         fontName='Helvetica-Oblique',
-        leading=16,
+        leading=20,
         leftIndent=40,
         rightIndent=40
     )
     
     story = []
     
-    # Add title page elements
-    story.append(Spacer(1, 0.5*inch))
+    # Title page
+    story.append(Spacer(1, 0.75*inch))
     story.append(Paragraph("Nodal Pathways", title_style))
-    story.append(Paragraph("Personalized Astrological Report", subtitle_style))
+    story.append(Paragraph(f"Personalized Astrological Report for {first_name}", subtitle_style))
     
-    # Parse the report content
+    # Parse report sections
     sections = report_text.split('SECTION:')
-    
     for section in sections:
         if not section.strip():
             continue
@@ -531,19 +514,11 @@ def create_pdf_report(report_text):
         if not lines:
             continue
             
-        # First line is the section header
         header = lines[0].strip()
-        
-        # Add section header with beautiful styling
         story.append(Paragraph(header, section_style))
         
-        # Process the content paragraphs
-        content_lines = []
-        for line in lines[1:]:
-            if line.strip():
-                content_lines.append(line.strip())
+        content_lines = [line.strip() for line in lines[1:] if line.strip()]
         
-        # Group lines into paragraphs (assuming paragraphs are separated by empty lines)
         current_paragraph = []
         for line in content_lines:
             if line:
@@ -553,18 +528,15 @@ def create_pdf_report(report_text):
                     para_text = ' '.join(current_paragraph)
                     story.append(Paragraph(para_text, body_style))
                     current_paragraph = []
-        
-        # Add final paragraph if exists
         if current_paragraph:
             para_text = ' '.join(current_paragraph)
             story.append(Paragraph(para_text, body_style))
     
-    # Add footer elements
-    story.append(Spacer(1, 0.5*inch))
+    # Footer
+    story.append(Spacer(1, 0.75*inch))
     story.append(Paragraph("Nodal Pathways", section_style))
     story.append(Paragraph("Guiding you on your cosmic journey of self-discovery", disclaimer_style))
     
-    # Build the PDF
     doc.build(story)
     return filepath
     
@@ -1058,7 +1030,7 @@ def process_form():
 
         ai_content = generate_ai_report(chart_data, first_name)
         html_content = create_html_report(chart_data, ai_content, first_name)
-        pdf_path = create_pdf_report(ai_content)
+        pdf_path = create_pdf_report(ai_content, first_name)
 
         send_report_email(email, html_content, pdf_path)
         print("Email sent successfully")
