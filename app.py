@@ -167,15 +167,18 @@ def calculate_nodes_and_big_three(date, time, location):
                         dt_utc.hour + dt_utc.minute/60.0)
 
         # Sun & Moon
-        _, sun_lon, _ = swe.calc_ut(jd, swe.SUN)
-        _, moon_lon, _ = swe.calc_ut(jd, swe.MOON)
+        sun = swe.calc_ut(jd, swe.SUN)[0]
+        moon = swe.calc_ut(jd, swe.MOON)[0]
+        sun_lon = sun[0]
+        moon_lon = moon[0]
 
         # Ascendant (Rising sign)
         ascmc = swe.houses(jd, latitude, longitude)[0]
         asc_lon = ascmc[0]
 
         # Nodes (True Node)
-        _, node_lon, _ = swe.calc_ut(jd, swe.TRUE_NODE)
+        node = swe.calc_ut(jd, swe.TRUE_NODE)[0]
+        node_lon = node[0]
 
         # Signs lookup
         SIGNS = [
@@ -207,7 +210,9 @@ def calculate_nodes_and_big_three(date, time, location):
         return chart_data
 
     except Exception as e:
+        import traceback
         print(f"Error in chart calculation: {e}")
+        print(traceback.format_exc())
         return None
 
 def generate_full_report(chart_data):
