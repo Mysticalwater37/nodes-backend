@@ -81,102 +81,39 @@ def calculate_nodes_and_big_three(date, time, location):
                 print(f"Using cached coordinates for {cached_city}: {latitude}, {longitude}")
                 break
         
-        # If not in cache, try geocoding with Positionstack
-        if latitude is None:
-            try:
-                print(f"Location '{location}' not in cache, attempting geocoding...")
-                import requests
-                import os
-                
-                api_key = os.getenv("POSITIONSTACK_API_KEY")
-                url = "https://api.positionstack.com/v1/forward"
-                params = {
-                    'access_key': api_key,
-                    'query': location,
-                    'limit': 1
-                }
-                
-                response = requests.get(url, params=params, timeout=10)
-                data = response.json()
-                
-                if data.get('data') and len(data['data']) > 0:
-                    latitude = data['data'][0]['latitude']
-                    longitude = data['data'][0]['longitude']
-                    print(f"Geocoded {location}: {latitude}, {longitude}")
-                else:
-                    raise ValueError(f"Could not find location: {location}")
-                    
-            except Exception as e:
-                print(f"Geocoding error: {e}")
-                raise ValueError(f"Could not find location: {location}")
-        
-        # Parse birth date and time
-        birth_dt = datetime.strptime(date, '%Y-%m-%d')
-        birth_time_dt = datetime.strptime(time, '%H:%M').time()
-        
-        # Get timezone
-        tf = TimezoneFinder()
-        timezone_str = tf.timezone_at(lat=latitude, lng=longitude)
-        
-        if not timezone_str:
-            timezone_str = 'UTC'
-        
-        # Create timezone-aware datetime
-        local_tz = pytz.timezone(timezone_str)
-        birth_datetime = local_tz.localize(
-            datetime.combine(birth_dt.date(), birth_time_dt)
-        )
-        
-        # Convert to UTC
-        utc_datetime = birth_datetime.astimezone(pytz.UTC)
-        
-        # Calculate Julian day
-        julian_day = swe.julday(
-            utc_datetime.year,
-            utc_datetime.month, 
-            utc_datetime.day,
-            utc_datetime.hour + utc_datetime.minute/60.0
-        )
-        
-        # Calculate planetary positions
-        sun_pos = swe.calc_ut(julian_day, swe.SUN)[0][0]
-        moon_pos = swe.calc_ut(julian_day, swe.MOON)[0][0]
-        
-        # Calculate Ascendant
-        houses = swe.houses(julian_day, latitude, longitude)[1]
-        ascendant = houses[0]
-        
-        # Calculate lunar nodes
-        north_node_pos = swe.calc_ut(julian_day, swe.MEAN_NODE)[0][0]
-        south_node_pos = (north_node_pos + 180) % 360
-        
-        # Convert positions to signs
-        def degree_to_sign(degree):
-            signs = ["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
-                    "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"]
-            sign_index = int(degree // 30)
-            return signs[sign_index]
-        
-        result = {
-            'sun_sign': degree_to_sign(sun_pos),
-            'moon_sign': degree_to_sign(moon_pos),
-            'rising_sign': degree_to_sign(ascendant),
-            'north_node': {
-                'sign': degree_to_sign(north_node_pos),
-                'degree': north_node_pos % 30
-            },
-            'south_node': {
-                'sign': degree_to_sign(south_node_pos),
-                'degree': south_node_pos % 30
-            }
+       # If not in cache, try geocoding with Positionstack
+if latitude is None:
+    try:
+        print(f"Location '{location}' not in cache, attempting geocoding...")
+
+        api_key = os.getenv("POSITIONSTACK_API_KEY")
+        if not api_key:
+            raise ValueError("POSITIONSTACK_API_KEY is not set in environment")
+
+        url = "https://api.positionstack.com/v1/forward"
+        params = {
+            "access_key": api_key,
+            "query": location,
+            "limit": 1,
+            "output": "json"
         }
-        
-        print(f"Chart calculation successful: {result}")
-        return result
-        
+
+        response = requests.get(url, params=params, timeout=10)
+
+        if response.status_code != 200:
+            raise ValueError(f"Positionstack error {response.status_code}: {response.text}")
+
+        data = response.json()
+        if "data" in data and len(data["data"]) > 0:
+            latitude = data["data"][0]["latitude"]
+            longitude = data["data"][0]["longitude"]
+            print(f"Geocoded {location}: {latitude}, {longitude}")
+        else:
+            raise ValueError(f"Could not find location: {location}")
+
     except Exception as e:
-        print(f"Error in chart calculation: {e}")
-        return None
+        print(f"Geocoding error: {e}")
+        raise
 
 def generate_full_report(chart_data):
     """Generate rich, narrative-style report with context and explanations"""
