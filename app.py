@@ -982,57 +982,40 @@ def make_report():
 def process_form():
     """Process Google Form submission and email report"""
     print("=== PROCESS FORM STARTED ===")
-    print("=== RAW REQUEST DEBUG ===")
     print(f"Content-Type: {request.content_type}")
-    print(f"Request data: {request.data}")
-    print(f"Request JSON: {request.json}")
-    print("=== END DEBUG ===")
-    
+    print(f"Raw request data: {request.data}")
+
     try:
-        data = request.json
-        if data is None:
-            return jsonify({"error": "Failed to parse JSON"}), 400
-            
-        print(f"Received data: {data}")
-        
-        print("=== ABOUT TO CALCULATE CHART DATA ===")
+        # Safely parse JSON
+        data = request.get_json(silent=True)
+        if not data:
+            return jsonify({"error": "Failed to parse JSON body"}), 400
+
+        print(f"Received JSON: {data}")
+
         city = data.get('City', '')
         state = data.get('State', '')  
         country = data.get('Country', '')
-
-        if state:
-            full_location = f"{city}, {state}, {country}"
-        else:
-            full_location = f"{city}, {country}"
-
-        chart_data = calculate_nodes_and_big_three(
-            data['Birth Date'],
-            data.get('Birth Time', '12:00'),
-            full_location
-        )
-
-        print(f"Chart calculation completed: {chart_data}")
-        
-        print("=== ABOUT TO GENERATE AI REPORT ===")
+        email = data.get('Email', 'test@example.com')
         first_name = data.get('First Name', 'Friend')
+        birth_date = data.get('Birth Date', '')
+        birth_time = data.get('Birth Time', '12:00')
+
+        full_location = f"{city}, {state}, {country}" if state else f"{city}, {country}"
+
+        chart_data = calculate_nodes_and_big_three(birth_date, birth_time, full_location)
         ai_content = generate_ai_report(chart_data, first_name)
         html_content = create_html_report(chart_data, ai_content, first_name)
-        
-        print("=== CREATING PDF WITH REPORTLAB ===")
         pdf_path = create_pdf_report(ai_content)
-        
-        print("=== ABOUT TO SEND EMAIL ===")
-        send_report_email(
-            data['Email'],
-            html_content,
-            pdf_path
-        )
+
+        send_report_email(email, html_content, pdf_path)
         print("Email sent successfully")
-        
+
         return jsonify({"status": "success", "message": "Report sent successfully"})
+
     except Exception as e:
-        print(f"DETAILED ERROR: {str(e)}")
         import traceback
+        print(f"DETAILED ERROR: {str(e)}")
         print(f"FULL TRACEBACK: {traceback.format_exc()}")
         return jsonify({"error": str(e)}), 400
 
