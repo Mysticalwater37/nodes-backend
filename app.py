@@ -54,75 +54,28 @@ def ping():
     return jsonify({"parsed": request.get_json(silent=True)})
 
 
+from geopy.geocoders import Nominatim
+
 def calculate_nodes_and_big_three(date, time, location):
-    """Calculate North/South Node positions and Sun/Moon/Rising signs"""
     try:
-        # Cached coordinates for reliability
-        CITY_COORDS = {
-            "Berkeley, USA": (37.8715, -122.2730),
-            "San Francisco, USA": (37.7749, -122.4194),
-            "Los Angeles, USA": (34.0522, -118.2437),
-            "New York, USA": (40.7128, -74.0060),
-            "Chicago, USA": (41.8781, -87.6298),
-            "Houston, USA": (29.7604, -95.3698),
-            "Miami, USA": (25.7617, -80.1918),
-            "Atlanta, USA": (33.7490, -84.3880),
-            "Washington, USA": (38.9072, -77.0369),
-            "Dallas, USA": (32.7767, -96.7970),
-            "London, UK": (51.5074, -0.1278),
-            "Paris, France": (48.8566, 2.3522),
-            "Tokyo, Japan": (35.6895, 139.6917),
-            "Sydney, Australia": (-33.8688, 151.2093),
-            "Toronto, Canada": (43.6532, -79.3832),
-            "San Rafael, USA": (37.9735, -122.5311),
-            "San Rafael, CA, USA": (37.9735, -122.5311),
-        }
-        
-        # Try to find coordinates in cache first
-        latitude = None
-        longitude = None
-        
-        for cached_city, coords in CITY_COORDS.items():
-            if location.lower() in cached_city.lower() or cached_city.lower() in location.lower():
-                latitude, longitude = coords
-                print(f"Using cached coordinates for {cached_city}: {latitude}, {longitude}")
-                break
-        
-        # If not in cache, try geocoding with Positionstack
-        if latitude is None:
-            try:
-                print(f"Location '{location}' not in cache, attempting geocoding...")
+        latitude, longitude = None, None
 
-                api_key = os.getenv("POSITIONSTACK_API_KEY")
-                if not api_key:
-                    raise ValueError("POSITIONSTACK_API_KEY is not set in environment")
+        # Nominatim geocoder
+        try:
+            geolocator = Nominatim(user_agent="nodes_backend/1.0")
+            loc = geolocator.geocode(location, timeout=10)
+            if loc:
+                latitude = loc.latitude
+                longitude = loc.longitude
+                print(f"Geocoded {location}: {latitude}, {longitude}")
+            else:
+                raise ValueError(f"Could not find location: {location}")
+        except Exception as e:
+            print(f"Nominatim geocoding error: {e}")
+            raise
 
-                url = "https://api.positionstack.com/v1/forward"
-                params = {
-                    "access_key": api_key,
-                    "query": location,
-                    "limit": 1,
-                    "output": "json"
-                }
-
-                response = requests.get(url, params=params, timeout=10)
-
-                if response.status_code != 200:
-                    raise ValueError(f"Positionstack error {response.status_code}: {response.text}")
-
-                data = response.json()
-                if "data" in data and len(data["data"]) > 0:
-                    latitude = data["data"][0]["latitude"]
-                    longitude = data["data"][0]["longitude"]
-                    print(f"Geocoded {location}: {latitude}, {longitude}")
-                else:
-                    raise ValueError(f"Could not find location: {location}")
-
-            except Exception as e:
-                print(f"Geocoding error: {e}")
-                raise
-
-        # (Your existing astro/timezone code continues here…)
+        # --- your existing astrology + timezone code goes here ---
+        # (parse birth date, find timezone, compute chart, etc.)
 
     except Exception as e:
         print(f"Error in chart calculation: {e}")
@@ -963,6 +916,8 @@ def process_form():
         full_location = f"{city}, {state}, {country}" if state else f"{city}, {country}"
 
         chart_data = calculate_nodes_and_big_three(birth_date, birth_time, full_location)
+        if not chart_data:
+        return jsonify({"error": f"Could not geocode location: {full_location}"}), 400
         ai_content = generate_ai_report(chart_data, first_name)
         html_content = create_html_report(chart_data, ai_content, first_name)
         pdf_path = create_pdf_report(ai_content)
