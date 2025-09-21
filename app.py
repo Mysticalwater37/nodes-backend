@@ -130,9 +130,8 @@ def ping():
 from geopy.geocoders import Nominatim
 
 def calculate_nodes_and_big_three(date, time, location):
+    """Calculate North/South Node positions and Sun/Moon/Rising signs"""
     try:
-        latitude, longitude = None, None
-
         # --- Geocoding: local DB first, then Nominatim fallback ---
         _city = location.split(",")[0].strip() if location else ""
         _state = location.split(",")[1].strip() if location and len(location.split(",")) > 2 else ""
@@ -148,8 +147,64 @@ def calculate_nodes_and_big_three(date, time, location):
 
         latitude, longitude = lat, lon
 
-        # --- your existing astrology + timezone code goes here ---
-        # (parse birth date, find timezone, compute chart, etc.)
+        # --- Parse date & time ---
+        dt_str = f"{date} {time}"
+        naive_dt = datetime.strptime(dt_str, "%Y-%m-%d %H:%M")
+
+        # --- Find timezone from coordinates ---
+        tz_finder = TimezoneFinder()
+        tz_name = tz_finder.timezone_at(lng=longitude, lat=latitude)
+        if not tz_name:
+            raise ValueError(f"Could not find timezone for {location}")
+        tz = pytz.timezone(tz_name)
+        dt_local = tz.localize(naive_dt)
+
+        # Convert to UTC for Swiss Ephemeris
+        dt_utc = dt_local.astimezone(pytz.utc)
+
+        # --- Swiss Ephemeris calculations ---
+        jd = swe.julday(dt_utc.year, dt_utc.month, dt_utc.day,
+                        dt_utc.hour + dt_utc.minute/60.0)
+
+        # Sun & Moon
+        _, sun_lon, _ = swe.calc_ut(jd, swe.SUN)
+        _, moon_lon, _ = swe.calc_ut(jd, swe.MOON)
+
+        # Ascendant (Rising sign)
+        ascmc = swe.houses(jd, latitude, longitude)[0]
+        asc_lon = ascmc[0]
+
+        # Nodes (True Node)
+        _, node_lon, _ = swe.calc_ut(jd, swe.TRUE_NODE)
+
+        # Signs lookup
+        SIGNS = [
+            "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
+            "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"
+        ]
+        def get_sign(degree):
+            return SIGNS[int(degree // 30)]
+
+        chart_data = {
+            "sun_sign": get_sign(sun_lon),
+            "moon_sign": get_sign(moon_lon),
+            "rising_sign": get_sign(asc_lon),
+            "north_node": {
+                "sign": get_sign(node_lon),
+                "degree": node_lon
+            },
+            "south_node": {
+                "sign": get_sign((node_lon + 180) % 360),
+                "degree": (node_lon + 180) % 360
+            },
+            "location": location,
+            "latitude": latitude,
+            "longitude": longitude,
+            "datetime_utc": dt_utc.isoformat(),
+            "timezone": tz_name
+        }
+
+        return chart_data
 
     except Exception as e:
         print(f"Error in chart calculation: {e}")
