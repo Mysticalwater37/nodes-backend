@@ -105,107 +105,56 @@ def geocode_google(city: str, state: str, country: str):
 
     return (None, None)
 
-def calculate_nodes_and_big_three(date, time, location):
-    """Calculate North/South Node positions and Sun/Moon/Rising signs"""
+def get_zodiac_sign(longitude):
+    zodiac_signs = [
+        "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
+        "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"
+    ]
+    index = int(longitude // 30) % 12
+    return zodiac_signs[index]
+
+def calculate_nodes_and_big_three(birthdate, birthtime, latitude, longitude):
+    """Calculate Sun, Moon, Rising, and Nodes using Swiss Ephemeris."""
     try:
-        # --- Geocoding: Google only ---
-        _city = location.split(",")[0].strip() if location else ""
-        _state = location.split(",")[1].strip() if location and len(location.split(",")) > 2 else ""
-        _country = location.split(",")[-1].strip() if location else ""
+        dt_str = f"{birthdate} {birthtime}"
+        dt = datetime.strptime(dt_str, "%Y-%m-%d %H:%M")
 
-        lat, lon = geocode_google(_city, _state, _country)
+        jd_ut = swe.julday(dt.year, dt.month, dt.day, dt.hour + dt.minute / 60.0)
 
-        if lat is None or lon is None:
-            raise ValueError(f"Could not geocode location: {_city}, {_state}, {_country}")
+        # Sun
+        sun_long, _ = swe.calc_ut(jd_ut, swe.SUN)
+        sun_sign = get_zodiac_sign(sun_long[0])
 
-        latitude, longitude = lat, lon
-        print(f"[debug] Using coords: {latitude}, {longitude} for '{location}'")
+        # Moon
+        moon_long, _ = swe.calc_ut(jd_ut, swe.MOON)
+        moon_sign = get_zodiac_sign(moon_long[0])
 
-        # --- Parse date & time ---
-        dt_str = f"{date} {time}"
-        naive_dt = datetime.strptime(dt_str, "%Y-%m-%d %H:%M")
+        # Ascendant (Rising)
+        ascmc = swe.houses(jd_ut, latitude, longitude, b"P")
+        rising_long = ascmc[0][0]
+        rising_sign = get_zodiac_sign(rising_long)
 
-        # --- Find timezone from coordinates ---
-        tz_finder = TimezoneFinder()
-        tz_name = tz_finder.timezone_at(lng=longitude, lat=latitude)
-        if not tz_name:
-            # fallback if timezone_at fails
-            tz_name = tz_finder.closest_timezone_at(lng=longitude, lat=latitude)
-        if not tz_name:
-            raise ValueError(f"Could not find timezone for {location}")
-        tz = pytz.timezone(tz_name)
-        dt_local = tz.localize(naive_dt)
-        dt_utc = dt_local.astimezone(pytz.utc)
+        # Nodes
+        north_node_long, _ = swe.calc_ut(jd_ut, swe.TRUE_NODE)
+        north_node_sign = get_zodiac_sign(north_node_long[0])
 
-        print(f"[debug] Local datetime: {dt_local}, UTC: {dt_utc}, TZ: {tz_name}")
+        south_node_long = (north_node_long[0] + 180.0) % 360.0
+        south_node_sign = get_zodiac_sign(south_node_long)
 
-        # --- Swiss Ephemeris calculations ---
-        jd = swe.julday(
-            dt_utc.year, dt_utc.month, dt_utc.day,
-            dt_utc.hour + dt_utc.minute / 60.0
-        )
-        print(f"[debug] Julian Day: {jd}")
-
-        # Helper: safely extract longitude
-        def _lon(result):
-            if isinstance(result, (list, tuple)):
-                # sometimes (rc, [lon, lat, dist])
-                if len(result) > 1 and isinstance(result[1], (list, tuple)):
-                    return result[1][0]
-                # sometimes (lon, lat, dist)
-                return result[0]
-            return result
-
-        # Sun, Moon, Node
-        sun_lon = _lon(swe.calc_ut(jd, swe.SUN))
-        moon_lon = _lon(swe.calc_ut(jd, swe.MOON))
-        node_lon = _lon(swe.calc_ut(jd, swe.TRUE_NODE))
-
-        print(f"[debug] Sun longitude: {sun_lon}")
-        print(f"[debug] Moon longitude: {moon_lon}")
-        print(f"[debug] Node longitude: {node_lon}")
-
-        # Ascendant (Rising sign)
-        cusps, ascmc = swe.houses(jd, latitude, longitude)
-        asc_lon = ascmc[0]
-        print(f"[debug] Ascendant longitude: {asc_lon}")
-
-        # Signs lookup
-        SIGNS = [
-            "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
-            "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"
-        ]
-
-        def get_sign(degree):
-            return SIGNS[int(degree // 30)]
-
-        chart_data = {
-            "sun_sign": get_sign(sun_lon),
-            "moon_sign": get_sign(moon_lon),
-            "rising_sign": get_sign(asc_lon),
-            "north_node": {
-                "sign": get_sign(node_lon),
-                "degree": node_lon
-            },
-            "south_node": {
-                "sign": get_sign((node_lon + 180) % 360),
-                "degree": (node_lon + 180) % 360
-            },
-            "location": location,
-            "latitude": latitude,
-            "longitude": longitude,
-            "datetime_utc": dt_utc.isoformat(),
-            "timezone": tz_name
+        return {
+            "sun_sign": sun_sign,
+            "moon_sign": moon_sign,
+            "rising_sign": rising_sign,
+            "north_node": {"sign": north_node_sign},
+            "south_node": {"sign": south_node_sign},
         }
-
-        print(f"[debug] Chart data built successfully: {chart_data}")
-        return chart_data
 
     except Exception as e:
         import traceback
-        print(f"Error in chart calculation: {e}")
-        print(traceback.format_exc())
-        return None
+        tb = traceback.format_exc()
+        print("[calculate_nodes_and_big_three] ERROR:", str(e))
+        print(tb)
+        raise
 
 def generate_full_report(chart_data):
     """Generate rich, narrative-style report with context and explanations"""
@@ -1007,30 +956,20 @@ def make_report():
 # New endpoint for Google Forms processing
 @app.route('/process-form', methods=['POST'])
 def process_form():
-    """Process Google Form submission and email report"""
-    print("=== PROCESS FORM STARTED ===")
-    print(f"Content-Type: {request.content_type}")
-    print(f"Raw request data: {request.data}")
-
+    """Process Google Form submission and generate chart data"""
     try:
-        # Safely parse JSON
-        print(f"Headers: {dict(request.headers)}")
-        print(f"Request data (raw): {request.data}")
         data = request.get_json(silent=True)
         if not data:
             return jsonify({"error": "Failed to parse JSON body"}), 400
 
-        print(f"Received JSON: {data}")
-
         city = data.get('City', '')
-        state = data.get('State', '')  
+        state = data.get('State', '')
         country = data.get('Country', '')
         email = data.get('Email', 'test@example.com')
         first_name = data.get('First Name', 'Friend')
         birth_date = data.get('Birth Date', '')
         birth_time = data.get('Birth Time', '12:00')
 
-        # Build full location string
         full_location = f"{city}, {state}, {country}" if state else f"{city}, {country}"
 
         # === Geocode with Google Maps ===
@@ -1038,7 +977,6 @@ def process_form():
         response = requests.get(geocode_url)
         geo_data = response.json()
 
-        # Log raw response
         print("Geocoding API response:", geo_data)
 
         if geo_data["status"] != "OK":
@@ -1051,22 +989,17 @@ def process_form():
         latitude = geo_data["results"][0]["geometry"]["location"]["lat"]
         longitude = geo_data["results"][0]["geometry"]["location"]["lng"]
 
-        # Now call Swiss Ephemeris calculation with lat/long
+        # ✅ pass lat/long now instead of location
         chart_data = calculate_nodes_and_big_three(birth_date, birth_time, latitude, longitude)
 
         if not chart_data:
             return jsonify({"error": f"Chart calculation failed for: {full_location}"}), 400
 
-        # Generate AI content and reports
-        ai_content = generate_ai_report(chart_data, first_name)
-        html_content = create_html_report(chart_data, ai_content, first_name)
-        pdf_path = create_pdf_report(ai_content, first_name)
-
-        # Email the report
-        send_report_email(email, html_content, pdf_path)
-        print("Email sent successfully")
-
-        return jsonify({"status": "success", "message": "Report sent successfully"})
+        # For now just return chart data to confirm it works
+        return jsonify({
+            "status": "success",
+            "chart_data": chart_data
+        })
 
     except Exception as e:
         import traceback
