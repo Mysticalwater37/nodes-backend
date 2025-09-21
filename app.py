@@ -22,6 +22,79 @@ from reportlab.lib.colors import HexColor
 from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY, TA_LEFT
 from io import BytesIO
 
+import sqlite3, unicodedata
+from typing import Tuple, Optional
+
+DB_PATH = os.getenv("CITIES_DB_PATH", "world_cities.db")
+NOMINATIM_USER_AGENT = os.getenv("NOMINATIM_USER_AGENT", "nodes_backend/1.0")
+GEOCODE_CACHE = {}
+
+def _norm(s: str) -> str:
+    if not s:
+        return ""
+    s = s.strip().lower()
+    s = "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c))
+    return " ".join(s.split())
+
+def get_coords_local(city: str, state: str, country: str) -> Tuple[Optional[float], Optional[float]]:
+    """Look up coordinates in the local SQLite DB."""
+    key = (_norm(city), _norm(state), _norm(country))
+    if key in GEOCODE_CACHE:
+        return GEOCODE_CACHE[key]
+
+    if not os.path.exists(DB_PATH):
+        print(f"[geo] DB not found at {DB_PATH}")
+        return (None, None)
+
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cur = conn.cursor()
+
+        cur.execute("""
+            SELECT latitude, longitude
+            FROM cities
+            WHERE city_norm=? AND state_norm=? AND country_norm=?
+            ORDER BY population DESC
+            LIMIT 1
+        """, key)
+        row = cur.fetchone()
+
+        if not row:
+            cur.execute("""
+                SELECT latitude, longitude
+                FROM cities
+                WHERE city_norm=? AND country_norm=?
+                ORDER BY population DESC
+                LIMIT 1
+            """, (key[0], key[2]))
+            row = cur.fetchone()
+
+        conn.close()
+
+        if row:
+            GEOCODE_CACHE[key] = (row[0], row[1])
+            return (row[0], row[1])
+
+        return (None, None)
+    except Exception as e:
+        print(f"[geo] Local DB error: {e}")
+        return (None, None)
+
+def geocode_nominatim(city: str, state: str, country: str) -> Tuple[Optional[float], Optional[float]]:
+    """Fallback to Nominatim if local DB lookup fails."""
+    try:
+        from geopy.geocoders import Nominatim
+        location_str = ", ".join([x for x in [city, state, country] if x])
+        geolocator = Nominatim(user_agent=NOMINATIM_USER_AGENT)
+        loc = geolocator.geocode(location_str, timeout=10, addressdetails=False, language="en")
+        if loc:
+            print(f"[geo] Nominatim hit: {loc.latitude},{loc.longitude} for '{location_str}'")
+            return (loc.latitude, loc.longitude)
+        print(f"[geo] Nominatim returned no result for '{location_str}'")
+    except Exception as e:
+        print(f"[geo] Nominatim exception: {e}")
+    return (None, None)
+
 # ===== App Setup =====
 app = Flask(__name__)
 logging.basicConfig(level=logging.DEBUG)
@@ -60,19 +133,20 @@ def calculate_nodes_and_big_three(date, time, location):
     try:
         latitude, longitude = None, None
 
-        # Nominatim geocoder
-        try:
-            geolocator = Nominatim(user_agent="nodes_backend/1.0")
-            loc = geolocator.geocode(location, timeout=10)
-            if loc:
-                latitude = loc.latitude
-                longitude = loc.longitude
-                print(f"Geocoded {location}: {latitude}, {longitude}")
-            else:
-                raise ValueError(f"Could not find location: {location}")
-        except Exception as e:
-            print(f"Nominatim geocoding error: {e}")
-            raise
+        # --- Geocoding: local DB first, then Nominatim fallback ---
+        _city = location.split(",")[0].strip() if location else ""
+        _state = location.split(",")[1].strip() if location and len(location.split(",")) > 2 else ""
+        _country = location.split(",")[-1].strip() if location else ""
+
+        lat, lon = get_coords_local(_city, _state, _country)
+        if lat is None or lon is None:
+            print(f"[geo] Local miss for '{_city}, {_state}, {_country}'. Trying Nominatim...")
+            lat, lon = geocode_nominatim(_city, _state, _country)
+
+        if lat is None or lon is None:
+            raise ValueError(f"Could not geocode location: {_city}, {_state}, {_country}")
+
+        latitude, longitude = lat, lon
 
         # --- your existing astrology + timezone code goes here ---
         # (parse birth date, find timezone, compute chart, etc.)
