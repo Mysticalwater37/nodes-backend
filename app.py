@@ -20,6 +20,10 @@ from reportlab.lib.units import inch
 from reportlab.lib.colors import HexColor
 from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY, TA_LEFT
 from io import BytesIO
+from io import BytesIO
+
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+
 
 # ===== App Setup =====
 app = Flask(__name__)
