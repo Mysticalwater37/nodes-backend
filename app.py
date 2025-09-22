@@ -114,12 +114,25 @@ def get_zodiac_sign(longitude):
     return zodiac_signs[index]
 
 def calculate_nodes_and_big_three(birthdate, birthtime, latitude, longitude):
-    """Calculate Sun, Moon, Rising, and Nodes using Swiss Ephemeris."""
     try:
         dt_str = f"{birthdate} {birthtime}"
-        dt = datetime.strptime(dt_str, "%Y-%m-%d %H:%M")
+        local_dt = datetime.strptime(dt_str, "%Y-%m-%d %H:%M")
 
-        jd_ut = swe.julday(dt.year, dt.month, dt.day, dt.hour + dt.minute / 60.0)
+        tf = TimezoneFinder()
+        tz_name = tf.timezone_at(lat=latitude, lng=longitude)
+        if not tz_name:
+            tz_name = "UTC"
+        local_tz = pytz.timezone(tz_name)
+
+        local_dt = local_tz.localize(local_dt)
+        utc_dt = local_dt.astimezone(pytz.utc)
+
+        jd_ut = swe.julday(
+            utc_dt.year,
+            utc_dt.month,
+            utc_dt.day,
+            utc_dt.hour + utc_dt.minute / 60.0
+        )
 
         # Sun
         sun_long, _ = swe.calc_ut(jd_ut, swe.SUN)
@@ -130,31 +143,33 @@ def calculate_nodes_and_big_three(birthdate, birthtime, latitude, longitude):
         moon_sign = get_zodiac_sign(moon_long[0])
 
         # Ascendant (Rising)
-        ascmc = swe.houses(jd_ut, latitude, longitude, b"P")
-        rising_long = ascmc[0][0]
+        print("DEBUG date input:", birthdate, birthtime)
+        print("DEBUG jd_ut (Julian Day, UT):", jd_ut)
+        print("DEBUG latitude:", latitude)
+        print("DEBUG longitude:", longitude)
+
+        ascmc, cusps = swe.houses(jd_ut, latitude, longitude, b"P")
+        rising_long = ascmc[0]  # ascendant degree
         rising_sign = get_zodiac_sign(rising_long)
 
         # Nodes
         north_node_long, _ = swe.calc_ut(jd_ut, swe.TRUE_NODE)
         north_node_sign = get_zodiac_sign(north_node_long[0])
-
-        south_node_long = (north_node_long[0] + 180.0) % 360.0
-        south_node_sign = get_zodiac_sign(south_node_long)
+        south_node_sign = get_zodiac_sign((north_node_long[0] + 180.0) % 360.0)
 
         return {
             "sun_sign": sun_sign,
             "moon_sign": moon_sign,
             "rising_sign": rising_sign,
             "north_node": {"sign": north_node_sign},
-            "south_node": {"sign": south_node_sign},
+            "south_node": {"sign": south_node_sign}
         }
 
     except Exception as e:
         import traceback
-        tb = traceback.format_exc()
         print("[calculate_nodes_and_big_three] ERROR:", str(e))
-        print(tb)
-        raise
+        print(traceback.format_exc())
+        return None
 
 def generate_full_report(chart_data):
     """Generate rich, narrative-style report with context and explanations"""
