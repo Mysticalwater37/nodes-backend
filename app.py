@@ -115,27 +115,18 @@ def get_zodiac_sign(longitude):
 
 def calculate_nodes_and_big_three(birthdate, birthtime, latitude, longitude):
     try:
-        import swisseph as swe
-        from timezonefinder import TimezoneFinder
-        from datetime import datetime
-        import pytz
-
-        # Step 1: Parse local datetime
         dt_str = f"{birthdate} {birthtime}"
         local_dt = datetime.strptime(dt_str, "%Y-%m-%d %H:%M")
 
-        # Step 2: Get timezone for lat/lon
         tf = TimezoneFinder()
         tz_name = tf.timezone_at(lat=latitude, lng=longitude)
         if not tz_name:
             tz_name = "UTC"
         local_tz = pytz.timezone(tz_name)
 
-        # Step 3: Localize and convert to UTC
         local_dt = local_tz.localize(local_dt)
         utc_dt = local_dt.astimezone(pytz.utc)
 
-        # Step 4: Compute Julian Day (using UTC)
         jd_ut = swe.julday(
             utc_dt.year,
             utc_dt.month,
@@ -144,7 +135,7 @@ def calculate_nodes_and_big_three(birthdate, birthtime, latitude, longitude):
         )
 
         # Debug info
-        print("DEBUG utc_dt (should be 1999-03-13 22:04 UTC):", utc_dt)
+        print("DEBUG utc_dt (should be UTC):", utc_dt)
         print("DEBUG jd_ut:", jd_ut)
         print("DEBUG latitude:", latitude)
         print("DEBUG longitude:", longitude)
