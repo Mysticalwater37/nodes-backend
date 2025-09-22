@@ -895,58 +895,6 @@ def send_report_email(email, report_text, pdf_path):
         print("Error type:", type(e).__name__)
         raise Exception(f"Email sending error: {str(e)}")
 
-# Your existing endpoints
-def calculate_nodes_and_big_three(birthdate, birthtime, latitude, longitude):
-    try:
-        import swisseph as swe
-        import datetime
-
-        # Combine date and time
-        dt_str = f"{birthdate} {birthtime}"
-        dt = datetime.datetime.strptime(dt_str, "%Y-%m-%d %H:%M")
-
-        jd_ut = swe.julday(
-        utc_dt.year,
-        utc_dt.month,
-        utc_dt.day,
-        utc_dt.hour + utc_dt.minute / 60.0
-    )
-
-        # Sun
-        sun_long, _ = swe.calc_ut(jd_ut, swe.SUN)
-        sun_sign = get_zodiac_sign(sun_long[0])
-
-        # Moon
-        moon_long, _ = swe.calc_ut(jd_ut, swe.MOON)
-        moon_sign = get_zodiac_sign(moon_long[0])
-
-        # Ascendant (Rising)
-        ascmc = swe.houses(jd_ut, latitude, longitude, b'P')
-        rising_long = ascmc[0][0]
-        rising_sign = get_zodiac_sign(rising_long)
-
-        # Nodes
-        north_node_long, _ = swe.calc_ut(jd_ut, swe.TRUE_NODE)
-        north_node_sign = get_zodiac_sign(north_node_long[0])
-
-        south_node_long = (north_node_long[0] + 180.0) % 360.0
-        south_node_sign = get_zodiac_sign(south_node_long)
-
-        return {
-            "sun_sign": sun_sign,
-            "moon_sign": moon_sign,
-            "rising_sign": rising_sign,
-            "north_node": {"sign": north_node_sign},
-            "south_node": {"sign": south_node_sign}
-        }
-
-    except Exception as e:
-        import traceback
-        tb = traceback.format_exc()
-        print("[calculate_nodes_and_big_three] ERROR:", str(e))
-        print(tb)
-        raise
-
 @app.route('/report', methods=['POST'])
 def make_report():
     try:
