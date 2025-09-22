@@ -145,12 +145,14 @@ def calculate_nodes_and_big_three(birthdate, birthtime, latitude, longitude):
         # Ascendant (Rising)
         print("DEBUG date input:", birthdate, birthtime)
         print("DEBUG jd_ut (Julian Day, UT):", jd_ut)
-        print("DEBUG latitude:", latitude)
-        print("DEBUG longitude:", longitude)
+        print("DEBUG latitude (should be ~41.5):", latitude)
+        print("DEBUG longitude (should be ~-87.6):", longitude)
 
         ascmc, cusps = swe.houses(jd_ut, latitude, longitude, b"P")
         rising_long = ascmc[0]  # ascendant degree
+        print("DEBUG rising_long (asc degree):", rising_long)
         rising_sign = get_zodiac_sign(rising_long)
+
 
         # Nodes
         north_node_long, _ = swe.calc_ut(jd_ut, swe.TRUE_NODE)
