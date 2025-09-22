@@ -132,8 +132,12 @@ def calculate_nodes_and_big_three(birthdate, birthtime, latitude, longitude):
             utc_dt.month,
             utc_dt.day,
             utc_dt.hour + utc_dt.minute / 60.0
-        )
-
+    )
+        print("DEBUG utc_dt (should be 1999-03-13 22:04 UTC):", utc_dt)
+        print("DEBUG jd_ut:", jd_ut)
+        print("DEBUG latitude:", latitude)
+        print("DEBUG longitude:", longitude)
+        
         # Sun
         sun_long, _ = swe.calc_ut(jd_ut, swe.SUN)
         sun_sign = get_zodiac_sign(sun_long[0])
