@@ -904,9 +904,12 @@ def calculate_nodes_and_big_three(birthdate, birthtime, latitude, longitude):
         dt_str = f"{birthdate} {birthtime}"
         dt = datetime.datetime.strptime(dt_str, "%Y-%m-%d %H:%M")
 
-        # Convert to Julian Day
-        jd_ut = swe.julday(dt.year, dt.month, dt.day, 
-                          dt.hour + dt.minute/60.0)
+        jd_ut = swe.julday(
+        utc_dt.year,
+        utc_dt.month,
+        utc_dt.day,
+        utc_dt.hour + utc_dt.minute / 60.0
+    )
 
         # Sun
         sun_long, _ = swe.calc_ut(jd_ut, swe.SUN)
