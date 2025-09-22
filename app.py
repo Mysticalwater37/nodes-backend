@@ -476,7 +476,12 @@ def create_pdf_report(report_text, first_name="Friend"):
     # Footer
     story.append(Spacer(1, 0.75*inch))
     story.append(Paragraph("Nodal Pathways", section_style))
-    story.append(Paragraph("Guiding you on your cosmic journey of self-discovery", disclaimer_style))
+    story.append(Paragraph(
+    "Guiding you on your cosmic journey of self-discovery. "
+    "For entertainment and self-reflection purposes only — not predictive or definitive.",
+    disclaimer_style
+    ))
+
     
     doc.build(story)
     return filepath
