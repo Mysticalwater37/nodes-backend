@@ -174,76 +174,67 @@ def create_pdf_report(report_text, first_name="Friend"):
     doc = SimpleDocTemplate(
         filepath,
         pagesize=A4,
-        rightMargin=0.75*inch, leftMargin=0.75*inch,
+        rightMargin=0.8*inch, leftMargin=0.8*inch,
         topMargin=1*inch, bottomMargin=1*inch
     )
 
     gold = HexColor('#edd598')
-    white = HexColor('#ffffff')
-    body_color = HexColor('#e2e8f0')
-    bg_dark = HexColor('#2d3748')  # used in section header background
+    black = HexColor('#111111')
+    gray = HexColor('#555555')
 
     title_style = ParagraphStyle(
         'Title',
-        fontSize=32,
+        fontSize=28,
         textColor=gold,
-        spaceAfter=30,
+        spaceAfter=24,
         alignment=TA_CENTER,
         fontName='Helvetica-Bold',
-        leading=36
+        leading=32
     )
     subtitle_style = ParagraphStyle(
         'Subtitle',
-        fontSize=18,
-        textColor=body_color,
+        fontSize=14,
+        textColor=gray,
         spaceAfter=36,
         alignment=TA_CENTER,
         fontName='Helvetica',
-        leading=24
+        leading=20
     )
     section_style = ParagraphStyle(
         'SectionHeader',
-        fontSize=22,
+        fontSize=16,
         textColor=gold,
-        spaceAfter=18,
-        spaceBefore=28,
+        spaceBefore=18,
+        spaceAfter=12,
         alignment=TA_CENTER,
         fontName='Helvetica-Bold',
-        leading=28,
-        borderWidth=1,
-        borderColor=gold,
-        borderPadding=12,
-        backColor=bg_dark
+        leading=20
     )
     body_style = ParagraphStyle(
         'Body',
-        fontSize=12.5,
-        textColor=body_color,
+        fontSize=11.5,
+        textColor=black,
         spaceAfter=12,
-        spaceBefore=4,
+        spaceBefore=2,
         alignment=TA_JUSTIFY,
         fontName='Helvetica',
-        leading=18
+        leading=16
     )
     disclaimer_style = ParagraphStyle(
         'Disclaimer',
-        fontSize=11.5,
-        textColor=body_color,
-        spaceAfter=10,
-        spaceBefore=22,
+        fontSize=9.5,
+        textColor=gray,
+        spaceBefore=30,
         alignment=TA_CENTER,
         fontName='Helvetica-Oblique',
-        leading=16,
-        leftIndent=20,
-        rightIndent=20
+        leading=13
     )
 
     story = []
-    story.append(Spacer(1, 0.6*inch))
     story.append(Paragraph("Nodal Pathways", title_style))
     story.append(Paragraph(f"Personalized Astrological Report for {first_name}", subtitle_style))
 
-    # Parse the AI sections and render
+    # Parse AI text into sections
     sections = [s for s in report_text.split('SECTION:') if s.strip()]
     for sec in sections:
         lines = [ln.strip() for ln in sec.strip().split('\n') if ln.strip()]
@@ -252,16 +243,15 @@ def create_pdf_report(report_text, first_name="Friend"):
         header = lines[0]
         story.append(Paragraph(header, section_style))
         text = ' '.join(lines[1:])
-        # Split into pseudo-paragraphs by double spaces or sentence ends
-        parts = [p.strip() for p in text.replace('\n', ' ').split('. ') if p.strip()]
-        for p in parts:
+        paragraphs = [p.strip() for p in text.replace('\n', ' ').split('. ') if p.strip()]
+        for p in paragraphs:
             if not p.endswith('.'):
                 p += '.'
             story.append(Paragraph(p, body_style))
+        story.append(Spacer(1, 0.2*inch))
 
-    # Footer with merged disclaimer sentence
-    story.append(Spacer(1, 0.6*inch))
-    story.append(Paragraph("Nodal Pathways", section_style))
+    # Disclaimer footer
+    story.append(PageBreak())
     story.append(Paragraph(
         "Guiding you on your cosmic journey of self-discovery. "
         "For entertainment and self-reflection purposes only. Not predictive or definitive.",
