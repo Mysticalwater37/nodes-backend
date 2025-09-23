@@ -284,8 +284,10 @@ def create_pdf_report(ai_text, first_name="Friend", chart_data=None):
     doc.build(story)
     return filepath
 
-def create_html_report(chart_data, ai_content, first_name):
-    """HTML report with merged disclaimer sentence."""
+def create_html_report(chart_data, ai_text, first_name="Friend"):
+    """Generate styled HTML with proper headers, chart essentials, sections, and disclaimer."""
+
+    # Essentials block
     chart_basics = f"""
     <div class="chart-basics">
         <h3>Chart Essentials for {first_name}</h3>
@@ -294,10 +296,33 @@ def create_html_report(chart_data, ai_content, first_name):
             <div class="basic-item"><strong>Moon Sign:</strong> {chart_data['moon_sign']}</div>
             <div class="basic-item"><strong>Rising Sign:</strong> {chart_data['rising_sign']}</div>
             <div class="basic-item"><strong>North Node:</strong> {chart_data['north_node']['sign']}</div>
+            <div class="basic-item"><strong>South Node:</strong> {chart_data['south_node']['sign']}</div>
         </div>
     </div>
     """
 
+    # Parse AI text into sections
+    sections_html = []
+    sections = [s.strip() for s in ai_text.split("SECTION:") if s.strip()]
+    for sec in sections:
+        lines = [ln.strip() for ln in sec.split("\n") if ln.strip()]
+        if not lines:
+            continue
+        header = lines[0].replace("SECTION:", "").strip()
+        body_text = " ".join(lines[1:])
+        paragraphs = [p.strip() for p in body_text.split(". ") if p.strip()]
+
+        sec_html = f"<div class='section'><h2>{header}</h2>"
+        for p in paragraphs:
+            if not p.endswith("."):
+                p += "."
+            sec_html += f"<p>{p}</p>"
+        sec_html += "</div>"
+        sections_html.append(sec_html)
+
+    sections_content = "\n".join(sections_html)
+
+    # Full HTML
     html = f"""<!DOCTYPE html>
 <html>
 <head>
@@ -313,7 +338,7 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial,
 .basic-item {{ background:#2a3141; border:1px solid #3a4151; padding:14px; border-radius:10px; }}
 strong {{ color:#edd598; }}
 .section h2 {{ color:#edd598; text-align:center; margin:28px 0 12px; }}
-.section p {{ line-height:1.7; text-align:justify; }}
+.section p {{ line-height:1.7; text-align:justify; margin-bottom:14px; }}
 .footer {{ text-align:center; margin-top:32px; padding:24px; background:#2d3748; border-radius:14px; color:#cbd5e0; }}
 .disclaimer {{ margin:22px auto; max-width:760px; text-align:center; color:#cbd5e0; }}
 </style>
@@ -325,9 +350,7 @@ strong {{ color:#edd598; }}
     <div class="subtitle">Personalized Astrological Report for {first_name}</div>
   </div>
   {chart_basics}
-  <div class="section" id="content">
-    {ai_content}
-  </div>
+  {sections_content}
   <div class="disclaimer">
     Guiding you on your cosmic journey of self-discovery. For entertainment and self-reflection purposes only. Not predictive or definitive.
   </div>
