@@ -13,10 +13,11 @@ import requests
 import logging
 
 from reportlab.lib.pagesizes import A4
-from reportlab.lib.units import inch
-from reportlab.lib.colors import HexColor
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak
 from reportlab.lib.styles import ParagraphStyle, TA_CENTER, TA_JUSTIFY
+from reportlab.lib.units import inch
+from reportlab.lib.colors import HexColor, black
+
 import uuid
 
 # ===== App Setup =====
@@ -166,7 +167,7 @@ Use {first_name}'s name naturally. Counseling tone. No em dashes.
 Hi {first_name}. Your report could not be generated automatically. Please contact support."""
         return fallback
 
-def create_pdf_report(report_text, first_name="Friend"):
+def create_pdf_report(ai_text, first_name="Friend", chart_data=None):
     """Create a styled PDF and return file path."""
     filename = f"nodal_report_{uuid.uuid4()}.pdf"
     filepath = f"/tmp/{filename}"
@@ -179,9 +180,9 @@ def create_pdf_report(report_text, first_name="Friend"):
     )
 
     gold = HexColor('#edd598')
-    black = HexColor('#111111')
     gray = HexColor('#555555')
 
+    # Styles
     title_style = ParagraphStyle(
         'Title',
         fontSize=28,
@@ -214,11 +215,10 @@ def create_pdf_report(report_text, first_name="Friend"):
         'Body',
         fontSize=11.5,
         textColor=black,
-        spaceAfter=12,
-        spaceBefore=2,
+        spaceAfter=10,
         alignment=TA_JUSTIFY,
         fontName='Helvetica',
-        leading=16
+        leading=17
     )
     disclaimer_style = ParagraphStyle(
         'Disclaimer',
@@ -231,26 +231,49 @@ def create_pdf_report(report_text, first_name="Friend"):
     )
 
     story = []
+    # Cover
     story.append(Paragraph("Nodal Pathways", title_style))
     story.append(Paragraph(f"Personalized Astrological Report for {first_name}", subtitle_style))
 
-    # Parse AI text into sections
-    sections = [s for s in report_text.split('SECTION:') if s.strip()]
+    # Chart Essentials table
+    if chart_data:
+        chart_rows = [
+            ["Sun", chart_data.get("sun_sign", "")],
+            ["Moon", chart_data.get("moon_sign", "")],
+            ["Rising", chart_data.get("rising_sign", "")],
+            ["North Node", chart_data.get("north_node", {}).get("sign", "")],
+            ["South Node", chart_data.get("south_node", {}).get("sign", "")]
+        ]
+        t = Table(chart_rows, colWidths=[1.5*inch, None])
+        t.setStyle(TableStyle([
+            ("FONTNAME", (0,0), (-1,-1), "Helvetica"),
+            ("FONTSIZE", (0,0), (-1,-1), 11.5),
+            ("TEXTCOLOR", (0,0), (-1,-1), black),
+            ("LINEBELOW", (0,0), (-1,-1), 0.25, gray),
+            ("LEFTPADDING", (0,0), (-1,-1), 6),
+            ("RIGHTPADDING", (0,0), (-1,-1), 6),
+            ("TOPPADDING", (0,0), (-1,-1), 4),
+            ("BOTTOMPADDING", (0,0), (-1,-1), 4),
+        ]))
+        story.append(t)
+        story.append(Spacer(1, 0.3*inch))
+
+    # Narrative sections
+    sections = [s for s in ai_text.split('SECTION:') if s.strip()]
     for sec in sections:
         lines = [ln.strip() for ln in sec.strip().split('\n') if ln.strip()]
         if not lines:
             continue
-        header = lines[0]
+        header = lines[0].replace("SECTION:", "").strip()
         story.append(Paragraph(header, section_style))
         text = ' '.join(lines[1:])
-        paragraphs = [p.strip() for p in text.replace('\n', ' ').split('. ') if p.strip()]
-        for p in paragraphs:
-            if not p.endswith('.'):
-                p += '.'
-            story.append(Paragraph(p, body_style))
-        story.append(Spacer(1, 0.2*inch))
+        for p in text.split('. '):
+            if p:
+                if not p.endswith('.'):
+                    p += '.'
+                story.append(Paragraph(p, body_style))
 
-    # Disclaimer footer
+    # Disclaimer
     story.append(PageBreak())
     story.append(Paragraph(
         "Guiding you on your cosmic journey of self-discovery. "
