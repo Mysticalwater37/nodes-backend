@@ -16,7 +16,7 @@ from reportlab.lib.pagesizes import A4
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak
 from reportlab.lib.styles import ParagraphStyle, TA_CENTER, TA_JUSTIFY
 from reportlab.lib.units import inch
-from reportlab.lib.colors import HexColor, black, gray
+from reportlab.lib.colors import HexColor, black
 import uuid
 
 # ===== App Setup =====
@@ -179,6 +179,7 @@ def create_pdf_report(ai_text, first_name="Friend", chart_data=None):
     )
 
     gold = HexColor('#edd598')
+    dark = HexColor('#2d3748')
     muted = HexColor('#555555')
 
     # Styles
@@ -203,7 +204,7 @@ def create_pdf_report(ai_text, first_name="Friend", chart_data=None):
     section_style = ParagraphStyle(
         'SectionHeader',
         fontSize=18,
-        textColor=gold,
+        textColor=dark,
         spaceBefore=18,
         spaceAfter=12,
         alignment=TA_CENTER,
@@ -221,12 +222,12 @@ def create_pdf_report(ai_text, first_name="Friend", chart_data=None):
     )
     disclaimer_style = ParagraphStyle(
         'Disclaimer',
-        fontSize=10.5,
-        textColor=muted,
+        fontSize=11,
+        textColor=dark,
         spaceBefore=30,
         alignment=TA_CENTER,
         fontName='Helvetica-Oblique',
-        leading=14
+        leading=15
     )
 
     story = []
@@ -247,7 +248,8 @@ def create_pdf_report(ai_text, first_name="Friend", chart_data=None):
         t.setStyle(TableStyle([
             ("FONTNAME", (0,0), (-1,-1), "Helvetica"),
             ("FONTSIZE", (0,0), (-1,-1), 12),
-            ("TEXTCOLOR", (0,0), (-1,-1), black),
+            ("TEXTCOLOR", (0,0), (0,-1), gold),   # labels in gold
+            ("TEXTCOLOR", (1,0), (1,-1), dark),   # values in dark navy
             ("LINEBELOW", (0,0), (-1,-1), 0.25, muted),
             ("LEFTPADDING", (0,0), (-1,-1), 6),
             ("RIGHTPADDING", (0,0), (-1,-1), 6),
@@ -286,9 +288,9 @@ def create_pdf_report(ai_text, first_name="Friend", chart_data=None):
 
     doc.build(story)
     return filepath
-
+    
 def create_html_report(chart_data, ai_text, first_name="Friend"):
-    """Generate styled HTML with proper headers, chart essentials, sections, disclaimer, and instructions."""
+    """Generate styled HTML with dark section headers, chart essentials, disclaimer, and instructions."""
 
     # Essentials block
     chart_basics = f"""
@@ -332,18 +334,19 @@ def create_html_report(chart_data, ai_text, first_name="Friend"):
 <meta charset="UTF-8">
 <title>Nodal Pathways Report - {first_name}</title>
 <style>
-body {{ font-family: -apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial, sans-serif; background:#1a202c; color:#e2e8f0; margin:0; }}
+body {{ font-family: -apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial, sans-serif; background:#ffffff; color:#111; margin:0; }}
 .container {{ max-width: 900px; margin: 0 auto; padding: 24px; }}
 .header {{ text-align:center; padding: 36px 12px; background:#2d3748; border-radius:16px; }}
 .header h1 {{ color:#edd598; margin:0 0 8px 0; }}
-.header .subtitle {{ color:#cbd5e0; }}
+.header .subtitle {{ color:#e2e8f0; }}
 .basics-grid {{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }}
 .basic-item {{ background:#2a3141; border:1px solid #3a4151; padding:14px; border-radius:10px; color:#e2e8f0; }}
 strong {{ color:#edd598; }}
-.section h2 {{ color:#edd598; text-align:center; margin:28px 0 12px; }}
+.section h2 {{ color:#2d3748; text-align:center; margin:28px 0 12px; font-size:20px; }}
 .section p {{ line-height:1.6; text-align:left; margin-bottom:14px; }}
-.footer {{ text-align:center; margin-top:32px; padding:24px; background:#2d3748; border-radius:14px; color:#cbd5e0; }}
-.disclaimer {{ margin:22px auto; max-width:760px; text-align:center; color:#cbd5e0; font-size:13px; }}
+.footer {{ text-align:center; margin-top:32px; padding:24px; background:#2d3748; border-radius:14px; color:#e2e8f0; }}
+.disclaimer {{ margin:22px auto; max-width:760px; text-align:center; color:#2d3748; font-size:13px; }}
+.instructions {{ text-align:center; font-size:13px; color:#2d3748; margin-top:30px; }}
 </style>
 </head>
 <body>
@@ -354,7 +357,7 @@ strong {{ color:#edd598; }}
   </div>
   {chart_basics}
   {sections_content}
-  <p style="text-align:center; font-size:13px; color:#cbd5e0; margin-top:30px;">
+  <p class="instructions">
     You can download and print this report using the attachment or your browser’s print option.
   </p>
   <div class="disclaimer">
