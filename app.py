@@ -16,8 +16,7 @@ from reportlab.lib.pagesizes import A4
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak
 from reportlab.lib.styles import ParagraphStyle, TA_CENTER, TA_JUSTIFY
 from reportlab.lib.units import inch
-from reportlab.lib.colors import HexColor, black
-
+from reportlab.lib.colors import HexColor, black, gray
 import uuid
 
 # ===== App Setup =====
@@ -180,22 +179,22 @@ def create_pdf_report(ai_text, first_name="Friend", chart_data=None):
     )
 
     gold = HexColor('#edd598')
-    gray = HexColor('#555555')
+    muted = HexColor('#555555')
 
     # Styles
     title_style = ParagraphStyle(
         'Title',
-        fontSize=28,
+        fontSize=30,
         textColor=gold,
         spaceAfter=24,
         alignment=TA_CENTER,
         fontName='Helvetica-Bold',
-        leading=32
+        leading=34
     )
     subtitle_style = ParagraphStyle(
         'Subtitle',
         fontSize=14,
-        textColor=gray,
+        textColor=muted,
         spaceAfter=36,
         alignment=TA_CENTER,
         fontName='Helvetica',
@@ -203,31 +202,31 @@ def create_pdf_report(ai_text, first_name="Friend", chart_data=None):
     )
     section_style = ParagraphStyle(
         'SectionHeader',
-        fontSize=16,
+        fontSize=18,
         textColor=gold,
         spaceBefore=18,
         spaceAfter=12,
         alignment=TA_CENTER,
         fontName='Helvetica-Bold',
-        leading=20
+        leading=22
     )
     body_style = ParagraphStyle(
         'Body',
-        fontSize=11.5,
+        fontSize=13,
         textColor=black,
-        spaceAfter=10,
+        spaceAfter=12,
         alignment=TA_JUSTIFY,
         fontName='Helvetica',
-        leading=17
+        leading=18
     )
     disclaimer_style = ParagraphStyle(
         'Disclaimer',
-        fontSize=9.5,
-        textColor=gray,
+        fontSize=10.5,
+        textColor=muted,
         spaceBefore=30,
         alignment=TA_CENTER,
         fontName='Helvetica-Oblique',
-        leading=13
+        leading=14
     )
 
     story = []
@@ -244,12 +243,12 @@ def create_pdf_report(ai_text, first_name="Friend", chart_data=None):
             ["North Node", chart_data.get("north_node", {}).get("sign", "")],
             ["South Node", chart_data.get("south_node", {}).get("sign", "")]
         ]
-        t = Table(chart_rows, colWidths=[1.5*inch, None])
+        t = Table(chart_rows, colWidths=[1.8*inch, None])
         t.setStyle(TableStyle([
             ("FONTNAME", (0,0), (-1,-1), "Helvetica"),
-            ("FONTSIZE", (0,0), (-1,-1), 11.5),
+            ("FONTSIZE", (0,0), (-1,-1), 12),
             ("TEXTCOLOR", (0,0), (-1,-1), black),
-            ("LINEBELOW", (0,0), (-1,-1), 0.25, gray),
+            ("LINEBELOW", (0,0), (-1,-1), 0.25, muted),
             ("LEFTPADDING", (0,0), (-1,-1), 6),
             ("RIGHTPADDING", (0,0), (-1,-1), 6),
             ("TOPPADDING", (0,0), (-1,-1), 4),
@@ -273,8 +272,12 @@ def create_pdf_report(ai_text, first_name="Friend", chart_data=None):
                     p += '.'
                 story.append(Paragraph(p, body_style))
 
-    # Disclaimer
+    # Disclaimer + instructions
     story.append(PageBreak())
+    story.append(Paragraph(
+        "You can download and print this report using the attachment or your browser’s print option.",
+        disclaimer_style
+    ))
     story.append(Paragraph(
         "Guiding you on your cosmic journey of self-discovery. "
         "For entertainment and self-reflection purposes only. Not predictive or definitive.",
@@ -285,7 +288,7 @@ def create_pdf_report(ai_text, first_name="Friend", chart_data=None):
     return filepath
 
 def create_html_report(chart_data, ai_text, first_name="Friend"):
-    """Generate styled HTML with proper headers, chart essentials, sections, and disclaimer."""
+    """Generate styled HTML with proper headers, chart essentials, sections, disclaimer, and instructions."""
 
     # Essentials block
     chart_basics = f"""
@@ -335,12 +338,12 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial,
 .header h1 {{ color:#edd598; margin:0 0 8px 0; }}
 .header .subtitle {{ color:#cbd5e0; }}
 .basics-grid {{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }}
-.basic-item {{ background:#2a3141; border:1px solid #3a4151; padding:14px; border-radius:10px; }}
+.basic-item {{ background:#2a3141; border:1px solid #3a4151; padding:14px; border-radius:10px; color:#e2e8f0; }}
 strong {{ color:#edd598; }}
 .section h2 {{ color:#edd598; text-align:center; margin:28px 0 12px; }}
-.section p {{ line-height:1.7; text-align:justify; margin-bottom:14px; }}
+.section p {{ line-height:1.6; text-align:left; margin-bottom:14px; }}
 .footer {{ text-align:center; margin-top:32px; padding:24px; background:#2d3748; border-radius:14px; color:#cbd5e0; }}
-.disclaimer {{ margin:22px auto; max-width:760px; text-align:center; color:#cbd5e0; }}
+.disclaimer {{ margin:22px auto; max-width:760px; text-align:center; color:#cbd5e0; font-size:13px; }}
 </style>
 </head>
 <body>
@@ -351,8 +354,12 @@ strong {{ color:#edd598; }}
   </div>
   {chart_basics}
   {sections_content}
+  <p style="text-align:center; font-size:13px; color:#cbd5e0; margin-top:30px;">
+    You can download and print this report using the attachment or your browser’s print option.
+  </p>
   <div class="disclaimer">
-    Guiding you on your cosmic journey of self-discovery. For entertainment and self-reflection purposes only. Not predictive or definitive.
+    Guiding you on your cosmic journey of self-discovery.<br>
+    For entertainment and self-reflection purposes only. Not predictive or definitive.
   </div>
   <div class="footer">
     Nodal Pathways
