@@ -2,8 +2,9 @@
 from flask import Flask, request, jsonify, send_file
 import swisseph as swe
 from timezonefinder import TimezoneFinder
-from datetime import datetime
+from datetime import datetime, timedelta
 import pytz
+from pytz import exceptions as tzex
 import uuid
 import os
 import resend
@@ -17,7 +18,6 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, Tabl
 from reportlab.lib.styles import ParagraphStyle, TA_CENTER, TA_JUSTIFY
 from reportlab.lib.units import inch
 from reportlab.lib.colors import HexColor, black
-import uuid
 
 # ===== App Setup =====
 app = Flask(__name__)
@@ -47,26 +47,31 @@ def calculate_nodes_and_big_three(birthdate, birthtime, latitude, longitude):
     """
     Compute Sun, Moon, Rising, and Nodes using Swiss Ephemeris.
     birthdate: 'YYYY-MM-DD'
-    birthtime: 'HH:MM' 24h local time
+    birthtime: 'HH:MM' (24h local time string)
     latitude, longitude: floats (lon negative for W)
     """
     try:
-        # 1) Parse local date/time (naive)
+        # 1) Parse local datetime
         dt_str = f"{birthdate} {birthtime}"
-        local_dt = datetime.strptime(dt_str, "%Y-%m-%d %H:%M")
+        naive = datetime.strptime(dt_str, "%Y-%m-%d %H:%M")
 
-        # 2) Resolve timezone from coordinates
+        # 2) Resolve timezone
         tf = TimezoneFinder()
-        tz_name = tf.timezone_at(lat=latitude, lng=longitude)
-        if not tz_name:
-            tz_name = "UTC"
-        local_tz = pytz.timezone(tz_name)
+        tz_name = tf.timezone_at(lat=latitude, lng=longitude) or "UTC"
+        tz = pytz.timezone(tz_name)
 
-        # 3) Localize then convert to UTC
-        local_dt = local_tz.localize(local_dt)
-        utc_dt = local_dt.astimezone(pytz.utc)
+        # 3) Localize safely with DST awareness
+        try:
+            local_dt = tz.localize(naive, is_dst=None)
+        except tzex.AmbiguousTimeError:
+            local_dt = tz.localize(naive, is_dst=False)
+        except tzex.NonExistentTimeError:
+            local_dt = tz.localize(naive + timedelta(hours=1), is_dst=True)
 
-        # 4) Julian Day in UT
+        # 4) Convert to UTC
+        utc_dt = local_dt.astimezone(pytz.UTC)
+
+        # 5) Julian Day in UT
         jd_ut = swe.julday(
             utc_dt.year,
             utc_dt.month,
@@ -74,29 +79,32 @@ def calculate_nodes_and_big_three(birthdate, birthtime, latitude, longitude):
             utc_dt.hour + utc_dt.minute / 60.0
         )
 
-        # Debug
-        print("DEBUG utc_dt:", utc_dt)
-        print("DEBUG jd_ut:", jd_ut)
-        print("DEBUG latitude:", latitude, "longitude:", longitude)
+        # Debug info
+        print("DEBUG >>> Local datetime:", local_dt.isoformat())
+        print("DEBUG >>> UTC datetime:", utc_dt.isoformat())
+        print("DEBUG >>> jd_ut:", jd_ut)
+        print("DEBUG >>> latitude:", latitude, "longitude:", longitude)
 
-        # Sun
-        sun_long, _ = swe.calc_ut(jd_ut, swe.SUN)
-        sun_sign = get_zodiac_sign(sun_long[0])
+        # 6) Sun
+        xx, _ = swe.calc_ut(jd_ut, swe.SUN)
+        sun_sign = get_zodiac_sign(xx[0])
 
-        # Moon
-        moon_long, _ = swe.calc_ut(jd_ut, swe.MOON)
-        moon_sign = get_zodiac_sign(moon_long[0])
+        # 7) Moon
+        xx, _ = swe.calc_ut(jd_ut, swe.MOON)
+        moon_sign = get_zodiac_sign(xx[0])
 
-        # Rising (Ascendant)
+        # 8) Ascendant (Rising)
         ascmc, cusps = swe.houses(jd_ut, latitude, longitude, b"P")
         rising_long = ascmc[0]
         rising_sign = get_zodiac_sign(rising_long)
-        print("DEBUG rising_long:", rising_long, "rising_sign:", rising_sign)
+        print("DEBUG >>> Rising degree:", rising_long, "sign:", rising_sign)
 
-        # Nodes (True Node)
-        north_node_long, _ = swe.calc_ut(jd_ut, swe.TRUE_NODE)
-        north_node_sign = get_zodiac_sign(north_node_long[0])
-        south_node_sign = get_zodiac_sign((north_node_long[0] + 180.0) % 360.0)
+        # 9) Nodes (True Node)
+        xx, _ = swe.calc_ut(jd_ut, swe.TRUE_NODE)
+        nn_long = xx[0]
+        sn_long = (nn_long + 180.0) % 360.0
+        north_node_sign = get_zodiac_sign(nn_long)
+        south_node_sign = get_zodiac_sign(sn_long)
 
         return {
             "sun_sign": sun_sign,
